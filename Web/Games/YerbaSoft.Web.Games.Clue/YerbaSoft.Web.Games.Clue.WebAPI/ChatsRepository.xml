@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlSimpleRepository>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.Chat UniqueKey="37c6535136074488a5ba17cf7017d8ef27a65c7f057e4299b08c737a0bff0281">
+    <Id>2c4b9153-39e2-4974-a852-4972c7992a59</Id>
+    <Name>Partida de Clue</Name>
+    <Type>Group</Type>
+    <IconRes>http://localhost:4200/assets/clue/ClueCard.jpg</IconRes>
+    <LastUpdate>3/6/2018 16:50:59</LastUpdate>
+    <Integrantes>
+      <Integrantes UniqueKey="8e398377feda43aa9751c5307044d1394d4c50580bd34d17a5e5be008f25d8f9">
+        <Id>00000000-0000-0000-0000-000000000000</Id>
+        <Name>Anonimo</Name>
+      </Integrantes>
+    </Integrantes>
+    <ChatLines />
+  </YerbaSoft.Web.Games.Clue.Common.DTO.Chat>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.Chat UniqueKey="132ca839a7cb48ea91b4a9396cecd0bf71f4b1e627d0400c9e526bad1b9c4611">
+    <Id>15b1f439-3995-4c1f-a5b5-708bbebaf060</Id>
+    <Name>Global</Name>
+    <Type>Global</Type>
+    <IconRes>http://localhost:4200/assets/globalchat.png</IconRes>
+    <LastUpdate>10/6/2018 16:41:40</LastUpdate>
+    <Integrantes>
+      <Integrantes UniqueKey="f38c482cef0c427d868041c590043e72b989daea5d7d4aba83a25f6476a0d63f">
+        <Id>00000000-0000-0000-0000-000000000000</Id>
+        <Name>Anonimo</Name>
+      </Integrantes>
+    </Integrantes>
+    <ChatLines />
+  </YerbaSoft.Web.Games.Clue.Common.DTO.Chat>
+</XmlSimpleRepository>

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4CDFB59F-292D-4C42-ABD1-950CC809E113}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsHelper.Common</RootNamespace>
+    <AssemblyName>WindowsHelper.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.4.12\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interfaces\IApp.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="Configuration\App.cs" />
+    <Compile Include="Configuration\Applications.cs" />
+    <Compile Include="Configuration\WindowsHelper.cs" />
+    <Compile Include="Const\LogLevel.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Interfaces\ILoggeable.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DTO\YerbaSoft.DTO.csproj">
+      <Project>{03356582-57fe-40a0-b032-9585df279cfc}</Project>
+      <Name>YerbaSoft.DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.ico" />
+    <Content Include="WindowsHelper.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\WindowsHelper.ico" />
+    <None Include="Resources\nav_up_right_red.ICO" />
+    <None Include="Resources\nav_up_right_green.ICO" />
+    <None Include="Resources\nav_up_right_blue.ICO" />
+    <None Include="Resources\nav_up_red.ICO" />
+    <None Include="Resources\nav_up_left_red.ICO" />
+    <None Include="Resources\nav_up_left_green.ICO" />
+    <None Include="Resources\nav_up_left_blue.ICO" />
+    <None Include="Resources\nav_up_green.ICO" />
+    <None Include="Resources\nav_up_blue.ICO" />
+    <None Include="Resources\nav_right_red.ICO" />
+    <None Include="Resources\nav_right_green.ICO" />
+    <None Include="Resources\nav_right_blue.ICO" />
+    <None Include="Resources\nav_left_red.ICO" />
+    <None Include="Resources\nav_left_green.ICO" />
+    <None Include="Resources\nav_left_blue.ICO" />
+    <None Include="Resources\nav_down_right_red.ICO" />
+    <None Include="Resources\nav_down_right_green.ICO" />
+    <None Include="Resources\nav_down_right_blue.ICO" />
+    <None Include="Resources\nav_down_red.ICO" />
+    <None Include="Resources\nav_down_left_red.ICO" />
+    <None Include="Resources\nav_down_left_green.ICO" />
+    <None Include="Resources\nav_down_left_blue.ICO" />
+    <None Include="Resources\nav_down_green.ICO" />
+    <None Include="Resources\nav_down_blue.ICO" />
+    <None Include="Resources\nav_delete.ICO" />
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="WindowsHelper.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

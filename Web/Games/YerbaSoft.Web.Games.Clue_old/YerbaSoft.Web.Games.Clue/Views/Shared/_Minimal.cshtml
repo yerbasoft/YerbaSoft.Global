@@ -1,0 +1,34 @@
+﻿@{ 
+    var CurrentUser = YerbaSoft.Web.Games.Clue.Models.Site.Session.GetUsuarioActivo(this.Session);
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="~/Content/Site.css" rel="stylesheet" media="screen" />
+    <link href="~/Content/jquery-ui.css" rel="stylesheet" media="screen" />
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Content/jquery-ui.min.js"></script>
+    <script src="~/Scripts/jquery.blockUI.js"></script>
+    <script src="~/Scripts/YerbaSoft.Web.JavaScript.Math.js"></script>
+    <script src="~/Scripts/YerbaSoft.Web.JavaScript.Html.js"></script>
+    <script src="~/Scripts/YerbaSoft.Web.JavaScript.ControlManager.js"></script>
+    <script src="~/Scripts/YerbaSoft.Web.JavaScript.Template.js"></script>
+    <script src="~/Scripts/YerbaSoft.Web.Games.js"></script>
+
+    @RenderSection("Scripts", required: false)
+</head>
+<body >
+    @RenderBody()
+    <script>
+        $Server.Security.CurrentUserId = @Html.Raw(CurrentUser != null ? "'" + CurrentUser.Id.ToString() + "'" : "null");
+        $Server.Security.CurrentUser = @Html.Raw(CurrentUser != null ? Json.Encode(CurrentUser) : "null");
+    </script>
+</body>
+</html>

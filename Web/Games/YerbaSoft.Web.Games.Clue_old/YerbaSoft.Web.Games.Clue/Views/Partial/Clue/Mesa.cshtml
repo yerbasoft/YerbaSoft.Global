@@ -1,0 +1,83 @@
+﻿<h3>{{Model.Nombre}}</h3>
+<var name="enabled" value="Model.Estado == $Server.Clue.Mesa.EstadoAbierta" />
+<var name="mesaimage" value="enabled ? '../Content/images/mesa.jpg' : '../Content/images/jugando.gif'" />
+
+<div id="{{Model.unique}}">
+    <div id="{{Model.unique}}Count"></div>
+    <table cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <if condicion="enabled &amp;&amp; $Math.Array.find(Model.Integrantes, 'item.Id == $Server.Security.CurrentUserId').length == 0">
+                    <a class="btn btn-default" href="#{{Model.unique}}" onclick="Mesas.{{Model.unique}}.addMe();">
+                        <img src="{{mesaimage}}" height="200px" />
+                    </a>
+                <else />
+                    <img src="{{mesaimage}}" height="200px" />
+                </if>
+            </td>
+            <td>
+                <table width="100%" height="100%">
+                    <if condicion="enabled &amp;&amp; Model.IdOwner == $Server.Security.CurrentUserId">
+                        <tr>
+                            <td>
+                                <a class="btn btn-default" href="#{{Model.unique}}" onclick="Mesas.{{Model.unique}}.addBot();">Agregar Bot</a>
+                                <a class="btn btn-default" href="#{{Model.unique}}" onclick="Mesas.{{Model.unique}}.addSuperBot();">Agregar Super Bot</a>
+                            </td>
+                        </tr>
+                    </if>
+                    <tr>
+                        <td>
+                            <foreach var="usr" in="Model.Integrantes">
+                                <if condicion="enabled &amp;&amp; ( Model.IdOwner == $Server.Security.CurrentUserId || usr.Id == $Server.Security.CurrentUserId )">
+                                    <a class="btn btn-default" href="#{{Model.unique}}" onclick="Mesas.{{Model.unique}}.removeUser('{{usr.Id}}');">
+                                        <img src="~/Content/UserProfiles/{{usr.Logo}}" height="50px" width="50px" />{{usr.Nombre}}
+                                    </a>
+                                <else />
+                                    <img src="~/Content/UserProfiles/{{usr.Logo}}" height="50px" width="50px" />{{usr.Nombre}}
+                                </if>
+                            </foreach>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <if condicion="enabled &amp;&amp; Model.IdOwner == $Server.Security.CurrentUserId">
+            <tr>
+                <td align="center">
+                    <a class="btn btn-default" href="#{{Model.unique}}" onclick="Mesas.enter('{{Model.Id}}');">Comenzar Partida</a>
+                </td>
+                <td align="center">
+                    <a class="btn btn-default" href="#{{Model.unique}}" onclick="Mesas.remove('{{Model.Id}}');">Cerrar Mesa</a>
+                </td>
+                <td></td>
+            </tr>
+        </if>
+    </table>
+</div>
+
+<script>
+
+    Mesas["{{Model.unique}}"] = {
+
+        addMe: function () {
+            $Server.Ajax('@Url.Action("MesaAddUser", "Clue")', { idMesa: '{{Model.Id}}', idUser: '{{$Server.Security.CurrentUserId}}' });
+        },
+
+        addBot: function () {
+            $Server.Ajax('@Url.Action("MesaAddUser", "Clue")', { idMesa: '{{Model.Id}}', idUser: '00000000-0000-0000-0000-000000000002' });
+        },
+        addSuperBot: function () {
+            $Server.Ajax('@Url.Action("MesaAddUser", "Clue")', { idMesa: '{{Model.Id}}', idUser: '00000000-0000-0000-0000-000000000003' });
+        },
+
+        removeUser: function (id) {
+            if (id == '{{Model.IdOwner}}') {
+                Mesas.remove('{{Model.Id}}');
+                return;
+            }
+
+            $Server.Ajax('@Url.Action("MesaRemoveUser", "Clue")', { idMesa: '{{Model.Id}}', idUser: id });
+        }
+    };
+
+</script>

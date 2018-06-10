@@ -1,0 +1,47 @@
+﻿@{
+    var CurrentUser = YerbaSoft.Web.Games.Clue.Models.Site.Session.GetUsuarioActivo(this.Session);
+    Layout = "~/Views/Shared/_Minimal.cshtml";
+}
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            @Html.ActionLink("YerbaSoft Games", "Main", "Home", null, new { @class = "navbar-brand" })
+        </div>
+        @if (CurrentUser != null)
+        {
+        <div class="navbar-collapse collapse">
+
+            <!-- LISTADO DE JUEGOS -->
+            <ul class="nav navbar-nav">
+                @foreach (var g in YerbaSoft.Web.Games.Clue.BLL.Factory.GetGamesService(CurrentUser).GetGames())
+                {
+                    <li>@Html.ActionLink(g.Nombre, g.Codigo, "Game")</li>
+                }
+            </ul>
+
+            <!-- CURRENT USER INFO -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="~/Security/Usuario?Id=@CurrentUser.Id.ToString()" style="padding-top:0; padding-bottom:0">
+                        <img src="~/Content/UserProfiles/@CurrentUser.Logo" height="50px" width="50px" />
+                    </a>
+                </li>
+                <li>
+                    @Html.ActionLink("Hola " + CurrentUser.Nombre + "!", "Usuario", "Security", new { Id = CurrentUser.Id }, new { })
+                </li>
+                <li>
+                    @Html.ActionLink("Cerrar", "Index", "Home")
+                </li>
+            </ul>
+        </div>
+        }
+    </div>
+</div>
+<div class="container body-content col-md-12">
+    @RenderBody()
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - YerbaSoft Studios</p>
+    </footer>
+</div>

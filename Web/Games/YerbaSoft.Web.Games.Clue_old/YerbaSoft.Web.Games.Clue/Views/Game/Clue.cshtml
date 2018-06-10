@@ -1,0 +1,126 @@
+﻿@{
+    ViewBag.Title = "Clue";
+    Layout = "~/Views/Shared/_Base.cshtml";
+}
+
+<div style="float:right" id="refreshPing"></div>
+<h2>Clue<img id="loading_img" src="~/Content/images/loading.gif" height="25px" width="25px" hidden="hidden" /></h2>
+
+<script>
+    var interval;
+    $(function(){
+        interval = window.setInterval(function() { Mesas.refresh(); }, 600);
+    });
+
+    var refreshing = false;
+    var Mesas = {
+
+        new: function () {
+            $Server.Ajax('@Url.Action("MesaNew", "Clue")', { });
+        },
+
+        refreshing: false,
+
+        refresh: function () {
+            if (refreshing) return;
+            $("#loading_img").attr("hidden", null);
+            refreshing = true;
+
+            $Server.Ajax( '@Url.Action("GetMesas", "Game")',
+                          { idGame: '@ViewBag.IdGame.ToString()' },
+                          function(data, e) {
+                              Mesas.prototype._Refresh(data);
+                              $("#loading_img").attr("hidden", "hidden");
+                              refreshing = false;
+
+                              $("#refreshPing").html( "Ping: " + e.timeLapsed );
+                          },
+                          function() { refreshing = false; }
+            );
+        },
+
+        remove: function(id) {
+            $Server.Ajax('@Url.Action("MesaRemove", "Clue")', { idMesa: id });
+        },
+
+        enter: function(id) {
+            //clearInterval(interval);
+            $Server.Ajax('@Url.Action("MesaStart", "Clue")', { idMesa: id });
+            //$.blockUI({ message: '<h1><img src="../Content/images/loading.gif" height="25px" width="25px"/> Entrando a la partida </h1>' });
+        },
+
+        prototype: {
+
+            _RefreshLapse: 10000,
+
+            _MesaTemplate: @Html.Raw(YerbaSoft.Web.Games.Clue.Models.Site.Html.GetPartialString(Html.Partial("../Partial/Clue/Mesa"))),
+
+            _Mesas: [],
+
+            _Refresh: function(mesas) {
+                
+                //busco la mesa donde está el usuario actual, si la partida comenzó lo redirecciono
+                for(var i = 0; i < mesas.length; i++)
+                {
+                    if (mesas[i].Estado == $Server.Clue.Mesa.EstadoJugando)
+                    {
+                        if ($Math.Array.findFirst(mesas[i].Integrantes, "item.Id == $Server.Security.CurrentUserId") != null)
+                            window.location.href = '@Url.Action("Playing", "Clue")';
+                    }
+                }
+
+
+                var updated = [];
+                var deleted = [];
+                var news = [];
+
+                // Busco las mesas para actualizarlas, borrarlas o agregarlas
+                for(var i = 0; i < this._Mesas.length; i++){
+                    var mesa = $Math.Array.findFirst(mesas, 'item.unique == "' + this._Mesas[i] + '"');
+
+                    if (mesa == null) {
+                        deleted[deleted.length] = this._Mesas[i];
+                    } else {
+                        updated[updated.length] = mesa;
+                    }
+                }
+
+                for(var i = 0; i < mesas.length; i++) {
+                    var mesa = $Math.Array.findFirst(this._Mesas, mesas[i].unique);
+
+                    if (mesa == null)
+                        news[news.length] = mesas[i];
+                }
+
+                // Nuevos
+                for(var i = 0; i < news.length; i++) {
+                    var html = TemplateManager.ResolveTemplate(news[i], this._MesaTemplate);
+                    html = '<div id="' + news[i].unique + '">' + html + '</div>';
+                    $("#MesasContent").append(html);
+                    this._Mesas[this._Mesas.length] = news[i].unique;
+                }
+
+                // Actualizar
+                for(var i = 0; i < updated.length; i++) {
+                    var html = TemplateManager.ResolveTemplate(updated[i], this._MesaTemplate);
+
+                    $("#" + updated[i].unique).html(html);
+                }
+
+                // Delete
+                for(var i = 0; i < deleted.length; i++) {
+                    $("#" + deleted[i]).remove();
+
+                    $Math.Array.remove(this._Mesas, deleted[i]);
+                }
+            }
+        }
+    };
+</script>
+
+<div id="Mesas">
+    <a class="btn btn-default" href="#" onclick="Mesas.new();">Nueva Mesa</a>
+    <br />
+
+    <div id="MesasContent"></div>
+</div>

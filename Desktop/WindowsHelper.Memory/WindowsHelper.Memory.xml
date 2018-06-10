@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Memory Name="Memory">
+  <SubMenu Name="Scripts">
+    <SubMenu Name="SIR">
+      <ToClipBoard Name="CREATE USER ggr">
+        INSERT INTO SIR.USUARIO ( ID,         NOMBRE,   LOGIN,        CLAVE,                                      CAMBIARCLAVE, LEGAJO,   DNI,      CREAFECHA,CREAUSU,                            APELLIDO,     EMAIL,                                SECTOR )
+        SELECT                    SYS_GUID(), 'Gastón',	'ggr', 'b32da141acb6fc468c63134e2f65c9e1923299ba', 'N',          29332389, 29332389, SYSDATE,  '00000000000000000000000000000001', 'Rodríguez',  'grodriguez@cardinalsystems.com.ar',  'Sistemas'
+        FROM DUAL
+        WHERE NOT EXISTS( SELECT 1 FROM SIR.USUARIO WHERE LOGIN = 'ggr' );
+
+        INSERT INTO COBRANZA.USUARIO ( ID )
+        SELECT    (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' )
+        FROM DUAL
+        WHERE NOT EXISTS( SELECT 1 FROM COBRANZA.USUARIO WHERE ID = (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ) );
+
+        INSERT INTO PAGOELECTRONICO.USUARIO ( ID )
+        SELECT    (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' )
+        FROM DUAL
+        WHERE NOT EXISTS( SELECT 1 FROM PAGOELECTRONICO.USUARIO WHERE ID = (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ) );
+
+        INSERT INTO BU.USUARIO ( ID, DEPENDENCIAID, ROLID )
+        SELECT    (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ), (SELECT ID FROM SIR.DEPENDENCIA WHERE CODIGO = 1), (SELECT ID FROM BU.ROL WHERE NOMBRE = 'Administrador')
+        FROM DUAL
+        WHERE NOT EXISTS( SELECT 1 FROM BU.USUARIO WHERE ID = (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ) );
+
+        INSERT INTO COBRANZA.USUARIOROL (AUDITID, IDUSUARIO, IDROL)
+        SELECT SYS_GUID(), (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ), (SELECT ID FROM COBRANZA.ROL WHERE SIMBOL = 'ADMIN' )
+        FROM DUAL
+        WHERE NOT EXISTS( SELECT 1 FROM COBRANZA.USUARIOROL WHERE IDUSUARIO = (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ) AND IDROL = (SELECT ID FROM COBRANZA.ROL WHERE SIMBOL = 'ADMIN' ) );
+
+        INSERT INTO COBRANZA.USUARIOROL (AUDITID, IDUSUARIO, IDROL)
+        SELECT SYS_GUID(), (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ), (SELECT ID FROM COBRANZA.ROL WHERE SIMBOL = 'FISCALIZADOR' AND REQUIEREAGENCIA = 0 )
+        FROM DUAL
+        WHERE NOT EXISTS( SELECT 1 FROM COBRANZA.USUARIOROL WHERE IDUSUARIO = (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ) AND IDROL = (SELECT ID FROM COBRANZA.ROL WHERE SIMBOL = 'FISCALIZADOR' AND REQUIEREAGENCIA = 0 ) );
+
+        INSERT INTO COBRANZA.USUARIOROL (AUDITID, IDUSUARIO, IDROL, IDGRUPODEPENDENCIA)
+        SELECT SYS_GUID(), (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ), (SELECT ID FROM COBRANZA.ROL WHERE SIMBOL = 'AREA' ), (SELECT ID FROM SIR.GRUPODEPENDENCIA WHERE NOMBRE = 'TODAS' )
+        FROM DUAL
+        WHERE NOT EXISTS( SELECT 1 FROM COBRANZA.USUARIOROL WHERE IDUSUARIO = (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ) AND IDROL = (SELECT ID FROM COBRANZA.ROL WHERE SIMBOL = 'TODAS' ) );
+      </ToClipBoard>
+      <ToClipBoard Name="SELECT Usuario-Roles-Agencias-Deps">
+        SELECT U.LOGIN, R.NOMBRE, A.CODIGO || '-' || A.NOMBRE , D.CODIGO || '-' || D.NOMBRE
+        FROM SIR.USUARIO  U
+        INNER JOIN COBRANZA.USUARIOROL UR ON ( UR.IDUSUARIO = U.ID )
+        INNER JOIN COBRANZA.ROL R ON ( R.ID = UR.IDROL )
+        INNER JOIN SIR.AGENCIA A ON ( A.ID = UR.IDAGENCIA )
+        INNER JOIN SIR.GRUPODEPENDENCIA GD ON ( GD.ID = UR.IDGRUPODEPENDENCIA )
+        INNER JOIN SIR.GRUPODEPENDENCIA_DEP GDD ON ( GDD.IDGRUPODEPENDENCIA = GD.ID )
+        INNER JOIN SIR.DEPENDENCIA D ON ( D.ID = GDD.IDDEPENDENCIA )
+        WHERE U.LOGIN = 'pfernandez' AND UR.BAJAFECHA IS NULL;
+      </ToClipBoard>
+      <ToClipBoard Name="SELECT CierreZ para agregar a Balance">
+        SELECT  P.CODIGO "POS", U.APELLIDO || ', ' || U.NOMBRE "CAJERO", Z.FECHA, Z.NROZ
+        FROM    COBRANZA.CIERREZ Z
+        INNER JOIN SIR.POS P ON ( P.ID = Z.IDPOS )
+        INNER JOIN SIR.USUARIO U ON ( U.ID = Z.IDCAJERO )
+        WHERE NOT EXISTS ( SELECT 1 FROM COBRANZA.BALANCEITEM BI WHERE BI.IDCIERREZ = Z.ID )
+        AND Z.ESBALANCEABLE = 'Y'
+        ORDER BY Z.FECHA DESC;
+      </ToClipBoard>
+      <ToClipBoard Name="SELECT Boletas Pendientes de Pago">SELECT ID, NUMERO, NROEXPEDIENTE FROM BU.BOLETA WHERE NROEXPEDIENTE IS NOT NULL AND ESTADO = 1;</ToClipBoard>
+    </SubMenu>
+  </SubMenu>
+  
+  <SubMenu Name="GCBA" Icon=".\Memory\GCBA.ico">
+    <ToClipBoard Name="VPN Password (grodriguez)" Icon=".\Memory\red_up.ico">Gr0dr1gu3z.r4a2</ToClipBoard>
+    <SubMenu Name="Passwords de Red">
+      <ToClipBoard Name="DGUIAF\grodriguez" Icon=".\Memory\red_up.ico">G4st0n.2015</ToClipBoard>
+      <ToClipBoard Name="DGUIAF\tvisgarra" Icon=".\Memory\red_up.ico">T3r3s4.2016</ToClipBoard>
+      <ToClipBoard Name="DGUIAF\jaranguez" Icon=".\Memory\red_up.ico">J0n4t4n.2017</ToClipBoard>
+    </SubMenu>
+    <SubMenu Name="Pass de Usuarios BO" Icon=".\Memory\key.ico">
+      <ToClipBoard Name="ivisgarra" Icon=".\Memory\key.ico">Zaq12wsx</ToClipBoard>
+      <ToClipBoard Name="ggr" Icon=".\Memory\key.ico">29332389</ToClipBoard>
+    </SubMenu>
+    <SubMenu Name="Connections Strings" Icon=".\Memory\db.ico">
+      <ToClipBoard Name="DEV" Icon=".\Memory\db_connect.ico">&lt;add name=&quot;conn&quot; connectionString=&quot;Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.245)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRDEV)));User Id=SIR;Password=Ab123456;&quot; /&gt;</ToClipBoard>
+      <ToClipBoard Name="TEST" Icon=".\Memory\db_connect.ico">&lt;add name=&quot;conn&quot; connectionString=&quot;Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.226)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRT)));User Id=SIR;Password=Ab123456;&quot; /&gt;</ToClipBoard>
+      <ToClipBoard Name="HOMO" Icon=".\Memory\db_connect.ico">&lt;add name=&quot;conn&quot; connectionString=&quot;Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.226)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRH)));User Id=SIR;Password=Hm2PYH4_H;&quot; /&gt;</ToClipBoard>
+      <ToClipBoard Name="SIRUM" Icon=".\Memory\db_connect.ico">&lt;add name=&quot;conn&quot; connectionString=&quot;Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.245)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRUM)));User Id=SIR;Password=nhGAcpCe;&quot; /&gt;</ToClipBoard>
+      <ToClipBoard Name="PREPROD" Icon=".\Memory\db_connect.ico">&lt;add name=&quot;conn&quot; connectionString=&quot;Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.226)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRPRE)));User Id=GRODRIGUEZ;Password=Grodriguez.8935!;&quot; /&gt;</ToClipBoard>
+    </SubMenu>
+  </SubMenu>
+
+  <SubMenu Name="NACION" Icon=".\Memory\NACION.ico">
+    <ToClipBoard Name="VPN Password" Icon=".\Memory\red_up.ico">XZY2954a</ToClipBoard>
+    <SubMenu Name="Pass de Usuarios BO" Icon=".\Memory\key.ico">
+      <ToClipBoard Name="admin" Icon=".\Memory\key.ico">C4rd1n4l515t3m5.S1R.B0</ToClipBoard>
+    </SubMenu>
+    <SubMenu Name="Connections Strings" Icon=".\Memory\db.ico">
+      <ToClipBoard Name="DEV"  Icon=".\Memory\db_connect.ico">User Id=SIR;Password=Ab123456;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=172.16.172.70)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=SIR)));</ToClipBoard>
+      <ToClipBoard Name="TEST" Icon=".\Memory\db_connect.ico">User Id=SIR;Password=Ab123456;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=172.16.174.70)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=SIR)));</ToClipBoard>
+      <ToClipBoard Name="HOMO" Icon=".\Memory\db_connect.ico">User Id=SIR;Password=Ab123456;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=172.16.173.70)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=SIR)));</ToClipBoard>
+      <ToClipBoard Name="PROD" Icon=".\Memory\db_connect.ico">User Id=GRODRIGUEZ;Password=XZY2954a;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=172.16.172.70)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=SIR)));</ToClipBoard>
+    </SubMenu>
+  </SubMenu>
+</Memory>

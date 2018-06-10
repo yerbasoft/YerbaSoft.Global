@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YerbaSoft.Web.Games.Clue.Common", "YerbaSoft.Web.Games.Clue.Common\YerbaSoft.Web.Games.Clue.Common.csproj", "{3ED0ECC8-6E5D-4485-95B2-D39AB5AA4597}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YerbaSoft.Web.Games.Clue.DAL", "YerbaSoft.Web.Games.Clue.DAL\YerbaSoft.Web.Games.Clue.DAL.csproj", "{86B25FBB-7775-4634-8464-02C9F1A3F52B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YerbaSoft.DTO", "..\..\..\DTO\YerbaSoft.DTO.csproj", "{03356582-57FE-40A0-B032-9585DF279CFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YerbaSoft.DAL", "..\..\..\DAL\YerbaSoft.DAL.csproj", "{13034674-FE45-480D-8869-A3F00DE94FCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YerbaSoft.Web.Games.Clue.BLL", "YerbaSoft.Web.Games.Clue.BLL\YerbaSoft.Web.Games.Clue.BLL.csproj", "{8D0F78B1-0C72-4C47-9D6F-A02405539BEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YerbaSoft.Web.Games.Clue.WebAPI", "YerbaSoft.Web.Games.Clue.WebAPI\YerbaSoft.Web.Games.Clue.WebAPI.csproj", "{4106CC4F-1228-4CCF-A245-3619095F2024}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3ED0ECC8-6E5D-4485-95B2-D39AB5AA4597}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ED0ECC8-6E5D-4485-95B2-D39AB5AA4597}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ED0ECC8-6E5D-4485-95B2-D39AB5AA4597}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ED0ECC8-6E5D-4485-95B2-D39AB5AA4597}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86B25FBB-7775-4634-8464-02C9F1A3F52B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86B25FBB-7775-4634-8464-02C9F1A3F52B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86B25FBB-7775-4634-8464-02C9F1A3F52B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86B25FBB-7775-4634-8464-02C9F1A3F52B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03356582-57FE-40A0-B032-9585DF279CFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03356582-57FE-40A0-B032-9585DF279CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03356582-57FE-40A0-B032-9585DF279CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03356582-57FE-40A0-B032-9585DF279CFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13034674-FE45-480D-8869-A3F00DE94FCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13034674-FE45-480D-8869-A3F00DE94FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13034674-FE45-480D-8869-A3F00DE94FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13034674-FE45-480D-8869-A3F00DE94FCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D0F78B1-0C72-4C47-9D6F-A02405539BEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D0F78B1-0C72-4C47-9D6F-A02405539BEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D0F78B1-0C72-4C47-9D6F-A02405539BEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D0F78B1-0C72-4C47-9D6F-A02405539BEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4106CC4F-1228-4CCF-A245-3619095F2024}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4106CC4F-1228-4CCF-A245-3619095F2024}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4106CC4F-1228-4CCF-A245-3619095F2024}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4106CC4F-1228-4CCF-A245-3619095F2024}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {647EA856-2A2F-46D8-9697-053ABEE47C09}
+	EndGlobalSection
+EndGlobal

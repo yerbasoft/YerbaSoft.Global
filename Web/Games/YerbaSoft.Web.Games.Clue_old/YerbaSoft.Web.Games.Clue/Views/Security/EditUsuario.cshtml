@@ -1,0 +1,108 @@
+﻿@model YerbaSoft.Web.Games.Clue.DTO.Usuario
+@{
+    var editing = Model.Id != default(Guid);
+}
+
+<script>
+
+    $(function () {
+
+        $("#divSexo input[value='@Model.Sexo']").attr("checked", "true");
+        $("#divSexo").buttonset();
+
+        $("#btnOk").button({ icons: { secondary: "ui-icon-key" } });
+        @if(editing)
+        {
+            <text>
+            $("#divSexo").buttonset("option", "disabled", true);
+            $("#divSexo").buttonset("refresh");
+            ControlManager.ConvertTextToLabel($('#Login'));
+
+            $("label[for='Login']").css("color", "#999");
+            $("label[for='Sexo']").css("color", "#999");
+
+            $("#btnUploadImg").button({ icons: { primary: "ui-icon-arrowthickstop-1-n" } });
+            $("#btnUseUrlImg").button({ icons: { primary: "ui-icon-image" } });
+
+            $("#UploadLogo").change(function (e) {
+                var archivos = e.target.files;
+                if (archivos.length == 1) {
+                    e.target.
+                    e.target.form.submit();
+                }
+            })
+            </text>
+        }
+    });
+
+</script>
+
+<script>
+
+    function OnSubirImagen() {
+        $("#UploadLogo").click();
+    }
+
+</script>
+
+
+@using (Html.BeginForm("SaveUsuario", "Security", FormMethod.Post, new { role = "form", enctype = "multipart/form-data" }))
+{
+    <input type="hidden" name="Id" value="@Model.Id" />
+    
+    <div style="display:none">
+        <input id="UploadLogo" type="file" name="UploadLogo" accept="image/*" />
+    </div>
+    
+    if (editing)
+    { 
+    <div class="form-group">
+        <label for="Logo">Logo</label>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <img src="~/Content/UserProfiles/@Model.Logo" height="50px" width="50px" />
+                    </td>
+                    <td>
+                        <a id="btnUploadImg" class="btn btn-default" href="#" onclick="OnSubirImagen();">Subir Imagen</a>
+                        <!--<a id="btnUseUrlImg" class="btn btn-default" href="#">Utilizar Url</a>-->
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    }
+    <div class="form-group">
+        <label for="Login">Usuario</label>
+        <input id="Login" name="Login" type="text" class="form-control" placeholder="Usuario" autofocus value="@Model.Login" />
+    </div>
+    <div class="form-group">
+        <label for="Nombre">Nombre</label>
+        <input id="Nombre" name="Nombre" type="text" class="form-control" placeholder="Nombre" autofocus value="@Model.Nombre" />
+    </div>
+    <div class="form-group">
+        <label for="Sexo">Sexo</label>
+        <div id="divSexo">
+            <input type="radio" id="SexoMan" name="Sexo" value="M" /><label for="SexoMan">Hombre</label>
+            <input type="radio" id="SexoWoman" name="Sexo" value="F" /><label for="SexoWoman">Mujer</label>
+        </div>
+    </div>
+    if (!editing)
+    { 
+    <div class="form-group">
+        <label for="Password">Constrase&ntilde;a</label>
+        <input id="Password" name="Password" type="password" class="form-control" placeholder="Constrase&ntilde;a">
+    </div>
+    }
+    
+    <div class="form-group">
+        <div id="divError" class="alert" style="display:@Html.Raw(ViewBag.MsgErr == null ? "none" : "inline")">
+            <button type="button" class="close" data-dismiss="alert" onclick="$('#divError').hide();">&times;</button>@{@ViewBag.MsgErr}
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <button id="btnOk" class="btn btn-default pull-right">@Html.Raw(editing ? "Guardar Cambios" : "Registrarse")</button>
+    </div>
+}

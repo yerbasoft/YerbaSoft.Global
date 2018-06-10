@@ -1,0 +1,55 @@
+﻿@{
+    Layout = null;
+    var version = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
+    var buildDate = System.IO.File.GetCreationTime(System.Reflection.Assembly.GetExecutingAssembly().Location).ToString("dd/MM/yyyy HH:mm");
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YerbaSoft.Games.Clue API</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="~/Content/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <table cellspacing="1" cellpadding="20" width="100%" border="0">
+        <tr>
+            <td align="center">
+                <p>
+                    <img alt="www.yerbasoft.com.ar" src="~/Content/Carsys_logo.png" />
+                </p>
+                <p>
+                    <a href="http://www.yerbasoft.com.ar">www.YerbaSoft.com.ar</a>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <h1><strong>YerbaSoft.Clue</strong></h1>
+                <h1><strong>Clue.API</strong></h1>
+                <h2>
+                    <strong>
+                        <span id="lblVersion">Versión @Html.Raw(version)<br />@Html.Raw(buildDate)</span>
+                    </strong>
+                </h2>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <h1><strong>Acceso a los Juegos</strong></h1>
+                <p><a href="http://186.23.45.49:8080">Clue</a></p>
+            </td>
+        </tr>
+        <!-- Descarga de LOGS
+        <tr>
+            <td align="center">
+                <h1><strong>Logs</strong></h1>
+                <p><a href="@Url.Action("DownloadLog", "Home", new { day = DateTime.Now } )">Hoy</a></p>
+                <p><a href="@Url.Action("DownloadLog", "Home", new { day = DateTime.Now.AddDays(-1) } )">Ayer</a></p>
+                <p><a href="@Url.Action("DownloadLog", "Home", new { day = DateTime.Now.AddDays(-2) } )">Anteayer</a></p>
+            </td>
+        </tr>
+        -->
+    </table>
+</body>
+</html>

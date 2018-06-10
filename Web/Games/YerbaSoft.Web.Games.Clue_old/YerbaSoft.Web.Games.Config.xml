@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlSimpleRepository>
+  <YerbaSoft.Web.Games.Clue.DAL.DTO.Usuario UniqueKey="2ae52bf034854c2dad94c73de7f06643bbd3341b08634b00a2e30bb87c71e916">
+    <Id>00000000-0000-0000-0000-000000000001</Id>
+    <Nombre>Admin</Nombre>
+    <Login>admin</Login>
+    <Password>admin</Password>
+    <Sexo>M</Sexo>
+    <Logo>man.jpg</Logo>
+  </YerbaSoft.Web.Games.Clue.DAL.DTO.Usuario>
+  <YerbaSoft.Web.Games.Clue.DAL.DTO.Usuario UniqueKey="385ffcc36aea425b935de9c68daccf5caf74d9fb92ee4c1d90e12ce5aa8c34f8">
+    <Id>00000000-0000-0000-0000-000000000011</Id>
+    <Nombre>Bot</Nombre>
+    <Login>bot</Login>
+    <Password>bot</Password>
+    <Sexo>M</Sexo>
+    <Logo>robot.jpg</Logo>
+  </YerbaSoft.Web.Games.Clue.DAL.DTO.Usuario>
+  <YerbaSoft.Web.Games.Clue.DAL.DTO.Usuario UniqueKey="f8feb8616007416995714003d7bbcf1ed48e0a1f6d794fe5ad82818a0e0b0aa0">
+    <Id>00000000-0000-0000-0000-000000000012</Id>
+    <Nombre>Bot Dificil</Nombre>
+    <Login>bothard</Login>
+    <Password>bothard</Password>
+    <Sexo>M</Sexo>
+    <Logo>robot.jpg</Logo>
+  </YerbaSoft.Web.Games.Clue.DAL.DTO.Usuario>
+  <YerbaSoft.Web.Games.Clue.DAL.DTO.Game UniqueKey="64c61e2ad9fa46159a048cb87bc001ef30a89172fc134aaea18d7e188fe9add9">
+    <Id>00000000-0000-0000-0001-000000000000</Id>
+    <Nombre>Clue</Nombre>
+    <Descripcion>El clue es un juego basado en el Cluedo, a su vez basado en el Espionaje. &lt;a class="btn btn-default" href="https://es.wikipedia.org/wiki/Cluedo"&gt;Ver más &amp;raquo;&lt;/a&gt;</Descripcion>
+    <Codigo>Clue</Codigo>
+  </YerbaSoft.Web.Games.Clue.DAL.DTO.Game>
+  <YerbaSoft.Web.Games.Clue.DAL.DTO.Usuario UniqueKey="815236e6b977494d96879f4c8bcff854de360b98bf364511b59e12b21e644c71">
+    <Id>6b3d9a09-c4fd-422d-8071-a3e9014104e6</Id>
+    <Nombre>Gastón</Nombre>
+    <Login>gaston</Login>
+    <Password>gaston</Password>
+    <Sexo>M</Sexo>
+    <Logo>ef66a23b982941ff92d8119e522c1168.png</Logo>
+  </YerbaSoft.Web.Games.Clue.DAL.DTO.Usuario>
+  <YerbaSoft.Web.Games.Clue.DAL.DTO.Usuario UniqueKey="4d9398072d5d4112845abd536d724002b84a5e88edea4a7f96011eff71da4ad0">
+    <Id>c12abb5f-5580-49ed-a239-e6ccc79b6685</Id>
+    <Nombre>Francisco</Nombre>
+    <Login>fran</Login>
+    <Password>fran</Password>
+    <Sexo>M</Sexo>
+    <Logo>man.png</Logo>
+  </YerbaSoft.Web.Games.Clue.DAL.DTO.Usuario>
+  <YerbaSoft.Web.Games.Clue.DAL.DTO.Usuario UniqueKey="aa2914bd1f6348afb578e3132f5ee111ff5a7c36e36846b996762b74dbbb7cab">
+    <Id>3022f78e-7c31-476c-9694-44dec2e2f351</Id>
+    <Nombre>Mircko</Nombre>
+    <Login>mircko</Login>
+    <Password>mircko</Password>
+    <Sexo>M</Sexo>
+    <Logo>0f96cb09347c4a6db5601e68efc488bc.jpg</Logo>
+  </YerbaSoft.Web.Games.Clue.DAL.DTO.Usuario>
+  <YerbaSoft.Web.Games.Clue.DAL.DTO.Usuario UniqueKey="73c0fb0da557492c9234f33bddc9c17633427f53521546f1b1e6f0fe5d6bc61b">
+    <Id>57066ae6-24fc-4791-ac18-6725ea6c0910</Id>
+    <Nombre>Sabrina</Nombre>
+    <Login>sabrina</Login>
+    <Password>sabrina</Password>
+    <Sexo>F</Sexo>
+    <Logo>woman.png</Logo>
+  </YerbaSoft.Web.Games.Clue.DAL.DTO.Usuario>
+  <YerbaSoft.Web.Games.Clue.DAL.DTO.Usuario UniqueKey="0061d5fb8ff64b90a26772437d90a7b842f7a29d2f824f2eb310c5ead7a8e6c9">
+    <Id>c75eadc6-6e6d-4ddf-9d77-f7424b1f3979</Id>
+    <Nombre>pepe</Nombre>
+    <Login>pepe</Login>
+    <Sexo>M</Sexo>
+    <Logo>man.png</Logo>
+    <Password>pepe</Password>
+  </YerbaSoft.Web.Games.Clue.DAL.DTO.Usuario>
+</XmlSimpleRepository>

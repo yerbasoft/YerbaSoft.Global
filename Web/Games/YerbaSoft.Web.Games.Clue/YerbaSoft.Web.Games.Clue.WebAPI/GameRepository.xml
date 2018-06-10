@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlSimpleRepository>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.Game UniqueKey="63eb28d6cf4e48008b0b979286525ffb4bf1fd092aa94e96b8fff837b64b3d65">
+    <Id>840cd3ed-1173-4999-8cdf-dcb0de3a48fb</Id>
+    <Name>Clue</Name>
+    <Text>Descripción del juego</Text>
+    <ImageCardUrl>http://localhost:4200/assets/clue/ClueCard.jpg</ImageCardUrl>
+    <ImageCardBackUrl>http://localhost:4200/assets/clue/ClueCardBack.jpg</ImageCardBackUrl>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.Game>
+</XmlSimpleRepository>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Windows.Tasks>
+  <Task Name="N3">
+    <Triggers>
+      <Timer mins="1" />
+    </Triggers>
+    <Actions>
+      
+    </Actions>
+  </Task>
+</Windows.Tasks>

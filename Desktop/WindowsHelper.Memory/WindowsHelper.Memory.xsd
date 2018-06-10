@@ -1,0 +1,30 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- OBJETOS DE TYPO EASY OPEN TYPE -->
+  <xs:attributeGroup name="Memory.Base">
+    <xs:attribute type="xs:string" name="Id" use="optional"/>
+    <xs:attribute type="xs:string" name="Name" use="required"/>
+    <xs:attribute type="xs:string" name="Icon" use="optional"/>
+  </xs:attributeGroup>
+
+  <xs:complexType name="Memory.ToClipBoard">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attributeGroup ref="Memory.Base" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="Memory.SubMenu">
+    <xs:sequence>
+      <xs:element name="ToClipBoard" maxOccurs="unbounded" minOccurs="0" type="Memory.ToClipBoard" />
+      <xs:element name="SubMenu" maxOccurs="unbounded" minOccurs="0" type="Memory.SubMenu" />
+    </xs:sequence>
+    <xs:attributeGroup ref="Memory.Base" />
+  </xs:complexType>
+
+
+  <!-- MAIN ELEMENT-->
+  <xs:element name="Memory" type="Memory.SubMenu" />
+  
+</xs:schema>

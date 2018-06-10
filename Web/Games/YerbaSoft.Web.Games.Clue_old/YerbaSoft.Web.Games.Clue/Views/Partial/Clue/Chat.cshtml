@@ -1,0 +1,152 @@
+﻿@{ 
+    var height = "600px";
+    var width = "450px";
+    var textHeight = "560px";
+}
+<script>
+    $(function () {
+        $ClueChat.highligthsinterval = window.setInterval(function () { $ClueChat.refreshStatus(); }, 100);
+        $ClueChat.refreshInterval = window.setInterval(function () { $ClueChat.refresh(); }, 1000);
+
+        // $ClueChat.toggleMenu();
+    });
+
+    var $ClueChat = {
+
+        IdChat: null,                   // Chat ID reference
+        isOpen: false,                  // Indica si el menú está abierto
+        highligths: false,              // Indica si el highligth está encendido
+        highligthsinterval: null,       // Proceso "intrerval" que actualiza el highligth
+        menuButton: null,               // Botón de menú para establecer el highligth
+        isEmoticonMenuOpen: false,      // Indica si el menú de emoticones se encuentra abierto
+        isRefreshing: false,            // Indica si se está buscando la información del chat
+        refreshInterval: null,          // Proceso "intrerval" que mantiene actualizado el chat
+        pendingMessages: 0,             // Indica la cantidad de mensajes sin leer (ya cargados en la página)
+        
+        /// <summary>
+        /// Actualiza el estado de highligth
+        /// </summary>
+        refreshStatus: function () {
+            this.highligths = !this.highligths;
+            if (this.pendingMessages > 0)
+                this.menuButton.find("div").css("color", this.highligths ? "#FF0000" : "#428bca");
+
+            if ($("#ClueChatText").val() != "")
+                $("#ClueChatSendButton").find("div").css("color", this.highligths ? "#FF0000" : "#428bca");
+        },
+
+        /// <summary>
+        /// Abre o cierra el menú según su estado actual
+        /// </summary>
+        toggleMenu: function () {
+            this.isOpen = !this.isOpen;
+            $("#ClueChat").css("display", this.isOpen ? "inline" : "none");
+
+            if (this.isOpen) {
+                $("#ClueChatSection")[0].scrollTop = $("#ClueChatSection")[0].scrollHeight;
+                $ClueChat.pendingMessages = 0;
+                $("#ClueChatText").focus();
+            }
+        },
+
+        /// <summary>
+        /// envia un nuevo mensaje al chat
+        /// </summary>
+        sendMessage: function() {
+            var message = $("#ClueChatText").val();
+            if (message == "" || message == undefined || message == null)
+                return;
+
+            $Server.Ajax('@Url.Action("SendChatMessage", "Game")', { idChat: this.IdChat, message: message });
+
+            $('#ClueChatText').val("");
+            $("#ClueChatText").focus();
+        },
+
+
+        /// <summary>
+        /// Abre o cierra el menú de Emoticones según su estado actual
+        /// </summary>
+        toggleEmoticonMenu: function () {
+            // por ahora no hago nada
+            alert("abrir y cerrar menú de emoticones");
+        },
+
+        /// <summary>
+        /// cierra el menú de Emoticones
+        /// </summary>
+        closeEmoticonMenu: function () {
+            if (isEmoticonMenuOpen)
+                this.toggleEmoticonMenu();
+        },
+
+        /// <summary>
+        /// Actualiza los mensajes contra el server
+        /// </summary>
+        refresh: function () {
+
+            $ClueChat.isRefreshing = true;
+            $Server.Ajax('@Url.Action("GetChat", "Game")',
+                          { idChat: $ClueChat.IdChat },
+                          function (data, e) {
+                              $ClueChat.prototype._refresh(data);
+                              $ClueChat.isRefreshing = false;
+                          },
+                          function (e) { $ClueChat.isRefreshing = false;  }
+            );
+        },
+
+        prototype: {
+
+            _refresh: function (data) {
+                for(var d = 0; d < data.length; d++)
+                {
+                    $Server.Ajax('@Url.Action("SetChatMessageRead", "Game")', { idMessage: data[d].IdMessage });
+                    $("#ClueChatSection").html($("#ClueChatSection").html() + data[d].HTMLMessage);
+                }
+
+                if (data.length > 0) {
+                    if ($ClueChat.isOpen) {
+                        $("#ClueChatSection")[0].scrollTop = $("#ClueChatSection")[0].scrollHeight;
+                        $ClueChat.pendingMessages = 0;
+                    }
+                    else {
+                        $ClueChat.pendingMessages = $ClueChat.pendingMessages + data.length;
+                    }
+                }
+
+                if ($ClueChat.pendingMessages > 0)
+                    $ClueChat.menuButton.find("div").html("CHAT [" + $ClueChat.pendingMessages + "]");
+                else
+                    $ClueChat.menuButton.find("div").html("CHAT");
+            }
+        }
+    }
+</script>
+
+<script>
+    $(function () {
+        $('#ClueChatText').keypress(function (e) {
+            if (e.which == 10 || e.which == 13) $ClueChat.sendMessage();
+        });
+    })
+</script>
+
+<div id="ClueChat" style="z-index: 10; position: absolute; left:0; top:25px; width:@width; height:@height; padding: 0; background: url('../Content/images/ClueChat.jpg') repeat; border: 2px solid black; display:none;">
+    <div id="ClueChatSection" style="width:100%; height:@textHeight; font: normal 18px Buxton Sketch; overflow-y: scroll; padding-top:5px; padding-left:5px; padding-right:-5px"></div>
+    <div style="font: normal 16px Bauhaus 93; border: 2px solid black; border-top: 0px; margin-top:3px;">
+        <div style="float:left; margin-top:5px"><input id="ClueChatText" type="text" style="width:400px; font: normal 16px Buxton Sketch" /></div>
+
+        <a href="#" onclick="$ClueChat.toggleEmoticonMenu();">
+            <div style="float:left; margin-top:5px">
+                <img src="~/Content/images/ClueChatEmoticon.png" height="18px" width="18px" />
+            </div>
+        </a>
+
+        <a id="ClueChatSendButton" href="#" onclick="$ClueChat.sendMessage();">
+            <div style="float:right; width:80px; text-align:center; margin-top:5px">
+                <span>ENVIAR</span>
+            </div>
+        </a>
+    </div>
+</div>

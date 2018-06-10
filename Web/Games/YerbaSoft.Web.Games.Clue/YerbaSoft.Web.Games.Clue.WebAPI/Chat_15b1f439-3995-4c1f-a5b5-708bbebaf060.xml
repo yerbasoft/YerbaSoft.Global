@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlSimpleRepository>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="5ce6fd68f60248aa94e90a08fb310effeb043bd594ae40ca8013fc996106a139">
+    <Fecha>3/6/2018 18:13:12</Fecha>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+    <Text>Hola muchachos</Text>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="622a09b721274ae1af36fa73e6b07718e8953f3d12554a36949b694ee92f8d82">
+    <Fecha>3/6/2018 18:13:26</Fecha>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+    <Text>Todos topus</Text>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="88c867cd04ef455dbe4be762572e1849b3ba3ad277624a2babcf4ca17cc71dea">
+    <Fecha>3/6/2018 18:13:44</Fecha>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+    <Text>manga de gatoslk fdjsalñk djflñkas jdñlfk jsadñlkfj asñlkdjf sñalkdjf lñkasjd fñlkjsad fñlkjasd ñlkfjas ñldkfjñl askdjfñl kasjfñlkasj dñflkjas dñlfkj ñasldkfj lkdafj</Text>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="a6a9cd3acd4a4c868a70dc789b526fabf728c4468a724f319f6062d887ec3d03">
+    <Fecha>3/6/2018 21:07:22</Fecha>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+    <Text>HOLA HIJA</Text>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="8d94ad38d44a42f885dd780c9bf2a5e1048f8f5c0d134f50a9b21fbc216b9e3d">
+    <Fecha>10/6/2018 16:27:29</Fecha>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+    <Text>hjgkjhg</Text>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="85b20621d1a64d1da9aa0f3e49c8577d375117211ff443158c9f84c16c2bcdd9">
+    <Fecha>10/6/2018 16:41:16</Fecha>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+    <Text>Hola</Text>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="634507fef9c248feac73d5461652c72ce0f2bdb6484e4970b54e766acc6d5abf">
+    <Fecha>10/6/2018 16:41:35</Fecha>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+    <Text>Hola2</Text>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="7da8b1ed2baf4affa2ed2ed92488b4d42fe0e89fc0564b23ba5999ae5cb0ac5b">
+    <Fecha>10/6/2018 16:41:37</Fecha>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+    <Text>Hola3</Text>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="eba42f9fdf804c5f8bcbba90bf13b53d76f529b9bb5e4e8fa09f561a6a8b7818">
+    <Fecha>10/6/2018 16:41:40</Fecha>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+    <Text>Hola4</Text>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+</XmlSimpleRepository>

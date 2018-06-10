@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<EasyOpen Name="EasyOpen">
+  <Exe Name="Microsoft Visual Studio 2017" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" />
+  <Exe Name="VS Code" Icon="C:\Program Files\Microsoft VS Code\Code.exe" OpenWith="C:\Program Files\Microsoft VS Code\Code.exe" />
+  <Exe Name="SourceTree" Icon="C:\Users\yerba\AppData\Local\SourceTree\SourceTree.exe" OpenWith="C:\Users\yerba\AppData\Local\SourceTree\SourceTree.exe" Params="" />
+  <Exe Name="SQL Developer" Icon="C:\Program Files\SQLDeveloper\sqldeveloper.exe" OpenWith="C:\Program Files\SQLDeveloper\sqldeveloper.exe" Params="" />
+  <Separator />
+  <SubMenu Name="JIRA" Icon=".\EasyOpen\jira.ico">
+    <Exe Name="Developer - Inbox" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="https://cardinalconsulting.atlassian.net/issues/?filter=29414" />
+    <Exe Name="Developer - Doing" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="https://cardinalconsulting.atlassian.net/issues/?filter=29439" />
+    <Separator />
+    <Exe Name="Horas :: May 2018" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="https://goo.gl/3VJvQn" />
+    <Exe Name="Horas :: Abr 2018" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="https://goo.gl/kMiDPM" />
+    <Exe Name="Horas :: Mar 2018" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://bit.ly/2H3zLmq" />
+    <SubMenu Name="GCBA - Filtros" Icon=".\EasyOpen\GCBA.ico">
+      <Exe Name="N3" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="https://cardinalconsulting.atlassian.net/issues/?filter=19714" />
+      <Exe Name="Abiertos Internos" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="https://cardinalconsulting.atlassian.net/issues/?filter=27503" />
+      <Exe Name="Abiertos Externos" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="https://cardinalconsulting.atlassian.net/issues/?filter=24400" />
+      <Exe Name="Deploy" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="https://cardinalconsulting.atlassian.net/issues/?filter=27502" />
+    </SubMenu>
+    <SubMenu Name="NACION - Filtros" Icon=".\EasyOpen\NACION.ico">
+      <Exe Name="N3" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="https://cardinalconsulting.atlassian.net/issues/?filter=29389" />
+      <Exe Name="DashBoard" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="https://cardinalconsulting.atlassian.net/secure/RapidBoard.jspa?rapidView=69" />
+    </SubMenu>
+  </SubMenu>
+  <Separator />
+  <SubMenu Name="Cardinal Systems" Icon=".\EasyOpen\pc.ico">
+    <OpenFile Name="Cardinal.xml" Path="Z:\Work\Cardinal Systems\Cardinal.xml" />
+    <OpenFile Name="Carga de Horas" Path="Z:\Work\Cardinal Systems\Carga de Horas - Issues.xlsx" />
+    <ShowFiles Name="JIRA Docs" Path="W:\CS\docs" OpenFolder="true" ShowSubFolders="true" FileFilter="*.*" ShowModiFecha="true" SortByModiFecha="true" />
+  </SubMenu>
+  <Separator />
+  <SubMenu Name="GCBA" Icon=".\EasyOpen\GCBA.ico">
+    <Exe Name="GitLab" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://repolnx01.hacienda-gcba.gov.ar/SFCS/SIR/branches" />
+    <SubMenu Name="Ambientes" Icon=".\EasyOpen\web.ico">
+      <OpenFile Name="Ambientes doc" Path="Z:\Work\Cardinal Systems\GCBA - Ambientes SIR.xlsx" Icon="C:\Program Files (x86)\Microsoft Office\root\Office16\EXCEL.EXE" />
+      <Separator />
+      <Exe Name="GCBA :: DEV :: BO" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.2.98/" />
+      <Exe Name="GCBA :: DEV :: Boleta Única" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.2.98:6748/WEB/Usuario/SignIn?ReturnUrl=%2fweb/" />
+      <Exe Name="GCBA :: DEV :: Portal Trámites" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.2.98:2942/" />
+      <Separator />
+      <Exe Name="GCBA :: TEST :: BO" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.100.48/Home/Acceder?ReturnUrl=%2f" />
+      <Exe Name="GCBA :: TEST :: Boleta Única" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.100.48:6748/WEB/Usuario/SignIn?ReturnUrl=%2fweb/" />
+      <Exe Name="GCBA :: TEST :: Portal Trámites" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.100.48:2942/" />
+      <Separator />
+      <Exe Name="GCBA :: SIRUM :: BO" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.100.49:1030/Home/Acceder?ReturnUrl=%2f" />
+      <Separator />
+      <Exe Name="GCBA :: HOMO :: BO" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.2.97/Home/Acceder?ReturnUrl=%2f" />
+      <Separator />
+      <Exe Name="GCBA :: PREPROD :: BO" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.2.99/" />
+      <Exe Name="GCBA :: PREPROD :: Boleta Única" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.2.99:6748/WEB/Usuario/SignIn" />
+      <Exe Name="GCBA :: PREPROD :: Pago Electrónico" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.2.99:2485/ABM/login" />
+    </SubMenu>
+    <Separator />
+    <Cmd Name="GCBA VPN - START" Icon="C:\Program Files\ShrewSoft\VPN Client\ipseca.exe">
+      net stop "ShrewSoft IPSEC Daemon"
+      net stop "ShrewSoft IKE Daemon"
+      net start "ShrewSoft IKE Daemon"
+      net start "ShrewSoft IPSEC Daemon"
+      C:
+      cd "C:\Program Files\ShrewSoft\VPN Client"
+      ipsecc.exe -r "Cardinal_VPN.PCF" -u "grodriguez" -p "Gr0dr1gu3z.r4a2" -a
+    </Cmd>
+    <Cmd Name="GCBA VPN - STOP" Icon="C:\Program Files\ShrewSoft\VPN Client\ipseca.exe">
+      net stop "ShrewSoft IPSEC Daemon"
+      net stop "ShrewSoft IKE Daemon"
+    </Cmd>
+    <Separator />
+    <SubMenu Name=".NET" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe">
+      <Exe Name="SIR.All" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.All.sln" />
+      <Exe Name="SIR.Migrations" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.Migrations.sln" />
+      <Separator />
+      <Exe Name="SIR.BackOffice" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.Server.BackOffice.sln" />
+      <Exe Name="SIR.BackOffice.Tarifaria" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.BackOffice.Tarifaria.sln" />
+      <Separator />
+      <Exe Name="SIR.BUI" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.BoletaUnica.sln" />
+      <Exe Name="SIR.BUI.UI" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.BoletaUnica.UI.sln" />
+      <Separator />
+      <Exe Name="SIR.PE" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.PagoElectronico.sln" />
+      <Exe Name="SIR.PE.API" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.PEAPI.sln" />
+      <Separator />
+      <Exe Name="SIR.Front Office" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-FrontOffice\SIR.FrontOffice\SIR.FrontOffice.sln" />
+      <Separator />
+      <ShowFiles Name="PostClonas" Path="W:\CS\GCBA-PostClona_SIR" FileFilter="*.sql" />
+      <ShowFiles Name="All Proyects" Path="W:\CS\GCBA-SIR\src" FileFilter="*.sln" />
+    </SubMenu>
+    <SubMenu Name="Remote" Icon="C:\Windows\System32\mstsc.exe">
+      <Cmd Name="Remote :: GCBA :: DEV" Icon="C:\Windows\System32\mstsc.exe" >
+        cmdkey /delete:10.73.2.98
+        cmdkey /add:10.73.2.98 /user:"DGUIAF\grodriguez" /pass:"G4st0n.2015"
+        mstsc /v:10.73.2.98 /admin /f
+      </Cmd>
+      <Cmd Name="Remote :: GCBA :: TEST" Icon="C:\Windows\System32\mstsc.exe" >
+        cmdkey /delete:10.73.100.48
+        cmdkey /add:10.73.100.48 /user:"DGUIAF\grodriguez" /pass:"G4st0n.2015"
+        mstsc /v:10.73.100.48 /admin /f
+      </Cmd>
+      <Cmd Name="Remote :: GCBA :: HOMO" Icon="C:\Windows\System32\mstsc.exe" >
+        cmdkey /delete:10.73.2.97
+        cmdkey /add:10.73.2.97 /user:"DGUIAF\grodriguez" /pass:"G4st0n.2015"
+        mstsc /v:10.73.2.97 /admin /f
+      </Cmd>      
+      <Cmd Name="Remote :: GCBA :: SIRUM" Icon="C:\Windows\System32\mstsc.exe" >
+        cmdkey /delete:10.73.100.49
+        cmdkey /add:10.73.100.49 /user:"DGUIAF\grodriguez" /pass:"G4st0n.2015"
+        mstsc /v:10.73.100.49 /admin /f
+      </Cmd>
+      <Cmd Name="Remote :: GCBA :: SIRUM (jona)" Icon="C:\Windows\System32\mstsc.exe" >
+        cmdkey /delete:10.73.100.49
+        cmdkey /add:10.73.100.49 /user:"DGUIAF\jaranguez" /pass:"J0n4t4n.2017"
+        mstsc /v:10.73.100.49 /admin /f
+      </Cmd>      
+      <Cmd Name="Remote :: GCBA :: SIRI1/2" Icon="C:\Windows\System32\mstsc.exe" >
+        cmdkey /delete:10.73.100.59
+        cmdkey /add:10.73.100.59 /user:"DGUIAF\grodriguez" /pass:"G4st0n.2015"
+        mstsc /v:10.73.100.59 /admin /f
+      </Cmd>
+      <Cmd Name="Remote :: GCBA :: SIRTARI" Icon="C:\Windows\System32\mstsc.exe" >
+        cmdkey /delete:10.73.100.48
+        cmdkey /add:10.73.100.48 /user:"DGUIAF\grodriguez" /pass:"G4st0n.2015"
+        mstsc /v:10.73.100.48 /admin /f
+      </Cmd>
+      <Cmd Name="Remote :: GCBA :: PREPROD" Icon="C:\Windows\System32\mstsc.exe" >
+        cmdkey /delete:10.73.2.99
+        cmdkey /add:10.73.2.99 /user:"DGUIAF\grodriguez" /pass:"G4st0n.2015"
+        mstsc /v:10.73.2.99 /admin /f
+      </Cmd>
+      <Cmd Name="Remote :: GCBA :: PREPROD (jona)" Icon="C:\Windows\System32\mstsc.exe" >
+        cmdkey /delete:10.73.2.99
+        cmdkey /add:10.73.2.99 /user:"DGUIAF\jaranguez" /pass:"J0n4t4n.2017"
+        mstsc /v:10.73.2.99 /admin /f
+      </Cmd>
+      <Separator />
+      <Cmd Name="LOGs :: GCBA :: PROD (WEB)" Icon="C:\Windows\explorer.exe" >
+        cmdkey /delete:10.73.100.42
+        cmdkey /add:10.73.100.42 /user:"DGUIAF\grodriguez" /pass:"G4st0n.2015"
+        C:\Windows\explorer.exe "\\10.73.100.42"
+      </Cmd>
+      <Cmd Name="LOGs :: GCBA :: PROD (APK)" Icon="C:\Windows\explorer.exe" >
+        cmdkey /delete:10.73.100.44
+        cmdkey /add:10.73.100.44 /user:"DGUIAF\grodriguez" /pass:"G4st0n.2015"
+        C:\Windows\explorer.exe "\\10.73.100.44"
+      </Cmd>
+    </SubMenu>
+  </SubMenu>
+  <SubMenu Name="NACION" Icon=".\EasyOpen\NACION.ico">
+    <Exe Name="BitBucket (Repositorio)" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="https://bitbucket.org/dashboard/overview" />
+    <Separator />
+    <Exe Name="NACION VPN" Icon="EasyOpen\red_up.ico" OpenWith="C:\Program Files (x86)\F5 VPN\f5fpc.exe" Params="-start /h &quot;VPN-GDE&quot; /u gastonrodriguez /p XZY2954a /t" />
+    <SubMenu Name="Ambientes" Icon=".\EasyOpen\web.ico">
+      <Exe Name="NACION :: Ambientes (docs)" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="https://cardinalconsulting.atlassian.net/wiki/spaces/SIRN/pages/81690673/Ambientes+de+SIR-Naci+n" />
+      <Separator />
+      <Exe Name="NACION :: DEV :: BO" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://172.16.172.71/" />
+      <Exe Name="NACION :: DEV :: PE" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://172.16.172.71:1112/" />
+      <Exe Name="NACION :: DEV :: Portal Trámites" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://172.16.172.71:1113/" />
+      <Separator />
+      <Exe Name="NACION :: TEST :: BO" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://172.16.174.71/" />
+      <Exe Name="NACION :: TEST :: PE" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://172.16.174.71:1112/" />
+      <Exe Name="NACION :: TEST :: Portal Trámites" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://172.16.174.71:1113/" />
+      <Separator />
+      <Exe Name="NACION :: HOMO :: BO" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://172.16.173.71/" />
+      <Exe Name="NACION :: HOMO :: PE" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://172.16.173.71:1112/" />
+      <Exe Name="NACION :: HOMO :: Portal Trámites" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://172.16.173.71:1113/" />
+      <Separator />
+      <Exe Name="NACION :: PROD :: BO" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://bo.pagostad.gob.ar/" />
+    </SubMenu>
+    <Separator />
+    <SubMenu Name=".NET" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe">
+      <Exe Name="SIR.BO" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\NACION-SIR.CORE\Fuentes\BO\SIR.BO.sln" />
+      <Exe Name="SIR.CORE.All" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\NACION-SIR.CORE\Fuentes\SIR.Core.All.sln" />
+      <Exe Name="SIR.CORE :: Migrations" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\NACION-SIR.CORE\Fuentes\SIR.Core.Migrations.sln" />
+      <Exe Name="SIR.Gestion (Angular)" Icon="C:\Program Files\Microsoft VS Code\Code.exe" OpenWith="C:\Program Files\Microsoft VS Code\Code.exe" Params="W:\CS\NACION-SIR.CORE\Fuentes\SIR.Gestion\app" />
+      <Separator />
+      <Exe Name="SIR.AfipAPI.WebAPI" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\NACION-AfipConnector\Fuentes\CS.AFIPAPI.WebAPI.sln" />
+      <Exe Name="SIR.AfipAPI :: Migrations" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\NACION-AfipConnector\Fuentes\CS.AfipApi.Migrations.sln" />
+    </SubMenu>
+    <SubMenu Name="Remote" Icon="C:\Windows\System32\mstsc.exe">
+      <Cmd Name="Remote :: DEV" Icon="C:\Windows\System32\mstsc.exe" >
+        cmdkey /delete:172.16.172.71
+        cmdkey /add:172.16.172.71 /user:"grodriguez" /pass:"Ab123456"
+        mstsc /v:172.16.172.71 /admin /f
+      </Cmd>
+      <Cmd Name="Remote :: TEST" Icon="C:\Windows\System32\mstsc.exe" >
+        cmdkey /delete:172.16.174.71
+        cmdkey /add:172.16.174.71 /user:"grodriguez" /pass:"Ab123456"
+        mstsc /v:172.16.174.71 /admin /f
+      </Cmd>
+      <Cmd Name="Remote :: HOMO" Icon="C:\Windows\System32\mstsc.exe" >
+        cmdkey /delete:172.16.173.71
+        cmdkey /add:172.16.173.71 /user:"grodriguez" /pass:"Ab123456"
+        mstsc /v:172.16.173.71 /admin /f
+      </Cmd>
+      <Cmd Name="Remote :: PROD" Icon="C:\Windows\System32\mstsc.exe" >
+        cmdkey /delete:172.27.98.71
+        cmdkey /add:172.27.98.71 /user:"grodriguez" /pass:"G4st0nc1t0"
+        mstsc /v:172.27.98.71 /admin /f
+      </Cmd>
+      <Separator />
+      <Cmd Name="LOGs :: PROD" Icon="C:\Windows\explorer.exe" >
+        cmdkey /delete:172.27.98.71
+        cmdkey /add:172.27.98.71 /user:"grodriguez" /pass:"6qUvg$xLxKQ"
+        C:\Windows\explorer.exe "\\172.27.98.71"
+      </Cmd>
+    </SubMenu>
+  </SubMenu>
+  <SubMenu Name="YerbaSoft" Icon="W:\YerbaSoft\YerbaSoft.ico">
+    <Exe Name="WindowsHelper" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\YerbaSoft\Desktop\WindowsHelper.sln" />
+    <Separator />
+    <Exe Name="YerbaSoft.Web.Games.Clue.All" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\YerbaSoft\Web\Games\YerbaSoft.Web.Games.Clue\YerbaSoft.Web.Games.Clue.sln" />
+    <Exe Name="YerbaSoft.Web.Games.Clue.Web" Icon="C:\Program Files\Microsoft VS Code\Code.exe" OpenWith="C:\Program Files\Microsoft VS Code\Code.exe" Params="W:\YerbaSoft\Web\Games\YerbaSoft.Web.Games.Clue\YerbaSoft.Web.Games.Clue.Web" />
+    <Separator />
+    <Exe Name="YerbaSoft.Web.Games.Clue (HTML)" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\YerbaSoft\Web\Games\YerbaSoft.Web.Games.Clue_old\YerbaSoft.Web.Games.Clue.sln" />
+  </SubMenu>
+  <Separator />
+  <SubMenu Name="Mios" Icon="Z:\Mios\mios.ico">
+    <OpenFile Name="Agenda" Icon=".\EasyOpen\TXT.ico" Path="W:\Agenda.txt" />
+    <OpenFile Name="Password.xml" Icon=".\EasyOpen\XML.ico" Path="Z:\Mios\Password.xml" />
+    <OpenFile Name="Cuentas" Path="Z:\Mios\Cuentas.xlsx" Icon="C:\Program Files (x86)\Microsoft Office\root\Office16\EXCEL.EXE" />
+    <OpenFolder Name="Facturas AFIP" Icon="C:\Windows\explorer.exe" Path="Z:\Mios\Legales\Monotributo" />
+  </SubMenu>
+  <SubMenu Name="MI PC" Icon=".\EasyOpen\mipc.ico">
+    <ShowFiles Name="Escritorio" Path="C:\Users\yerba\Desktop" Icon=".\EasyOpen\desktop.ico" OpenFolder="true" />
+    <ShowFiles Name="Descargas" Path="C:\Users\yerba\Downloads" Icon=".\EasyOpen\downloads.ico" OpenFolder="true" SortByModiFecha="true" ShowModiFecha="true" />
+  </SubMenu>
+</EasyOpen>

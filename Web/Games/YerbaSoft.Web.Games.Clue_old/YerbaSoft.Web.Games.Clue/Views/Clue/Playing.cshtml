@@ -1,0 +1,188 @@
+﻿@{
+    ViewBag.Title = "Playing Clue";
+    Layout = "~/Views/Shared/_Minimal.cshtml";
+
+    var CurrentUser = YerbaSoft.Web.Games.Clue.Models.Site.Session.GetUsuarioActivo(this.Session);
+    var tablero = (YerbaSoft.Web.Games.Clue.DTO.Clue.Tablero)this.ViewData["Tablero"];
+}
+<script>
+    var map = @Html.Raw(Json.Encode(tablero));
+
+    var interval;
+    $(function(){
+        interval = window.setInterval(function() { $Game.refresh(); }, 600);
+    });
+    
+    var refreshing = false;
+    var $Game = {
+
+        TurnoActual: null,      // Usuario con el turno actual
+        JugadorActual: null,    // objeto Jugador que tiene el turno actual
+        EtapaActual: null,      // Etapa del turno actual
+
+        Etapas: {
+            TirarDado: 1,
+            MoverPersonaje: 2
+        },
+
+        /* ETAPA : DADOS */
+        Dados: {
+
+            Interface: $("#Dados"),
+
+            setInterface: function() {
+                if ($Game.EtapaActual != $Game.Etapas.TirarDado) { $("#Dados").hide(); return; }
+
+                $("#Dados").show();
+                if ($Game.TurnoActual == $Server.Security.CurrentUserId) {
+                    $("#Dados .readwrite").show(); 
+                    $("#Dados .readonly").hide(); 
+                } else {
+                    $("#Dados .readwrite").hide();
+                    $("#Dados .readonly").show();
+                    $("#Dados .text").html("Esperando a ..." + $Game.JugadorActual.Jugador.Nombre);
+                }
+            },
+
+            informandoDados: false,
+            tirarDados: function() {
+                if ($Game.Dados.informandoDados) return;
+                var d1 = $Math.Rnd(1,6);
+                var d2 = $Math.Rnd(1,6);
+                $Game.Dados.informandoDados = true;
+
+                $Server.Ajax( '@Url.Action("SetDados", "Clue")', { idTablero: '@tablero.Id', idJugador:$Server.Security.CurrentUserId, d1:d1, d2:d2 }, function(){ $Game.Dados.informandoDados = false; }, function(){ $Game.Dados.informandoDados = false; });
+            },
+
+        },
+
+        /* ETAPA : MOVER JUGADOR */
+        Movimiento: {
+
+            movimientosLeft: 0,
+
+            setInterface: function() {
+                if ($Game.EtapaActual != $Game.Etapas.MoverPersonaje) { return; }
+
+                if ($Game.Movimiento.movimientosLeft != $Game.JugadorActual.Dados.Movimientos) {
+                    $Game.Movimiento.movimientosLeft = $Game.JugadorActual.Dados.Movimientos;
+                    alert($Game.JugadorActual.Dados.D1);
+                    alert($Game.JugadorActual.Dados.D2);
+                    alert($Game.JugadorActual.Dados.Movimientos);
+
+                    $(".road").css("cursor", "pointer");
+                }
+            }
+
+        },
+
+
+        refresh: function() {
+            if (refreshing) return;
+            $("#loading_img").attr("hidden", null);
+            refreshing = true;
+
+            $Server.Ajax( '@Url.Action("GetStatus", "Clue")', { idTablero: '@tablero.Id' },
+                          function(data, e) {
+                              $Game.prototype._Refresh(data);
+                              $("#loading_img").attr("hidden", "hidden");
+                              refreshing = false;
+
+                              $("#refreshPing").html( e.timeLapsed );
+                          },
+                          function() { refreshing = false; }
+            );
+        },
+
+        prototype: {
+
+            _Refresh: function(data) {
+                
+                if ($Game.TurnoActual != data.Turno) {
+                    if (data.Turno == $Server.Security.CurrentUserId) {
+                        window.focus();
+                    }
+                    $Game.TurnoActual = data.Turno;
+                }
+                $Game.EtapaActual = data.Etapa;
+                $Game.JugadorActual = $Math.Array.findFirst(data.Jugadores, function(d){ return d.Jugador.Id == $Game.TurnoActual; });
+
+                $("#TurnoDe").html($Game.JugadorActual.Jugador.Nombre);
+
+                // Etapas
+                $Game.Dados.setInterface();
+                $Game.Movimiento.setInterface();
+
+            }
+        }
+    };
+
+</script>
+
+<script>
+
+    $(function() {
+        $ClueChat.IdChat = '@tablero.Id.ToString()';
+        $ClueChat.menuButton = $("#MenuChat");
+    });
+
+</script>
+
+
+<!-- MENU -->
+<div style="height:25px; background-color:lightgrey;font: normal 16px Bauhaus 93;">
+    <a id="MenuChat" href="#" onclick="$ClueChat.toggleMenu();">
+        <div style="height:25px; width:80px; text-align:center; vertical-align:central;float: left; border:1px solid red;">CHAT</div>
+    </a>
+    <a href="#">
+        <div style="height:25px; width:130px; text-align:center; vertical-align:central;float: left; border:1px solid red;">ANOTACIONES</div>
+    </a>
+    <div id="TurnoDe" style="height:25px; width:130px; text-align:left; vertical-align:central;float: left; border:1px solid red;">...</div>
+    <img id="loading_img" src="~/Content/images/loading.gif" height="12px" width="12px" hidden="hidden" />
+    <div style="float: right;"><img src="~/Content/images/ping.png" height="12px" width="12px" /></div>
+    <div id="refreshPing" style="float: right;"></div>
+</div>
+
+
+<!-- CHAT-->
+@Html.Partial("~/Views/Partial/Clue/Chat.cshtml")
+
+
+<!-- TABLERO -->
+<table id="Tablero" cellpadding="0" cellspacing="0" style="background: url('../Content/images/ClueTablero.png') no-repeat;" width="@Html.Raw(tablero.Width * 25)" height="@Html.Raw(tablero.Height * 25)">
+    @{
+        for (var y = 0; y < tablero.Height; y++)
+        {
+            @Html.Raw("<tr height=\"25\" >");
+            for (var x = 0; x < tablero.Width; x++)
+            {
+                var c = tablero.Celdas.Single(p => p.X == x && p.Y == y);
+                var j = tablero.Jugadores.SingleOrDefault(p => p.IdCelda == c.Id);
+
+                <td class="road" align="center" height="25" width="25" x="@c.X.ToString()" y="@c.Y.ToString()" card="@c.Card.ToString()[0]" room="@Html.Raw(c.Room.HasValue ? c.Room.ToString() : "")">
+
+                @if (j != null)
+                {
+                    <img id="@j.Jugador.Id.ToString()" src="~/Content/UserProfiles/@j.Jugador.Logo" width="25px" height="25px" />
+                }
+
+                </td>
+            }
+
+            @Html.Raw("</tr>");
+        }
+    }
+</table>
+
+<!-- ETAPA 01 : Tirar los dados -->
+<div id="Dados" style="z-index: 2; position: absolute; left:150px; top:325px; width:225px; height:150px; padding: 0; background: url('../Content/images/ClueEtapa01.jpg') repeat; border: 2px solid red; display: none">
+    <div class="readwrite">
+        <a href="#" onclick="$Game.Dados.tirarDados();">
+            <div style="z-index: 2; position: absolute; left:40px; top:40px; padding: 0;"><img src="~/Content/images/dados.gif" /></div>
+        </a>
+    </div>
+    <div class="readonly">
+        <div style="z-index: 2; position: absolute; left:40px; top:20px; padding: 0;"><img src="~/Content/images/dados.gif" /></div>
+        <div style="z-index: 2; position: absolute; left:0px; width:100%; text-align:center; top:110px; padding: 0; background-color:white"><b><label class="text"></label></b></div>
+    </div>
+</div>

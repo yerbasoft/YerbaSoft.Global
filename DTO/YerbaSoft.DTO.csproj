@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03356582-57FE-40A0-B032-9585DF279CFC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YerbaSoft.DTO</RootNamespace>
+    <AssemblyName>YerbaSoft.DTO</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigurationManager.cs" />
+    <Compile Include="Convert.cs" />
+    <Compile Include="Exceptions\ExceptionConvertTemplateBase.cs" />
+    <Compile Include="Exceptions\ExceptionConvertTemplateFull.cs" />
+    <Compile Include="Exceptions\ExceptionConvertTemplateLight.cs" />
+    <Compile Include="Exceptions\ExceptionConvertTemplateOnlyMessage.cs" />
+    <Compile Include="Exceptions\Exceptions.cs" />
+    <Compile Include="IExtensions.cs" />
+    <Compile Include="Mapping\AttributeClass.cs" />
+    <Compile Include="Mapping\AutoMapping.cs" />
+    <Compile Include="Mapping\Config\AutoMappingConfig.cs" />
+    <Compile Include="Mapping\Config\DefaultAutomappingConfig.cs" />
+    <Compile Include="Mapping\Config\ManualAutoMappingCongif.cs" />
+    <Compile Include="Mapping\Direct.cs" />
+    <Compile Include="Mapping\IExtraMapping.cs" />
+    <Compile Include="Mapping\IMappingPropertyAttribute.cs" />
+    <Compile Include="Mapping\Map.cs" />
+    <Compile Include="Mapping\NoMap.cs" />
+    <Compile Include="Mapping\SubClass.cs" />
+    <Compile Include="Mapping\SubList.cs" />
+    <Compile Include="Math.cs" />
+    <Compile Include="Result.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Types\Three.cs" />
+    <Compile Include="Types\Two.cs" />
+    <Compile Include="XmlHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dynamic\YerbaSoft.Dynamic.csproj">
+      <Project>{1bb3f5b2-eeec-4852-8960-3263d65f3180}</Project>
+      <Name>YerbaSoft.Dynamic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
