@@ -16,7 +16,5 @@ namespace YerbaSoft.Web.Games.Clue.Common.DTO.Clue
         public Guid Id { get; set; }
         [Direct]
         public Guid Name { get; set; }
-        [Direct]
-        public string ImageUrl { get; set; }
     }
 }

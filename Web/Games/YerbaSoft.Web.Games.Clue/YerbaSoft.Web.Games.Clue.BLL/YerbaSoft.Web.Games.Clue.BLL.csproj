@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="BaseService.cs" />
     <Compile Include="ChatService.cs" />
+    <Compile Include="ClueService.cs" />
     <Compile Include="SecurityService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

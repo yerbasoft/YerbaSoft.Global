@@ -1,48 +1,1239 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <XmlSimpleRepository>
-  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="5ce6fd68f60248aa94e90a08fb310effeb043bd594ae40ca8013fc996106a139">
-    <Fecha>3/6/2018 18:13:12</Fecha>
-    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
-    <Text>Hola muchachos</Text>
-  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
-  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="622a09b721274ae1af36fa73e6b07718e8953f3d12554a36949b694ee92f8d82">
-    <Fecha>3/6/2018 18:13:26</Fecha>
-    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
-    <Text>Todos topus</Text>
-  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
-  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="88c867cd04ef455dbe4be762572e1849b3ba3ad277624a2babcf4ca17cc71dea">
-    <Fecha>3/6/2018 18:13:44</Fecha>
-    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
-    <Text>manga de gatoslk fdjsalñk djflñkas jdñlfk jsadñlkfj asñlkdjf sñalkdjf lñkasjd fñlkjsad fñlkjasd ñlkfjas ñldkfjñl askdjfñl kasjfñlkasj dñflkjas dñlfkj ñasldkfj lkdafj</Text>
-  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
-  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="a6a9cd3acd4a4c868a70dc789b526fabf728c4468a724f319f6062d887ec3d03">
-    <Fecha>3/6/2018 21:07:22</Fecha>
-    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
-    <Text>HOLA HIJA</Text>
-  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
-  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="8d94ad38d44a42f885dd780c9bf2a5e1048f8f5c0d134f50a9b21fbc216b9e3d">
-    <Fecha>10/6/2018 16:27:29</Fecha>
-    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
-    <Text>hjgkjhg</Text>
-  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
-  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="85b20621d1a64d1da9aa0f3e49c8577d375117211ff443158c9f84c16c2bcdd9">
-    <Fecha>10/6/2018 16:41:16</Fecha>
-    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="33657140a1f443d58dc8844c66b088b82c5c7147280f417d96ab3de95559eb3c">
+    <Fecha>636649388377522140</Fecha>
+    <UserName>Alquimista de Acero</UserName>
     <Text>Hola</Text>
-  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
-  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="634507fef9c248feac73d5461652c72ce0f2bdb6484e4970b54e766acc6d5abf">
-    <Fecha>10/6/2018 16:41:35</Fecha>
     <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
-    <Text>Hola2</Text>
   </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
-  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="7da8b1ed2baf4affa2ed2ed92488b4d42fe0e89fc0564b23ba5999ae5cb0ac5b">
-    <Fecha>10/6/2018 16:41:37</Fecha>
-    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
-    <Text>Hola3</Text>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="f17649886b71461a910b8096d8838c4a87ee9183a36d4ffaa5046977759e1547">
+    <Fecha>636649389417141937</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>holass</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
   </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
-  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="eba42f9fdf804c5f8bcbba90bf13b53d76f529b9bb5e4e8fa09f561a6a8b7818">
-    <Fecha>10/6/2018 16:41:40</Fecha>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="29e1639a0612499c963ffce605c72e8b22a96463074a4ee0a2e6c296b20fa61d">
+    <Fecha>636649390585418396</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>hola</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="0a51f8fe08f643c3a6a448c82aea574fa8645c9b7e4a4f948cdb2eae06d908ff">
+    <Fecha>636649390644006936</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>hola</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="4b152b41b57d4ddeba05e390b9f535241d063d5975a842dc96b3cf62c1a5cf06">
+    <Fecha>636649390660198195</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>holafgvdf</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="84345983dd92483d86f8ae69973db73e7c8eb5b53ca64097bc367b2cf8a233b7">
+    <Fecha>636649390802983084</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>holafgvdfd</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="b5d3ded7ed574ed1a168f914eff4e1dd8c9c38fa9c01459fa7d1892d6ca20b75">
+    <Fecha>636649392266069365</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>hola</Text>
     <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
-    <Text>Hola4</Text>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="cdcfc9e7766241e192b7c0eb9ab1bbdb57e451ff6955483495d8047c3b6ac927">
+    <Fecha>636649392493848312</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>4654</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="af1653afb2f74ae48f291cfcb8f690bb1ba6a108302344aea7404b1d909519f9">
+    <Fecha>636649399512585092</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>gdsfg sfgsdf</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="2937f70a511f43dd8bcb79626d5076da18c7779c810e4a4dae739c96a61464f0">
+    <Fecha>636649399902863860</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>gdsfg sfgsdf</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="42af50c3e3ab4490bca3f7037089ab03a6e1d10a63154ee195d030bbe0f408b9">
+    <Fecha>636649404067413498</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>Hola hija</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="2a53f8c109fd497dbcff9e5c750dfd6321e40c4816334966a6a7a96caa788e1a">
+    <Fecha>636649404215064779</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>kikiriquihaga</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="878d4bb7cad94b339cf72268c2a0ae6b64bd091dbb414b109d964670cc5c7737">
+    <Fecha>636649405149714918</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>jkdh gkdsjh fgñldks</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="4914e3ed0b9c4e378c4ce300035bd52a486d6b2461af4483bc73237f48cc901b">
+    <Fecha>636649407014767791</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>jkdh gkdsjh fgñldks</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="2cb9d5930e1340a8a41769a0cf85d2501c82b5cfefc34d09b03e89b029b4c393">
+    <Fecha>636649407023505996</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>jkdh gkdsjh fgñldks</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="4ffa3fbf3ab349119b07e9b23f223307b0d299e9733f478cb170abbacc13e8a7">
+    <Fecha>636649407031679589</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>jkdh gkdsjh fgñldks</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="7d5685dd7e4045b0b2eeea90d247bc71b169e74721f94e708f530b63128a36d2">
+    <Fecha>636649407039099755</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>jkdh gkdsjh fgñldks</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="c7548dd28e3545048213252dbb86cf0954e009f648064d61a6d0cab890d64213">
+    <Fecha>636649407145606864</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>Hola hija</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="90d237f917084a9dbd0acd2c63a2340c9d501d5c07724eefbde0af5dc845fcec">
+    <Fecha>636649407163571262</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>Hola hijao</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="a4c9c19c8da74a1b9da7f0330d8c36bf355378ab8e354b91b766aa3c5ea8bb64">
+    <Fecha>636649407171255050</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>Hola hijaoo</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="213e75af5b2b4dfa96c0f2ce69e32d8f3b1c8004f0974eb780a7c53876aaf139">
+    <Fecha>636649407180774309</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>Hola hijaooo</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="9c0be0b8815e4e7393a5784615d2ccf38f45ddcee8884c269c831f36284d1657">
+    <Fecha>636649407193350384</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>Hola hijaoooo</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="22ad24d1452c4073b641b9a9cd677204452e8e2f97054840949c4d5f4072d78b">
+    <Fecha>636649411042732983</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>kjhfds jkh ds</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="1604a0eefb484009ae79afed0e322ba8d2f2865da7e04978aced03aa6b4411fa">
+    <Fecha>636649411091340426</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>kjhfds jkh dsdsfg.</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="ac9597c871c04b1a8fd58ba06d141e89e0270b0d261f4276bd2027325094f1ad">
+    <Fecha>636649411103837767</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>kjhfds jkh dsdsfgdsfgdf.</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="bd9de899c01a4f9892611dbe0e008c5348213ce2141346c18df69f85a4055fea">
+    <Fecha>636649411113972104</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>kjhfds jkh dsdsfgdsfgdsfdsfgdf.</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="017d33977626488499f1500ef0b2fe0a918330d65e774e65b9c4079daf15b727">
+    <Fecha>636649411125014695</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>kjhfds jkh dsdsfgdfsgfddsfgdsfdsfgdf.</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="5ac5304826aa4e99b4acaa354e7e433afe1ffb95f3e2401b91feac42f24092d5">
+    <Fecha>636649411494320551</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>kjhfds jkh dsdsfgdfsgfddsfgdsfdsfgdf.dfgdsf</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="b75a3e51358a4b878e438370d1f95ff22e43aefb7c2247b4844f96b313d51368">
+    <Fecha>636649412727051194</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>holiwis</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="053c97bc1d9648c39cb832c40c2fdaa6ec6d3306e62b412cabb363bcf211298d">
+    <Fecha>636649412833641953</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>hola ?</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="8980d12ea354427e92e9c2e6360ef8db04bf014fd9bd4831b9e9fad226355e6f">
+    <Fecha>636649412860374001</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>estás ?</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="0a7e6da247a942b290c1b18d298d4f70a97d3890be4a4e52b600cbad978cabe6">
+    <Fecha>636649413010890424</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>dale zorra</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="dcf656c6aa5d40cd9f909d733ccf53d74a23e5c434b640d9b3062ea69f376182">
+    <Fecha>636649414320901063</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>dfgdsfgd</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="64c3860e54ad4c3796a93adb151b3bd1e8b0d781e31f4dd49c8548fe1c54c9d7">
+    <Fecha>636649414337176564</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>dfgdsfgddfsgsd</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="9f0136990f76481c9bb33f7cae68f79806ad219101f94902ae7a3656a59e85be">
+    <Fecha>636649414348863317</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>dfgdsfgddfsgsdgdsfgds</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="9b4a8f97a89444ba8c7e7eab0c1e28647a035da5d90c4ab4a9e795e7a0c2e160">
+    <Fecha>636649414414052548</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>dfgsgsdfd</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="f43a022b3c14425fa672d1d0cceb341812a5d1c4e9ff4975bbeac4a102ce2fc0">
+    <Fecha>636649414607774859</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>dfgsgsdfdkj sdhaklñj hsaklñdjh fñkjsahdfñkjhas dñkfjhas kdñjfh saklñdjhfñaslk jdhfñksa jdhflkas djfñlkjas ñflkjasdñlkfj ñlsdak fjñlskadj f</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="fa7607a62458402ab0435edbcc843e4fcc201dc5159c401fb7890ced577b64b2">
+    <Fecha>636649415556530977</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>jlsdhñlkjsa</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="dfb607f0ed0c4bc78a26d8828a6e89ff7de836821e4f40b9a4ae0f336c3d31a0">
+    <Fecha>636649416047731371</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>jlsdhñlkjsa564</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="fb87beb307b3495e897a0f8a28f92c3b0b5192eb15734073a51c0a3aae629cc4">
+    <Fecha>636649417151863805</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>sadf</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="79bbbb513cce42cdb45c5e2a789a24ae8f7334aae062480d9b3302e2f244b58c">
+    <Fecha>636649417160701053</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>sadfsadf</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="7d9c1930654648c3bf6226fb476c99eebca971e00eaa4f4e95166148bc0d001b">
+    <Fecha>636649417169663846</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>sadfsadfsadf</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="8243db53b37e4be3bd5b4e91d766a406049607f253104f2790e0cc2236042831">
+    <Fecha>636649417178060331</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>sadfsadfsadfsadf</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="166bd13b15e3462a835806c0334ac8ea27bd9de42fd64437af4949b45149e310">
+    <Fecha>636649417504827719</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>safd</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="dfee83bcf4c945d3921a4a1fba691cc12e86642be5a44f31b934e21e28d51b80">
+    <Fecha>636649417512384557</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>safdsfad</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="b81ce8f7e2614c2d9952219a65797040bc701a91759a48afb162f48d42cbcbbe">
+    <Fecha>636649417520468964</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>safdsfadfsda</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="12e20f1c860f40218f37f5b7e486df26b046e6e0eecf40ed98f7a34f9c6eed8c">
+    <Fecha>636649417554613416</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>safdsaf</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="59adf8503237450791a723951c742c21ebd31ec37b294947983dd867c4ff3a27">
+    <Fecha>636649417795072541</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>sadf</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="cff9d2efc25a46bea21826758a9b8afac2e924899f064d0f8d5d2a132a270408">
+    <Fecha>636649417803596431</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>sadfsadf</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="53eb342849404f9095df3dd6c88b0680034eabd0ea7d4ab5a0fee6c9ddfba731">
+    <Fecha>636649417812227701</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>sadfsadfsafd</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="f0c5656c494744e9b5e14394443e877362a8ae6c56f14dae9ef2900c51e6e52c">
+    <Fecha>636649417900132302</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>sadf</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="7e7bfe1d6dfb474aae72faa60bd26b5b6477b8477afc47d298ef203c4909e374">
+    <Fecha>636649417909397722</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>sadfsafd</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="96f9e85b86d545fbae19debace0490ed7c75982ba944476fa0df37341a2682be">
+    <Fecha>636649417918780299</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>sadfsafdsfda</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="4deb01f5f156456baa093901c3f47bffa2874fb21d12450791f1996a1f8103c1">
+    <Fecha>636649417950931526</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>sadfsadfsafdsadf</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="0996fe7ce04a4d61a1269256a3efece618445aafba2f48e9bbccfdd01f66e812">
+    <Fecha>636649501013350973</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>hola</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="311e1d569c504cd1ac5195ca21fcff644c37cbd14b454d0ca0cfb0d5da771a95">
+    <Fecha>636649501079629685</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>que tal</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="e53d02e9722040bdba7e7ac5a160901e2683a1f94d194f24a056364d9cc97057">
+    <Fecha>636649501109057436</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>todo bien ?</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="619c85f0f7c14b11abf0728227b9583e878e80c254cb4a41b50ffae1d2b22b5d">
+    <Fecha>636649501166993770</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>porque acá todo bárbaro</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="61b551666b234bee9c1346cdae8cc74870ead30aa8ed4ab4bf66beec77b61f83">
+    <Fecha>636649501213428761</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>123.</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="3588a2a3c7d54375b80e478c6789330a62349fbd006541a5b438d590a1824ba3">
+    <Fecha>636649501226610042</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>123.2</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="4ae8d0235e0d41f38b948517d92ae2b5f38b87da00f64d3a89c099a10b04c873">
+    <Fecha>636649501237349763</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>123.23</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="b48ef511f9da4fe68c68c79215c2f2d61d99441c559149e1a241459af6126a33">
+    <Fecha>636649501250090928</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>123.234</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="387f1adf709e4cf4b846610c1a7c7c97d019b847d3e841f8b93680015f3d13cf">
+    <Fecha>636649501710462298</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>123.23433</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="edccc4166b824e3aad704797efe29109692dfd932ee64bd8b5bfe6868f6b6c40">
+    <Fecha>636649502328834245</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>1</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="2c0fcb92937f43e38efeb6a2122ef85177b83cc7a58446319505c48b2f0e077a">
+    <Fecha>636649502338150101</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>12</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="8273906df4a14b4c98fdbd9a3a20bdd9c97b68c55db84a0f885f5cae68dfe79e">
+    <Fecha>636649502346724052</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>123</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="84e1cbc06f11460aa70ee9033d1c9797e5ba511ed375479394cb608da5d3fcab">
+    <Fecha>636649502355618450</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>1234</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="6a2a7f46eb01475fbe7be7933776ab87e7e660c17f6e465c87be1612edc7a8ab">
+    <Fecha>636649502364874097</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>12345</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="458c77e799834d21819b66a6d47efa82b15762ece25a43098d4e8a0e735457cf">
+    <Fecha>636649502373133931</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>123456</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="77ebb7d3450a4237984a1f2b19bba8023ea33810cfbd44a5911a2b4a4b4524f5">
+    <Fecha>636649502387273791</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>1234567</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="05df427b4b944ad180bfea810e618b9b88f6f554570b41c9bf14ad6f51cf13bb">
+    <Fecha>636649502460503655</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>12345678</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="7ff6deceb8a64922babce114ff17a31c7169395e37524c6c83eabc5b6fb6aa78">
+    <Fecha>636649502478547779</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>123456789</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="5419566b6f7641be8dbc9379266418a17f280a169ef34c0b97a027b275ead140">
+    <Fecha>636649504943484733</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>a&lt;</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="d65003251c0848c08090e1515bb01471b565b3d3cf764329b4325edafaaff4f6">
+    <Fecha>636649505121431081</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>as</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="916b0621598a4c028323dedf931dcac8b373a1b812894152819996c157da952f">
+    <Fecha>636649505130989399</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>assa</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="74d7c4fc363a49f2b65fb7ddd7874013737e81676d6c4fba80ca7fe5811b9555">
+    <Fecha>636649505138438842</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>assasda</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="750c67baf0a6407b95db5e3c0bbd22be6cd6a9c7866648c0b61ffd3c5f87fc2b">
+    <Fecha>636649505146474113</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>assasdasda</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="eccd0daebffa4b36944d99fa9d263ee75546199128204f4a86cedbc3aa25765d">
+    <Fecha>636649505154831529</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>assasdasdasda</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="339a7df4980c40cb841d95516a5333763e93651a88064e79b4cb98ac516d2efb">
+    <Fecha>636649505173040393</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>assasdasdasda</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="52e11e629dac4fe3b5be04132a0b893d4e5799ea81bc424d9c48803ed784cdc0">
+    <Fecha>636649505203308449</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>assasdasdasdaasd</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="f465a261295042d6ae02dae3971585440fdc9aa36c09480b8e20ab2b143acfec">
+    <Fecha>636649505629353600</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>assasdasdasdaasd3</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="da925e91ed5044b0abfda9909032ee7830b387dc37174aac826bb50c1c219f00">
+    <Fecha>636649505648685051</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>assasdasdasdaasd34</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="54cfa7f6aef340968449aa7e98533ef18d7cbf8a4e0040d6bacdb0dfc50cd501">
+    <Fecha>636649506070898714</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>gffd</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="1d6f1ff6910a45a095064f2365dd22d326b3220b78b644e08d1cbf3fceac57b8">
+    <Fecha>636649506106655836</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>gffddsfg</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="f60f250250c140f0a5243acba69da5f65729dff2664f4b1c97385dfd7764b8e7">
+    <Fecha>636649506116744177</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>gffddsfg</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="a222c50123aa46b38ecb7ff12bea9ab0f5445aeeba8546d592a860f419d31ab8">
+    <Fecha>636649506127337414</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>gffddsfg</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="fc9b3e7e7dd74c81a051f40c12a2d53d6e529c58d962455baffa8c562cc3aea0">
+    <Fecha>636649506134269649</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>gffddsfg</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="c0b906ff2eef4466aaba5fd6d7df82af08b237d86144458c9aac82f480e6a49b">
+    <Fecha>636649506141914317</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>gffddsfg</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="e78e7cbed14a45eca3d61003480f889dd527549187c947b69460b885cc322729">
+    <Fecha>636649506148807245</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>gffddsfg</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="2999ab4053b0429db4df99c0f3fd889e698d12b9f85045ef9563946a8e1fdf97">
+    <Fecha>636649506163589449</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>gffddsfg</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="82cff29fba764799a3538b04f37d77f74508d361e0bc47ff93eeaf7df06fa8d0">
+    <Fecha>636649506171439163</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>gffddsfg</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="e2ec6b8b711d45239209e953c8c0fd876d7ee1875b934b02a154614a5ae0d4bc">
+    <Fecha>636649506178664031</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>gffddsfg</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="7237382b4b7d45e58368855cc20a919775c9fa398c6744dfaddf7477cf1bacae">
+    <Fecha>636649506184385371</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>gffddsfg</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="87886e663fac44e49eeb06e56848f9041043e66896164be7a8a5b128f23a620a">
+    <Fecha>636649510005912298</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>hola</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="589c204effa6474b896a2aac20d4a1465e80ca4aefc64569ab16b2c495500497">
+    <Fecha>636649510048021658</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>hola321</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="e3408169ef7c45d09d82c873c1184e7a3d636d79692d417f9055b0f654024800">
+    <Fecha>636649510066513467</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>hola3213</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="4b707f0e13864443b5a8c3f1b3f2421f608d29966eaf4a0daac8f7040ad941cd">
+    <Fecha>636649510080855847</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>hola3213</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="4374dccfba3440b8ab95aaab995973f9f23c4e8b8f7d45e386018ac3586059d9">
+    <Fecha>636649510086069458</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>hola3213</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="23e50f19e06445ee888563287ce26294fb161799bc794773979447d59437f437">
+    <Fecha>636649510088227167</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>hola3213</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="7961c17607fc4343bea43407d6ba0cb25f34bf52d5394e358a222587d27865dc">
+    <Fecha>636649510091312380</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>hola3213</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="e23c087c4d81401ea76ff6e7ff746d4578f9c8f682ff4279b6cea9239cc2797b">
+    <Fecha>636649510095881635</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>hola3213</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="eeef992c3fe84d6b8c7caa64c0b7bcdd7840f02bbc5d45bc8e805aa73a7c7b23">
+    <Fecha>636649510099601519</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>hola3213</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="d8833227d82b41409bee1449299add09a063b0128c8341a48a8c9b2f0a738b40">
+    <Fecha>636649510102296172</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>hola3213</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="f92018be9e9e421da565703665daec5e5a093e64511c41369c9bfab4af5a153c">
+    <Fecha>636649510107441450</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>hola3213</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="84ed848eb053424aaf86282ad9ee060def2c8a4650e44fad9771dd3daefed393">
+    <Fecha>636649510109931139</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>hola3213</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="0af656cc835e458ea0b9dc0e18c238ad0a27ddfc30ad4238824a56f760d835e8">
+    <Fecha>636649511209104746</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>hola3213fsd</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="11a83cdb59c847d2968899f3bfec545fc905203d9dc74dadacf8ba47cb6c1408">
+    <Fecha>636649511219912779</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>hola3213fsdsdf</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="4c509b06cc0f417ea65b8e7d911f229689b1b7a367f946e398df0aa8d3930375">
+    <Fecha>636649511232556324</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>hola3213fsdsdffdsfds</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="3c6ded526f5b4397be15ce6c6aba7fa3941ed182d95c43f7b9480a1fb09afa81">
+    <Fecha>636649511243042185</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>hola3213fsdsdffdsfdsfdsdf</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="e1ded7d33d3348dfbb6cdf7cc74b57df7da84d5c97c948f890df935421effe12">
+    <Fecha>636649511256681607</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>hola3213fsdsdffdsfdsfdsdffds</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="5c1a4f19635c4bfc93d25774701ca059721325e273ad4c64b20151ed46bd9df1">
+    <Fecha>636649511266874544</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>hola3213fsdsdffdsfdsfdsdffdsdfsfd</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="a1c5b501ca3443bc8501e97c010acb62e3f12aba69ec4c9eab3c0169c5559462">
+    <Fecha>636649514498786023</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>asfd</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="ef9fd00eb0134a96972575b3b5f7771ea005553563e442c3827232f1b4bb3711">
+    <Fecha>636649514507670668</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>asfd</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="66480bac26e146a58cec70c2c397d421678859e67dbf4c3cad952c62fa05ea3b">
+    <Fecha>636649514515910940</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>asfd</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="1f4127339ad548c89302f4cd892ec596d2702f0446d44f23baa871ffa57c5137">
+    <Fecha>636649514523702092</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>asfd</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="770435d1584247d6bc62333614d869214224f3d202674548816dd28d02b491d5">
+    <Fecha>636649515228382146</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>asdf</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="fbc3c150526942d58b3d8e7f4aee5c0dfe18a6d9457b471d92ee5171008db727">
+    <Fecha>636649515237110580</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>asdf</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="b999d11eeaa94776b6d24f2afe2de2c33e75fbf5b3814783bcee618219861cd6">
+    <Fecha>636649515244247602</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>asdf</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="ba705341cc4645a8a050d0db41f32e866dc94616d68d4a24a7717fa1ab19ce59">
+    <Fecha>636649515250964786</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>asdf</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="c5dd4ce47ddd4295ad0687f7754e669a71296130c25a4842831063e5cb956587">
+    <Fecha>636649515258482572</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>asdf</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="d9020141d61a41f0bd0c82d40f928151b8b8b6ec87324d309ca4291eccb0b3b6">
+    <Fecha>636649515264711593</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>asdf</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="1a7a087b0e894905862022b3220d2d7522eb6f413367418ba6704d749a9835f3">
+    <Fecha>636649515271262803</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>asdf</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="9b36dd98c8b446c292682b18f90a0d2f9764ed4ce63d4107a8832919bfbcfd93">
+    <Fecha>636649515304487512</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>asdf2</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="e62082e63d604edc99d8ea7d88c0baf4932a73dbf7034e449224373e267726b9">
+    <Fecha>636649515315764198</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>asdf23</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="7aa8f6609f6d4534bb68963a0136628b34cab4793cc742d584dd5c004b3a389b">
+    <Fecha>636649515381139671</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>asdf234</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="367eb46cc5bb46af9d80cb3b060dcba33bba1332136a407496186f2309c5a28e">
+    <Fecha>636649515414852493</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>asdf2345</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="7c8b625ab81a436fade830b8691986d410a7ca6550db4796ac64f82cd75ac6a0">
+    <Fecha>636649515534004508</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>asdf23456</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="9e51ed315d804b649267a168ec22ee4217f34c13f3254da89c23a253408e549b">
+    <Fecha>636649518842122724</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>sadf</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="79a08db320104627bac215457a35cf88471631732f99495aa96bb0b1d9b12f6d">
+    <Fecha>636649518860966003</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>sadfsfad</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="42ae8aae691145c2a9d012f1a8e1814b335b06418ae24c2e84cbf9f593d07fa3">
+    <Fecha>636649518865486459</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>sadfsfad</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="8a6636f222354d3b90fbfddbfe98241af584cbacdcbf4bc8afe73807da942135">
+    <Fecha>636649518868444734</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>sadfsfad</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="751f056947a944ed9c86a15ac70bef4f355718780d1d4b57be813436eee1480a">
+    <Fecha>636649518871276108</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>sadfsfad</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="3f63ca0d47584e46af69b39c0eb16b80500f3f1ddb534a4c870b1e4fc1798e20">
+    <Fecha>636649518874253940</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>sadfsfad</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="1c123bf0bd934c34a7ba6db95ac1d411bcff3f61a5004c118f5cbcc56b14bc28">
+    <Fecha>636649518877212241</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>sadfsfad</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="c458bb9199c547a8a374c819134fddf036633e4d0a294c43a02fcd7adb50099c">
+    <Fecha>636649518880072887</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>sadfsfad</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="bac327e601dc4a179c644054d9397b541881fbae1ac945db9a2ae497f01541b5">
+    <Fecha>636649518883040951</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>sadfsfad</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="6672b6e392774dbc99d687f591f523d7057c88342e4d45a792a6d8dc1245e209">
+    <Fecha>636649518885989492</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>sadfsfad</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="cdc62c9fd1254bb69a188aa8d2dcef202670d68e466449c0a856db1586fd8024">
+    <Fecha>636649518888508433</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>sadfsfad</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="1ffd476665214c06a2c253e8f24d9cd942529bc5631d43219a6329db7b218193">
+    <Fecha>636649518891671754</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>sadfsfad</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="8f00e7dc9f374487ba7a63b1d3892f1c04c4013b9ad14842952c1de4269479be">
+    <Fecha>636649518894757005</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>sadfsfad</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="6af1996e5e9049789efabf129c7ab85d616d039955fc475194d2409f3cfa2ab6">
+    <Fecha>636649518924427839</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>sadfsfad</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="765ec007110249fd851db1bdab50ae145fbfb0e86cd74e43b8a600e1fb96ea97">
+    <Fecha>636649520108742540</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>654</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="c55f379e0b4242098f1cff8840946e1986ffd39dc65140d687c4a400609fa15b">
+    <Fecha>636649520126472802</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>654</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="1c3bc654f52a48e49837766b0136011406875a6759054284877971fed07eaf19">
+    <Fecha>636649520135015750</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>654</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="bdd5f82fce2c4c41a7315802f7407692a1b52c99d7394d30a7c75a92ffdace52">
+    <Fecha>636649520143998042</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>654</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="beafbf77b88e4640bdaac078f25ad773df7e27009cd84145b34fd4ce8342df64">
+    <Fecha>636649520152433565</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>654</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="cca7088cc2354915868290616853f4665e25200bd95d4d738f2aefd64d54fb82">
+    <Fecha>636649520161025313</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>654</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="31057b7dbd864582985312e0e105a883e1b185240717412d9a114510a5f87b27">
+    <Fecha>636649520168660281</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>654</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="d87e57b9933040db9542b1f95dcd51b32ea7feb256434ecfb974575c2d3e3d0e">
+    <Fecha>636649520175523904</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>654</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="01cdfb9b76ef46da8e1fd0aac4b39d404b7981866d5b47fb8dd2ad46ad3f21f1">
+    <Fecha>636649520181957956</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>654</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="39cbe6b2219d4b9fb4b954a5749f4169ca09340b358a42299269323a10c10727">
+    <Fecha>636649520192394982</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>654</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="2701e7c0cd1b4f54ac01c8c07de68af820574fd6b459413a9f33da31b8a6dbfe">
+    <Fecha>636649520199697989</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>654</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="18be15e27bab4a999dca77c5a0a0e9e2faeaeed05628412ca2df72edff0c50a5">
+    <Fecha>636649520206883805</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>654</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="81fab99d83124de69842e4c3ffdc7ed6383f00c9b0344d118bc79e54360f486a">
+    <Fecha>636649522000959358</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>56432151.21</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="ef9d3ad3c9c74a1083d6d671a81c02728b73cd1e0a5a45dead3dfd2ea36d6f72">
+    <Fecha>636649522017527812</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>56432151.21</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="9ef7e108d870483ea8abcb9c0e118b668e00f9cd850f4e7d8a91686aee8a44d3">
+    <Fecha>636649522025465386</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>56432151.21</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="dca2c91683b54cd7a4df0c2ca0d44573a0f4b191b7464893868a2a7e23f14986">
+    <Fecha>636649522064138092</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>56432151.21</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="e66107751350441d865a72ee54a740649ba670ec098c48018c46c3e19ab1f4b3">
+    <Fecha>636649522074262658</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>56432151.21</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="feb664e30d184c5e8f78717a1af6a70311623d472f2c4cb8b9fcaec120909904">
+    <Fecha>636649522082961803</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>56432151.21</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="ba2761e4a5b1447e82e32b40a83bee67c00c4f7c38684b08a35fa7fa29229646">
+    <Fecha>636649522091114211</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>56432151.21</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="46cc15e7b19447248ed8f3b734ae319d8bf44edc552245078d754a38dc5fb122">
+    <Fecha>636649522108141509</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>56432151.21</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="6a645da7b1874610a5b981143c9956c94cd78dc77fea40a99d3b7530093b699d">
+    <Fecha>636649522122825586</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>56432151.21</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="86536d025cb84f0a9b091201848063cbc4c1ab1bbeef4e69b0a3e3ce37e5fa89">
+    <Fecha>636650979645883541</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>hola</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="d45a094c88c9458abaee85a7455796a02ea8f5478bd549779ba4586cada54411">
+    <Fecha>636650980035701029</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>que tal</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="3750c02538254d5a98d81b4881de9daa5537970fff3b4f128339f1a66e74c7e5">
+    <Fecha>636650981567203314</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>fasd</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="90a5b32a89bd4e018cd80fad1cca4f07c914a179976d47679977edd2df980649">
+    <Fecha>636650983708865039</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>hola</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="a949453f07584908b7dc377637df1cd55582fe3fa22b406595734d0df5455cce">
+    <Fecha>636650984425842129</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>hola2</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="d59627c437f144a1aac7900b0747173ac3cced52672b429db27d68681a30f664">
+    <Fecha>636650984470464993</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>hola23</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="8d85310d20e2495292d0cb8d5e5d8b03daa10c5bf74041419cb89bd62cd122e3">
+    <Fecha>636650984938187516</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>hola23dfgdsf</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="fdfee42231404a289c30fb7fe6383e4d8af29b69f0a24b8e98aee1f32848340d">
+    <Fecha>636650985642940780</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>afsdd</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="f70aa78d0f5241f19418581697620aad420249ceeef8409b89f49871926d7b53">
+    <Fecha>636650985919187897</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>asfd</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="f061f8f4af904920b4c5dccfee8fc14dc25cd3048a6f444cbeed716927a574b1">
+    <Fecha>636650985977221639</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>safasf</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="5bc58c839fd64a20a6b249e7b861255ca0889a36de774f37b83e8263bfe58deb">
+    <Fecha>636650986718422843</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>hola</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="bf50b019750642f6bb41b2ccda5e598df230154307674a01b8b6e7bec90ad76c">
+    <Fecha>636650986777806055</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>dfgsfgsd</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="b486b174f6d4414984e39d3b47470bce4a270d0bf6624c0ab102884b5106e41f">
+    <Fecha>636650992234737299</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>gg</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="18d312f31e034f80b85d9acad963fc08ddea0deb6b1041ae80e75293375ca6e4">
+    <Fecha>636650992314557006</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>dgffs</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="b7a4f20eaf5a4e26aaeacabe76bf284428fec622d41e4141a5b7294c8914ee13">
+    <Fecha>636650992594741331</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>sdfg</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="8b24a355b86a47b8ab7ce890429cf9a5d5f38309055a4dfbad36a566455f67b3">
+    <Fecha>636650992880201354</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>sadf</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="10dc2cb19f36400a9697ab2a583ef35c0b7d9b1228e248d3b0655cb263e34041">
+    <Fecha>636650993111874996</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>fasd</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="b01b9aed905c4f5b80e3a3e5cf129d76e9af0380a453458abc1321e91f940b27">
+    <Fecha>636650993879281628</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>sdfa</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="7d2a5e0911d64ca3a9111b1b683137c12a2020508a6b47378a730f839f820283">
+    <Fecha>636650996497661780</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>jgfjhjf</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="22aeb75f4e7e416fb47e9336ccc27ce74bb2d7ff953b4ec2af5aa84183ada033">
+    <Fecha>636650996560432777</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>6456</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="79dab75b5b4745469862b90b00f6e8449138b1c9973d4131ba2d9fa5ac354785">
+    <Fecha>636650996602151570</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>dfsds</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="e32678f48a674abfb8e57dc0e7913afb596634c1175349ebba4a72a5737f0175">
+    <Fecha>636650997392311678</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>gg izi</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="61dc676f19594817b6fc67d43fc417277af47ce98c72420b909a6555eaa24e9c">
+    <Fecha>636650997732497897</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>lkdjg ñlkjdfñ glkdjfñgkdjsf</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="22b1df348cb74c2fbc6b6a1a71e2a1544319fa6eeb8845d99e92585c3e295cb1">
+    <Fecha>636650997812765704</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>dghhdgfshgfs</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="d27875bbb7c14be7ab1025f549abfc5ed3bc84a3ed3b4ac6a96a7a72d57dc699">
+    <Fecha>636650997845757145</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>dfgfdsgfsdsdgf</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="2ad300d0ded24711919f2cafc3ac980fcedbf942724141e59bb5990bb800f686">
+    <Fecha>636650997925420660</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>dgfdsfg</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="120595fb68ed45be9581c7eacd6fe5aee22f4af3d76e4dde9de5005277ff9367">
+    <Fecha>636650998229333513</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>sdffsd</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="5a90da7c4af54ff39a9c80fe0fa78b9ec22c1318ed9a4802aad786c9504b00a5">
+    <Fecha>636650999295966399</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>sfdf</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="a85bef90b62840508f792190f242d98c5a2f6f4016f241a79a4fac1e93fbfa42">
+    <Fecha>636650999307926510</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>gdfs</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="2b651776b67a4d2599b8d1100e13d9025c32e0b5fa104efbb4fd5136bd743d36">
+    <Fecha>636650999329044654</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>jhgfhj</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="436092ab9dc34d0fb59faf65ab554f3b76ed40c4fd384e8bab47326b536ae543">
+    <Fecha>636650999337587582</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>gfhj</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="4360de237cbb4c6a93b97ab2325efe61c17f4a8b03d940b38ec779e8bb3ec167">
+    <Fecha>636650999345603295</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>fgjh3</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="6b04156f64924266b7a41d5e3422e2faf21aba543bbc4cd5bbc99bf89c39679c">
+    <Fecha>636650999357377906</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>fj</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="e9a531fbfb0b4273b05d96b1675fdf9ea5eaa9066ad147fda804ca65e2c04ddd">
+    <Fecha>636650999366252821</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>gfjh</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="20443bd0f0874c3096b681cec9b05ddeb6ee1d1bb6a44ef9a9add87440ec797b">
+    <Fecha>636650999374971508</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>fgjh</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="373c1c5fe1804efab545f6a7b1f0daae0617f364517c4e9c91d2eb2ff0bdc0bc">
+    <Fecha>636650999383758498</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>fghj</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="208b6097ee38428683db6a9f02bd1df01f09e423649449ee9194c24977ec9fb3">
+    <Fecha>636650999392233094</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>fghj</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="2662ce4e868c41df91a448f1fed9ef39ecb9b45fc3bf431a8d85b8e90b45b46a">
+    <Fecha>636650999402904449</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>fgjh</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="1ef9165094f24bc985ba4200696559c60831e0852ffb4323b493ccb874c4641b">
+    <Fecha>636650999512029168</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>fdh</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="2d76239b97e84a6d992a217fc44da5bcc4138c4ee04b4ba4ba3ff018dbcd05af">
+    <Fecha>636650999528001978</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>dfgh</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="1bd8a8b14d6f4cb085bc2613f6a547dab38921d6a8604e16beb425c902107c5c">
+    <Fecha>636650999559391142</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>dfgh</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="25cc5d63f27949abb557758b5d9a590940884de9cc0640d289f8560dc93cc70c">
+    <Fecha>636650999568705406</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>dfgh</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="6e4ff1a7c5ad4b4486ff96c09915e6d3654bf4375796417096e4569261656400">
+    <Fecha>636650999580315143</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>fdhg</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="6f06bafdd8904a77ba785401652ed16eaf03fa7e4e594388959fe0489d0d3341">
+    <Fecha>636650999593261321</Fecha>
+    <UserName>Alquimista de Acero</UserName>
+    <Text>fdgh</Text>
+    <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
   </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
 </XmlSimpleRepository>

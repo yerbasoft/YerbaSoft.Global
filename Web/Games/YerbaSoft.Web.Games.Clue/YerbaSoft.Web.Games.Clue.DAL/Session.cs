@@ -47,6 +47,8 @@ namespace YerbaSoft.Web.Games.Clue.DAL
             private YerbaSoft.DAL.IRepository<Clue.Common.DTO.Clue.TipoTablero> _TipoTableroRepository { get; set; }
             public YerbaSoft.DAL.IRepository<Clue.Common.DTO.Clue.TipoTablero> TipoTableroRepository => _TipoTableroRepository = _TipoTableroRepository ?? new YerbaSoft.DAL.Repositories.XmlSimpleRepository<Games.Clue.Common.DTO.Clue.TipoTablero>(System.IO.Path.Combine(RepositoryFilePath, Games.Clue.Common.DTO.Clue.TipoTablero.RepositoryName + ".xml"));
 
+            private YerbaSoft.DAL.IRepository<Clue.Common.DTO.Clue.Mesa> _MesaRepository { get; set; }
+            public YerbaSoft.DAL.IRepository<Clue.Common.DTO.Clue.Mesa> MesaRepository => _MesaRepository = _MesaRepository ?? new YerbaSoft.DAL.Repositories.MemoryRepository<Games.Clue.Common.DTO.Clue.Mesa>();
         }
     }
 }

@@ -26,7 +26,7 @@ namespace YerbaSoft.Web.Games.Clue.Common.DTO
         public string IconRes { get; set; }
 
         [Direct]
-        public DateTime LastUpdate { get; set; }
+        public long LastUpdate { get; set; }
 
         [SubList]
         public List<ChatUser> Integrantes { get; set; } = new List<ChatUser>();
@@ -49,30 +49,35 @@ namespace YerbaSoft.Web.Games.Clue.Common.DTO
     public class ChatLine : XmlSimpleClass
     {
         [Direct]
-        public DateTime Fecha { get; set; }
+        public long Fecha { get; set; }
 
         public string FechaToShow
         {
             get
             {
-                if (DateTime.Now.ToString("yyyyMMdd") == Fecha.ToString("yyyyMMdd"))
-                    return Fecha.ToString("HH:mm");
+                var fecha = new DateTime(this.Fecha);
+                if (DateTime.Now.ToString("yyyyMMdd") == fecha.ToString("yyyyMMdd"))
+                    return fecha.ToString("HH:mm");
                 else
-                    return $"{new System.Globalization.CultureInfo("es-es").DateTimeFormat.GetDayName(Fecha.DayOfWeek)} {Fecha.ToString("HH:mm")}";
+                    return $"{new System.Globalization.CultureInfo("es-es").DateTimeFormat.GetDayName(fecha.DayOfWeek)} {fecha.ToString("HH:mm")}";
             }
         }
 
         [Direct]
-        public Guid IdUser { get; set; }
+        public string UserName { get; set; }
 
         [Direct]
         public string Text { get; set; }
+
+        [Direct]
+        public Guid IdUser { get; set; }
     }
 
     public class ChatUserUpdates
     {
         public Guid IdUser { get; set; }
-        public DateTime LastUpdate { get; set; }
+
+        public long LastUpdate { get; set; }
     }
 
     public class ChatNews

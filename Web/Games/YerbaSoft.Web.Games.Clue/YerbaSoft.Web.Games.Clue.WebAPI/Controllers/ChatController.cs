@@ -24,13 +24,13 @@ namespace YerbaSoft.Web.Games.Clue.WebAPI.Controllers
         }
 
         [HttpPost]
-        public JsonResult AddChatLine(Guid idchat, string text)
+        public JsonResult AddChatLine(Guid idchat, string user, string text)
         {
             try
             {
                 if (this.SecurityToken.IsValid().ExistsErrorMessages) return new JsonResult() { Data = Common.Result.AUTHENTICATE_FAIL };
 
-                return new JsonResult() { Data = this.ChatService.AddChatLine(SecurityToken.IdUser, idchat, text) };
+                return new JsonResult() { Data = this.ChatService.AddChatLine(SecurityToken.IdUser, idchat, user, text) };
             }
             catch (Exception ex)
             {

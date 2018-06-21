@@ -18,6 +18,9 @@ namespace YerbaSoft.Web.Games.Clue.WebAPI.Controllers
         private Clue.BLL.ChatService _ChatService { get; set; }
         protected Clue.BLL.ChatService ChatService => _ChatService = _ChatService ?? new BLL.ChatService();
 
+        private Clue.BLL.ClueService _ClueService { get; set; }
+        protected Clue.BLL.ClueService ClueService => _ClueService = _ClueService ?? new BLL.ClueService();
+
 
         protected override void Initialize(RequestContext requestContext)
         {
