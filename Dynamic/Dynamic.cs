@@ -82,7 +82,7 @@ namespace YerbaSoft.Dynamic
                     }
 
                     type = res.CompiledAssembly.GetType("DynamicClass");
-                    Types.Add(key, type);
+                    try { Types.Add(key, type); } catch { }
                 }
             }
 

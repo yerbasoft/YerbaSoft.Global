@@ -25,7 +25,7 @@ namespace YerbaSoft.Web.Games.Clue.BLL
             Session.ChatRepository.Commit();
             */
 
-            var data = Session.ChatRepository.Find(p => p.Integrantes.Any(i => i.Id == idUser || i.Id == Common.DTO.User.Anonimo.Id));
+            var data = Session.Chats.Find(p => p.Integrantes.Any(i => i.Id == idUser || i.Id == Common.DTO.User.Anonimo.Id));
             return new DTO.Result<Common.DTO.Chat[]>(data.OrderByDescending(p => p.LastUpdate).ToArray());
         }
 
@@ -42,10 +42,10 @@ namespace YerbaSoft.Web.Games.Clue.BLL
             repo.UpsertEntity(dbLine);
             repo.Commit();
 
-            var dbChat = Session.ChatRepository.Find(p => p.Id == idchat).SingleOrDefault();
+            var dbChat = Session.Chats.Find(p => p.Id == idchat).SingleOrDefault();
             dbChat.LastUpdate = fechahora;
-            Session.ChatRepository.UpsertEntity(dbChat);
-            Session.ChatRepository.Commit();
+            Session.Chats.UpsertEntity(dbChat);
+            Session.Chats.Commit();
             return new DTO.Result(true);
         }
 
@@ -53,16 +53,16 @@ namespace YerbaSoft.Web.Games.Clue.BLL
         {
             var fechahora = DateTime.Now.Ticks;
 
-            var db = Session.ChatUserUpdatesRepository.Find(p => p.IdUser == iduser).SingleOrDefault();
+            var db = Session.ChatUserUpdates.Find(p => p.IdUser == iduser).SingleOrDefault();
 
             if (db == null)
             {
-                db = Session.ChatUserUpdatesRepository.GetNew();
+                db = Session.ChatUserUpdates.GetNew();
                 db.IdUser = iduser;
                 db.LastUpdate = DateTime.Now.AddDays(-5).Ticks;
             }
 
-            var chats = Session.ChatRepository.Find(p => p.LastUpdate > db.LastUpdate && p.Integrantes.Any(i => i.Id == iduser || i.Id == Common.DTO.User.Anonimo.Id));
+            var chats = Session.Chats.Find(p => p.LastUpdate > db.LastUpdate && p.Integrantes.Any(i => i.Id == iduser || i.Id == Common.DTO.User.Anonimo.Id));
 
             var result = new List<ChatNews>();
             foreach (var chat in chats)
@@ -74,8 +74,8 @@ namespace YerbaSoft.Web.Games.Clue.BLL
             }
 
             db.LastUpdate = fechahora;
-            Session.ChatUserUpdatesRepository.UpsertEntity(db);
-            Session.ChatUserUpdatesRepository.Commit();
+            Session.ChatUserUpdates.UpsertEntity(db);
+            Session.ChatUserUpdates.Commit();
 
             return new DTO.Result<ChatNews[]>(result.ToArray());
         }

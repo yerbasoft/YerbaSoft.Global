@@ -52,19 +52,20 @@
       <Exe Name="GCBA :: PREPROD :: Pago Electrónico" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.2.99:2485/ABM/login" />
     </SubMenu>
     <Separator />
-    <Cmd Name="GCBA VPN - START" Icon="C:\Program Files\ShrewSoft\VPN Client\ipseca.exe">
+    <Cmd Name="GCBA VPN - Stop Services" Icon="C:\Program Files\ShrewSoft\VPN Client\ipseca.exe">
       net stop "ShrewSoft IPSEC Daemon"
       net stop "ShrewSoft IKE Daemon"
+    </Cmd>
+    <Cmd Name="GCBA VPN - Start Services" Icon="C:\Program Files\ShrewSoft\VPN Client\ipseca.exe">
       net start "ShrewSoft IKE Daemon"
       net start "ShrewSoft IPSEC Daemon"
+    </Cmd>
+    <Cmd Name="GCBA VPN - Open" Icon="C:\Program Files\ShrewSoft\VPN Client\ipseca.exe">
       C:
       cd "C:\Program Files\ShrewSoft\VPN Client"
       ipsecc.exe -r "Cardinal_VPN.PCF" -u "grodriguez" -p "Gr0dr1gu3z.r4a2" -a
     </Cmd>
-    <Cmd Name="GCBA VPN - STOP" Icon="C:\Program Files\ShrewSoft\VPN Client\ipseca.exe">
-      net stop "ShrewSoft IPSEC Daemon"
-      net stop "ShrewSoft IKE Daemon"
-    </Cmd>
+    <Exe Name="GCBA VPN - Ping DEV" Icon="C:\Windows\System32\cmd.exe" OpenWith="C:\Windows\System32\cmd.exe" Params="/C &quot;ping 10.73.2.98 -t&quot;" />
     <Separator />
     <SubMenu Name=".NET" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe">
       <Exe Name="SIR.All" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.All.sln" />
@@ -146,7 +147,8 @@
   <SubMenu Name="NACION" Icon=".\EasyOpen\NACION.ico">
     <Exe Name="BitBucket (Repositorio)" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="https://bitbucket.org/dashboard/overview" />
     <Separator />
-    <Exe Name="NACION VPN" Icon="EasyOpen\red_up.ico" OpenWith="C:\Program Files (x86)\F5 VPN\f5fpc.exe" Params="-start /h &quot;VPN-GDE&quot; /u gastonrodriguez /p XZY2954a /t" />
+    <Exe Name="NACION VPN (grodriguez)" Icon="EasyOpen\red_up.ico" OpenWith="C:\Program Files (x86)\F5 VPN\f5fpc.exe" Params="-start /h &quot;VPN-GDE&quot; /u grodriguez /p XZY2954a /t" />
+    <Exe Name="NACION VPN (gastonrodriguez)" Icon="EasyOpen\red_up.ico" OpenWith="C:\Program Files (x86)\F5 VPN\f5fpc.exe" Params="-start /h &quot;VPN-GDE&quot; /u gastonrodriguez /p XZY2954a /t" />
     <SubMenu Name="Ambientes" Icon=".\EasyOpen\web.ico">
       <Exe Name="NACION :: Ambientes (docs)" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="https://cardinalconsulting.atlassian.net/wiki/spaces/SIRN/pages/81690673/Ambientes+de+SIR-Naci+n" />
       <Separator />

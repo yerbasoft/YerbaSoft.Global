@@ -41,8 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DTO\Chat.cs" />
+    <Compile Include="DTO\Clue\GameInfo.cs" />
     <Compile Include="DTO\Clue\Mesa.cs" />
     <Compile Include="DTO\Clue\MesasInfo.cs" />
+    <Compile Include="DTO\Clue\Tablero.cs" />
     <Compile Include="DTO\Clue\TipoTablero.cs" />
     <Compile Include="DTO\Game.cs" />
     <Compile Include="DTO\SecurityToken.cs" />

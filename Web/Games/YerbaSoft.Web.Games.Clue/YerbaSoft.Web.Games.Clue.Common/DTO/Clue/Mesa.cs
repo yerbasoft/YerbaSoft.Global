@@ -22,7 +22,10 @@ namespace YerbaSoft.Web.Games.Clue.Common.DTO.Clue
         public Guid Id { get; set; }
 
         [Direct]
-        public Guid IdOwer { get; set; }
+        public int Sillas { get; set; }
+
+        [Direct]
+        public Guid IdOwner { get; set; }
 
         [Direct]
         public TipoTablero TipoTablero { get; set; }

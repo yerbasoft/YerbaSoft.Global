@@ -1236,4 +1236,10 @@
     <Text>fdgh</Text>
     <IdUser>61f3a048-3d5a-4fba-93c2-53b769b726e8</IdUser>
   </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="6744c219094f4e50875e980dc14aceb4252132a5d3e340a4a67321d1babee723">
+    <Fecha>636654442998592530</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>fsd</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
 </XmlSimpleRepository>

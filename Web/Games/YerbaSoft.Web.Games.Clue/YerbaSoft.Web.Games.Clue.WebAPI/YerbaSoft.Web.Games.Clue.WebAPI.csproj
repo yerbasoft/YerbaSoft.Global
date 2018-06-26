@@ -157,6 +157,9 @@
     <Content Include="ChatsRepository.xml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Clue-TipoTableroRepository.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="GameRepository.xml">
       <SubType>Designer</SubType>

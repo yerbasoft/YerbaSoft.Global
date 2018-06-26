@@ -13,22 +13,22 @@ namespace YerbaSoft.Web.Games.Clue.BLL
 
         public DTO.Result<Clue.Common.DTO.SecurityToken> AddUser(Clue.Common.DTO.User user)
         {
-            if (Session.UserRepository.Any(p => p.UserName == user.UserName || (p.EMail == user.EMail && !string.IsNullOrEmpty(user.EMail))))
+            if (Session.Users.Any(p => p.UserName == user.UserName || (p.EMail == user.EMail && !string.IsNullOrEmpty(user.EMail))))
             {
                 return new DTO.Result<SecurityToken>("Ya existe un usuario con el mismo nombre de usuario o e-Mail");
             }
 
             user.Id = Guid.NewGuid();
 
-            Session.UserRepository.UpsertEntity(user);
-            Session.UserRepository.Commit();
+            Session.Users.UpsertEntity(user);
+            Session.Users.Commit();
 
             return GetToken(user.UserName, user.Password);
         }
 
         public DTO.Result<Clue.Common.DTO.SecurityToken> GetToken(string user, string pass)
         {
-            var dbUser = Session.UserRepository.Find(p => p.UserName == user && p.Password == pass).SingleOrDefault();
+            var dbUser = Session.Users.Find(p => p.UserName == user && p.Password == pass).SingleOrDefault();
 
             if (dbUser == null)
                 return new DTO.Result<SecurityToken>("El usuario/contraseña no son correctos");
@@ -39,7 +39,7 @@ namespace YerbaSoft.Web.Games.Clue.BLL
 
         public DTO.Result<User> GetUser(Guid idUser)
         {
-            var dbUser = Session.UserRepository.Find(p => p.Id == idUser).SingleOrDefault();
+            var dbUser = Session.Users.Find(p => p.Id == idUser).SingleOrDefault();
 
             if (dbUser == null)
                 return  new DTO.Result<User>("Usuario no válido");
@@ -49,7 +49,7 @@ namespace YerbaSoft.Web.Games.Clue.BLL
 
         public DTO.Result<User> ChangePassword(Guid idUser, string pass, string newpass)
         {
-            var dbUser = Session.UserRepository.Find(p => p.Id == idUser).SingleOrDefault();
+            var dbUser = Session.Users.Find(p => p.Id == idUser).SingleOrDefault();
 
             if (dbUser == null)
                 return new DTO.Result<User>("Usuario no válido");
@@ -58,8 +58,8 @@ namespace YerbaSoft.Web.Games.Clue.BLL
                 return new DTO.Result<User>("Contraseña actual no válida");
 
             dbUser.Password = newpass;
-            Session.UserRepository.UpsertEntity(dbUser);
-            Session.UserRepository.Commit();
+            Session.Users.UpsertEntity(dbUser);
+            Session.Users.Commit();
 
             return new DTO.Result<User>(dbUser);
         }
@@ -69,15 +69,15 @@ namespace YerbaSoft.Web.Games.Clue.BLL
             if (idUser != user.Id)
                 return new DTO.Result<User>("El usuario a modificar es distinto al usuario logueado");
 
-            var dbUser = Session.UserRepository.Find(p => p.Id == user.Id).SingleOrDefault();
+            var dbUser = Session.Users.Find(p => p.Id == user.Id).SingleOrDefault();
 
             if (dbUser == null)
                 return new DTO.Result<User>("Error al obtener el usuario a modificar");
 
             YerbaSoft.DTO.Mapping.Map.CopyTo(user, dbUser);
 
-            Session.UserRepository.UpsertEntity(dbUser);
-            Session.UserRepository.Commit();
+            Session.Users.UpsertEntity(dbUser);
+            Session.Users.Commit();
 
             return new DTO.Result<User>(dbUser);
         }
@@ -86,7 +86,7 @@ namespace YerbaSoft.Web.Games.Clue.BLL
 
         public DTO.Result<Clue.Common.DTO.Game[]> GetGames(Guid idUser)
         {
-            return new DTO.Result<Game[]>(Session.GameRepository.Find().ToArray());
+            return new DTO.Result<Game[]>(Session.Games.Find().ToArray());
         }
 
     }
