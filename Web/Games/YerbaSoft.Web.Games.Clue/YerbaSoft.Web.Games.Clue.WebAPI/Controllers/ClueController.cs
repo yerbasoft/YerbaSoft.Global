@@ -127,5 +127,35 @@ namespace YerbaSoft.Web.Games.Clue.WebAPI.Controllers
                 return new JsonResult() { Data = new YerbaSoft.DTO.Result(ex) };
             }
         }
+
+        [HttpPost]
+        public JsonResult LeftGame(string user)
+        {
+            try
+            {
+                if (this.SecurityToken.IsValid().ExistsErrorMessages) return new JsonResult() { Data = Common.Result.AUTHENTICATE_FAIL };
+
+                return new JsonResult() { Data = this.ClueService.LeftGame(Get<Common.DTO.User>("user")) };
+            }
+            catch (Exception ex)
+            {
+                return new JsonResult() { Data = new YerbaSoft.DTO.Result(ex) };
+            }
+        }
+
+        [HttpPost]
+        public JsonResult MoveTo(string x, string y)
+        {
+            try
+            {
+                if (this.SecurityToken.IsValid().ExistsErrorMessages) return new JsonResult() { Data = Common.Result.AUTHENTICATE_FAIL };
+
+                return new JsonResult() { Data = this.ClueService.MoveTo(SecurityToken.IdUser, x, y) };
+            }
+            catch (Exception ex)
+            {
+                return new JsonResult() { Data = new YerbaSoft.DTO.Result(ex) };
+            }
+        }
     }
 }

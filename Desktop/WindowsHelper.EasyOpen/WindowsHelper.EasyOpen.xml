@@ -65,7 +65,7 @@
       cd "C:\Program Files\ShrewSoft\VPN Client"
       ipsecc.exe -r "Cardinal_VPN.PCF" -u "grodriguez" -p "Gr0dr1gu3z.r4a2" -a
     </Cmd>
-    <Exe Name="GCBA VPN - Ping DEV" Icon="C:\Windows\System32\cmd.exe" OpenWith="C:\Windows\System32\cmd.exe" Params="/C &quot;ping 10.73.2.98 -t&quot;" />
+    <Exe Name="GCBA VPN - Ping DEV" Icon="C:\Windows\System32\cmd.exe" OpenWith="C:\Windows\System32\cmd.exe" Params="/C &quot;ping 10.73.2.245 -t&quot;" />
     <Separator />
     <SubMenu Name=".NET" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe">
       <Exe Name="SIR.All" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.All.sln" />
@@ -207,6 +207,7 @@
   </SubMenu>
   <SubMenu Name="YerbaSoft" Icon="W:\YerbaSoft\YerbaSoft.ico">
     <Exe Name="WindowsHelper" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\YerbaSoft\Desktop\WindowsHelper.sln" />
+    <Exe Name="OracleCloner" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\YerbaSoft\Desktop\YerbaSoft.Desktop.OracleCloner\YerbaSoft.Desktop.OracleCloner.sln" />
     <Separator />
     <Exe Name="YerbaSoft.Web.Games.Clue.All" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\YerbaSoft\Web\Games\YerbaSoft.Web.Games.Clue\YerbaSoft.Web.Games.Clue.sln" />
     <Exe Name="YerbaSoft.Web.Games.Clue.Web" Icon="C:\Program Files\Microsoft VS Code\Code.exe" OpenWith="C:\Program Files\Microsoft VS Code\Code.exe" Params="W:\YerbaSoft\Web\Games\YerbaSoft.Web.Games.Clue\YerbaSoft.Web.Games.Clue.Web" />

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YerbaSoft.Desktop.OracleCloner", "YerbaSoft.Desktop.OracleCloner\YerbaSoft.Desktop.OracleCloner.csproj", "{27A394AB-B1AC-4C7B-AF8D-E8B86D453628}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YerbaSoft.DTO", "..\..\DTO\YerbaSoft.DTO.csproj", "{03356582-57FE-40A0-B032-9585DF279CFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27A394AB-B1AC-4C7B-AF8D-E8B86D453628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27A394AB-B1AC-4C7B-AF8D-E8B86D453628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27A394AB-B1AC-4C7B-AF8D-E8B86D453628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27A394AB-B1AC-4C7B-AF8D-E8B86D453628}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03356582-57FE-40A0-B032-9585DF279CFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03356582-57FE-40A0-B032-9585DF279CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03356582-57FE-40A0-B032-9585DF279CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03356582-57FE-40A0-B032-9585DF279CFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C515A685-6A96-4B15-B332-65C4DAC2AF82}
+	EndGlobalSection
+EndGlobal

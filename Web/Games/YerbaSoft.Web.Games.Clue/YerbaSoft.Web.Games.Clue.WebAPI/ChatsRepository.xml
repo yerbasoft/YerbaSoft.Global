@@ -5,9 +5,9 @@
     <Name>Global</Name>
     <Type>Global</Type>
     <IconRes>http://localhost:4200/assets/globalchat.png</IconRes>
-    <LastUpdate>636654442998592530</LastUpdate>
+    <LastUpdate>636659940524953655</LastUpdate>
     <Integrantes>
-      <Integrantes UniqueKey="938aa7fca76648b3931f8f45a96d68ea6928c7b62d8140b7b606dabfb892f7de">
+      <Integrantes UniqueKey="4c55039e50cd431cbabbc9fc6b0c9afd0ffa50b83e4d40d68206fad88b8133b5">
         <Id>00000000-0000-0000-0000-000000000000</Id>
         <Name>Anonimo</Name>
       </Integrantes>

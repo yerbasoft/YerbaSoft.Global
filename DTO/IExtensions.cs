@@ -225,33 +225,54 @@ namespace YerbaSoft.DTO
         #endregion
 
         #region Exceptions
+        /// <summary>
+        /// Devuelve la descripción completa de un Exception
+        /// </summary>
+        /// <param name="ex">excepción</param>
+        /// <returns>texto completo del error</returns>
         public static string GetFullDescription(this Exception ex)
         {
             var sb = new StringBuilder();
-            
+
             // Inner Exception
             var _ex = ex;
             var tab = "";
             while (_ex != null)
             {
                 if (_ex != ex)
-                    sb.AppendLine($"{tab}- Inner Exception -");
-                sb.AppendLine($"{tab}Type:    {ex.GetType().FullName}");
-                sb.AppendLine($"{tab}Message: {ex.Message}");
-                sb.AppendLine($"{tab}Source:  {ex.Source}");
-                sb.AppendLine($"{tab}Target:  {ex.TargetSite.ToString()}");
-                sb.AppendLine($"{tab}Trace:   {ex.StackTrace}");
-
-
+                    sb.AppendLine($"\n{tab}- Inner Exception -");
+                sb.AppendLine($"{tab}Type:    {_ex.GetType().FullName}");
+                sb.AppendLine($"{tab}Message: {_ex.Message}");
+                sb.AppendLine($"{tab}Source:  {_ex.Source}");
+                sb.AppendLine($"{tab}Target:  {_ex.TargetSite?.ToString()}");
+                sb.AppendLine($"{tab}Trace:   {_ex.StackTrace?.Replace("\n", $"\n{tab}")}");
+                /*
+                if (_ex is OracleException)
+                {
+                    if ((_ex as OracleException).Errors != null)
+                    {
+                        foreach (var err in (_ex as OracleException).Errors.OfType<OracleError>())
+                        {
+                            sb.AppendLine($"\n{tab}\t- Oracle Exception Inner Error -");
+                            sb.AppendLine($"{tab}\tMessage: {err.Message}");
+                            sb.AppendLine($"{tab}\tNumber: {err.Number}");
+                            sb.AppendLine($"{tab}\tArrayBindIndex: {err.ArrayBindIndex}");
+                            sb.AppendLine($"{tab}\tDataSource: {err.DataSource}");
+                            sb.AppendLine($"{tab}\tProcedure: {err.Procedure}");
+                            sb.AppendLine($"{tab}\tSource: {err.Source}");
+                        }
+                    }
+                }
+                */
                 if (_ex is AggregateException)
                 {
                     ((AggregateException)_ex).Handle((iex) => {
-                        sb.AppendLine($"{tab}\t- Aggregate Inner Exception -");
+                        sb.AppendLine($"\n{tab}\t- Aggregate Inner Exception -");
                         sb.AppendLine($"{tab}\tType:    {iex.GetType().FullName}");
                         sb.AppendLine($"{tab}\tMessage: {iex.Message}");
                         sb.AppendLine($"{tab}\tSource:  {iex.Source}");
-                        sb.AppendLine($"{tab}\tTarget:  {iex.TargetSite.ToString()}");
-                        sb.AppendLine($"{tab}\tTrace:   {iex.StackTrace}");
+                        sb.AppendLine($"{tab}\tTarget:  {iex.TargetSite?.ToString()}");
+                        sb.AppendLine($"{tab}\tTrace:   {iex.StackTrace?.Replace("\n", $"\n{tab}")}");
                         return true;
                     });
                 }
@@ -259,7 +280,7 @@ namespace YerbaSoft.DTO
                 tab += "\t";
                 _ex = _ex.InnerException;
             }
-            
+
             return sb.ToString();
         }
         #endregion

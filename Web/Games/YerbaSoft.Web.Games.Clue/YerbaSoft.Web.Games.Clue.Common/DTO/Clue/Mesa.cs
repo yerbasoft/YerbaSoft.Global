@@ -35,5 +35,15 @@ namespace YerbaSoft.Web.Games.Clue.Common.DTO.Clue
 
         [Direct]
         public MesaStatus Status { get; set; }
+
+        /// <summary>
+        /// Indica si un id de usuario existe en la mes
+        /// </summary>
+        /// <param name="idUser"></param>
+        /// <returns></returns>
+        public bool HasUser(Guid idUser)
+        {
+            return this.Integrantes.Any(p => p.Id == idUser);
+        }
     }
 }

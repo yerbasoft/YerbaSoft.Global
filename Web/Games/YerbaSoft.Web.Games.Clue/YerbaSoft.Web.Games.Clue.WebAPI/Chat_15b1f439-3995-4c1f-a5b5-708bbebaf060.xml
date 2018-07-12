@@ -1242,4 +1242,16 @@
     <Text>fsd</Text>
     <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
   </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="9a1e21d6d69343c09405dd4529e418dd3fcace473c0e4b658dc5d95acd33938e">
+    <Fecha>636659938400087343</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>Hola Mica</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
+  <YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine UniqueKey="bc28d5ce6b76470d8b07d9c913692805ed8829fc73864ad08bb96f8cb1e50fbf">
+    <Fecha>636659940524953655</Fecha>
+    <UserName>Bebota</UserName>
+    <Text>todo bien ?=</Text>
+    <IdUser>65876a78-c030-4dd6-a990-c4c536f1c297</IdUser>
+  </YerbaSoft.Web.Games.Clue.Common.DTO.ChatLine>
 </XmlSimpleRepository>
