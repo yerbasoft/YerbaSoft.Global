@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YerbaSoft.Web.Games.Clue.BL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YerbaSoft.Web.Games.Clue.WebAPI", "YerbaSoft.Web.Games.Clue.WebAPI\YerbaSoft.Web.Games.Clue.WebAPI.csproj", "{4106CC4F-1228-4CCF-A245-3619095F2024}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YerbaSoft.Web.Games.Clue.DAL.Editor", "YerbaSoft.Web.Games.Clue.DAL.Editor\YerbaSoft.Web.Games.Clue.DAL.Editor.csproj", "{19AB0A42-EF71-4E1F-B034-7F64617912A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YerbaSoft.Dynamic", "..\..\..\Dynamic\YerbaSoft.Dynamic.csproj", "{1BB3F5B2-EEEC-4852-8960-3263D65F3180}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{4106CC4F-1228-4CCF-A245-3619095F2024}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4106CC4F-1228-4CCF-A245-3619095F2024}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4106CC4F-1228-4CCF-A245-3619095F2024}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19AB0A42-EF71-4E1F-B034-7F64617912A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19AB0A42-EF71-4E1F-B034-7F64617912A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19AB0A42-EF71-4E1F-B034-7F64617912A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19AB0A42-EF71-4E1F-B034-7F64617912A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BB3F5B2-EEEC-4852-8960-3263D65F3180}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BB3F5B2-EEEC-4852-8960-3263D65F3180}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BB3F5B2-EEEC-4852-8960-3263D65F3180}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BB3F5B2-EEEC-4852-8960-3263D65F3180}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

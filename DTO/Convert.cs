@@ -189,7 +189,9 @@ namespace YerbaSoft.DTO
                     throw new InvalidCastException(string.Format("No se pudo convertir {0} en el tipo de datos System.DateTime", value));
             }
 
-
+            else if (type.IsEnum)
+                return Enum.Parse(type, (value ?? "").ToString());
+ 
             else
                 throw new FormatException("No se reconoce el formato de salida");
         }

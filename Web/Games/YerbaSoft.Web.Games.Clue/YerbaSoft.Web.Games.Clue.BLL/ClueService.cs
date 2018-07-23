@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using YerbaSoft.DTO;
 using YerbaSoft.Web.Games.Clue.Common.DTO;
 
 namespace YerbaSoft.Web.Games.Clue.BLL
@@ -44,8 +45,8 @@ namespace YerbaSoft.Web.Games.Clue.BLL
         public DTO.Result AbandonarMesa(Guid idUser)
         {
             var mesas = this.Session.Clue.Mesas.Find(p => p.Integrantes.Select(u => u.Id).Contains(idUser)).ToArray();
-            
-            foreach(var mesa in mesas)
+
+            foreach (var mesa in mesas)
             {
                 var cierroMesa = false;
                 if (mesa.IdOwner == idUser)
@@ -106,7 +107,7 @@ namespace YerbaSoft.Web.Games.Clue.BLL
 
             // Inicializar el tablero
             var tablero = this.Session.Clue.Tableros.GetNew();
-            tablero.Inicializar(mesa);
+            tablero.Manager.StartTablero(mesa);
             this.Session.Clue.Tableros.UpsertEntity(tablero);
             this.Session.Clue.Tableros.Commit();
 
@@ -117,7 +118,7 @@ namespace YerbaSoft.Web.Games.Clue.BLL
         {
             return new DTO.Result<string[]>(this.Session.Clue.TipoTableros.Find().Select(p => p.Name).ToArray());
         }
-        
+
         public DTO.Result<Common.DTO.Clue.GameInfo> GetGameInfo(Guid idUser)
         {
             var mesa = this.Session.Clue.Mesas.Find(p => p.Integrantes.Select(u => u.Id).Contains(idUser) && p.Status == Common.DTO.Clue.Mesa.MesaStatus.Playing).SingleOrDefault();
@@ -128,7 +129,7 @@ namespace YerbaSoft.Web.Games.Clue.BLL
             var tablero = GetTablero(mesa.Id);
             if (tablero.ExistsErrorMessages)
                 return new DTO.Result<Common.DTO.Clue.GameInfo>(tablero.Messages);
-            
+
             return new DTO.Result<Common.DTO.Clue.GameInfo>(new Common.DTO.Clue.GameInfo() { Mesa = mesa, Tablero = tablero.Data });
         }
 
@@ -155,24 +156,10 @@ namespace YerbaSoft.Web.Games.Clue.BLL
             var mesa = this.Session.Clue.Mesas.Find(p => p.HasUser(idUser)).Single();
             var tablero = this.Session.Clue.Tableros.Find(p => p.IdMesa == mesa.Id).Single();
 
-            tablero.Turno = Guid.Empty;
+            tablero.Manager.MoverPersonaje(mesa, x + y);
 
-            var index = tablero.Turnos.Select((id, i) => new { id, i }).Where(p => p.id == idUser).Select(p => p.i).Single();
-            var newTurno = tablero.Turnos.Length <= index + 1 ? 0 : index + 1;
-
-            // Calculo los nuevos valores del tablero
-            var dados = tablero.TirarDados();
-            //var moveto = tablero.CalcMoveTo(tablero.Posiciones[newTurno], dados.V1 + dados.V2, mesa);
-            
-            // Cambio el tablero
-            tablero.Posiciones[index] = x + y;
-            tablero.Turno = tablero.Turnos[newTurno];
-            tablero.Dados = dados;
-            tablero.MoveTo = new string[] { };
-            tablero.MoveTo = tablero.CalcMoveTo(tablero.Posiciones[newTurno], dados.V1 + dados.V2, mesa);
             this.Session.Clue.Tableros.UpsertEntity(tablero);
             this.Session.Clue.Tableros.Commit();
-            
             return new DTO.Result();
         }
 

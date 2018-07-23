@@ -25,19 +25,33 @@ namespace YerbaSoft.Web.Games.Clue.Common.DTO.Clue
         public string WallsConfig { get; set; }
         [Direct]
         public string Imagen { get; set; }
-        [SubList("Rooms")]
+        [SubList]
         public List<Room> Rooms { get; set; }
-        [SubList("Rooms")]
+        [SubList]
         public List<Card> Cards { get; set; }
+        [SubList]
+        public List<Events.Event> Events { get; set; }
+        [SubList]
+        public List<Dado> Dados { get; set; }
+
+        public Common.DTO.Clue.Events.EventManager EventManager => new Events.EventManager(this.Events);
 
         private IEnumerable<Two<string, string>> _Walls = null;
-        public IEnumerable<Two<string, string>> Walls => _Walls = _Walls ?? GetPars(this.WallsConfig);
+        public IEnumerable<Two<string, string>> Walls => _Walls = _Walls ?? GetParCoords(this.WallsConfig);
 
         [Direct]
         public string SpotsConfig { get; set; }
-        public IEnumerable<string> Spots => this.SpotsConfig.Split(';').Select(p => p.Trim()).Where(p => !string.IsNullOrEmpty(p));
+        public IEnumerable<string> Spots => TipoTablero.GetCoords(this.SpotsConfig);
         
-        internal static IEnumerable<Two<string, string>> GetPars(string fullconfig)
+        internal static IEnumerable<string> GetCoords(string fullconfig, char separator = ';')
+        {
+            if (fullconfig == null)
+                return new string[] { };
+
+            return (fullconfig ?? "").Split(separator).Select(p => p.Trim()).Where(p => !string.IsNullOrEmpty(p));
+        }
+
+        internal static IEnumerable<Two<string, string>> GetParCoords(string fullconfig)
         {
             fullconfig = fullconfig ?? "";
             var pars = fullconfig.Split(';').Where(p => p.IndexOf('-') > 0).Select(p => p.Trim());
@@ -46,44 +60,30 @@ namespace YerbaSoft.Web.Games.Clue.Common.DTO.Clue
     }
 
     [AutoMapping]
-    public class Room
+    public class Room : YerbaSoft.DAL.Repositories.XmlSimpleClass
     {
         [Direct]
         public string Name { get; set; }
-
         [Direct]
-        public string DoorsConfig { get; set; }
-        public IEnumerable<string> Doors => this.DoorsConfig.Split(';').Select(p => p.Trim()).Where(p => !string.IsNullOrEmpty(p));
-
-        [Direct("Spots")]
-        public string SpotsConfig { get; set; }
-        public IEnumerable<string> Spots => this.SpotsConfig.Split(';').Select(p => p.Trim()).Where(p => !string.IsNullOrEmpty(p));
-
-        public override string ToString()
-        {
-            return $"{{ Name:{Name}, Doors:{Doors.Count()}, Spots:{Spots.Count()} }}";
-        }
+        public int Code { get; set; }
     }
 
 
     [AutoMapping]
-    public class Card
+    public class Card : YerbaSoft.DAL.Repositories.XmlSimpleClass
     {
         [Direct]
         public string Name { get; set; }
         [Direct]
         public string Texto { get; set; }
         [Direct]
-        public string Imagen { get; set; }
-        [Direct]
         public int Cantidad { get; set; }
         [Direct]
         public string Uso { get; set; }
 
-        public bool IsUsable(Tablero.TurnoStatus status)
+        public bool IsUsable(TurnoStatus status)
         {
-            var usos = Uso.Split(';').Select(p => (Tablero.TurnoStatus)Enum.Parse(typeof(Tablero.TurnoStatus), p));
-
+            var usos = Uso.Split(';').Select(p => (TurnoStatus)Enum.Parse(typeof(TurnoStatus), p));
             return usos.Contains(status);            
         }
     }

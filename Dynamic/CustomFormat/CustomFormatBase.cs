@@ -35,7 +35,7 @@ namespace YerbaSoft.Dynamic.CustomFormat
                     mode = fullExpression.Substring(0, modeIndex);
                     expression = fullExpression.Substring(mode.Length + this.ModeSeparator.Length);
 
-                    var r = Dynamic.Exec(mode, expression, values);
+                    var r = Dynamic.Exec(mode, "return " + expression + ";", values);
                     replace = r == null ? null : r.ToString();
                 }
                 

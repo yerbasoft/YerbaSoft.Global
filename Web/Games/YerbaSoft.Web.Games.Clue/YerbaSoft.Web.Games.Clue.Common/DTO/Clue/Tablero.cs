@@ -9,133 +9,95 @@ using YerbaSoft.DTO.Types;
 
 namespace YerbaSoft.Web.Games.Clue.Common.DTO.Clue
 {
+    /// <summary>
+    /// Estados posibles en un Turno
+    /// </summary>
+    public enum TurnoStatus
+    {
+        Start = 0,
+        DespuesDados = 10,
+        Acusando = 30,
+        DespuesAcusacion = 40,
+        FinDeTurno = 50
+    }
+
     [AutoMapping]
     public class Tablero
     {
-        public enum TurnoStatus
-        {
-            Start = 0,
-            DespuesDados = 10,
-            DespuesMoverse = 20,
-            Acusando = 30,
-            DespuesAcusacion = 40,
-            FinDeTurno = 50
-        }
+        /// <summary>
+        /// Id único por tablero
+        /// </summary>
+        [Direct]
+        public Guid Id { get; set; } = Guid.NewGuid();
 
+        /// <summary>
+        /// Id de la mesa a la que pertenece el tablero
+        /// </summary>
         [Direct]
         public Guid IdMesa { get; set; }
+
+        /// <summary>
+        /// Indica el Id del jugador en Turno
+        /// </summary>
         [Direct]
         public Guid Turno { get; set; }
+
+        /// <summary>
+        /// Indica el index de Turno para los arrays con información x Turno
+        /// </summary>
+        [Direct]
+        public int TurnoIndex { get; set; }
+        
+        /// <summary>
+        /// Indica el Estado del Turno
+        /// </summary>
         [Direct]
         public TurnoStatus Status { get; set; }
+
+        /// <summary>
+        /// Indica la lista de Jugadores (Ordenado por turno)
+        /// </summary>
         [Direct]
         public Guid[] Turnos { get; set; }
+
+        /// <summary>
+        /// Indica la habitación donde se encuentran los personajes
+        /// </summary>
+        [Direct]
+        public int?[] CurrentRoom { get; set; }
+
+        /// <summary>
+        /// Indica las posiciones en el mapa de cada uno de los jugadores (Ordenado por turno)
+        /// </summary>
         [Direct]
         public string[] Posiciones { get; set; }
+
+        /// <summary>
+        /// Indica los Dados tal como se tiraron la última vez
+        /// </summary>
         [Direct]
-        public Two<int, int> Dados { get; set; }
+        public Dado[] Dados { get; set; } = new Dado[] { };
+
+        /// <summary>
+        /// Indica las posiciones donde se puese mover un personaje (solo debe tener valor en estado = "DespuesDados")
+        /// </summary>
         [Direct]
         public string[] MoveTo { get; set; }
 
+        /// <summary>
+        /// Mazo de cartas disponibles en la partida
+        /// </summary>
         [Direct]
         public Queue<Card> Mazo { get; set; }
+
+        /// <summary>
+        /// Listado de cartas que posee cada jugador
+        /// </summary>
         [Direct]
         public Card[][] Cards { get; set; }
 
-
-        /// <summary>
-        /// Inicializa el Tablero de juego
-        /// </summary>
-        /// <param name="mesa"></param>
-        public void Inicializar(Mesa mesa)
-        {
-            this.IdMesa = mesa.Id;
-            this.Turnos = mesa.Integrantes.Shuffle().Select(p => p.Id.Value).ToArray();
-            this.Turno = this.Turnos[0];
-            this.Dados = TirarDados();
-
-            var spots = mesa.TipoTablero.Spots.ToList().Shuffle().ToArray();
-            this.Posiciones = this.Turnos.Select((p, i) => spots[i]).ToArray();
-            this.Mazo = new Queue<Card>(mesa.TipoTablero.Cards.SelectMany(p => new string(' ', p.Cantidad).Select(c => p)).ToList().Shuffle());
-            this.Cards = this.Turnos.Select(p => new Card[] { this.Mazo.Dequeue() }).ToArray();
-
-            this.MoveTo = CalcMoveTo(this.Posiciones[0], this.Dados.V1 + this.Dados.V2, mesa);
-        }
-
-        public string[] CalcMoveTo(string start, int dados, Mesa mesa)
-        {
-            var places = CalcMoveToRecursive(start, 0, dados, mesa, new List<string>()).Distinct();
-            return places.Where(p => !this.Posiciones.Contains(p)).ToArray();
-        }
-
-        private string[] CalcMoveToRecursive(string pos, int steps, int dados, Mesa mesa, List<string> path)
-        {
-            if (steps > dados)
-                return new string[] { };
-
-            if (path.Contains(pos)) // vuelve para atrás
-                return new string[] { };
-            path.Add(pos);
-
-            var acum = new string[] { };
-            var X1 = pos.Substring(0, 3);
-            var Y1 = pos.Substring(3, 3);
-            var x1 = System.Convert.ToInt32(X1);
-            var y1 = System.Convert.ToInt32(Y1);
-
-            string X2 = null;
-            string Y2 = null;
-            // up
-            if (y1 > 0)
-            {
-                X2 = X1;
-                Y2 = (y1 - 1).ToString("D3");
-                if (!HasWall(X1+Y1, X2+Y2, mesa))
-                    acum = acum.Concat(CalcMoveToRecursive(X2 + Y2, steps + 1, dados, mesa, path)).ToArray();
-            }
-
-            // down
-            if (y1 < mesa.TipoTablero.Heigth - 1)
-            {
-                X2 = X1;
-                Y2 = (y1 + 1).ToString("D3");
-                if (!HasWall(X1 + Y1, X2 + Y2, mesa))
-                    acum = acum.Concat(CalcMoveToRecursive(X2 + Y2, steps + 1, dados, mesa, path)).ToArray();
-            }
-
-            // left
-            if (x1 > 0)
-            {
-                X2 = (x1 - 1).ToString("D3");
-                Y2 = Y1;
-                if (!HasWall(X1 + Y1, X2 + Y2, mesa))
-                    acum = acum.Concat(CalcMoveToRecursive(X2 + Y2, steps + 1, dados, mesa, path)).ToArray();
-            }
-
-            // rigth
-            if (x1 < mesa.TipoTablero.Width - 1)
-            {
-                X2 = (x1 + 1).ToString("D3");
-                Y2 = Y1;
-                if (!HasWall(X1 + Y1, X2 + Y2, mesa))
-                    acum = acum.Concat(CalcMoveToRecursive(X2 + Y2, steps + 1, dados, mesa, path)).ToArray();
-            }
-            return new string[] { pos }.Concat(acum).ToArray();
-        }
-
-        private bool HasWall(string c1, string c2, Mesa mesa)
-        {
-            return mesa.TipoTablero.Walls.Any(p => (p.V1 == c1 && p.V2 == c2) || (p.V1 == c2 && p.V2 == c1));
-        }
-
-        public Two<int, int> TirarDados()
-        {
-            var rnd = new Random();
-            return new Two<int, int>()
-            {
-                V1 = rnd.Next(1, 6),
-                V2 = rnd.Next(1, 6)
-            };
-        }
+        private TableroManagement _Manager;
+        [NoMap]
+        public TableroManagement Manager => _Manager = _Manager ?? new TableroManagement(this);
     }
 }

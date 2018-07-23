@@ -63,13 +63,13 @@ namespace YerbaSoft.Dynamic
                     code.AppendLine("using System.Linq;");
                     code.AppendLine("using System.Text;");
                     foreach (var u in usings)
-                        code.AppendLine(u.StartsWith("using ") ? u : ("using " + u));
+                        code.AppendLine((u.StartsWith("using ") ? u : ("using " + u)) + (u.EndsWith(";") ? "" : ";"));
                     code.AppendLine("");
                     code.AppendLine("public class DynamicClass");
                     code.AppendLine("{");
                     code.AppendLine("    public static object Execute(" + parmsDefinition + ")");
                     code.AppendLine("    {");
-                    code.AppendLine("        return " + expression + " ;");
+                    code.AppendLine("        " + expression);
                     code.AppendLine("    }");
                     code.AppendLine("}");
 

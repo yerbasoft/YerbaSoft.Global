@@ -45,7 +45,7 @@ namespace YerbaSoft.DTO
         }
         public static IEnumerable<XmlNode> SubNodes(this XmlNode node, string name, IEnumerable<KeyValuePair<string, string>> attrs)
         {
-            var result = node.ChildNodes.OfType<XmlNode>();
+            var result = node.ChildNodes.OfType<XmlNode>().Where(p => !(p.GetType().IsAssignableFrom(typeof(XmlComment))));
 
             if (!string.IsNullOrEmpty(name))
                 result = result.Where(n => n.Name == name);
@@ -126,11 +126,18 @@ namespace YerbaSoft.DTO
 
         public static string Attr(this XmlNode node, string name)
         {
-            var attr = node.Attrs().SingleOrDefault(p => p.Name.ToLower() == name.ToLower());
-            if (attr != null)
-                return attr.Value;
+            try
+            {
+                var attr = node.Attrs().SingleOrDefault(p => p.Name.ToLower() == name.ToLower());
+                if (attr != null)
+                    return attr.Value;
 
-            return null;
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
         public static T Attr<T>(this XmlNode node, string name)
         {
@@ -206,6 +213,20 @@ namespace YerbaSoft.DTO
             }
 
             return arrDes;
+        }
+
+        /// <summary>
+        /// Devuelve un item aleatorio de un array
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static T GetRandomValue<T>(this IEnumerable<T> input)
+        {            
+            var rnd = new Random();
+            var index = rnd.Next(0, input.Count() - 1);
+
+            return input.Select((p, i) => new { value = p, i = i }).Single(p => p.i == index).value;
         }
 
         #endregion

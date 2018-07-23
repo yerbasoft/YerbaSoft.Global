@@ -92,7 +92,8 @@
       <ToClipBoard Name="DEV"  Icon=".\Memory\db_connect.ico">User Id=SIR;Password=Ab123456;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=172.16.172.70)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=SIR)));</ToClipBoard>
       <ToClipBoard Name="TEST" Icon=".\Memory\db_connect.ico">User Id=SIR;Password=Ab123456;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=172.16.174.70)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=SIR)));</ToClipBoard>
       <ToClipBoard Name="HOMO" Icon=".\Memory\db_connect.ico">User Id=SIR;Password=Ab123456;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=172.16.173.70)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=SIR)));</ToClipBoard>
-      <ToClipBoard Name="PROD" Icon=".\Memory\db_connect.ico">User Id=GRODRIGUEZ;Password=XZY2954a;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=172.27.98.70)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=SIR)));</ToClipBoard>
+      <ToClipBoard Name="PROD (grodriguez)" Icon=".\Memory\db_connect.ico">User Id=GRODRIGUEZ;Password=XZY2954a;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=172.27.98.70)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=SIR)));</ToClipBoard>
+      <ToClipBoard Name="PROD (ivisgarra)" Icon=".\Memory\db_connect.ico">User Id=IVISGARRA;Password=Zaq12wsx;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=172.27.98.70)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=SIR)));</ToClipBoard>
     </SubMenu>
   </SubMenu>
 </Memory>

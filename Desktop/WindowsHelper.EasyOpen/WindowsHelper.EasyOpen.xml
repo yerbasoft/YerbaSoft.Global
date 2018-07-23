@@ -189,7 +189,7 @@
       </Cmd>
       <Cmd Name="Remote :: HOMO" Icon="C:\Windows\System32\mstsc.exe" >
         cmdkey /delete:172.16.173.71
-        cmdkey /add:172.16.173.71 /user:"grodriguez" /pass:"Ab123456"
+        cmdkey /add:172.16.173.71 /user:"SIRNACWEBSERVER\grodriguez" /pass:"XZY2954a"
         mstsc /v:172.16.173.71 /admin /f
       </Cmd>
       <Cmd Name="Remote :: PROD" Icon="C:\Windows\System32\mstsc.exe" >
@@ -211,6 +211,13 @@
     <Separator />
     <Exe Name="YerbaSoft.Web.Games.Clue.All" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\YerbaSoft\Web\Games\YerbaSoft.Web.Games.Clue\YerbaSoft.Web.Games.Clue.sln" />
     <Exe Name="YerbaSoft.Web.Games.Clue.Web" Icon="C:\Program Files\Microsoft VS Code\Code.exe" OpenWith="C:\Program Files\Microsoft VS Code\Code.exe" Params="W:\YerbaSoft\Web\Games\YerbaSoft.Web.Games.Clue\YerbaSoft.Web.Games.Clue.Web" />
+    <Cmd Name="Implementar Clue (Angular)" Icon="W:\YerbaSoft\Web\Games\YerbaSoft.Web.Games.Clue\YerbaSoft.Web.Games.Clue.Web\src\favicon.ico" >
+      w:
+      cd "W:\YerbaSoft\Web\Games\YerbaSoft.Web.Games.Clue\YerbaSoft.Web.Games.Clue.Web"
+      ng build --env=prod
+      cd dist
+      xcopy *.* "C:\inetpub\Clue\" /E /Y
+    </Cmd>
     <Separator />
     <Exe Name="YerbaSoft.Web.Games.Clue (HTML)" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\YerbaSoft\Web\Games\YerbaSoft.Web.Games.Clue_old\YerbaSoft.Web.Games.Clue.sln" />
   </SubMenu>
