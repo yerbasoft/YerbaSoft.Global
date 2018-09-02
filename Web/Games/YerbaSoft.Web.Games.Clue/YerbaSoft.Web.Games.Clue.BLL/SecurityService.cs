@@ -86,7 +86,18 @@ namespace YerbaSoft.Web.Games.Clue.BLL
 
         public DTO.Result<Clue.Common.DTO.Game[]> GetGames(Guid idUser)
         {
-            return new DTO.Result<Game[]>(Session.Games.Find().ToArray());
+            var games = Session.Games.Find().ToArray();
+
+            foreach(var game in games)
+            {
+                switch (game.Name.ToUpper())
+                {
+                    case "CLUE":
+                        game.Redirect = new BLL.ClueService().IsUserInGame(idUser);
+                        break;
+                }
+            }
+            return new DTO.Result<Game[]>(games);
         }
 
     }

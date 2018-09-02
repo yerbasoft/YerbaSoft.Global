@@ -5,11 +5,22 @@ using System.Text;
 using System.Threading.Tasks;
 using YerbaSoft.DTO;
 using YerbaSoft.Web.Games.Clue.Common.DTO;
+using YerbaSoft.Web.Games.Clue.Common.DTO.Clue;
 
 namespace YerbaSoft.Web.Games.Clue.BLL
 {
     public class ClueService : BaseService
     {
+        /// <summary>
+        /// Indica si éste jugador está jugando a éste Juego y debe ser redirigido al juego
+        /// </summary>
+        /// <param name="idUser"></param>
+        /// <returns></returns>
+        public bool IsUserInGame(Guid idUser)
+        {
+            return this.Session.Clue.Mesas.Any(p => p.HasUser(idUser)); // el usuario está jugando al juego desde que existe en una mesa
+        }
+        
         public DTO.Result<Common.DTO.Clue.MesasInfo> GetMesas(Guid idUser)
         {
             var mesas = this.Session.Clue.Mesas.Find(p => p.Status == Common.DTO.Clue.Mesa.MesaStatus.WaitingPlayers || p.Status == Common.DTO.Clue.Mesa.MesaStatus.Playing).ToArray();
@@ -111,6 +122,13 @@ namespace YerbaSoft.Web.Games.Clue.BLL
             this.Session.Clue.Tableros.UpsertEntity(tablero);
             this.Session.Clue.Tableros.Commit();
 
+            // Inicializo las notas
+            var notas = this.Session.Clue.Notas.GetNew();
+            notas.Inicializar(tablero);
+            this.Session.Clue.Notas.UpsertEntity(notas);
+            this.Session.Clue.Notas.Commit();
+
+
             return new DTO.Result(true);
         }
 
@@ -137,7 +155,7 @@ namespace YerbaSoft.Web.Games.Clue.BLL
         {
             return new DTO.Result<Common.DTO.Clue.Tablero>(this.Session.Clue.Tableros.Find(p => p.IdMesa == idMesa).Single());
         }
-
+        
         public DTO.Result LeftGame(User user)
         {
             var mesas = this.Session.Clue.Mesas.Find(p => p.Integrantes.Select(i => i.Id).Contains(user.Id));
@@ -163,5 +181,82 @@ namespace YerbaSoft.Web.Games.Clue.BLL
             return new DTO.Result();
         }
 
+        public DTO.Result SelectNoCard(Guid idUser, string statusCode)
+        {
+            var status = (Common.DTO.Clue.TurnoStatus)Enum.Parse(typeof(Common.DTO.Clue.TurnoStatus), statusCode);
+
+            var mesa = this.Session.Clue.Mesas.Find(p => p.HasUser(idUser)).Single();
+            var tablero = this.Session.Clue.Tableros.Find(p => p.IdMesa == mesa.Id).Single();
+
+            tablero.Manager.SelectNoCard(idUser, mesa, status);
+
+            this.Session.Clue.Tableros.UpsertEntity(tablero);
+            this.Session.Clue.Tableros.Commit();
+            return new Result();
+        }
+
+        public DTO.Result UseCard(Guid idUser, Card card, Card.DataStr data)
+        {
+            var mesa = this.Session.Clue.Mesas.Find(p => p.HasUser(idUser)).Single();
+            var tablero = this.Session.Clue.Tableros.Find(p => p.IdMesa == mesa.Id).Single();
+
+            tablero.Manager.UseCard(idUser, mesa, card, data);
+
+            this.Session.Clue.Tableros.UpsertEntity(tablero);
+            this.Session.Clue.Tableros.Commit();
+            return new Result();
+        }
+
+        #region Notas
+
+        public Result<Nota[]> GetNotas(Guid idUser)
+        {
+            var mesa = this.Session.Clue.Mesas.Find(p => p.HasUser(idUser)).Single();
+            var tablero = this.Session.Clue.Tableros.Find(p => p.IdMesa == mesa.Id).Single();
+            var notas = this.Session.Clue.Notas.Find(p => p.IdTablero == tablero.Id).Single();
+
+            var index = tablero.Turnos.IndexOf(p => p == idUser);
+            return new Result<Nota[]>(notas.JugadorNotas[index].ToArray());
+        }
+
+        public Result RemoveNota(Guid idUser, Nota nota)
+        {
+            var mesa = this.Session.Clue.Mesas.Find(p => p.HasUser(idUser)).Single();
+            var tablero = this.Session.Clue.Tableros.Find(p => p.IdMesa == mesa.Id).Single();
+            var notas = this.Session.Clue.Notas.Find(p => p.IdTablero == tablero.Id).Single();
+            var index = tablero.Turnos.IndexOf(p => p == idUser);
+
+            var dbNota = notas.JugadorNotas[index].SingleOrDefault(p => p.TipoRumor == nota.TipoRumor && p.RumorCode == nota.RumorCode && p.Jugador == nota.Jugador);
+
+            foreach(var simbolo in nota.Simbolos)
+            {
+                if (dbNota.Simbolos.Any(p => p == simbolo))
+                    dbNota.Simbolos.Remove(simbolo);
+            }
+
+            return new Result();
+        }
+
+        public Result AddNota(Guid idUser, Nota nota)
+        {
+            var mesa = this.Session.Clue.Mesas.Find(p => p.HasUser(idUser)).Single();
+            var tablero = this.Session.Clue.Tableros.Find(p => p.IdMesa == mesa.Id).Single();
+            var notas = this.Session.Clue.Notas.Find(p => p.IdTablero == tablero.Id).Single();
+            var index = tablero.Turnos.IndexOf(p => p == idUser);
+
+            var dbNota = notas.JugadorNotas[index].SingleOrDefault(p => p.TipoRumor == nota.TipoRumor && p.RumorCode == nota.RumorCode && p.Jugador == nota.Jugador);
+
+            foreach (var simbolo in nota.Simbolos)
+            {
+                if (!dbNota.Simbolos.Any(p => p == simbolo))
+                {
+                    dbNota.Simbolos.Add(simbolo);
+                }
+            }
+
+            return new Result();
+        }
+
+        #endregion
     }
 }

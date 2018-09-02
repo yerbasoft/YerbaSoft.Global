@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Script.Serialization;
+using System.Xml.Serialization;
 using YerbaSoft.DTO;
 using YerbaSoft.DTO.Mapping;
 using YerbaSoft.DTO.Types;
@@ -76,7 +79,7 @@ namespace YerbaSoft.Web.Games.Clue.Common.DTO.Clue
         /// Indica los Dados tal como se tiraron la última vez
         /// </summary>
         [Direct]
-        public Dado[] Dados { get; set; } = new Dado[] { };
+        public Dados Dados { get; set; } = new Dados();
 
         /// <summary>
         /// Indica las posiciones donde se puese mover un personaje (solo debe tener valor en estado = "DespuesDados")
@@ -96,8 +99,17 @@ namespace YerbaSoft.Web.Games.Clue.Common.DTO.Clue
         [Direct]
         public Card[][] Cards { get; set; }
 
+        [Direct]
+        [XmlIgnore]
+        [IgnoreDataMember]
+        [ScriptIgnore]
+        public List<List<Rumor>> Rumores { get; set; }
+
         private TableroManagement _Manager;
         [NoMap]
+        [XmlIgnore]
+        [IgnoreDataMember]
+        [ScriptIgnore]
         public TableroManagement Manager => _Manager = _Manager ?? new TableroManagement(this);
     }
 }

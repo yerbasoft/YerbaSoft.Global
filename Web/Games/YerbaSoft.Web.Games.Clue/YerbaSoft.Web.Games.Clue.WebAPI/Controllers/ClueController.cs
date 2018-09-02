@@ -157,5 +157,81 @@ namespace YerbaSoft.Web.Games.Clue.WebAPI.Controllers
                 return new JsonResult() { Data = new YerbaSoft.DTO.Result(ex) };
             }
         }
+
+        [HttpPost]
+        public JsonResult SelectNoCard(string status)
+        {
+            try
+            {
+                if (this.SecurityToken.IsValid().ExistsErrorMessages) return new JsonResult() { Data = Common.Result.AUTHENTICATE_FAIL };
+
+                return new JsonResult() { Data = this.ClueService.SelectNoCard(SecurityToken.IdUser, status) };
+            }
+            catch (Exception ex)
+            {
+                return new JsonResult() { Data = new YerbaSoft.DTO.Result(ex) };
+            }
+        }
+
+        [HttpPost]
+        public JsonResult UseCard()
+        {
+            try
+            {
+                var card = Get<Common.DTO.Clue.Card>("card");
+                var data = Get<Common.DTO.Clue.Card.DataStr>("data");
+
+                return new JsonResult() { Data = this.ClueService.UseCard(SecurityToken.IdUser, card, data) };
+            }
+            catch (Exception ex)
+            {
+                return new JsonResult() { Data = new YerbaSoft.DTO.Result(ex) };
+            }
+        }
+
+        [HttpPost]
+        public JsonResult GetNotas()
+        {
+            try
+            {
+                if (this.SecurityToken.IsValid().ExistsErrorMessages) return new JsonResult() { Data = Common.Result.AUTHENTICATE_FAIL };
+
+                return new JsonResult() { Data = this.ClueService.GetNotas(this.SecurityToken.IdUser) };
+            }
+            catch (Exception ex)
+            {
+                return new JsonResult() { Data = new YerbaSoft.DTO.Result(ex) };
+            }
+        }
+
+        [HttpPost]
+        public JsonResult AddNota(string nota)
+        {
+            try
+            {
+                if (this.SecurityToken.IsValid().ExistsErrorMessages) return new JsonResult() { Data = Common.Result.AUTHENTICATE_FAIL };
+
+                return new JsonResult() { Data = this.ClueService.AddNota(this.SecurityToken.IdUser, Get<Common.DTO.Clue.Nota>(nota)) };
+            }
+            catch (Exception ex)
+            {
+                return new JsonResult() { Data = new YerbaSoft.DTO.Result(ex) };
+            }
+        }
+
+        [HttpPost]
+        public JsonResult RemoveNota(string nota)
+        {
+            try
+            {
+                if (this.SecurityToken.IsValid().ExistsErrorMessages) return new JsonResult() { Data = Common.Result.AUTHENTICATE_FAIL };
+
+                return new JsonResult() { Data = this.ClueService.RemoveNota(this.SecurityToken.IdUser, Get<Common.DTO.Clue.Nota>(nota)) };
+            }
+            catch (Exception ex)
+            {
+                return new JsonResult() { Data = new YerbaSoft.DTO.Result(ex) };
+            }
+        }
     }
 }

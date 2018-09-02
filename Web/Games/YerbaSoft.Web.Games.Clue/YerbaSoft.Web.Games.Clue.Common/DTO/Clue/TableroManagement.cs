@@ -27,10 +27,25 @@ namespace YerbaSoft.Web.Games.Clue.Common.DTO.Clue
 
             var spots = mesa.TipoTablero.Spots.ToList().Shuffle().ToArray();
             tablero.Posiciones = tablero.Turnos.Select((p, i) => spots[i]).ToArray();   // distribuyo los jugadores por los spots de inicio
-            tablero.Mazo = new Queue<Card>(mesa.TipoTablero.Cards.SelectMany(p => new string(' ', p.Cantidad).Select(c => p)).ToList().Shuffle()); // preparo el mazo de cartas
-            tablero.Cards = tablero.Turnos.Select(p => new Card[] { tablero.Mazo.Dequeue() }).ToArray();    // reparto una carta para cada jugador
+            tablero.CurrentRoom = tablero.Turnos.Select(p => (int?)null).ToArray();     // inicializo las CurrentRoom
+            tablero.Mazo = new Queue<Card>(mesa.TipoTablero.Cards.SelectMany(p => new string(' ', p.Cantidad * 10).Select(c => p)).ToList().Shuffle()); // preparo el mazo de cartas
+            tablero.Cards = tablero.Turnos.Select(p => new Card[] { tablero.Mazo.Dequeue(), tablero.Mazo.Dequeue(), tablero.Mazo.Dequeue(), tablero.Mazo.Dequeue(), tablero.Mazo.Dequeue() }).ToArray();    // reparto una carta para cada jugador
 
-            this.NuevoTurno(mesa, true);
+            // reparto los rumores
+            var piscina = mesa.TipoTablero.Rumores.GroupBy(p => p.TipoRumor).Select(p => p.GetRandomValue());
+
+            var allRumors = new Queue<Rumor>(mesa.TipoTablero.Rumores.Where(r => !piscina.Any(p => p.Id == r.Id)).ToList().Shuffle());
+            tablero.Rumores = tablero.Turnos.Select(p => new List<Rumor>()).ToList();
+            
+            var index = 0;
+            while(allRumors.Count > 0)
+            {
+                tablero.Rumores[index].Add(allRumors.Dequeue());
+
+                index = index == tablero.Turnos.Length - 1 ? 0 : index + 1;
+            }
+
+            this.NuevoTurno(mesa, 0);
         }
 
         /// <summary>
@@ -38,9 +53,9 @@ namespace YerbaSoft.Web.Games.Clue.Common.DTO.Clue
         /// </summary>
         /// <param name="mesa"></param>
         /// <param name="starting"></param>
-        public void NuevoTurno(Mesa mesa, bool starting = false)
+        public void NuevoTurno(Mesa mesa, int? index = null)
         {
-            tablero.TurnoIndex = starting ? 0 : (tablero.TurnoIndex >= tablero.Turnos.Length - 1 ? 0 : (tablero.TurnoIndex + 1));   // calculo el index del siguiente turno
+            tablero.TurnoIndex = index ?? (tablero.TurnoIndex >= tablero.Turnos.Length - 1 ? 0 : (tablero.TurnoIndex + 1));   // calculo el index del siguiente turno
             tablero.Turno = tablero.Turnos[tablero.TurnoIndex];
             tablero.Status = TurnoStatus.Start;
 
@@ -55,14 +70,15 @@ namespace YerbaSoft.Web.Games.Clue.Common.DTO.Clue
         /// </summary>
         public void TiraDados(Mesa mesa)
         {
-            var dados = mesa.TipoTablero.Dados;
+            ///TODO: GGR - los dados se deberían iniciar cuando se inicia el tablero
+            var dados = new Dados(mesa.TipoTablero.Dados);
 
-            tablero.Dados = dados.Select(p => p.Shufle()).ToArray();
+            tablero.Dados.ShuffleDados();// = dados.Select(p => p.Shufle()).ToArray();
 
             mesa.TipoTablero.EventManager.OnTirarDados(mesa, tablero);
 
             if ((tablero.MoveTo?.Length ?? 0) == 0)     // validación por si algún evento ya calculó el movimiento
-                tablero.MoveTo = CalcMoveTo(tablero.Posiciones[tablero.TurnoIndex], tablero.Dados.Sum(p => p.Value) ?? 0, mesa).ToArray();
+                tablero.MoveTo = CalcMoveTo(tablero.Posiciones[tablero.TurnoIndex], tablero.Dados.GetValues(true).Sum(p => p ?? 0), mesa).ToArray();
 
             if (tablero.Status == TurnoStatus.Start)    // validación por si algún evento cambió de estado
                 tablero.Status = TurnoStatus.DespuesDados;
@@ -123,7 +139,40 @@ namespace YerbaSoft.Web.Games.Clue.Common.DTO.Clue
                 this.NuevoTurno(mesa);
         }
 
+        /// <summary>
+        /// MAIN PROCESS :: CLIENT :: Continua con el Estado siguiente
+        /// </summary>
+        public void SelectNoCard(Guid idUser, Mesa mesa, TurnoStatus status)
+        {
+            if (this.tablero.Status != status || this.tablero.Turno != idUser)
+                return;
 
+            ForceContinueStatus(mesa);
+        }
+
+        public void UseCard(Guid idUser, Mesa mesa, Card card, Card.DataStr data)
+        {
+            Card.CardAction.CardActionResult result = null;
+
+            var userTurnoIndex = tablero.Turnos.IndexOf(p => p == idUser);
+            var status = tablero.Status;
+
+            if (card.Action != null && card.Action.Server != null)
+            {
+                result = card.Action.ExecuteServer(mesa, tablero, data);
+            }
+
+            //quito la carta de la mano del jugador
+            var cards = tablero.Cards[userTurnoIndex].ToList();
+            cards.RemoveAt(cards.IndexOf(p => p.Name == card.Name));
+            tablero.Cards[userTurnoIndex] = cards.ToArray();
+
+            ///Avanzo de estado excepto que se especifique el parámetro "nextStatus como false"
+            if (result?.NextStatus ?? true)
+            {
+                ForceContinueStatus(mesa);
+            }
+        }
 
         #region Helpers
 
@@ -134,6 +183,31 @@ namespace YerbaSoft.Web.Games.Clue.Common.DTO.Clue
         private bool TieneCartas(TurnoStatus status)
         {
             return tablero.Cards[tablero.TurnoIndex].Any(p => p.IsUsable(status));
+        }
+
+        /// <summary>
+        /// Continua el workflow de Estados (por decición del cliente)
+        /// </summary>
+        private void ForceContinueStatus(Mesa mesa)
+        {
+            switch (this.tablero.Status)
+            {
+                case TurnoStatus.Start:
+                    TiraDados(mesa);
+                    break;
+                case TurnoStatus.DespuesDados:
+                    FinDeTurno(mesa);   // se niega a mover, pierde el turno (puede elegir tarjeta de fin de turno)
+                    break;
+                case TurnoStatus.Acusando:
+                    FinDeTurno(mesa);   // Se niega a acusar, pierde el turno (puede elegir tarjeta de fin de turno)
+                    break;
+                case TurnoStatus.DespuesAcusacion:
+                    FinDeTurno(mesa);
+                    break;
+                case TurnoStatus.FinDeTurno:
+                    NuevoTurno(mesa);
+                    break;
+            }
         }
         
         #endregion

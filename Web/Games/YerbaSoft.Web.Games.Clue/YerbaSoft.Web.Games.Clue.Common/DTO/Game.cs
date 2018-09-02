@@ -22,5 +22,7 @@ namespace YerbaSoft.Web.Games.Clue.Common.DTO
         public string ImageCardUrl { get; set; }
         [Direct]
         public string ImageCardBackUrl { get; set; }
+        [NoMap]
+        public bool Redirect { get; set; }
     }
 }

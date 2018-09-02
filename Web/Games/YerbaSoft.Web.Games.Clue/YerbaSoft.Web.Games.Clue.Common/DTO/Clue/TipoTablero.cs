@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using YerbaSoft.DAL.Repositories;
 using YerbaSoft.DTO.Mapping;
 using YerbaSoft.DTO.Types;
 
@@ -33,6 +34,8 @@ namespace YerbaSoft.Web.Games.Clue.Common.DTO.Clue
         public List<Events.Event> Events { get; set; }
         [SubList]
         public List<Dado> Dados { get; set; }
+        [SubList]
+        public List<Rumor> Rumores { get; set; }
 
         public Common.DTO.Clue.Events.EventManager EventManager => new Events.EventManager(this.Events);
 
@@ -67,24 +70,19 @@ namespace YerbaSoft.Web.Games.Clue.Common.DTO.Clue
         [Direct]
         public int Code { get; set; }
     }
-
-
+    
     [AutoMapping]
-    public class Card : YerbaSoft.DAL.Repositories.XmlSimpleClass
+    public class Rumor : YerbaSoft.DAL.Repositories.XmlSimpleClass
     {
+        public Guid Id => Guid.NewGuid();
+
         [Direct]
         public string Name { get; set; }
         [Direct]
-        public string Texto { get; set; }
+        public string TipoRumor { get; set; }
         [Direct]
-        public int Cantidad { get; set; }
+        public bool EsLugar { get; set; }
         [Direct]
-        public string Uso { get; set; }
-
-        public bool IsUsable(TurnoStatus status)
-        {
-            var usos = Uso.Split(';').Select(p => (TurnoStatus)Enum.Parse(typeof(TurnoStatus), p));
-            return usos.Contains(status);            
-        }
+        public int Code { get; set; }
     }
 }

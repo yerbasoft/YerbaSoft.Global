@@ -28,6 +28,7 @@
     <OpenFile Name="Cardinal.xml" Path="Z:\Work\Cardinal Systems\Cardinal.xml" />
     <OpenFile Name="Carga de Horas" Path="Z:\Work\Cardinal Systems\Carga de Horas - Issues.xlsx" />
     <ShowFiles Name="JIRA Docs" Path="W:\CS\docs" OpenFolder="true" ShowSubFolders="true" FileFilter="*.*" ShowModiFecha="true" SortByModiFecha="true" />
+    <ShowFiles Name="logs" Path="W:\logs" OpenFolder="true" ShowSubFolders="true" />
   </SubMenu>
   <Separator />
   <SubMenu Name="GCBA" Icon=".\EasyOpen\GCBA.ico">
@@ -38,6 +39,7 @@
       <Exe Name="GCBA :: DEV :: BO" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.2.98/" />
       <Exe Name="GCBA :: DEV :: Boleta Única" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.2.98:6748/WEB/Usuario/SignIn?ReturnUrl=%2fweb/" />
       <Exe Name="GCBA :: DEV :: Portal Trámites" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.2.98:2942/" />
+      <Exe Name="GCBA :: PE :: Web :: ABM's" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.2.98:2485/ABM/login" />
       <Separator />
       <Exe Name="GCBA :: TEST :: BO" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.100.48/Home/Acceder?ReturnUrl=%2f" />
       <Exe Name="GCBA :: TEST :: Boleta Única" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.100.48:6748/WEB/Usuario/SignIn?ReturnUrl=%2fweb/" />
@@ -82,7 +84,7 @@
       <Separator />
       <Exe Name="SIR.Front Office" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-FrontOffice\SIR.FrontOffice\SIR.FrontOffice.sln" />
       <Separator />
-      <ShowFiles Name="PostClonas" Path="W:\CS\GCBA-PostClona_SIR" FileFilter="*.sql" />
+      <ShowFiles Name="PostClonas" Path="W:\CS\GCBA-PostClona_SIR" FileFilter="*.sql" OpenFolder="true" />
       <ShowFiles Name="All Proyects" Path="W:\CS\GCBA-SIR\src" FileFilter="*.sln" />
     </SubMenu>
     <SubMenu Name="Remote" Icon="C:\Windows\System32\mstsc.exe">
@@ -150,6 +152,7 @@
     <Exe Name="NACION VPN (grodriguez)" Icon="EasyOpen\red_up.ico" OpenWith="C:\Program Files (x86)\F5 VPN\f5fpc.exe" Params="-start /h &quot;VPN-GDE&quot; /u grodriguez /p XZY2954a /t" />
     <Exe Name="NACION VPN (gastonrodriguez)" Icon="EasyOpen\red_up.ico" OpenWith="C:\Program Files (x86)\F5 VPN\f5fpc.exe" Params="-start /h &quot;VPN-GDE&quot; /u gastonrodriguez /p XZY2954a /t" />
     <SubMenu Name="Ambientes" Icon=".\EasyOpen\web.ico">
+      <Exe Name="CS :: Octopus" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://192.168.32.97:8081/" />
       <Exe Name="NACION :: Ambientes (docs)" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="https://cardinalconsulting.atlassian.net/wiki/spaces/SIRN/pages/81690673/Ambientes+de+SIR-Naci+n" />
       <Separator />
       <Exe Name="NACION :: DEV :: BO" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://172.16.172.71/" />
@@ -177,6 +180,11 @@
       <Exe Name="SIR.AfipAPI :: Migrations" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\NACION-AfipConnector\Fuentes\CS.AfipApi.Migrations.sln" />
     </SubMenu>
     <SubMenu Name="Remote" Icon="C:\Windows\System32\mstsc.exe">
+      <Cmd Name="Remote :: CS DEV" Icon="C:\Windows\System32\mstsc.exe" >
+        cmdkey /delete:192.168.32.145
+        cmdkey /add:192.168.32.145 /user:"CSGALAXY\grodriguez" /pass:"XZY2954a"
+        mstsc /v:192.168.32.145 /admin /f
+      </Cmd>
       <Cmd Name="Remote :: DEV" Icon="C:\Windows\System32\mstsc.exe" >
         cmdkey /delete:172.16.172.71
         cmdkey /add:172.16.172.71 /user:"grodriguez" /pass:"Ab123456"

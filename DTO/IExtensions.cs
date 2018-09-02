@@ -229,6 +229,20 @@ namespace YerbaSoft.DTO
             return input.Select((p, i) => new { value = p, i = i }).Single(p => p.i == index).value;
         }
 
+        /// <summary>
+        /// Devuelve el índice del primer elemento encontrado según el filtro establecido
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="input"></param>
+        /// <param name="filter"></param>
+        /// <returns></returns>
+        public static int IndexOf<T>(this IEnumerable<T> input, Func<T, bool> filter)
+        {
+            var founded = input.Select((p, i) => new { obj = p, i }).Where(p => filter.Invoke(p.obj)).FirstOrDefault();
+
+            return (founded == null) ? -1 : founded.i;
+        }
+
         #endregion
 
         #region enums Extensions

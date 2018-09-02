@@ -32,6 +32,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,12 +43,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DTO\Chat.cs" />
+    <Compile Include="DTO\Clue\Card.cs" />
     <Compile Include="DTO\Clue\Dado.cs" />
     <Compile Include="DTO\Clue\Events\Event.cs" />
+    <Compile Include="DTO\Clue\Events\EventHelper.cs" />
     <Compile Include="DTO\Clue\Events\EventManager.cs" />
     <Compile Include="DTO\Clue\GameInfo.cs" />
     <Compile Include="DTO\Clue\Mesa.cs" />
     <Compile Include="DTO\Clue\MesasInfo.cs" />
+    <Compile Include="DTO\Clue\Nota.cs" />
+    <Compile Include="DTO\Clue\Notas.cs" />
     <Compile Include="DTO\Clue\Tablero.cs" />
     <Compile Include="DTO\Clue\TableroManagement.cs" />
     <Compile Include="DTO\Clue\TipoTablero.cs" />
