@@ -29,7 +29,7 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -115,6 +115,10 @@
     <ProjectReference Include="..\WindowsHelper.Common\WindowsHelper.Common.csproj">
       <Project>{4cdfb59f-292d-4c42-abd1-950cc809e113}</Project>
       <Name>WindowsHelper.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WindowsHelper.Customs\WindowsHelper.Customs.csproj">
+      <Project>{49d4f951-8a9d-4b80-aa5a-f75d7fe6b5ce}</Project>
+      <Name>WindowsHelper.Customs</Name>
     </ProjectReference>
     <ProjectReference Include="..\WindowsHelper.EasyOpen\WindowsHelper.EasyOpen.csproj">
       <Project>{1de6d323-fc08-4c6b-8c61-411e7134352e}</Project>

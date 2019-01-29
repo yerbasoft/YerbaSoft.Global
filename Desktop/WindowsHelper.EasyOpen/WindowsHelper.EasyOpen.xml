@@ -49,9 +49,18 @@
       <Separator />
       <Exe Name="GCBA :: HOMO :: BO" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.2.97/Home/Acceder?ReturnUrl=%2f" />
       <Separator />
-      <Exe Name="GCBA :: PREPROD :: BO" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.2.99/" />
-      <Exe Name="GCBA :: PREPROD :: Boleta Única" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.2.99:6748/WEB/Usuario/SignIn" />
-      <Exe Name="GCBA :: PREPROD :: Pago Electrónico" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.2.99:2485/ABM/login" />
+      <SubMenu Name="SIRTARI / SIRH" Icon=".\EasyOpen\web.ico">
+        <Exe Name="GCBA :: BO" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.2.97:3030/Home/Acceder/" />
+        <Exe Name="GCBA :: BUI Web" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.2.97:3010/Usuario/SignIn?ReturnUrl=%2f" />
+        <Exe Name="GCBA :: Portal Trámites" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.2.97:3060/" />
+        <Exe Name="GCBA :: Portal Trámites ABM" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.2.97:3060/ABM/Login/" />
+        <Exe Name="GCBA :: Pago Electrónino" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.2.97:3020/ABM/login?ReturnUrl=%2fABM%2ftramites" />
+      </SubMenu>
+      <SubMenu Name="PREPROD" Icon=".\EasyOpen\web.ico">
+        <Exe Name="GCBA :: PREPROD :: BO" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.2.99/" />
+        <Exe Name="GCBA :: PREPROD :: Boleta Única" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.2.99:6748/WEB/Usuario/SignIn" />
+        <Exe Name="GCBA :: PREPROD :: Pago Electrónico" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="http://10.73.2.99:2485/ABM/login" />
+      </SubMenu>
     </SubMenu>
     <Separator />
     <Cmd Name="GCBA VPN - Stop Services" Icon="C:\Program Files\ShrewSoft\VPN Client\ipseca.exe">
@@ -76,8 +85,8 @@
       <Exe Name="SIR.BackOffice" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.Server.BackOffice.sln" />
       <Exe Name="SIR.BackOffice.Tarifaria" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.BackOffice.Tarifaria.sln" />
       <Separator />
-      <Exe Name="SIR.BUI" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.BoletaUnica.sln" />
-      <Exe Name="SIR.BUI.UI" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.BoletaUnica.UI.sln" />
+      <Exe Name="SIR.BUI API" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.BoletaUnica.sln" />
+      <Exe Name="SIR.BUI Web" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.BoletaUnica.UI.sln" />
       <Separator />
       <Exe Name="SIR.PE" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.PagoElectronico.sln" />
       <Exe Name="SIR.PE.API" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.PEAPI.sln" />
@@ -85,7 +94,8 @@
       <Exe Name="SIR.Front Office" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-FrontOffice\SIR.FrontOffice\SIR.FrontOffice.sln" />
       <Separator />
       <ShowFiles Name="PostClonas" Path="W:\CS\GCBA-PostClona_SIR" FileFilter="*.sql" OpenFolder="true" />
-      <ShowFiles Name="All Proyects" Path="W:\CS\GCBA-SIR\src" FileFilter="*.sln" />
+      <ShowFiles Name="All SIR" Path="W:\CS\GCBA-SIR\src" FileFilter="*.sln" />
+      <Exe Name="Micro Sitio de Reportes" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-reportes\Fuentes\Fuentes\SIRReport.sln" />
     </SubMenu>
     <SubMenu Name="Remote" Icon="C:\Windows\System32\mstsc.exe">
       <Cmd Name="Remote :: GCBA :: DEV" Icon="C:\Windows\System32\mstsc.exe" >
@@ -143,6 +153,41 @@
         cmdkey /delete:10.73.100.44
         cmdkey /add:10.73.100.44 /user:"DGUIAF\grodriguez" /pass:"G4st0n.2015"
         C:\Windows\explorer.exe "\\10.73.100.44"
+      </Cmd>
+      <Cmd Name="LOGs :: GCBA :: DEV" Icon="C:\Windows\explorer.exe" >
+        cmdkey /delete:10.73.2.98
+        cmdkey /add:10.73.2.98 /user:"DGUIAF\grodriguez" /pass:"G4st0n.2015"
+        C:\Windows\explorer.exe "\\10.73.2.98"
+      </Cmd>
+      <Cmd Name="LOGs :: GCBA :: TEST" Icon="C:\Windows\explorer.exe" >
+        cmdkey /delete:10.73.100.48
+        cmdkey /add:10.73.100.48 /user:"DGUIAF\grodriguez" /pass:"G4st0n.2015"
+        C:\Windows\explorer.exe "\\10.73.100.48"
+      </Cmd>
+      <Cmd Name="LOGs :: GCBA :: HOMO / SIRTARI" Icon="C:\Windows\explorer.exe" >
+        cmdkey /delete:10.73.2.97
+        cmdkey /add:10.73.2.97 /user:"DGUIAF\grodriguez" /pass:"G4st0n.2015"
+        C:\Windows\explorer.exe "\\10.73.2.97"
+      </Cmd>
+      <Cmd Name="LOGs :: GCBA :: SIRUM" Icon="C:\Windows\explorer.exe" >
+        cmdkey /delete:10.73.100.49
+        cmdkey /add:10.73.100.49 /user:"DGUIAF\grodriguez" /pass:"G4st0n.2015"
+        C:\Windows\explorer.exe "\\10.73.100.49"
+      </Cmd>
+      <Cmd Name="LOGs :: GCBA :: SIRI1/2" Icon="C:\Windows\explorer.exe" >
+        cmdkey /delete:10.73.100.59
+        cmdkey /add:10.73.100.59 /user:"DGUIAF\grodriguez" /pass:"G4st0n.2015"
+        C:\Windows\explorer.exe "\\10.73.100.59"
+      </Cmd>
+      <Cmd Name="LOGs :: GCBA :: PREPROD" Icon="C:\Windows\explorer.exe" >
+        cmdkey /delete:10.73.2.99
+        cmdkey /add:10.73.2.99 /user:"DGUIAF\grodriguez" /pass:"G4st0n.2015"
+        C:\Windows\explorer.exe "\\10.73.2.99"
+      </Cmd>
+      <Cmd Name="GCBA :: Repositorio PDFs" Icon="C:\Windows\explorer.exe" >
+        cmdkey /delete:10.73.2.164
+        cmdkey /add:10.73.2.164 /user:"DGUIAF\grodriguez" /pass:"G4st0n.2015"
+        C:\Windows\explorer.exe "\\10.73.2.164\entornosSIR\SIR\"
       </Cmd>
     </SubMenu>
   </SubMenu>
@@ -231,9 +276,10 @@
   </SubMenu>
   <Separator />
   <SubMenu Name="Mios" Icon="Z:\Mios\mios.ico">
-    <OpenFile Name="Agenda" Icon=".\EasyOpen\TXT.ico" Path="W:\Agenda.txt" />
+    <OpenFile Name="Agenda" Icon=".\EasyOpen\TXT.ico" Path="W:\Agenda.info" />
     <OpenFile Name="Password.xml" Icon=".\EasyOpen\XML.ico" Path="Z:\Mios\Password.xml" />
     <OpenFile Name="Cuentas" Path="Z:\Mios\Cuentas.xlsx" Icon="C:\Program Files (x86)\Microsoft Office\root\Office16\EXCEL.EXE" />
+    <OpenFile Name="Acuerdo Sabrina" Path="Z:\Mios\Sabrina Acuerdo.xlsx" Icon="C:\Program Files (x86)\Microsoft Office\root\Office16\EXCEL.EXE" />
     <OpenFolder Name="Facturas AFIP" Icon="C:\Windows\explorer.exe" Path="Z:\Mios\Legales\Monotributo" />
   </SubMenu>
   <SubMenu Name="MI PC" Icon=".\EasyOpen\mipc.ico">

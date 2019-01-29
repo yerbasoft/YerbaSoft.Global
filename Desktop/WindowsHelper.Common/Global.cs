@@ -8,11 +8,22 @@ namespace WindowsHelper
 {
     public static class Global
     {
+        public enum HotKeyModifiers
+        {
+            MOD_NONE= 0x0,
+            MOD_ALT = 0x1,
+            MOD_CONTROL = 0x2,
+            MOD_SHIFT = 0x4,
+            MOD_WIN = 0x8
+        }
+
         public const string AppName = "WindowsHelper";
         public static string Instalacion { get; private set; }
         internal static Form MainForm { get; private set; }
         private static NLog.ILogger Logger { get; set; }
         public static bool IsDebugMode { get { return Instalacion.ToUpper() == "DEBUG"; } }
+        public delegate void HotKeyDelegate(Keys key);
+        private static Dictionary<Keys, HotKeyDelegate> HotKeys = new Dictionary<Keys, HotKeyDelegate>();
 
         public static void Iniciar(string instalacion, Form mainForm)
         {
@@ -53,6 +64,7 @@ namespace WindowsHelper
         #endregion
 
         #region Events
+
         public delegate IEnumerable<ToolStripItem> CreateMenuHandler();
         public static event CreateMenuHandler OnCreateMenu;
 
@@ -104,6 +116,28 @@ namespace WindowsHelper
                 case ".sln":
                     return @"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe";
                 default: return null;
+            }
+        }
+        
+        /// <summary>
+        /// registra una tecla para que se dispare al momento de presionarla (HotKey)
+        /// </summary>
+        /// <param name="modifier"></param>
+        /// <param name="key"></param>
+        public static void RegisterHotKey(Keys key, HotKeyDelegate callback)
+        {
+            if (!HotKeys.ContainsKey(key))
+            {
+                HotKeys.Add(key, callback);
+                Common.WinAPI.RegisterHotKey(MainForm, key);
+            }
+        }
+
+        public static void RaiseHotKey(Keys key)
+        {
+            if (HotKeys.ContainsKey(key))
+            {
+                HotKeys[key].Invoke(key);
             }
         }
     }

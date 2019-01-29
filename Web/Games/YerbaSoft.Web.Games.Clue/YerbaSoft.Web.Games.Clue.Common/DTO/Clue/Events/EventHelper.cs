@@ -71,7 +71,7 @@ namespace YerbaSoft.Web.Games.Clue.Common.DTO.Clue.Events
             var doors = TipoTablero.GetCoords(doorsList).ToArray();
             var pasajes = TipoTablero.GetCoords(pasajesList);
 
-            this.Tablero.MoveTo = this.Tablero.Manager.CalcMoveTo(doors, this.Tablero.Dados.Sum(p => p.Value) ?? 0, this.Mesa).Concat(pasajes).ToArray();
+            this.Tablero.MoveTo = this.Tablero.Manager.CalcMoveTo(doors, this.Tablero.Dados.GetValues(false).Sum(p => p) ?? 0, this.Mesa).Concat(pasajes).ToArray();
             return this.Tablero;
         }
 
@@ -95,7 +95,7 @@ namespace YerbaSoft.Web.Games.Clue.Common.DTO.Clue.Events
         /// <returns></returns>
         public Tablero RaizeDadoEspecial()
         {
-            foreach (var dado in this.Tablero.Dados.Where(p => p.Value == 0))
+            foreach (var dado in this.Tablero.Dados.GetValues(false).Where(p => p == 0))
             {
                 this.Tablero.Cards[this.Tablero.TurnoIndex] = this.Tablero.Cards[this.Tablero.TurnoIndex].Concat(new Card[] { this.Tablero.Mazo.Dequeue() }).ToArray();
             }

@@ -2,7 +2,7 @@
 <Memory Name="Memory">
   <SubMenu Name="Scripts">
     <SubMenu Name="SIR">
-      <ToClipBoard Name="CREATE USER ggr">
+      <ToClipBoard Name="SIR :: CREATE USER ggr">
         INSERT INTO SIR.USUARIO ( ID,         NOMBRE,   LOGIN,        CLAVE,                                      CAMBIARCLAVE, LEGAJO,   DNI,      CREAFECHA,CREAUSU,                            APELLIDO,     EMAIL,                                SECTOR )
         SELECT                    SYS_GUID(), 'Gastón',	'ggr', 'b32da141acb6fc468c63134e2f65c9e1923299ba', 'N',          29332389, 29332389, SYSDATE,  '00000000000000000000000000000001', 'Rodríguez',  'grodriguez@cardinalsystems.com.ar',  'Sistemas'
         FROM DUAL
@@ -17,6 +17,11 @@
         SELECT    (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' )
         FROM DUAL
         WHERE NOT EXISTS( SELECT 1 FROM PAGOELECTRONICO.USUARIO WHERE ID = (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ) );
+
+        INSERT INTO PORTALTRAMITES.USUARIO ( ID, ROL, LOGIN )
+        SELECT    (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ), 'ADMIN', 'ggr'
+        FROM DUAL
+        WHERE NOT EXISTS( SELECT 1 FROM PORTALTRAMITES.USUARIO WHERE ID = (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ) );
 
         INSERT INTO BU.USUARIO ( ID, DEPENDENCIAID, ROLID )
         SELECT    (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ), (SELECT ID FROM SIR.DEPENDENCIA WHERE CODIGO = 1), (SELECT ID FROM BU.ROL WHERE NOMBRE = 'Administrador')
@@ -33,12 +38,114 @@
         FROM DUAL
         WHERE NOT EXISTS( SELECT 1 FROM COBRANZA.USUARIOROL WHERE IDUSUARIO = (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ) AND IDROL = (SELECT ID FROM COBRANZA.ROL WHERE SIMBOL = 'FISCALIZADOR' AND REQUIEREAGENCIA = 0 ) );
 
+        INSERT INTO COBRANZA.USUARIOROL (AUDITID, IDUSUARIO, IDROL)
+        SELECT SYS_GUID(), (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ), (SELECT ID FROM COBRANZA.ROL WHERE NOMBRE = 'Reportes Consulta' AND REQUIEREAGENCIA = 0 )
+        FROM DUAL
+        WHERE NOT EXISTS( SELECT 1 FROM COBRANZA.USUARIOROL WHERE IDUSUARIO = (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ) AND IDROL = (SELECT ID FROM COBRANZA.ROL WHERE NOMBRE = 'Reportes Consulta' AND REQUIEREAGENCIA = 0 ) );
+
         INSERT INTO COBRANZA.USUARIOROL (AUDITID, IDUSUARIO, IDROL, IDGRUPODEPENDENCIA)
         SELECT SYS_GUID(), (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ), (SELECT ID FROM COBRANZA.ROL WHERE SIMBOL = 'AREA' ), (SELECT ID FROM SIR.GRUPODEPENDENCIA WHERE NOMBRE = 'TODAS' )
         FROM DUAL
         WHERE NOT EXISTS( SELECT 1 FROM COBRANZA.USUARIOROL WHERE IDUSUARIO = (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ) AND IDROL = (SELECT ID FROM COBRANZA.ROL WHERE SIMBOL = 'TODAS' ) );
       </ToClipBoard>
-      <ToClipBoard Name="SELECT Usuario-Roles-Agencias-Deps">
+      <ToClipBoard Name="AFIPAPI :: Crear Nuevo Comprobante">
+        DECLARE
+            pId                 RAW(16);
+            pFacturador         VARCHAR2(500);
+            pIdFacturador       RAW(16);
+            pPuntoDeVenta       NUMBER;
+            pIdPuntoDeVenta     RAW(16);
+            pTipoComprobante    NUMBER;
+            pIdTipoComprobante  RAW(16);
+            pTipoConcepto       NUMBER;
+            pFechaVencimiento   DATE;
+            pFechaServDesde     DATE;
+            pFechaServHasta     DATE;
+            pMoneda             VARCHAR(3);
+            pMonedaCtz          VARCHAR(20);
+            pObsComerciales     VARCHAR(255);
+            pObsGenerales       VARCHAR(255);
+            pFormaPago          VARCHAR(300);
+            pNota1              VARCHAR(255);
+            pNota2              VARCHAR(255);
+            pNota3              VARCHAR(255);
+            pImporte            NUMBER(18,2);
+            pItemCodigo         VARCHAR(255);
+            pItemDescripcion    VARCHAR(255);
+            pCliRazonSocial     VARCHAR(255);
+            pCliProvincia       VARCHAR(100);
+            pCliLocalidad       VARCHAR(100);
+            pCliDomicilio       VARCHAR(255);
+            pCliTelefono        VARCHAR(100);
+            pCliCondicionIva    VARCHAR(100);
+            pCliTipoDocumento   NUMBER(3);
+            pCliNroDocumento    NUMBER;
+            pCliEMail           VARCHAR(100);
+            pEstado             NUMBER;
+            pExtraInfo          BLOB;
+        BEGIN
+            -------------------------
+            -- Datos IMPORTANTES!! --
+            -------------------------
+            pFacturador := 'Fondo de Cooperación Técnica y Financiera CECBA- SLYT';
+            pPuntoDeVenta := 12;
+            pTipoComprobante := 11;    -- 11:F(C) / 12:ND(C) / 13:NC(C) / -15(R)
+            pTipoConcepto := 2;     -- 1:Productos / 2:Servicios / 3:ProductosYServicios
+            pImporte := 1051.00;
+            pItemCodigo := '09.01.04';  -- Codigo del item en la factura
+            pItemDescripcion := 'Diferencia por publicación en Boletín Oficial';    -- Descripción del Item en la factura
+    
+            -- En caso de TIPO CONCEPTO incluye SERVICIOS (establecer null cuando es TipoConcepto = 1)
+            pFechaServDesde := SYSDATE;
+            pFechaServHasta := SYSDATE;
+    
+            -- Datos del cliente
+            pCliRazonSocial := 'Andrea';
+            pCliProvincia := '';
+            pCliLocalidad := '';
+            pCliDomicilio := '';
+            pCliTelefono := '';
+            pCliCondicionIva := 'Consumidor Final';
+            pCliTipoDocumento := 80;    -- 96:DNI / 80:CUIT / 86:CUIL
+            pCliNroDocumento := 22113334442;
+            pCliEMail := '';
+    
+            -- Datos Secundarios
+            pFechaVencimiento := SYSDATE + 1;  -- días para el vencimiento del cbte
+            pObsComerciales := null;
+            pObsGenerales := null;
+            pFormaPago := null;
+            pNota1 := null;
+            pNota2 := null;
+            pNota3 := null;
+    
+            -- Datos que por lo gral van fijos
+            pId := SYS_GUID();
+            pMoneda := 'PES';
+            pMonedaCtz := '1';
+            pEstado := 0; -- 0:nueva
+            pExtraInfo := null;
+    
+    
+            --------------
+            -- NO TOCAR --
+            --------------
+            -- Búsqueda de datos
+            SELECT ID INTO pIdFacturador FROM AFIPAPI.FACTURADOR WHERE RAZONSOCIAL = pFacturador;
+            SELECT ID INTO pIdPuntoDeVenta FROM AFIPAPI.PUNTODEVENTA WHERE IDFACTURADOR = pIdFacturador AND NUMERO = pPuntoDeVenta;    
+            SELECT ID INTO pIdTipoComprobante FROM AFIPAPI.TIPOCOMPROBANTE WHERE CODIGO = pTipoComprobante;
+    
+            -- INSERT
+            INSERT INTO AFIPAPI.COMPROBANTE (ID, IDFACTURADOR, IDPUNTODEVENTA, IDTIPOCOMPROBANTE, TIPOCONCEPTO, CBTEDESDE,CBTEHASTA,FECHA,  FECHAVENC,        FECHASERVDESDE, FECHASERVHASTA, TIPOMONEDA,MONEDACTZ, OBSCOMERCIALES, OBSGENERALES, FORMADEPAGO,NOTA1, NOTA2, NOTA3, IMPORTETOTAL,IMPORTETOTALCONC,IMPORTENETO,IMPORTEIVA,IMPORTETRIB,IMPORTEOPEX,CLIRAZONSOCIAL, CLIPROVINCIA, CLILOCALIDAD, CLIDOMICILIO, CLITELEFONO, CLICONDICIONIVA, CLITIPODOCUMENTO, CLINRODOCUMENTO, CLIEMAIL, ESTADO, REINTENTOSAFIP,REINTENTOSPDF,CAE, CAEVENC,CREAFECHA,CREAUSU,                           PROCAFIPFECHA,EXTRAINFO, BAJAFECHA,BAJAUSU) 
+                                     VALUES (pId,pIdFacturador,pIdPuntoDeVenta,pIdTipoComprobante,pTipoConcepto,null,     null,     SYSDATE,pFechaVencimiento,pFechaServDesde,pFechaServHasta,pMoneda,   pMonedaCtz,pObsComerciales,pObsGenerales,pFormaPago, pNota1,pNota2,pNota3,pImporte,    0,               pImporte,   0,         0,          0,          pCliRazonSocial,pCliProvincia,pCliLocalidad,pCliDomicilio,pCliTelefono,pCliCondicionIva,pCliTipoDocumento,pCliNroDocumento,pCliEMail,pEstado,0,             0,            null,null,   SYSDATE,  '00000000000000000000000000000001',null,         pExtraInfo,null,     null);
+    
+            INSERT INTO AFIPAPI.COMPROBANTEITEM (ID, IDCOMPROBANTE,CODIGO,     DESCRIPCION,     CANTIDAD,TIPOUNIDADMEDIDA,PRECIOUNITARIO,BONIFICACION,TIPOALICUOTAIVA,MONTOIVA,IMPORTE, DESPACHO,CREAFECHA,CREAUSU,                           TIPOITEM)
+                                         VALUES (pId,pId,          pItemCodigo,pItemDescripcion,1,       0,               pImporte,      0,           0,              0,       pImporte,null,    SYSDATE,  '00000000000000000000000000000001',null);
+    
+            ROLLBACK;
+        END;
+      </ToClipBoard>
+      <ToClipBoard Name="BO :: SELECT Usuario-Roles-Agencias-Deps">
         SELECT U.LOGIN, R.NOMBRE, A.CODIGO || '-' || A.NOMBRE , D.CODIGO || '-' || D.NOMBRE
         FROM SIR.USUARIO  U
         INNER JOIN COBRANZA.USUARIOROL UR ON ( UR.IDUSUARIO = U.ID )
@@ -49,7 +156,7 @@
         INNER JOIN SIR.DEPENDENCIA D ON ( D.ID = GDD.IDDEPENDENCIA )
         WHERE U.LOGIN = 'pfernandez' AND UR.BAJAFECHA IS NULL;
       </ToClipBoard>
-      <ToClipBoard Name="SELECT CierreZ para agregar a Balance">
+      <ToClipBoard Name="BO :: SELECT CierreZ para agregar a Balance">
         SELECT  P.CODIGO "POS", U.APELLIDO || ', ' || U.NOMBRE "CAJERO", Z.FECHA, Z.NROZ
         FROM    COBRANZA.CIERREZ Z
         INNER JOIN SIR.POS P ON ( P.ID = Z.IDPOS )
@@ -58,7 +165,35 @@
         AND Z.ESBALANCEABLE = 'Y'
         ORDER BY Z.FECHA DESC;
       </ToClipBoard>
-      <ToClipBoard Name="SELECT Boletas Pendientes de Pago">SELECT ID, NUMERO, NROEXPEDIENTE FROM BU.BOLETA WHERE NROEXPEDIENTE IS NOT NULL AND ESTADO = 1;</ToClipBoard>
+      <ToClipBoard Name="BU :: Boletas Pendientes de Pago">SELECT ID, NUMERO, NROEXPEDIENTE FROM BU.BOLETA WHERE NROEXPEDIENTE IS NOT NULL AND ESTADO = 1;</ToClipBoard>
+      <ToClipBoard Name="ATM :: Buscar un Pago">
+        SELECT  C.NOMBRE "POS",
+                L.NROZ "LOTE",
+                L.CREACION "CREACION LOTE",
+                O.COMPROBANTE,
+                P.NROCOMPROBANTE,
+                P.BARCODE,
+                P.TIPO,
+                P.IMPORTE,
+                V.TARJETA,
+                V.TITULAR,
+                V.CODIGOAUTORIZACION,
+                V.NUMERO "VOUCHER NUMERO",
+                V.NROTARJETA
+        FROM    SIRAPI.VOUCHERS         V
+        INNER JOIN SIRAPI.PAGOS         P ON ( P.ID = V.ID )
+        INNER JOIN SIRAPI.OPERACIONES   O ON ( O.ID = P.OPERACIONID )
+        INNER JOIN SIRAPI.TRANSACCIONES T ON ( T.ID = O.TRANSACCIONID )
+        INNER JOIN SIRAPI.LOTES         L ON ( L.ID = T.LOTEID )
+        INNER JOIN SIRAPI.CLIENTES      C ON ( C.ID = L.CLIENTEID )
+        WHERE   --P.FECHA BETWEEN TO_DATE( '26-07-2018', 'DD-MM-YYYY' ) - 2 AND TO_DATE( '26-07-2018', 'DD-MM-YYYY' ) + 3     AND
+                P.FECHA >= TO_DATE( '01-09-2018', 'DD-MM-YYYY' ) AND
+                (
+                    V.CODIGOAUTORIZACION LIKE '%6555%'      OR
+                    V.NUMERO = 1860                         OR
+                    V.NROTARJETA LIKE '%1853%'
+                )
+      </ToClipBoard>
     </SubMenu>
   </SubMenu>
   

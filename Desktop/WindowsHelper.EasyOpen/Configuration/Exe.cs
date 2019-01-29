@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace WindowsHelper.EasyOpen.Configuration
 {
@@ -19,6 +20,15 @@ namespace WindowsHelper.EasyOpen.Configuration
 
         [YerbaSoft.DTO.Mapping.Direct]
         public string Params { get; set; }
+
+        internal override ToolStripItem GetMenu()
+        {
+            var m = base.GetMenu();
+
+            m.ToolTipText = OpenWith.Substring(OpenWith.LastIndexOf("\\")) + " " + Params;
+
+            return m;
+        }
 
         internal override void Run()
         {

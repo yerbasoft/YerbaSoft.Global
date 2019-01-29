@@ -12,6 +12,7 @@ namespace YerbaSoft.Web.Games.Clue.Common.DTO.Clue
 {
     public class Dados
     {
+        public Dados() { }
         public Dados(IEnumerable<Dado> originales)
         {
             this.Originales = new List<Dado>(originales);

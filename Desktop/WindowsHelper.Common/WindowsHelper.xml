@@ -4,5 +4,6 @@
     <App Name="Easy Open" IAppClass="WindowsHelper.EasyOpen.EasyOpen" AssemblyName="WindowsHelper.EasyOpen" />
     <App Name="Memory" IAppClass="WindowsHelper.Memory.Memory" AssemblyName="WindowsHelper.Memory" />
     <App Name="Task" IAppClass="WindowsHelper.Task.Task" AssemblyName="WindowsHelper.Task" />
+    <App Name="Customs" IAppClass="WindowsHelper.Customs.Customs" AssemblyName="WindowsHelper.Customs" />
   </Applications>
 </WindowsHelper>

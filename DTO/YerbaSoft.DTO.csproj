@@ -60,6 +60,7 @@
     <Compile Include="Mapping\SubClass.cs" />
     <Compile Include="Mapping\SubList.cs" />
     <Compile Include="Math.cs" />
+    <Compile Include="Reflection.cs" />
     <Compile Include="Result.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Types\Four.cs" />

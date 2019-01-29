@@ -89,5 +89,23 @@ namespace WindowsHelper.Forms
             MainMenuContext.Items.Add(update);
         }
 
+        protected override void WndProc(ref Message m)
+        {
+            if (m.Msg == Common.WinAPI.WM_HOTKEY)
+            {
+                var key = (Keys)(((int)m.LParam >> 16) & 0xFFFF);
+                var modifier = (Global.HotKeyModifiers)((int)m.LParam & 0xFFFF);
+
+                if ((modifier & Global.HotKeyModifiers.MOD_ALT) == Global.HotKeyModifiers.MOD_ALT)
+                    key = key | Keys.Alt;
+                if ((modifier & Global.HotKeyModifiers.MOD_CONTROL) == Global.HotKeyModifiers.MOD_CONTROL)
+                    key = key | Keys.Control;
+                if ((modifier & Global.HotKeyModifiers.MOD_SHIFT) == Global.HotKeyModifiers.MOD_SHIFT)
+                    key = key | Keys.Shift;
+
+                Global.RaiseHotKey(key);
+            }
+            base.WndProc(ref m);
+        }
     }
 }
