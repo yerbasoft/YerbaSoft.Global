@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlSimpleRepository>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="813e164f05644e5f8a63d8d22bcf7c942070de4276624a6da1fa91451ce2ad0f">
+    <Id>e04651c2-0ad8-4e2c-a9c7-180d9886820b</Id>
+    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
+    <Fecha>21/5/2019 11:10:52</Fecha>
+    <Monto>1064.68</Monto>
+    <Observaciones>Pagado con Mercado Pago</Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190521 GAS NATURAL FENOSA 201906.pdf</FileRef>
+    <CreaFecha>21/5/2019 11:13:07</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="9d83e26e01334a979aae5ecbb2079621e4505afa6c794da7820cf79caba9ea4d">
+    <Id>c0e4f459-9d74-4d15-b1c4-250c36b37463</Id>
+    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
+    <Fecha>21/5/2019 11:13:07</Fecha>
+    <Monto>1064.68</Monto>
+    <Observaciones>Pagado con Mercado Pago</Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190521 GAS NATURAL FENOSA 201907.pdf</FileRef>
+    <CreaFecha>21/5/2019 11:15:41</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+</XmlSimpleRepository>

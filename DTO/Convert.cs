@@ -161,7 +161,7 @@ namespace YerbaSoft.DTO
             else if (Math.In(type, typeof(double), typeof(double?)))
                 return System.Convert.ToDouble(value, DeafultFormatProvider);
             else if (Math.In(type, typeof(decimal), typeof(decimal?)))
-                return System.Convert.ToDouble(value, DeafultFormatProvider);
+                return System.Convert.ToDecimal(value, DeafultFormatProvider);
                 
             else if (Math.In(type, typeof(ushort), typeof(ushort?)))
                 return System.Convert.ToUInt16(value, DeafultFormatProvider);

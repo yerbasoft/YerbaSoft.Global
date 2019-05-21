@@ -63,7 +63,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -115,6 +115,10 @@
     <ProjectReference Include="..\WindowsHelper.Common\WindowsHelper.Common.csproj">
       <Project>{4cdfb59f-292d-4c42-abd1-950cc809e113}</Project>
       <Name>WindowsHelper.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WindowsHelper.Cuentas\WindowsHelper.Cuentas.csproj">
+      <Project>{eb9ad4cc-19a9-4ddf-ada5-7d2e6ef85408}</Project>
+      <Name>WindowsHelper.Cuentas</Name>
     </ProjectReference>
     <ProjectReference Include="..\WindowsHelper.Customs\WindowsHelper.Customs.csproj">
       <Project>{49d4f951-8a9d-4b80-aa5a-f75d7fe6b5ce}</Project>

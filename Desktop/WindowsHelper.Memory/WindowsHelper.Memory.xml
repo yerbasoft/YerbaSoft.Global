@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Memory Name="Memory">
+  <SubMenu Id="B81B085E-2319-4B74-9EC8-4FA35A3F3068" Name="Notas" Icon="note">
+    <CustomAction Name="Nueva Nota" Service="WindowsHelper.Memory.NOTES.Notes" Action="NewNote" Icon="note_add" />
+  </SubMenu>
   <SubMenu Name="Scripts">
-    <SubMenu Name="SIR">
+    <SubMenu Name="GCBA">
       <ToClipBoard Name="SIR :: CREATE USER ggr">
         INSERT INTO SIR.USUARIO ( ID,         NOMBRE,   LOGIN,        CLAVE,                                      CAMBIARCLAVE, LEGAJO,   DNI,      CREAFECHA,CREAUSU,                            APELLIDO,     EMAIL,                                SECTOR )
         SELECT                    SYS_GUID(), 'Gastón',	'ggr', 'b32da141acb6fc468c63134e2f65c9e1923299ba', 'N',          29332389, 29332389, SYSDATE,  '00000000000000000000000000000001', 'Rodríguez',  'grodriguez@cardinalsystems.com.ar',  'Sistemas'
@@ -48,6 +51,67 @@
         FROM DUAL
         WHERE NOT EXISTS( SELECT 1 FROM COBRANZA.USUARIOROL WHERE IDUSUARIO = (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ) AND IDROL = (SELECT ID FROM COBRANZA.ROL WHERE SIMBOL = 'TODAS' ) );
       </ToClipBoard>
+      <ToClipBoard Name="BO :: SELECT Usuario-Roles-Agencias-Deps">
+        SELECT U.LOGIN, R.NOMBRE, A.CODIGO || '-' || A.NOMBRE , D.CODIGO || '-' || D.NOMBRE
+        FROM SIR.USUARIO  U
+        INNER JOIN COBRANZA.USUARIOROL UR ON ( UR.IDUSUARIO = U.ID )
+        INNER JOIN COBRANZA.ROL R ON ( R.ID = UR.IDROL )
+        INNER JOIN SIR.AGENCIA A ON ( A.ID = UR.IDAGENCIA )
+        INNER JOIN SIR.GRUPODEPENDENCIA GD ON ( GD.ID = UR.IDGRUPODEPENDENCIA )
+        INNER JOIN SIR.GRUPODEPENDENCIA_DEP GDD ON ( GDD.IDGRUPODEPENDENCIA = GD.ID )
+        INNER JOIN SIR.DEPENDENCIA D ON ( D.ID = GDD.IDDEPENDENCIA )
+        WHERE U.LOGIN = 'pfernandez' AND UR.BAJAFECHA IS NULL;
+      </ToClipBoard>
+      <ToClipBoard Name="BUI :: Boletas Pendientes de Pago">SELECT ID, NUMERO, NROEXPEDIENTE FROM BU.BOLETA WHERE NROEXPEDIENTE IS NOT NULL AND ESTADO = 1;</ToClipBoard>
+      <ToClipBoard Name="ATM :: Buscar un Pago">
+        SELECT  C.NOMBRE "POS",
+        L.NROZ "LOTE",
+        L.CREACION "CREACION LOTE",
+        O.COMPROBANTE,
+        P.NROCOMPROBANTE,
+        P.BARCODE,
+        P.TIPO,
+        P.IMPORTE,
+        V.TARJETA,
+        V.TITULAR,
+        V.CODIGOAUTORIZACION,
+        V.NUMERO "VOUCHER NUMERO",
+        V.NROTARJETA
+        FROM    SIRAPI.VOUCHERS         V
+        INNER JOIN SIRAPI.PAGOS         P ON ( P.ID = V.ID )
+        INNER JOIN SIRAPI.OPERACIONES   O ON ( O.ID = P.OPERACIONID )
+        INNER JOIN SIRAPI.TRANSACCIONES T ON ( T.ID = O.TRANSACCIONID )
+        INNER JOIN SIRAPI.LOTES         L ON ( L.ID = T.LOTEID )
+        INNER JOIN SIRAPI.CLIENTES      C ON ( C.ID = L.CLIENTEID )
+        WHERE   --P.FECHA BETWEEN TO_DATE( '26-07-2018', 'DD-MM-YYYY' ) - 2 AND TO_DATE( '26-07-2018', 'DD-MM-YYYY' ) + 3     AND
+        P.FECHA >= TO_DATE( '01-09-2018', 'DD-MM-YYYY' ) AND
+        (
+        V.CODIGOAUTORIZACION LIKE '%6555%'      OR
+        V.NUMERO = 1860                         OR
+        V.NROTARJETA LIKE '%1853%'
+        )
+      </ToClipBoard>
+      <ToClipBoard Name="SUACI :: Pendientes de Notificación">
+        SELECT  SIR.RAW_TO_GUID( C.ID )
+        FROM    PAGOELECTRONICO.COBRO C
+        INNER JOIN PAGOELECTRONICO.TRAMITE T ON ( T.ID = C.IDTRAMITE )
+        INNER JOIN PAGOELECTRONICO.NOTIFICACION N ON ( N.IDTRAMITE = T.ID )
+        WHERE   C.FECHAPAGO IS NOT NULL AND
+                EXISTS( SELECT  1 
+                        FROM    PAGOELECTRONICO.POSTBACK P
+                        WHERE   P.IDCOBRO = C.ID AND
+                                P.NOTIFICACIONAGENCIA = 'N' AND
+                                P.NOTIFICACIONINTENTO &lt;> 99 AND
+                                P.NOTIFICACIONINTENTO &lt;= N.CANTIDADINTENTOS ) AND
+                NOT EXISTS (    SELECT  1
+                                FROM    PAGOELECTRONICO.POSTBACK P
+                                WHERE   P.IDCOBRO = C.ID AND
+                                        P.NOTIFICACIONAGENCIA = 'Y' )
+        AND INSTR( C.OBSERVACION, '/' ) = 9 -- solo suaci
+        ORDER BY C.FECHA
+      </ToClipBoard>
+    </SubMenu>
+    <SubMenu Name="NACION">
       <ToClipBoard Name="AFIPAPI :: Crear Nuevo Comprobante">
         DECLARE
             pId                 RAW(16);
@@ -145,54 +209,58 @@
             ROLLBACK;
         END;
       </ToClipBoard>
-      <ToClipBoard Name="BO :: SELECT Usuario-Roles-Agencias-Deps">
-        SELECT U.LOGIN, R.NOMBRE, A.CODIGO || '-' || A.NOMBRE , D.CODIGO || '-' || D.NOMBRE
-        FROM SIR.USUARIO  U
-        INNER JOIN COBRANZA.USUARIOROL UR ON ( UR.IDUSUARIO = U.ID )
-        INNER JOIN COBRANZA.ROL R ON ( R.ID = UR.IDROL )
-        INNER JOIN SIR.AGENCIA A ON ( A.ID = UR.IDAGENCIA )
-        INNER JOIN SIR.GRUPODEPENDENCIA GD ON ( GD.ID = UR.IDGRUPODEPENDENCIA )
-        INNER JOIN SIR.GRUPODEPENDENCIA_DEP GDD ON ( GDD.IDGRUPODEPENDENCIA = GD.ID )
-        INNER JOIN SIR.DEPENDENCIA D ON ( D.ID = GDD.IDDEPENDENCIA )
-        WHERE U.LOGIN = 'pfernandez' AND UR.BAJAFECHA IS NULL;
-      </ToClipBoard>
-      <ToClipBoard Name="BO :: SELECT CierreZ para agregar a Balance">
-        SELECT  P.CODIGO "POS", U.APELLIDO || ', ' || U.NOMBRE "CAJERO", Z.FECHA, Z.NROZ
-        FROM    COBRANZA.CIERREZ Z
-        INNER JOIN SIR.POS P ON ( P.ID = Z.IDPOS )
-        INNER JOIN SIR.USUARIO U ON ( U.ID = Z.IDCAJERO )
-        WHERE NOT EXISTS ( SELECT 1 FROM COBRANZA.BALANCEITEM BI WHERE BI.IDCIERREZ = Z.ID )
-        AND Z.ESBALANCEABLE = 'Y'
-        ORDER BY Z.FECHA DESC;
-      </ToClipBoard>
-      <ToClipBoard Name="BU :: Boletas Pendientes de Pago">SELECT ID, NUMERO, NROEXPEDIENTE FROM BU.BOLETA WHERE NROEXPEDIENTE IS NOT NULL AND ESTADO = 1;</ToClipBoard>
-      <ToClipBoard Name="ATM :: Buscar un Pago">
-        SELECT  C.NOMBRE "POS",
-                L.NROZ "LOTE",
-                L.CREACION "CREACION LOTE",
-                O.COMPROBANTE,
-                P.NROCOMPROBANTE,
-                P.BARCODE,
-                P.TIPO,
-                P.IMPORTE,
-                V.TARJETA,
-                V.TITULAR,
-                V.CODIGOAUTORIZACION,
-                V.NUMERO "VOUCHER NUMERO",
-                V.NROTARJETA
-        FROM    SIRAPI.VOUCHERS         V
-        INNER JOIN SIRAPI.PAGOS         P ON ( P.ID = V.ID )
-        INNER JOIN SIRAPI.OPERACIONES   O ON ( O.ID = P.OPERACIONID )
-        INNER JOIN SIRAPI.TRANSACCIONES T ON ( T.ID = O.TRANSACCIONID )
-        INNER JOIN SIRAPI.LOTES         L ON ( L.ID = T.LOTEID )
-        INNER JOIN SIRAPI.CLIENTES      C ON ( C.ID = L.CLIENTEID )
-        WHERE   --P.FECHA BETWEEN TO_DATE( '26-07-2018', 'DD-MM-YYYY' ) - 2 AND TO_DATE( '26-07-2018', 'DD-MM-YYYY' ) + 3     AND
-                P.FECHA >= TO_DATE( '01-09-2018', 'DD-MM-YYYY' ) AND
-                (
-                    V.CODIGOAUTORIZACION LIKE '%6555%'      OR
-                    V.NUMERO = 1860                         OR
-                    V.NROTARJETA LIKE '%1853%'
-                )
+      <ToClipBoard Name="AFIPAPI :: Generar NC desde FC">
+        -- Sólo se deben establecer los ID's de los Comprobantes en el primer query.
+
+        INSERT INTO AFIPAPI.COMPROBANTE (
+        ID                                ,IDFACTURADOR                      ,IDPUNTODEVENTA                    ,IDTIPOCOMPROBANTE                 ,
+        TIPOCONCEPTO                      ,CBTEDESDE                         ,CBTEHASTA                         ,FECHA                             ,
+        FECHAVENC                         ,FECHASERVDESDE                    ,FECHASERVHASTA                    ,TIPOMONEDA                        ,
+        MONEDACTZ                         ,OBSCOMERCIALES                    ,OBSGENERALES                      ,
+        FORMADEPAGO                       ,NOTA1                             ,NOTA2                             ,NOTA3                             ,
+        IMPORTETOTAL                      ,IMPORTETOTALCONC                  ,IMPORTENETO                       ,IMPORTEIVA                        ,
+        IMPORTETRIB                       ,IMPORTEOPEX                       ,CLIRAZONSOCIAL                    ,CLIPROVINCIA                      ,
+        CLILOCALIDAD                      ,CLIDOMICILIO                      ,CLITELEFONO                       ,CLICONDICIONIVA                   ,
+        CLITIPODOCUMENTO                  ,CLINRODOCUMENTO                   ,CLIEMAIL                          ,ESTADO                            ,
+        REINTENTOSAFIP                    ,REINTENTOSPDF                     ,CAE                               ,CAEVENC                           ,
+        CREAFECHA                         ,CREAUSU                           ,PROCAFIPFECHA                     ,EXTRAINFO                         )
+        SELECT
+        SYS_GUID()                        ,C.IDFACTURADOR                    ,C.IDPUNTODEVENTA                  ,'00000000000000000003000000000000',
+        C.TIPOCONCEPTO                    ,NULL                              ,NULL                              ,NULL                              ,
+        C.FECHAVENC                       ,C.FECHASERVDESDE                  ,C.FECHASERVHASTA                  ,C.TIPOMONEDA                      ,
+        C.MONEDACTZ                       ,C.OBSCOMERCIALES                  ,'Anulación de la ' || TC.DESCRIPCION || ' nº ' || TO_CHAR(C.CBTEDESDE),
+        C.FORMADEPAGO                     ,C.NOTA1                           ,C.NOTA2                           ,C.NOTA3                           ,
+        C.IMPORTETOTAL                    ,C.IMPORTETOTALCONC                ,C.IMPORTENETO                     ,C.IMPORTEIVA                      ,
+        C.IMPORTETRIB                     ,C.IMPORTEOPEX                     ,C.CLIRAZONSOCIAL                  ,C.CLIPROVINCIA                    ,
+        C.CLILOCALIDAD                    ,C.CLIDOMICILIO                    ,C.CLITELEFONO                     ,C.CLICONDICIONIVA                 ,
+        C.CLITIPODOCUMENTO                ,C.CLINRODOCUMENTO                 ,C.CLIEMAIL                        ,88                                ,
+        0                                 ,0                                 ,NULL                              ,NULL                              ,
+        SYSDATE                           ,'00000000000000000000000000000001',NULL                              ,C.EXTRAINFO
+        FROM    AFIPAPI.COMPROBANTE     C
+        INNER JOIN AFIPAPI.TIPOCOMPROBANTE TC ON  ( TC.ID = C.IDTIPOCOMPROBANTE )
+        WHERE   C.ID IN ( 	'1D837936C052334DB1F75DFDC2823CFF',
+                            '6B92363CB1645741A48112C674C969FF',
+                            'A0F6DE6FBC46714FAA200988347B64AF',
+                            '6B46F65755BC9145B8EA4D80537F7787')
+        ;
+
+        INSERT INTO AFIPAPI.COMPROBANTEITEM (
+        ID                                ,IDCOMPROBANTE                     ,CODIGO                            ,DESCRIPCION                       ,
+        CANTIDAD                          ,TIPOUNIDADMEDIDA                  ,PRECIOUNITARIO                    ,BONIFICACION                      ,
+        TIPOALICUOTAIVA                   ,MONTOIVA                          ,IMPORTE                           ,DESPACHO                          ,
+        CREAFECHA                         ,CREAUSU                           ,TIPOITEM                          )
+        SELECT
+        SYS_GUID()                        ,C.ID                              ,'ANU'                             ,C.OBSGENERALES                    ,
+        1                                 ,0                                 ,C.IMPORTETOTAL                    ,0                                 ,
+        0                                 ,0                                 ,C.IMPORTETOTAL                    ,NULL                              ,
+        SYSDATE                           ,'00000000000000000000000000000001',NULL
+        FROM    AFIPAPI.COMPROBANTE     C
+        WHERE   C.ESTADO = 88
+        ;
+
+        UPDATE AFIPAPI.COMPROBANTE SET ESTADO = 0 WHERE ESTADO = 88;
+
+        ROLLBACK;
       </ToClipBoard>
     </SubMenu>
   </SubMenu>
@@ -212,6 +280,8 @@
       <ToClipBoard Name="DEV" Icon=".\Memory\db_connect.ico">&lt;add name=&quot;conn&quot; connectionString=&quot;Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.245)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRDEV)));User Id=SIR;Password=Ab123456;&quot; /&gt;</ToClipBoard>
       <ToClipBoard Name="TEST" Icon=".\Memory\db_connect.ico">&lt;add name=&quot;conn&quot; connectionString=&quot;Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.226)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRT)));User Id=SIR;Password=Ab123456;&quot; /&gt;</ToClipBoard>
       <ToClipBoard Name="HOMO" Icon=".\Memory\db_connect.ico">&lt;add name=&quot;conn&quot; connectionString=&quot;Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.226)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRH)));User Id=SIR;Password=Hm2PYH4_H;&quot; /&gt;</ToClipBoard>
+      <ToClipBoard Name="SIRI 1" Icon=".\Memory\db_connect.ico">&lt;add name=&quot;conn&quot; connectionString=&quot;Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.226)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRI)));User Id=SIR;Password=Hm2PYH4;&quot; /&gt;</ToClipBoard>
+      <ToClipBoard Name="SIRI 2" Icon=".\Memory\db_connect.ico">&lt;add name=&quot;conn&quot; connectionString=&quot;Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.226)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRI2)));User Id=SIR;Password=Hm2PYH4;&quot; /&gt;</ToClipBoard>
       <ToClipBoard Name="SIRUM" Icon=".\Memory\db_connect.ico">&lt;add name=&quot;conn&quot; connectionString=&quot;Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.245)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRUM)));User Id=SIR;Password=nhGAcpCe;&quot; /&gt;</ToClipBoard>
       <ToClipBoard Name="SIRUM (new) (user BU)" Icon=".\Memory\db_connect.ico">&lt;add name=&quot;conn&quot; connectionString=&quot;Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = orasirprod01)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRUM)));User Id=BU;Password=e9JzM2aE;&quot; /&gt;</ToClipBoard>
       <ToClipBoard Name="PREPROD" Icon=".\Memory\db_connect.ico">&lt;add name=&quot;conn&quot; connectionString=&quot;Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.226)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRPRE)));User Id=GRODRIGUEZ;Password=Grodriguez.8935!;&quot; /&gt;</ToClipBoard>

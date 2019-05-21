@@ -33,10 +33,19 @@ namespace WindowsHelper.Memory.Configuration
                     {
                         var icoFile = new System.IO.FileInfo(this.Icon);
 
-                        if (icoFile.Extension == ".exe")
-                            img = System.Drawing.Icon.ExtractAssociatedIcon(this.Icon).ToBitmap();
+                        if (icoFile.Exists)
+                        {
+                            if (icoFile.Extension == ".exe")
+                                img = System.Drawing.Icon.ExtractAssociatedIcon(this.Icon).ToBitmap();
+                            else
+                                img = System.Drawing.Image.FromFile(this.Icon);
+                        }
                         else
-                            img = System.Drawing.Image.FromFile(this.Icon);
+                        {
+                            var res = (System.Drawing.Icon)WindowsHelper.Memory.Properties.Resources.ResourceManager.GetObject(this.Icon);
+                            if (res != null)
+                                img = res.ToBitmap();
+                        }
                     }
                     catch (Exception ex)
                     {

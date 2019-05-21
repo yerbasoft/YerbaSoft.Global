@@ -35,10 +35,14 @@ namespace WindowsHelper.Customs
                             NewMenu("Open SIRP", Properties.Resources.environment.ToBitmap(), JIRA.Jira.OpenSIRP),
                             NewMenu("Open SIRN", Properties.Resources.environment.ToBitmap(), JIRA.Jira.OpenSIRN)
                         }),
-                    NewSubMenu("GCBA VPN", Properties.Resources.environment_view.ToBitmap(),
+                    NewSubMenu("GCBA VPN", Properties.Resources.node.ToBitmap(),
                         new ToolStripMenuItem[] {
                             NewMenu("Open All", Properties.Resources.node.ToBitmap(), GCBA.VPNConnector.OpenAll),
                             NewMenu("Close All", Properties.Resources.node_delete.ToBitmap(), GCBA.VPNConnector.CloseAll)
+                        }),
+                    NewSubMenu("GCBA Tools", Properties.Resources.briefcase.ToBitmap(),
+                        new ToolStripMenuItem[] {
+                            NewMenu("Obtener Claves", Properties.Resources.keys.ToBitmap(), GCBA.GenerarClaves.OpenWin)
                         })
                 }
             );

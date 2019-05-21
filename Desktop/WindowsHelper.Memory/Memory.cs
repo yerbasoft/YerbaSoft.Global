@@ -20,7 +20,7 @@ namespace WindowsHelper.Memory
 
         private App AppConfig;
         private Configuration.SubMenu Config;
-        private ToolStripMenuItem HeadMenu { get; set; }
+        internal ToolStripMenuItem HeadMenu { get; set; }
 
         #endregion
 
@@ -40,8 +40,27 @@ namespace WindowsHelper.Memory
             HeadMenu = new ToolStripMenuItem(AppConfig.Name, DefaultIcon.ToBitmap());
 
             foreach (var link in Config.Items)
-                HeadMenu.DropDownItems.Add(link.GetMenu());
-            
+            {
+                var menu = link.GetMenu();
+
+                // NOTAS
+                if (link.Id == "B81B085E-2319-4B74-9EC8-4FA35A3F3068")
+                {
+                    var notes = new NOTES.Notes().GetNotes();
+                    foreach(var n in notes)
+                    {
+                        var m = new ToolStripMenuItem(n.Title);
+                        m.Tag = n;
+                        m.Image = Properties.Resources.note.ToBitmap();
+                        m.Click += NOTES.Notes.OpenNote;
+
+                        menu.DropDownItems.Add(m);
+                    }
+                }
+
+                HeadMenu.DropDownItems.Add(menu);
+            }
+
             return new ToolStripItem[] { HeadMenu };
         }
 
@@ -57,6 +76,7 @@ namespace WindowsHelper.Memory
         
         private void RefreshConfig()
         {
+            /*
             var result = XmlHelper.ValidateXMLFromFiles(Path.Combine(WindowsHelper.Config.AppPath, ConfigFileName), Path.Combine(WindowsHelper.Config.AppPath, ConfigXSDFileName));
             if (!result.Success)
             {
@@ -65,7 +85,7 @@ namespace WindowsHelper.Memory
 
                 return;
             }
-
+            */
             this.Config = new YerbaSoft.DTO.ConfigurationManager(Path.Combine(WindowsHelper.Config.AppPath, ConfigFileName)).GetMainElement<Configuration.SubMenu>();
         }
 

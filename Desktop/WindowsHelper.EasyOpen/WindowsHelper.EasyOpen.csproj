@@ -111,7 +111,13 @@
     <Content Include="EasyOpen\book_yellow.ICO">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="EasyOpen\Continnum.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="EasyOpen\downloads.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EasyOpen\edenor.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="EasyOpen\epub.ICO">

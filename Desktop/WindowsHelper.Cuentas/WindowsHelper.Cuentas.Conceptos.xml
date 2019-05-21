@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlSimpleRepository>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="208fc68583af4a41860a4e41037f50ef311b503e5a16426985ad6170a774d2bc">
+    <Id>53cfe798-7917-4c28-8299-8fd6ea3d608c</Id>
+    <Name>Ingresos Cardinal</Name>
+    <EsCredito>True</EsCredito>
+    <CreaFecha>19/5/2019 20:24:22</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+    <Observaciones>Sueldo</Observaciones>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="d74c8c733e3e407f860a5e26ccf965affb9c6664f84445b08beb50db4e44b4f6">
+    <Id>267e96d9-4590-4c5d-a622-bca609abefc8</Id>
+    <Name>Ingresos Continnum</Name>
+    <EsCredito>True</EsCredito>
+    <CreaFecha>19/5/2019 20:25:20</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+    <Observaciones>Ingresos de Proyectos Independientes con Continnum</Observaciones>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="53487e63bfaf4b5d94fdc2a8e8b70525e750d65d031d42e49e4c0a185d3008fb">
+    <Id>bd0a3780-11fe-4039-a4cf-7e90b395d044</Id>
+    <Name>Tarjeta Naranja</Name>
+    <EsCredito>False</EsCredito>
+    <Observaciones>
+    </Observaciones>
+    <CreaFecha>20/5/2019 14:44:39</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="9eb0b89c9d464393bd88597f0a427ce6e989af1bdc324d979ace0fa3c2c76ca0">
+    <Id>a78269b1-eca3-4e49-9814-3af893b070de</Id>
+    <Name>Tarjeta VISA Santander Rio</Name>
+    <EsCredito>False</EsCredito>
+    <Observaciones>
+    </Observaciones>
+    <CreaFecha>20/5/2019 14:44:59</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="218936f89a98427b96bc96b02fc6ef12f03c797d00a74ec8b7b830ac9bd98603">
+    <Id>a80d2003-b4e0-4dae-9966-f08c95dbddf0</Id>
+    <Name>Sabrina - Psicologa</Name>
+    <EsCredito>False</EsCredito>
+    <Observaciones>
+    </Observaciones>
+    <CreaFecha>20/5/2019 14:45:14</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="17908e1f25784d19ba83117bab258ef1bad9297e2140431bb71bc853f53f05a5">
+    <Id>8551ba44-2433-49a0-9b37-86af7601f708</Id>
+    <Name>Sabrina - Canto</Name>
+    <EsCredito>False</EsCredito>
+    <Observaciones>
+    </Observaciones>
+    <CreaFecha>20/5/2019 14:45:20</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="8b48a506ae9c4398b7bfcab9ceee83e3b24029263bc54807a8e9ac4582cf697f">
+    <Id>01473c4e-7757-468b-bc69-f0fa9c5082e4</Id>
+    <Name>Sabrina - Baile</Name>
+    <EsCredito>False</EsCredito>
+    <Observaciones>
+    </Observaciones>
+    <CreaFecha>20/5/2019 14:45:25</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="5fed2181334b4b698a7d774dd9b387c841394c2bd6604919a01570d213cfe5b7">
+    <Id>5134fd82-dd44-4e7a-bdbd-93f54d2826f9</Id>
+    <Name>Sabrina - SUBE</Name>
+    <EsCredito>False</EsCredito>
+    <Observaciones>
+    </Observaciones>
+    <CreaFecha>20/5/2019 14:45:33</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="e9681db3cc3548b8b1e645c804db8d30610abf70fdb1449093b69061cc831ff4">
+    <Id>68aa9227-b8e3-4416-b971-8b20d491097f</Id>
+    <Name>Auto - Arreglos</Name>
+    <EsCredito>False</EsCredito>
+    <Observaciones>
+    </Observaciones>
+    <CreaFecha>20/5/2019 14:45:56</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="a492bb2061774baca7714cd0649c763171b20ddc7c21448085eaabf0b02507e8">
+    <Id>e7968e57-cfb5-4d72-bee7-49fa5bce4078</Id>
+    <Name>Auto - Nafta</Name>
+    <EsCredito>False</EsCredito>
+    <Observaciones>
+    </Observaciones>
+    <CreaFecha>20/5/2019 14:46:12</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="de1ea21e3c8341f1995a13c30c922b11093abdc0a82d437fb1e3d9b03a1349da">
+    <Id>acfea326-44a7-428f-bd16-5230fe8c1b00</Id>
+    <Name>Gascón 887 - Gas</Name>
+    <EsCredito>False</EsCredito>
+    <Observaciones>Gas Natural Fenosa / Naturgy</Observaciones>
+    <CreaFecha>20/5/2019 14:43:08</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="a11aa8320422440bb2d01e88a5dcfada22391a2b672a45c0a6c0d5c9889645f4">
+    <Id>d85812f4-e047-48b8-8bf4-151809026194</Id>
+    <Name>Gascón 887 - Edenor</Name>
+    <EsCredito>False</EsCredito>
+    <Observaciones>
+    </Observaciones>
+    <CreaFecha>20/5/2019 14:43:22</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="04f87f3a3144424995c20dc48fec57ec66fb50c459c2470e9e94a393f16c2719">
+    <Id>580f8e11-e5dd-4d2a-8bf6-e2973b515c87</Id>
+    <Name>Gascón 887 - Agua</Name>
+    <EsCredito>False</EsCredito>
+    <Observaciones>
+    </Observaciones>
+    <CreaFecha>20/5/2019 14:43:34</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="5b74461a29584a3998c6cfa2eb0053e82f8a58157a314165b9bc38e049f8e32f">
+    <Id>712594fd-320d-4c63-873c-be922481f66c</Id>
+    <Name>Gascón 887 - Alquiler</Name>
+    <EsCredito>False</EsCredito>
+    <Observaciones>
+    </Observaciones>
+    <CreaFecha>20/5/2019 14:44:13</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="5d584ecd5ce646259f50eb216452996c945c37d6d285482b89b21531498b0f14">
+    <Id>555448d5-500c-4dba-bdaf-05291131cca3</Id>
+    <Name>Impuestos - AFIP Monotributo</Name>
+    <EsCredito>False</EsCredito>
+    <Observaciones>
+    </Observaciones>
+    <CreaFecha>20/5/2019 14:44:22</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="44e05ee890bd41a097e62f52ce984d7582591e6f4adc48049b63e030c47a80e8">
+    <Id>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</Id>
+    <Name>Impuestos - Omint</Name>
+    <EsCredito>False</EsCredito>
+    <Observaciones>
+    </Observaciones>
+    <CreaFecha>20/5/2019 14:44:29</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="832a5735c5674cc59d4f6d08238ef55810c6bb50f1d0407eacead2790a6f1b7e">
+    <Id>936286e9-b759-4099-b63d-6c2c79c62d2d</Id>
+    <Name>Servicios - Telecentro</Name>
+    <EsCredito>False</EsCredito>
+    <Observaciones>
+    </Observaciones>
+    <CreaFecha>20/5/2019 14:43:42</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="e78c2168d97d4ea683f6aa51b3342ea5dc51dbdb87da4f30be5b792faa5dcdf7">
+    <Id>b11785e6-0682-4815-9f6d-6fd428d996ab</Id>
+    <Name>Servicios - Soda</Name>
+    <EsCredito>False</EsCredito>
+    <Observaciones>
+    </Observaciones>
+    <CreaFecha>20/5/2019 14:43:48</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="1cdb45b7cf574adf8a498548233200eec49b5c6453d44ad8978b63f6753e2fb2">
+    <Id>8d2742c2-2064-4cb8-88f2-49e86de7db4a</Id>
+    <Name>Servicios - Movistar</Name>
+    <EsCredito>False</EsCredito>
+    <Observaciones>011 5836 2060</Observaciones>
+    <CreaFecha>20/5/2019 14:44:02</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="64c854f9318c402091caced0b3a686b7709ba36a22c041fcba6c7da9dd5e21be">
+    <Id>2b8a3404-65b0-4f59-ba26-8765212440ec</Id>
+    <Name>Gastos - Computación</Name>
+    <EsCredito>False</EsCredito>
+    <Observaciones>
+    </Observaciones>
+    <CreaFecha>20/5/2019 14:46:04</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="fd3163f2465645a78517d6df9bdffbabffedc3919f5b4398be4d9e96f1d51a2e">
+    <Id>d22e2a0e-068a-4c55-a13a-ce5310e9904f</Id>
+    <Name>Gastos - Varios</Name>
+    <EsCredito>False</EsCredito>
+    <Observaciones>Describir el gasto en las observaciones</Observaciones>
+    <CreaFecha>20/5/2019 14:46:42</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="2169e496306648128426f6fe59c095043f893d9096ed422f868cdd2816e3c746">
+    <Id>1553728b-bded-4b4c-bf6b-2d822cec8656</Id>
+    <Name>Gastos - Salidas</Name>
+    <EsCredito>False</EsCredito>
+    <Observaciones>
+    </Observaciones>
+    <CreaFecha>20/5/2019 14:46:25</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+</XmlSimpleRepository>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlSimpleRepository>
+  <WindowsHelper.Cuentas.DTO.Ahorro UniqueKey="ed652e42c5f14f06b502dc821633b27077173d5494ca4f4f8aa7853c87f15110">
+    <Id>9e70fc8e-4172-454b-867c-5e8684c04c71</Id>
+    <TipoAhorro>PlazoFijo</TipoAhorro>
+    <Entidad>Banco Credicoop</Entidad>
+    <Observaciones>Sabrina - Cumple 15 - Plazo Fijo 2</Observaciones>
+    <FechaDesde>6/5/2019 17:58:08</FechaDesde>
+    <FechaHasta>5/8/2019 17:58:08</FechaHasta>
+    <Monto>30000</Monto>
+    <TazaAnual>43</TazaAnual>
+    <CreaFecha>20/5/2019 17:58:08</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Ahorro>
+  <WindowsHelper.Cuentas.DTO.Ahorro UniqueKey="410fae9d6e834c3b97570173dfc8858a195c083431f54c0780badeca98076bf7">
+    <Id>9d372a19-b78a-455d-997a-807c29070d72</Id>
+    <TipoAhorro>PlazoFijo</TipoAhorro>
+    <Entidad>Banco Credicoop</Entidad>
+    <Observaciones>Sabrina - Cumple 15 - Plazo Fijo 3</Observaciones>
+    <FechaDesde>7/5/2019 17:58:53</FechaDesde>
+    <FechaHasta>5/8/2019 17:58:53</FechaHasta>
+    <Monto>20000</Monto>
+    <TazaAnual>48</TazaAnual>
+    <CreaFecha>20/5/2019 17:58:53</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Ahorro>
+  <WindowsHelper.Cuentas.DTO.Ahorro UniqueKey="c39d3607c29041cc820f0c99ef9ac0be3cbe457caa594031806ba095a4e93ebf">
+    <Id>c330b836-c398-46fd-ad2a-91bdd5416db3</Id>
+    <TipoAhorro>PlazoFijo</TipoAhorro>
+    <Entidad>Banco Credicoop</Entidad>
+    <Observaciones>Sabrina - Cumple 15 - Plazo Fijo 1</Observaciones>
+    <FechaDesde>4/4/2019 17:46:29</FechaDesde>
+    <FechaHasta>3/6/2019 17:46:29</FechaHasta>
+    <Monto>10000</Monto>
+    <TazaAnual>39</TazaAnual>
+    <CreaFecha>20/5/2019 17:46:29</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Ahorro>
+  <WindowsHelper.Cuentas.DTO.Ahorro UniqueKey="28ce98abb3d54a5dbe011a8aa5b92397dd7abcffbcb34b1ab68b5585df912d31">
+    <Id>3446d594-98fa-418d-b6ce-f8859e6e0e0f</Id>
+    <TipoAhorro>Dolares</TipoAhorro>
+    <Entidad>
+    </Entidad>
+    <Observaciones>Dolares en Cartera</Observaciones>
+    <FechaDesde>1/7/2018 10:45:41</FechaDesde>
+    <FechaHasta>
+    </FechaHasta>
+    <Monto>850</Monto>
+    <TazaAnual>
+    </TazaAnual>
+    <CreaFecha>21/5/2019 10:45:41</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Ahorro>
+</XmlSimpleRepository>

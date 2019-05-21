@@ -5,5 +5,6 @@
     <App Name="Memory" IAppClass="WindowsHelper.Memory.Memory" AssemblyName="WindowsHelper.Memory" />
     <App Name="Task" IAppClass="WindowsHelper.Task.Task" AssemblyName="WindowsHelper.Task" />
     <App Name="Customs" IAppClass="WindowsHelper.Customs.Customs" AssemblyName="WindowsHelper.Customs" />
+    <App Name="Cuentas" IAppClass="WindowsHelper.Cuentas.CuentasApp" AssemblyName="WindowsHelper.Cuentas" />
   </Applications>
 </WindowsHelper>

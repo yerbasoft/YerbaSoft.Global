@@ -44,9 +44,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configuration\Base.cs" />
+    <Compile Include="Configuration\CustomAction.cs" />
     <Compile Include="Configuration\SubMenu.cs" />
     <Compile Include="Configuration\ToClipBoard.cs" />
     <Compile Include="Memory.cs" />
+    <Compile Include="NOTES\EditNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NOTES\EditNote.Designer.cs">
+      <DependentUpon>EditNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NOTES\NoteDTO.cs" />
+    <Compile Include="NOTES\Notes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -55,6 +64,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\DAL\YerbaSoft.DAL.csproj">
+      <Project>{13034674-fe45-480d-8869-a3f00de94fcd}</Project>
+      <Name>YerbaSoft.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\DTO\YerbaSoft.DTO.csproj">
       <Project>{03356582-57fe-40a0-b032-9585df279cfc}</Project>
       <Name>YerbaSoft.DTO</Name>
@@ -65,6 +78,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="NOTES\EditNote.resx">
+      <DependentUpon>EditNote.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -118,6 +134,31 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Memory\red_up.ICO">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\note.ICO" />
+    <None Include="Resources\note_add.ICO" />
+    <None Include="Resources\note_delete.ICO" />
+    <None Include="Resources\note_edit.ICO" />
+    <None Include="Resources\note_find.ICO" />
+    <None Include="Resources\note_new.ICO" />
+    <None Include="Resources\note_pinned.ICO" />
+    <None Include="Resources\note_view.ICO" />
+    <None Include="Resources\bold.png" />
+    <None Include="Resources\italic.png" />
+    <None Include="Resources\underline.png" />
+    <None Include="Resources\fontsizedown.png" />
+    <None Include="Resources\fontsizeup.png" />
+    <None Include="Resources\fontcolor.png" />
+    <None Include="Resources\link.png" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\unlock.png" />
+    <None Include="Resources\backcolor.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\transparent.png" />
+    <None Include="Resources\settitle.png" />
+    <None Include="Resources\openwithapp.png" />
+    <Content Include="WindowsHelper.Memory.Notes.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="WindowsHelper.Memory.xml">

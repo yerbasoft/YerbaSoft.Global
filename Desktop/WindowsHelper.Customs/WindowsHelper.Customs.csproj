@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SLM">
+      <HintPath>..\packages\SLM.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,6 +48,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\Explorers.cs" />
+    <Compile Include="GCBA\GenerarClaves.cs" />
+    <Compile Include="GCBA\GenerarClavesWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GCBA\GenerarClavesWin.Designer.cs">
+      <DependentUpon>GenerarClavesWin.cs</DependentUpon>
+    </Compile>
     <Compile Include="GCBA\VPNConnector.cs" />
     <Compile Include="JIRA\Jira.cs" />
     <Compile Include="Customs.cs" />
@@ -77,6 +87,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="GCBA\GenerarClavesWin.resx">
+      <DependentUpon>GenerarClavesWin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="JIRA\OpenUrl.resx">
       <DependentUpon>OpenUrl.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,6 +166,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\node_delete.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note_add.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note_delete.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note_edit.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note_find.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note_new.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note_pinned.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note_view.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key1.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key1_add.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key1_delete.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key1_preferences.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keys.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase.ICO" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

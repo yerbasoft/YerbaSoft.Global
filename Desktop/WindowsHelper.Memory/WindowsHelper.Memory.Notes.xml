@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlSimpleRepository>
+  <WindowsHelper.Memory.NOTES.NoteDTO UniqueKey="f09d44cc355044f4a48be15445b0fb7d52fbe83110c34f848f5cc95e50a128dc">
+    <Id>ec52f4bd-3d42-4d0c-afb8-29ab716a7594</Id>
+    <Title>Agenda</Title>
+    <AutoOpen>False</AutoOpen>
+    <FormX>2957</FormX>
+    <FormY>200</FormY>
+    <FormWidth>721</FormWidth>
+    <FormHeight>473</FormHeight>
+    <BackColor>-1</BackColor>
+    <Content>{\rtf1\ansi\ansicpg1252\deff0\deflang2058{\fonttbl{\f0\fnil\fcharset0 Consolas;}}
+\viewkind4\uc1\pard\f0\fs24\par
+}
+</Content>
+  </WindowsHelper.Memory.NOTES.NoteDTO>
+</XmlSimpleRepository>

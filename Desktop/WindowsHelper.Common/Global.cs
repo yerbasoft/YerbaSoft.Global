@@ -89,6 +89,7 @@ namespace WindowsHelper
                 case ".xml": return @".\EasyOpen\XML.ico";
                 case ".gif": return @".\EasyOpen\file_gif.ico";
                 case ".jpg":
+                case ".png":
                 case ".jpeg":
                     return @".\EasyOpen\file_jpg.ico";
                 case ".bmp": return @".\EasyOpen\file_bmp.ico";
@@ -114,7 +115,12 @@ namespace WindowsHelper
                 case ".docx":
                     return @"C:\Program Files (x86)\Microsoft Office\root\Office16\WINWORD.EXE";
                 case ".sln":
-                    return @"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe";
+                    return @"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe";
+                case ".sql":
+                    return @"C:\Program Files\SQLDeveloper\sqldeveloper.exe";
+                case ".htm":
+                case ".html":
+                    return @".\EasyOpen\web.png";
                 default: return null;
             }
         }
