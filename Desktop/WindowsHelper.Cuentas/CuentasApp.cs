@@ -32,10 +32,13 @@ namespace WindowsHelper.Cuentas
             HeadMenu.DropDownItems.AddRange(
                 new ToolStripItem[] {
                     new ToolStripMenuItem("Agregar Movimiento", Properties.Resources.book_blue_add.ToBitmap(), factory.Add),
+                    new ToolStripMenuItem("Movimientos", Properties.Resources.book_blue_view.ToBitmap(), factory.VerMovimientos),
                     new ToolStripSeparator(),
                     new ToolStripMenuItem("Ahorros", Properties.Resources.money.ToBitmap(), factory.Ahorros),
                     new ToolStripSeparator(),
-                    new ToolStripMenuItem("Ver Cuentas", Properties.Resources.book_open.ToBitmap(), factory.Ver),
+                    new ToolStripMenuItem("Ver Mes (Excel)", Properties.Resources.book_open.ToBitmap(), factory.VerUltimoMesExcel),
+                    new ToolStripMenuItem("Ver Ultimo Año (Excel)", Properties.Resources.book_open.ToBitmap(), factory.VerUltimoAnioExcel),
+                    new ToolStripMenuItem("Ver Todas Cuentas (Excel)", Properties.Resources.book_open.ToBitmap(), factory.VerTodoExcel),
                     new ToolStripSeparator(),
                     new ToolStripMenuItem("Configuración", Properties.Resources.creditcards.ToBitmap(), factory.OpenConfig),
                 }

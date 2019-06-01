@@ -28,6 +28,12 @@ namespace WindowsHelper.Cuentas.Forms
         private void ResetForm()
         {
             ahorroBindingSource.DataSource = DAL.Session.Ahorros.Find().OrderByDescending(p => p.CreaFecha).ToArray();
+            foreach(var row in Grid.Rows.OfType<DataGridViewRow>())
+            {
+                var data = (DTO.Ahorro)row.DataBoundItem;
+                if ((data.FechaHasta ?? DateTime.MaxValue) < DateTime.Now)
+                    row.DefaultCellStyle.ForeColor = Color.Red;
+            }
 
             cmbTipo.Items.Clear();
             cmbTipo.Items.AddRange(Enum.GetNames(typeof(DTO.Ahorro.TipoAhorros)));
@@ -119,6 +125,11 @@ namespace WindowsHelper.Cuentas.Forms
         private void TxtMonto_TextChanged(object sender, EventArgs e)
         {
             ValidMonto(txtMonto, lMonto);
+        }
+
+        private void Grid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

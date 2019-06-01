@@ -29,16 +29,25 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ahorros));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ahorros));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.Grid = new System.Windows.Forms.DataGridView();
+            this.tipoAhorroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.entidadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Monto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TazaAnual = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dias = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ganancia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaDesdeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaHastaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.observacionesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ahorroBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.lTaza = new System.Windows.Forms.Label();
@@ -59,15 +68,6 @@
             this.txtObs = new System.Windows.Forms.TextBox();
             this.txtEntidad = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tipoAhorroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.entidadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Monto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TazaAnual = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dias = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ganancia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaDesdeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaHastaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.observacionesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grid)).BeginInit();
@@ -127,7 +127,94 @@
             this.Grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Grid.Size = new System.Drawing.Size(1020, 241);
             this.Grid.TabIndex = 0;
+            this.Grid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Grid_CellContentClick);
             this.Grid.SelectionChanged += new System.EventHandler(this.Grid_SelectionChanged);
+            // 
+            // tipoAhorroDataGridViewTextBoxColumn
+            // 
+            this.tipoAhorroDataGridViewTextBoxColumn.DataPropertyName = "TipoAhorro";
+            this.tipoAhorroDataGridViewTextBoxColumn.HeaderText = "Tipo de Ahorro";
+            this.tipoAhorroDataGridViewTextBoxColumn.Name = "tipoAhorroDataGridViewTextBoxColumn";
+            this.tipoAhorroDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tipoAhorroDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // entidadDataGridViewTextBoxColumn
+            // 
+            this.entidadDataGridViewTextBoxColumn.DataPropertyName = "Entidad";
+            this.entidadDataGridViewTextBoxColumn.HeaderText = "Entidad";
+            this.entidadDataGridViewTextBoxColumn.Name = "entidadDataGridViewTextBoxColumn";
+            this.entidadDataGridViewTextBoxColumn.ReadOnly = true;
+            this.entidadDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // Monto
+            // 
+            this.Monto.DataPropertyName = "Monto";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle1.Format = "C2";
+            dataGridViewCellStyle1.NullValue = null;
+            this.Monto.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Monto.HeaderText = "Monto";
+            this.Monto.Name = "Monto";
+            this.Monto.ReadOnly = true;
+            // 
+            // TazaAnual
+            // 
+            this.TazaAnual.DataPropertyName = "TazaAnual";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle2.Format = "##.##\'%\'";
+            dataGridViewCellStyle2.NullValue = null;
+            this.TazaAnual.DefaultCellStyle = dataGridViewCellStyle2;
+            this.TazaAnual.HeaderText = "TazaAnual";
+            this.TazaAnual.Name = "TazaAnual";
+            this.TazaAnual.ReadOnly = true;
+            // 
+            // Dias
+            // 
+            this.Dias.DataPropertyName = "Dias";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Dias.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Dias.HeaderText = "Dias";
+            this.Dias.Name = "Dias";
+            this.Dias.ReadOnly = true;
+            // 
+            // Ganancia
+            // 
+            this.Ganancia.DataPropertyName = "InteresEstimado";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle4.Format = "C2";
+            dataGridViewCellStyle4.NullValue = null;
+            this.Ganancia.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Ganancia.HeaderText = "Ganancia";
+            this.Ganancia.Name = "Ganancia";
+            this.Ganancia.ReadOnly = true;
+            // 
+            // fechaDesdeDataGridViewTextBoxColumn
+            // 
+            this.fechaDesdeDataGridViewTextBoxColumn.DataPropertyName = "FechaDesde";
+            dataGridViewCellStyle5.Format = "d";
+            dataGridViewCellStyle5.NullValue = null;
+            this.fechaDesdeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
+            this.fechaDesdeDataGridViewTextBoxColumn.HeaderText = "Inicio";
+            this.fechaDesdeDataGridViewTextBoxColumn.Name = "fechaDesdeDataGridViewTextBoxColumn";
+            this.fechaDesdeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // fechaHastaDataGridViewTextBoxColumn
+            // 
+            this.fechaHastaDataGridViewTextBoxColumn.DataPropertyName = "FechaHasta";
+            dataGridViewCellStyle6.Format = "d";
+            dataGridViewCellStyle6.NullValue = null;
+            this.fechaHastaDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle6;
+            this.fechaHastaDataGridViewTextBoxColumn.HeaderText = "Fin";
+            this.fechaHastaDataGridViewTextBoxColumn.Name = "fechaHastaDataGridViewTextBoxColumn";
+            this.fechaHastaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // observacionesDataGridViewTextBoxColumn
+            // 
+            this.observacionesDataGridViewTextBoxColumn.DataPropertyName = "Observaciones";
+            this.observacionesDataGridViewTextBoxColumn.HeaderText = "Observaciones";
+            this.observacionesDataGridViewTextBoxColumn.Name = "observacionesDataGridViewTextBoxColumn";
+            this.observacionesDataGridViewTextBoxColumn.ReadOnly = true;
+            this.observacionesDataGridViewTextBoxColumn.Width = 250;
             // 
             // ahorroBindingSource
             // 
@@ -341,92 +428,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Ver Ahorros";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tipoAhorroDataGridViewTextBoxColumn
-            // 
-            this.tipoAhorroDataGridViewTextBoxColumn.DataPropertyName = "TipoAhorro";
-            this.tipoAhorroDataGridViewTextBoxColumn.HeaderText = "Tipo de Ahorro";
-            this.tipoAhorroDataGridViewTextBoxColumn.Name = "tipoAhorroDataGridViewTextBoxColumn";
-            this.tipoAhorroDataGridViewTextBoxColumn.ReadOnly = true;
-            this.tipoAhorroDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // entidadDataGridViewTextBoxColumn
-            // 
-            this.entidadDataGridViewTextBoxColumn.DataPropertyName = "Entidad";
-            this.entidadDataGridViewTextBoxColumn.HeaderText = "Entidad";
-            this.entidadDataGridViewTextBoxColumn.Name = "entidadDataGridViewTextBoxColumn";
-            this.entidadDataGridViewTextBoxColumn.ReadOnly = true;
-            this.entidadDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // Monto
-            // 
-            this.Monto.DataPropertyName = "Monto";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle1.Format = "C2";
-            dataGridViewCellStyle1.NullValue = null;
-            this.Monto.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Monto.HeaderText = "Monto";
-            this.Monto.Name = "Monto";
-            this.Monto.ReadOnly = true;
-            // 
-            // TazaAnual
-            // 
-            this.TazaAnual.DataPropertyName = "TazaAnual";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle2.Format = "##.##\'%\'";
-            dataGridViewCellStyle2.NullValue = null;
-            this.TazaAnual.DefaultCellStyle = dataGridViewCellStyle2;
-            this.TazaAnual.HeaderText = "TazaAnual";
-            this.TazaAnual.Name = "TazaAnual";
-            this.TazaAnual.ReadOnly = true;
-            // 
-            // Dias
-            // 
-            this.Dias.DataPropertyName = "Dias";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Dias.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Dias.HeaderText = "Dias";
-            this.Dias.Name = "Dias";
-            this.Dias.ReadOnly = true;
-            // 
-            // Ganancia
-            // 
-            this.Ganancia.DataPropertyName = "InteresEstimado";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle4.Format = "C2";
-            dataGridViewCellStyle4.NullValue = null;
-            this.Ganancia.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Ganancia.HeaderText = "Ganancia";
-            this.Ganancia.Name = "Ganancia";
-            this.Ganancia.ReadOnly = true;
-            // 
-            // fechaDesdeDataGridViewTextBoxColumn
-            // 
-            this.fechaDesdeDataGridViewTextBoxColumn.DataPropertyName = "FechaDesde";
-            dataGridViewCellStyle5.Format = "d";
-            dataGridViewCellStyle5.NullValue = null;
-            this.fechaDesdeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
-            this.fechaDesdeDataGridViewTextBoxColumn.HeaderText = "Inicio";
-            this.fechaDesdeDataGridViewTextBoxColumn.Name = "fechaDesdeDataGridViewTextBoxColumn";
-            this.fechaDesdeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // fechaHastaDataGridViewTextBoxColumn
-            // 
-            this.fechaHastaDataGridViewTextBoxColumn.DataPropertyName = "FechaHasta";
-            dataGridViewCellStyle6.Format = "d";
-            dataGridViewCellStyle6.NullValue = null;
-            this.fechaHastaDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle6;
-            this.fechaHastaDataGridViewTextBoxColumn.HeaderText = "Fin";
-            this.fechaHastaDataGridViewTextBoxColumn.Name = "fechaHastaDataGridViewTextBoxColumn";
-            this.fechaHastaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // observacionesDataGridViewTextBoxColumn
-            // 
-            this.observacionesDataGridViewTextBoxColumn.DataPropertyName = "Observaciones";
-            this.observacionesDataGridViewTextBoxColumn.HeaderText = "Observaciones";
-            this.observacionesDataGridViewTextBoxColumn.Name = "observacionesDataGridViewTextBoxColumn";
-            this.observacionesDataGridViewTextBoxColumn.ReadOnly = true;
-            this.observacionesDataGridViewTextBoxColumn.Width = 250;
             // 
             // Ahorros
             // 

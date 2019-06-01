@@ -70,11 +70,6 @@ namespace WindowsHelper.Cuentas.Forms
             ValidMonto();
         }
 
-        private void TxtMonto_Validating(object sender, CancelEventArgs e)
-        {
-            e.Cancel = !ValidMonto();
-        }
-
         private bool ValidMonto()
         {
             var regex = new Regex("^[0-9]{1,7}(.[0-9]{1,2}|)$");

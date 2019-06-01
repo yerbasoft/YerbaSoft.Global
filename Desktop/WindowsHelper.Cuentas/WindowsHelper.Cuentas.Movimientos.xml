@@ -1,21 +1,2574 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <XmlSimpleRepository>
-  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="813e164f05644e5f8a63d8d22bcf7c942070de4276624a6da1fa91451ce2ad0f">
-    <Id>e04651c2-0ad8-4e2c-a9c7-180d9886820b</Id>
-    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
-    <Fecha>21/5/2019 11:10:52</Fecha>
-    <Monto>1064.68</Monto>
-    <Observaciones>Pagado con Mercado Pago</Observaciones>
-    <FileRef>Z:\Mios\Banco\Movimientos\20190521 GAS NATURAL FENOSA 201906.pdf</FileRef>
-    <CreaFecha>21/5/2019 11:13:07</CreaFecha>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="0737a8a81d8e4fd288d624ffa2afed29bfafa2a5d5eb45aab746fa5b183caade">
+    <Id>7672d63d-91ae-43d2-8e29-b11fbd90ae56</Id>
+    <IdConcepto>d85812f4-e047-48b8-8bf4-151809026194</IdConcepto>
+    <Fecha>636194304000000000</Fecha>
+    <Monto>693.98</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20170108 EDENOR.png</FileRef>
+    <CreaFecha>636944938767450088</CreaFecha>
   </WindowsHelper.Cuentas.DTO.Movimiento>
-  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="9d83e26e01334a979aae5ecbb2079621e4505afa6c794da7820cf79caba9ea4d">
-    <Id>c0e4f459-9d74-4d15-b1c4-250c36b37463</Id>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="0e8b65c9fbbf411d93e6a3d182d08873dac650bdafa94a1da7c81a8dd68ec3f5">
+    <Id>6327eb38-430c-42e0-a121-c2410a0ae1bd</Id>
+    <IdConcepto>46111c60-d7c0-4556-846b-5ef67a9ce23f</IdConcepto>
+    <Fecha>636323904000000000</Fecha>
+    <Monto>15000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20170607 ABOGADA FOTI ALIMENTOS CARINA WEINZETTEL.png</FileRef>
+    <CreaFecha>636944938767460079</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="cba80015699b42bd985082d722c9b9b918b1926b600e412aa658ab70529c6c77">
+    <Id>c841a448-c954-45d2-b329-4d6813d5925f</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636323904000000000</Fecha>
+    <Monto>5800</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20170607 ALQUILER.png</FileRef>
+    <CreaFecha>636944938767460079</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="a3762c44025f4feaa4fc1fb6e878fc019ddb35d23e5e4ff1b3b5d2da60089820">
+    <Id>440be322-ee59-4e66-ac94-a6aeef149ffc</Id>
+    <IdConcepto>d85812f4-e047-48b8-8bf4-151809026194</IdConcepto>
+    <Fecha>636323904000000000</Fecha>
+    <Monto>580.97</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20170607 EDENOR.png</FileRef>
+    <CreaFecha>636944938767460079</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="5aab3ed56f4b4ebeb458235efa5729f1e8e7a8cd58124ba0901dc5a66c9b2b20">
+    <Id>bd0f9a99-224f-4599-b9c4-b116d58a9af3</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>636323904000000000</Fecha>
+    <Monto>817.99</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20170607 MOVISTAR.png</FileRef>
+    <CreaFecha>636944938767460079</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="7362af9fce534361895532a699ff1311c2b6659f6e7f49e38c4bba0743b747ec">
+    <Id>a76a900b-73f7-49d1-a7a3-96357ed6fee6</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>636323904000000000</Fecha>
+    <Monto>3989.16</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20170607 OMINT.png</FileRef>
+    <CreaFecha>636944938767460079</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="e1fe4e69132f42e09264c4b2852360b2bac6e38b754a4261a6fdca1fc4f986cc">
+    <Id>3d8f12c3-48dd-4514-b5a9-196ca11e71da</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636350688000000000</Fecha>
+    <Monto>5800</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20170708 ALQUILER.pdf</FileRef>
+    <CreaFecha>636944938767460079</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="29a1106fa221498795cedac3829c21455daca3d2382048049a58788123f5429c">
+    <Id>7f91f92e-1b17-4a0a-b8cf-e443542cf667</Id>
     <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
-    <Fecha>21/5/2019 11:13:07</Fecha>
+    <Fecha>636352416000000000</Fecha>
+    <Monto>686.16</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20170710 GAS NATURAL FENOSA CUOTA 11704.png</FileRef>
+    <CreaFecha>636944938767460079</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="20be2e7c95a0447687249a99e5f3671e5c320354d03c4464987b3cf9a2bc0820">
+    <Id>123f1682-80b7-491a-b96c-215055dfd2bc</Id>
+    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
+    <Fecha>636352416000000000</Fecha>
+    <Monto>686.16</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20170710 GAS NATURAL FENOSA CUOTA 21704.png</FileRef>
+    <CreaFecha>636944938767460079</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="6d12eb237498452b9b5cd4a37d297b01bc3eeb49dcf44b02b8b4d0bf19e5a830">
+    <Id>473d87c1-27aa-4681-b581-5014819a7cd8</Id>
+    <IdConcepto>46111c60-d7c0-4556-846b-5ef67a9ce23f</IdConcepto>
+    <Fecha>636356736000000000</Fecha>
+    <Monto>4250</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20170715 ABOGADA FOTI ALIMENTOS MARIELA WEINZETTEL.png</FileRef>
+    <CreaFecha>636944938767460079</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="524067a15be14a9d89c3f60a1be9d7318e2e3edc09ac42a2aaaf7c93034ce4f0">
+    <Id>c731a7a7-cae9-46b3-a256-fb2a7b425243</Id>
+    <IdConcepto>46111c60-d7c0-4556-846b-5ef67a9ce23f</IdConcepto>
+    <Fecha>636374016000000000</Fecha>
+    <Monto>2500</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20170804 ABOGADA FOTI ALIMENTOS MARIELA WEINZETTEL.png</FileRef>
+    <CreaFecha>636944938767460079</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="9ff4325fbd694557834e691a692ce62e582bfa20099c43b9a1eb64eb5d103d48">
+    <Id>3fbfb642-cfa0-4c19-a731-ca5345384b8a</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636374016000000000</Fecha>
+    <Monto>5800</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20170804 ALQUILER.png</FileRef>
+    <CreaFecha>636944938767460079</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="c774f44f04864874a2dac40c03201f6ed86eb941751e4aefa5b32b89c1ac2b22">
+    <Id>8fdb6a48-2fcc-484b-aa1e-cfc9e0dc0162</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>636374016000000000</Fecha>
+    <Monto>816.46</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20170804 MOVISTAR.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="1672d1cf88b34ade990bab020298ba3c354deb2abb504d3fa503fb26cf1a4eed">
+    <Id>6a5b93f6-dd7a-4ab9-bbb1-24e2d0e04527</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>636374016000000000</Fecha>
+    <Monto>4455.93</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20170804 OMINT.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="668c9027c6684b0fbbb79b74f282b27430690749603d45d2a1bf4d02cc85586c">
+    <Id>a2ec4362-0d38-40fc-9198-5970b4b027ca</Id>
+    <IdConcepto>d22e2a0e-068a-4c55-a13a-ce5310e9904f</IdConcepto>
+    <Fecha>636379200000000000</Fecha>
+    <Monto>3598</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20170810 EBOOKS x2.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="754839b6e15846a09e3dd123c8ac92c003bb241c303a4e149e2db31bb2d4a7c4">
+    <Id>eade52de-7ef4-41e1-a3ec-6adf0cdd6540</Id>
+    <IdConcepto>d85812f4-e047-48b8-8bf4-151809026194</IdConcepto>
+    <Fecha>636379200000000000</Fecha>
+    <Monto>365.69</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20170810 EDENOR.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="518c5a2fa6f0473f850f08a20a860cc4001feea9242c4b50ba661c54f00a222e">
+    <Id>60c8830d-1ca7-4028-a847-10d4486c5347</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636404256000000000</Fecha>
+    <Monto>7000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20170908 ALQUILER.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="d6545f26891a43868fa97efa7d65b4a26be05d4253724b47884cdc24cf634df0">
+    <Id>fe22b072-a1cf-4498-83fd-4f048771e84d</Id>
+    <IdConcepto>d85812f4-e047-48b8-8bf4-151809026194</IdConcepto>
+    <Fecha>636404256000000000</Fecha>
+    <Monto>346.14</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20170908 EDENOR.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="5b4ddd71a6db4f1385dd31f23ae51ac62a63c3ff2e4b4b789a986a92b22f73db">
+    <Id>65777100-3054-4bd4-b443-4c5b5dda0971</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>636404256000000000</Fecha>
+    <Monto>816.46</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20170908 MOVISTAR.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="29a952e574e94057adef836b918da71fe1c75e321952459580e6e7432b96e34b">
+    <Id>b63cf731-79a1-4e3d-ba9f-6d14102fc6b6</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>636404256000000000</Fecha>
+    <Monto>4687.38</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20170908 OMINT.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="bbd44c8217cb4d9caa789101e65313d7debfe7cb3a1d4e6eb8e3d39adf20d8dc">
+    <Id>91bd2289-5df5-4ff3-b1d7-28077455b2fa</Id>
+    <IdConcepto>555448d5-500c-4dba-bdaf-05291131cca3</IdConcepto>
+    <Fecha>636425856000000000</Fecha>
+    <Monto>9910.46</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20171003 AFIP VEP DEUDA.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="e800d615e7bd45479349423b724f8c6f05e099b1452e4590b662470d500e9e97">
+    <Id>57c4e109-0b31-4ffd-9181-5d330416eedf</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636425856000000000</Fecha>
+    <Monto>7000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20171003 ALQUILER.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="8cfb523257094357bb9e1b6fb9d2636bcac9868b22da45ffa2daca03d3fa0d53">
+    <Id>bdd09aa9-1934-44ce-9ab0-a67c8d705968</Id>
+    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
+    <Fecha>636425856000000000</Fecha>
+    <Monto>876.07</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20171003 GAS NATURAL FENOSA CUOTA 11705.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="74c4f0dea82343c2abd232114ede82df156d5e14302f437098ce288e45bab43f">
+    <Id>417b2356-3f94-49db-b57c-71e01b16d829</Id>
+    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
+    <Fecha>636425856000000000</Fecha>
+    <Monto>876.07</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20171003 GAS NATURAL FENOSA CUOTA 21705.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="2ecbbd955ce84940904a3dead58991081c7f0c133d43487099e364a2ad4a057b">
+    <Id>94d2e099-6347-4a37-900e-dedd9a5a8cc7</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>636425856000000000</Fecha>
+    <Monto>826.54</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20171003 MOVISTAR.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="ee645d7c001441a09540531a70cf47dc41a5029911d84ace9aaec023d7f0822a">
+    <Id>93adab1e-0366-4eb4-ac39-0881fa876d4e</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>636425856000000000</Fecha>
+    <Monto>4687.38</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20171003 OMINT.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="02f86714cba44e068addcad5d868fb3b9f7b6120d5e3432c8cc899d0a6964a0a">
+    <Id>4619d9c5-2125-4ac8-867d-839eafb52f4c</Id>
+    <IdConcepto>d85812f4-e047-48b8-8bf4-151809026194</IdConcepto>
+    <Fecha>636431904000000000</Fecha>
+    <Monto>346.14</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20171010 EDENOR.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="af06e95b5cdd4f98baf78cbf276137f4400a43e212f845fdbfcfa79a727ca2e8">
+    <Id>c0521961-6bdb-4e0a-ad76-4415697d16b2</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636453504000000000</Fecha>
+    <Monto>7000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20171104 ALQUILER.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="18736c5f9c0b4efb88ee0441f73b5c25adf4016f8c1e473e805b24af40e1afbc">
+    <Id>2ac85924-bccd-4e5c-aff6-88d4f1765a1a</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>636453504000000000</Fecha>
+    <Monto>947.26</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20171104 MOVISTAR.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="6deb49bc8b784b768b66fcb9a268c79a902f7c27c5f5424c8a36f14c9bc38479">
+    <Id>35faa293-1b8a-47f4-91bb-7967362f6433</Id>
+    <IdConcepto>bd0a3780-11fe-4039-a4cf-7e90b395d044</IdConcepto>
+    <Fecha>636453504000000000</Fecha>
+    <Monto>2076.14</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20171104 NARANJA.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="75c9d661636d47428d298c1bd9b563bf9f4cd3456fd24bcf938d2d486c7e9531">
+    <Id>94fdac32-a518-4d43-944c-5a257f20a6ca</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>636453504000000000</Fecha>
+    <Monto>4686.81</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20171104 OMINT.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="c676410b43d04eecbe926121f6e8030de536d8ad57dd4e77b4d78eefc3c6bbfc">
+    <Id>77b029d5-160b-4c31-89ae-337a1d8dc748</Id>
+    <IdConcepto>d85812f4-e047-48b8-8bf4-151809026194</IdConcepto>
+    <Fecha>636469920000000000</Fecha>
+    <Monto>414.37</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20171123 EDENOR.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="8d8404c1c1a347d7a8b74a23edc5c0e018f7d472e3424677a42a6d4e8b6fa8d1">
+    <Id>1b30c5bb-e979-4b30-82e0-f6ccc7fae259</Id>
+    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
+    <Fecha>636469920000000000</Fecha>
+    <Monto>1939.76</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20171123 GAS NATURAL FENOSA CUOTA 11706.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="02480dc1fe67483e8f84230891922bc6dbc5c5919bf44a429ae80902de1038ca">
+    <Id>f6f9e339-4baa-434d-a210-02b07423229c</Id>
+    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
+    <Fecha>636469920000000000</Fecha>
+    <Monto>1939.76</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20171123 GAS NATURAL FENOSA CUOTA 21706.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="ae0821e21de74fb6a94b4efcc9cf10ed16076f6fae3149818b61fa6b9a2f427a">
+    <Id>cf10ec66-14cd-4180-8433-b213bcad884a</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636481152000000000</Fecha>
+    <Monto>7000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20171206 ALQUILER.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="2fe409b20f0e4966bc6e1b5817ffa1822823a695eeff4810bb9c67697549cac5">
+    <Id>d6e8e157-29c9-4d36-8eef-cf279e830103</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>636481152000000000</Fecha>
+    <Monto>1190.34</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20171206 MOVISTAR.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="4b23509e7cd54d3eb7fff9bbafa6bb51ab47934d9d8648e7bb66a923dd01d30d">
+    <Id>289f1aed-fe24-41aa-a060-1721df54ac49</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>636481152000000000</Fecha>
+    <Monto>4968.01</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20171206 OMINT.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="513a3c42712045cbb4993f63ae5050a236a59517ff424ab7ae39bb27ac51a238">
+    <Id>15e997de-07f6-4fcc-b2e4-3f7cde59ac23</Id>
+    <IdConcepto>bd0a3780-11fe-4039-a4cf-7e90b395d044</IdConcepto>
+    <Fecha>636481152000000000</Fecha>
+    <Monto>1736.01</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20171206 TARJETA NARANJA.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="67fc3b96ff904bea87f5e260bb1005493054ceca269444c59f69a8fcd4855f57">
+    <Id>1ec56141-0e94-443d-b6d1-6f4734226cbf</Id>
+    <IdConcepto>d85812f4-e047-48b8-8bf4-151809026194</IdConcepto>
+    <Fecha>636485472000000000</Fecha>
+    <Monto>425.66</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20171211 EDENOR.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="9666936a9d76479c9609931c5fdc89d0e6387e55ef9e4a58a68d571858385edf">
+    <Id>bd72fe95-cfc3-4cca-8eed-520f6ef61ebf</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636506208000000000</Fecha>
+    <Monto>7000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180104 ALQUILER.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="6bf26fe7c38a497aaa69d0bb2e7b40a51dbfe6bbff2a47b7ae4f29aecd594c50">
+    <Id>476cf6db-3e6d-41f7-ae8c-ab7ac4b55274</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>636506208000000000</Fecha>
+    <Monto>1158.16</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180104 MOVISTAR.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="1fa901a124354fbe93329e4ab575f3db2ef9c727f1684da8b42574ddd3d95365">
+    <Id>27c292cc-020b-4ea0-bff0-4213940e7862</Id>
+    <IdConcepto>bd0a3780-11fe-4039-a4cf-7e90b395d044</IdConcepto>
+    <Fecha>636506208000000000</Fecha>
+    <Monto>3496.89</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180104 NARANJA.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="697fc1e374c34e5696fb913eb96139b8fba7322cc40844bc9e380ca0db8d6fe3">
+    <Id>f0addc68-86e6-43e9-b3f7-e9d24b20d236</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>636506208000000000</Fecha>
+    <Monto>4968.01</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180104 OMINT.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="69a0872678984c4cb4d092f87bec708736fe7dab49ca470984826624adfd9417">
+    <Id>54171eb1-0c7e-4592-9510-279d3dfe689b</Id>
+    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
+    <Fecha>636521760000000000</Fecha>
+    <Monto>605.92</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180122 GAS NATURAL FENOSA CUOTA 11801.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="aa1076d22228461bbcc75ab2b447d3550ab33607a6c8470fb597ca997ab49b90">
+    <Id>4e87f8a3-f2b2-421d-b436-74b967a663d7</Id>
+    <IdConcepto>580f8e11-e5dd-4d2a-8bf6-e2973b515c87</IdConcepto>
+    <Fecha>636533856000000000</Fecha>
+    <Monto>336.08</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180205 AGUA.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="c8a977c3d41447c688f6e08e751c119b67de23c7715047e398eccac35d95ba4a">
+    <Id>badf54bd-5782-42f3-9a7f-60c83b773d01</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636533856000000000</Fecha>
+    <Monto>7000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180205 ALQUILER.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="e8a9fdb5bb1c408fb35a5cb0febf306764be09a3469a4b50b147212419e092d5">
+    <Id>7011eca9-e80a-492a-a73a-db3fcf64aefe</Id>
+    <IdConcepto>555448d5-500c-4dba-bdaf-05291131cca3</IdConcepto>
+    <Fecha>636533856000000000</Fecha>
+    <Monto>4922.42</Monto>
+    <Observaciones>Deuda anterior</Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180205 DEUDA AFIP.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="f56d55a6a7e74e75bd35034d706dac9ac430dd0ae5a34351859b49ccf55e7034">
+    <Id>75213a85-e195-4eef-9136-4fc02f39f468</Id>
+    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
+    <Fecha>636533856000000000</Fecha>
+    <Monto>605.92</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180205 GAS CUOTA 21801.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="e4e2b69cc89c4ad3a9789accef932dbbfa450d995da24be88e73e6c8c60060d1">
+    <Id>5c773629-9b49-4ed4-860b-1651fbcabebe</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>636533856000000000</Fecha>
+    <Monto>1176.09</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180205 MOVISTAR.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="a905891e16704bfca6b9a1f1a32a1356dee770e000684a8689e021cd656694c9">
+    <Id>bdb95d87-42e1-4cbc-ac27-d8e91283f0c3</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>636533856000000000</Fecha>
+    <Monto>5166.74</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180205 OMINT.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="26ebe838c3c24b5c9094d1dee72d624bf76875a8a8094655b3e4ee8e4cf7a7f5">
+    <Id>45ff8336-6ee7-4ba2-a568-106efc796bee</Id>
+    <IdConcepto>bd0a3780-11fe-4039-a4cf-7e90b395d044</IdConcepto>
+    <Fecha>636533856000000000</Fecha>
+    <Monto>4003.90</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180205 TARJETA NARANJA.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="0676467b64d94d889a4cf781410fbb0deeba5e6f1f0241fcb2f266fdc8df29e1">
+    <Id>a5531d50-f8ec-4b0e-8e20-bb1249269370</Id>
+    <IdConcepto>d85812f4-e047-48b8-8bf4-151809026194</IdConcepto>
+    <Fecha>636535584000000000</Fecha>
+    <Monto>1095.51</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180207 EDESUR.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="4196e433fbd242a18194af91c63e2932fd144e5c28f44d46b92796f28dc90e17">
+    <Id>4649e152-69d7-4bc0-bd17-ef08e009dc22</Id>
+    <IdConcepto>4580937d-a6c7-4227-8767-5dee20156679</IdConcepto>
+    <Fecha>636541632000000000</Fecha>
+    <Monto>1000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180214 CONSTITUCION PLAZO FIJO.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="f8da4c65699c4427bf897c73f26acbe62904f51793bb448c8f4645be0d619351">
+    <Id>cde3b47f-541c-4466-9630-e85a28cae314</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>636558048000000000</Fecha>
+    <Monto>5166.74</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180305 OMINT.jpg</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="7e43755e9360472e91f30c78a4a30894ecc81a1febb24009b354289deb0c103f">
+    <Id>b6c6f85d-eb8b-406b-8a86-6c3c922641be</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636558912000000000</Fecha>
+    <Monto>7000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180306 ALQUILER.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="0bbd188abfb8421e8c01d5ba5bbc76026e6b2c55159f44f390963cfd51856c63">
+    <Id>982f2bbd-4978-4f9b-9007-2a91da69282a</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>636558912000000000</Fecha>
+    <Monto>1260.25</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180306 MOVISTAR.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="a211b413030f406aa3da21b647f30dd029702df2e0be4d74a792733c8b33c2d8">
+    <Id>83c25fba-bcb8-4f8d-a933-08700b3bd90e</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>636558912000000000</Fecha>
+    <Monto>5166.74</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180306 OMINT - Transfer Georgina.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="fdfe13afa1134ee5821a5cea487d1133fa19970101214852a38323974b7954d7">
+    <Id>1b12a70a-c1c9-4a65-927e-84d33df87b19</Id>
+    <IdConcepto>bd0a3780-11fe-4039-a4cf-7e90b395d044</IdConcepto>
+    <Fecha>636558912000000000</Fecha>
+    <Monto>3921.93</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180306 TARJETA NARANJA.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="721128451d2341a4957ff07c8f99ae4ed976bfd31f7843e19b880b555574c1dc">
+    <Id>bc4d4337-5943-4b1e-b39c-5c1362fd5079</Id>
+    <IdConcepto>d85812f4-e047-48b8-8bf4-151809026194</IdConcepto>
+    <Fecha>636561504000000000</Fecha>
+    <Monto>2432.86</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180309 EDESUR.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="41acecbba8a14241adbc07e69e2c59b04bb1e1c857204de1acc63a58ff297753">
+    <Id>afed6f60-8bd3-4d21-b946-328a9c8dd9bd</Id>
+    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
+    <Fecha>636567552000000000</Fecha>
+    <Monto>657.68</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180316 GAS NATURAL FENOSA CUOTA 11802.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="c19c61b6809f4a208c54d7624addcf1828e5f3d128c74befa25b92717012fd18">
+    <Id>4962b4e4-e589-468b-89c0-b3f4b8edbd6d</Id>
+    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
+    <Fecha>636567552000000000</Fecha>
+    <Monto>657.68</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180316 GAS NATURAL FENOSA CUOTA 21802.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="afb9c596ed1540adab2fee44cd76a6bb75d866a3a3ec483b9e282ec3be9d3c1d">
+    <Id>39c4613c-3e20-4fff-82cb-d2c97078502b</Id>
+    <IdConcepto>d22e2a0e-068a-4c55-a13a-ce5310e9904f</IdConcepto>
+    <Fecha>636567552000000000</Fecha>
+    <Monto>300</Monto>
+    <Observaciones>Regalo para Sabrina</Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180316 REGALO SABRINA.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="6372db2b54384167a0f0c6ce5772e606337a72904ace4bacbd4be3ff6ebad850">
+    <Id>371e2815-0b2f-4695-ba81-ecf14b0084fd</Id>
+    <IdConcepto>d22e2a0e-068a-4c55-a13a-ce5310e9904f</IdConcepto>
+    <Fecha>636572736000000000</Fecha>
+    <Monto>300</Monto>
+    <Observaciones>Regalo para Sabrina</Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180322 REGALO SABRINA.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="c7ceaaed4bab42f99e989ca82bec79bf084d5b52637041d68227589b53bdbb60">
+    <Id>1be20faf-e9ab-418b-a5e9-5f673c4bc5e5</Id>
+    <IdConcepto>580f8e11-e5dd-4d2a-8bf6-e2973b515c87</IdConcepto>
+    <Fecha>636589152000000000</Fecha>
+    <Monto>309.69</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180410 AGUA.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="b30177f553774525be34301883fce820dfb56b7c18ba49469295bbaa65e9bd08">
+    <Id>a6343dba-3eec-4458-90b0-d3ce986e6bd2</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636589152000000000</Fecha>
+    <Monto>7000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180410 ALQUILER.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="bec0e17eb55547da88bb5cbdf4fba2394b33f567dee148eba772bbab59756bb1">
+    <Id>3518e4b7-424d-47c9-80ae-0fb30f50dc22</Id>
+    <IdConcepto>d85812f4-e047-48b8-8bf4-151809026194</IdConcepto>
+    <Fecha>636589152000000000</Fecha>
+    <Monto>2936.81</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180410 EDENOR.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="c52cb23011324639aaceada0a4e6a5618be1b19b48ff40e299d73769c93b039c">
+    <Id>eacaeb3e-2c49-4d14-868f-479b73ae16b7</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>636589152000000000</Fecha>
+    <Monto>1260.58</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180410 MOVISTAR.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="7fbb004622734362bc7bae5b78bcd544d15dd07815ee4f27a7e190d958cdcb84">
+    <Id>78e4a220-ef9f-4a26-94de-bad8600ba814</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>636589152000000000</Fecha>
+    <Monto>5166.74</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180410 OMINT.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="88b8dfe8d2b342b5a36a294c0192f0f2138affe8fb1f4130b30985c0fc43e111">
+    <Id>cdfe7659-71b4-4c5d-9a2b-81cb5c01cd91</Id>
+    <IdConcepto>bd0a3780-11fe-4039-a4cf-7e90b395d044</IdConcepto>
+    <Fecha>636589152000000000</Fecha>
+    <Monto>3807.73</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180410 TARJETA NARANJA.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="3be667d83aa4457894fc4b87e0e8a76b8383422a8b0946fbb807e068a983d6d5">
+    <Id>fde8e1d4-1267-4f37-8119-2168f64281dd</Id>
+    <IdConcepto>a78269b1-eca3-4e49-9814-3af893b070de</IdConcepto>
+    <Fecha>636590016000000000</Fecha>
+    <Monto>1090</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180411 SEGURO AUTO.png</FileRef>
+    <CreaFecha>636944938767470076</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="873842d3d7aa4bf38d56615f7d0661322e5e406f3536407bac5e101ac0f63243">
+    <Id>feb9e56c-ef97-41fd-802b-b48b36899f76</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636612480000000000</Fecha>
+    <Monto>7000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180507 ALQUILER.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="42bf656e36204fbfb6d509ee1d5d400d8c3a3ffd2f2e4b309963bab008b246bb">
+    <Id>1b7feb0e-9f3a-48f1-9dd4-04d3e9519018</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>636612480000000000</Fecha>
+    <Monto>1260.25</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180507 MOVISTAR.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="c114b75d875c41cd9828114b417e6eed952b19311b92416d824a6cdae54830f1">
+    <Id>552a13b2-61e7-45a7-bfa8-4be6e5ff1d7e</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>636612480000000000</Fecha>
+    <Monto>5269.52</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180507 OMINT.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="5ffad41563e646dbb96351971ef38efc4d5f33ab94064cfd9e0350196fb4b7fb">
+    <Id>e7a49e63-b3bc-439b-a34a-09fb40edf763</Id>
+    <IdConcepto>a78269b1-eca3-4e49-9814-3af893b070de</IdConcepto>
+    <Fecha>636612480000000000</Fecha>
+    <Monto>1090</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180507 SEGURO AUTO.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="1f72291f4637461ca8be37bd6fba231b075b7cae4ea74ca09c30a7a0dc4a76cc">
+    <Id>fa0ebbc7-c37a-47df-8385-5311ac894f76</Id>
+    <IdConcepto>bd0a3780-11fe-4039-a4cf-7e90b395d044</IdConcepto>
+    <Fecha>636612480000000000</Fecha>
+    <Monto>3871.82</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180507 TARJETA NARANJA.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="ea91334b1d06419fadce466a2909b5c30ce011d6852a42b38d5cb65452316e36">
+    <Id>14052a19-d4ee-456c-b48b-7abddb11a8e6</Id>
+    <IdConcepto>d85812f4-e047-48b8-8bf4-151809026194</IdConcepto>
+    <Fecha>636614208000000000</Fecha>
+    <Monto>663.68</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180509 EDENOR.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="91b7e8ecf8264a9796e28df4dc0a2aee5565cd6309f64a2da74aa625a77c2808">
+    <Id>ac5b46fc-e3f1-4706-a825-ac947839def6</Id>
+    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
+    <Fecha>636618528000000000</Fecha>
+    <Monto>609.89</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180514 GAS NATURAL FENOSA CUOTA 11803.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="96ae123541a742748ac5279f4ae106a3ff13fe7f387b4128b18fc40d9bfb9da2">
+    <Id>7a6ba325-65c6-4cc4-991f-d4961d555275</Id>
+    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
+    <Fecha>636618528000000000</Fecha>
+    <Monto>609.89</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180514 GAS NATURAL FENOSA CUOTA 21803.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="c2290715253c42eea4edfe4591578cacf5672017b8fd4cc7901c0349e68579d0">
+    <Id>e69f19a9-66b1-47b2-8ad3-757810e05ecb</Id>
+    <IdConcepto>580f8e11-e5dd-4d2a-8bf6-e2973b515c87</IdConcepto>
+    <Fecha>636621120000000000</Fecha>
+    <Monto>1166.17</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180517 AGUA.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="ec4c349d5151416da71dc42aeabec75c7eeec4f5930147e0a22bc9a6036b108e">
+    <Id>6bf73ec4-104a-4318-a80c-7209e28e3a00</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636637536000000000</Fecha>
+    <Monto>7000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180605 ALQUILER.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="d48af888d5d84e8b9fea71921a47a01683f0dc6924d44077b646d401bd1eec58">
+    <Id>58c0a329-7301-455d-9cbc-55623af5744a</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>636637536000000000</Fecha>
+    <Monto>1260.24</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180605 MOVISTAR.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="37eb8647dee345fd9f81bddb4172e92ea3d08bece370416db0444c23a9263089">
+    <Id>e25e723e-f142-48c0-a03c-74d1b9911fd7</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>636637536000000000</Fecha>
+    <Monto>5554.24</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180605 OMINT.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="b2ab9a9c838e45409f516bf88b3e01dcc4eaa276c6c14407bbdbb7b2a7ad1c87">
+    <Id>cbab271f-ac45-4f24-8965-6cd1c35c0e8b</Id>
+    <IdConcepto>a78269b1-eca3-4e49-9814-3af893b070de</IdConcepto>
+    <Fecha>636637536000000000</Fecha>
+    <Monto>1090</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180605 SEGURO AUTO.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="0cac21bd7b31494f83aed11ce43746f84621203d20be44108089ce2ab2b83d27">
+    <Id>db4d6535-85ec-4316-af91-db2472cdbf66</Id>
+    <IdConcepto>bd0a3780-11fe-4039-a4cf-7e90b395d044</IdConcepto>
+    <Fecha>636637536000000000</Fecha>
+    <Monto>3576.32</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180605 TARJETA NARANJA.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="4a861ce3f4d641cfaff9c222cc43935e3c51bf2e720c4f34ba42cff2ebb7636e">
+    <Id>f346d53a-9128-4150-9f7e-7c4813cf1af7</Id>
+    <IdConcepto>d85812f4-e047-48b8-8bf4-151809026194</IdConcepto>
+    <Fecha>636640128000000000</Fecha>
+    <Monto>684.85</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180608 EDENOR.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="d0c1c45884da4f2498760293f1bcf9cd5b4d1990f00e4f959ca347ed819470e0">
+    <Id>f8adb1c8-13a6-4e7a-82fd-084b896e8632</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636667776000000000</Fecha>
+    <Monto>7000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180710 ALQUILER.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="65be8d4c0a6f45dd81ca58bd9e231bb873c859be90c94e40bde0c5d155521a79">
+    <Id>7063420e-8749-47ea-806e-6333d2f0644c</Id>
+    <IdConcepto>d85812f4-e047-48b8-8bf4-151809026194</IdConcepto>
+    <Fecha>636667776000000000</Fecha>
+    <Monto>444.45</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180710 EDENOR.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="c18c078d02744e4392cc9cb31eab50e9de9f3636551b47dc8638484883a51e25">
+    <Id>432be836-866c-4c2e-ab58-f9f83cc5bb7e</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>636667776000000000</Fecha>
+    <Monto>1260.24</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180710 MOVISTAR.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="78e16a98e3634278a415c6c4dd4b05056f4fb168d86b4e8ba17d3cdb5eee9f11">
+    <Id>77e36486-7d2c-4211-b76b-006f9cd715c3</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>636667776000000000</Fecha>
+    <Monto>6410.60</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180710 OMINT.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="d1ee206201314493b343b4af9c0ac9b3c77da5aa8ae841c2b841821db599761b">
+    <Id>a10634d7-0b6a-4a7e-b0eb-1c5436cdba42</Id>
+    <IdConcepto>bd0a3780-11fe-4039-a4cf-7e90b395d044</IdConcepto>
+    <Fecha>636667776000000000</Fecha>
+    <Monto>4014.41</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180710 TARJETA NARANJA.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="ead260ed02ad4db6993e5de22e343c58e57fdaf69125449c82e5802fe011cfdd">
+    <Id>69758bed-e4e1-4829-92d9-b40933d49c0d</Id>
+    <IdConcepto>580f8e11-e5dd-4d2a-8bf6-e2973b515c87</IdConcepto>
+    <Fecha>636669504000000000</Fecha>
+    <Monto>1563.26</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180712 AGUA.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="9c06ea40c9fc4a4b8987478bb58c2f78f83ff2477bac4384967c285e16328fa8">
+    <Id>03b7ed80-a267-45dd-95d4-8e90860503f9</Id>
+    <IdConcepto>2b8a3404-65b0-4f59-ba26-8765212440ec</IdConcepto>
+    <Fecha>636669504000000000</Fecha>
+    <Monto>849</Monto>
+    <Observaciones>Parlantes</Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180712 MERCADOPAGO (parlantes).png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="c558e118911e48e8989efa3178b96c68925df0413dc74a14bc44e0c804c91aa2">
+    <Id>e43d4cf9-a37f-4c6b-bd43-c503dcf606bd</Id>
+    <IdConcepto>2b8a3404-65b0-4f59-ba26-8765212440ec</IdConcepto>
+    <Fecha>636669504000000000</Fecha>
+    <Monto>100</Monto>
+    <Observaciones>Parlantes (adicional)</Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180712 MERCADOPAGO (parlantes2).png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="1bba73f4bab94a919e532dfceb688373cf1c0acf4c15480abccef81b359c3f1f">
+    <Id>83f6d72c-1fd7-48b2-928a-2a4c4ddcb89a</Id>
+    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
+    <Fecha>636672960000000000</Fecha>
+    <Monto>1533.74</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180716 GAS NATURAL FENOSA CUOTA 11804.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="190d43d4903e4817a1825b2ab9e7aeefe9c24d9b50bc453faaaa5ed65c6faa07">
+    <Id>6e30cda3-e281-4867-8dab-082dc98be094</Id>
+    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
+    <Fecha>636672960000000000</Fecha>
+    <Monto>1533.74</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180716 GAS NATURAL FENOSA CUOTA 21804.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="b669a88f1962402b8bb065bbbc144abf20b5e8418d5547c5961a606ba26c42f0">
+    <Id>e4f83d38-0756-4e4b-8bc3-36f22b04f44a</Id>
+    <IdConcepto>2b8a3404-65b0-4f59-ba26-8765212440ec</IdConcepto>
+    <Fecha>636672960000000000</Fecha>
+    <Monto>1000</Monto>
+    <Observaciones>Parlantes (adicional)</Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180716 MERCADOPAGO (parlantes3).png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="f4c6000d46094a29b65fcb941c4cdf1b5832c687ca714afe8808200d64cc1583">
+    <Id>c0da3753-a89a-4f20-a3ca-7056bda1ebc5</Id>
+    <IdConcepto>d22e2a0e-068a-4c55-a13a-ce5310e9904f</IdConcepto>
+    <Fecha>636685056000000000</Fecha>
+    <Monto>5400</Monto>
+    <Observaciones>Maqueta IIS</Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180730 MERCADOLIBRE - MAQUETA IIS.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="4cbdd6a466504fcb9f08445cc7673c77a1a2d65539354a14a1bb4f3b05cc8500">
+    <Id>90eb3914-5e32-42a9-b606-e93675ea2394</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>636685056000000000</Fecha>
+    <Monto>1260.52</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180730 MOVISTAR.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="412ef0483bbf468daf75217804fdfc0c3b0d8f3a02f640c9a9300e1b7d4dfa7d">
+    <Id>b40719d2-0b08-4a28-935e-e19aea8eeb00</Id>
+    <IdConcepto>bd0a3780-11fe-4039-a4cf-7e90b395d044</IdConcepto>
+    <Fecha>636685056000000000</Fecha>
+    <Monto>3957.85</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180730 TARJETA NARANJA.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="ba8c938957c74444adf1df8c064bf3f624cee936a868478898fe810895e4e6a9">
+    <Id>21d88074-ebe6-4256-99fb-4d6d064649d7</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636690240000000000</Fecha>
+    <Monto>7000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180805 ALQUILER.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="03fe4781923a419ea552080724fe1841f50163e438d94bdc8064d022d2ef499b">
+    <Id>edad0482-dc67-40b6-9e84-c129bd2006ce</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>636690240000000000</Fecha>
+    <Monto>7031.99</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180805 OMINT.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="2748f68e2ce14901881669b7556a3007ebd633e280dd4f478fba69065a52e351">
+    <Id>b05f9eee-fae8-4773-9054-fc7fed975777</Id>
+    <IdConcepto>d85812f4-e047-48b8-8bf4-151809026194</IdConcepto>
+    <Fecha>636693696000000000</Fecha>
+    <Monto>458</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180809 EDENOR.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="53402299387648b5a8d90205a4c005740b8d2f1b3ebc482f8848b76ff89158a7">
+    <Id>337388ae-1c22-4aca-b078-9bbabf144aab</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>636711840000000000</Fecha>
+    <Monto>1418.22</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180830 MOVISTAR.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="79de793744e34736acfb13b326ca9af3c48083a245a64f6c84527c9c3a300bcf">
+    <Id>73268f0a-7765-4a1e-9024-e0eb908ca146</Id>
+    <IdConcepto>bd0a3780-11fe-4039-a4cf-7e90b395d044</IdConcepto>
+    <Fecha>636711840000000000</Fecha>
+    <Monto>4364.84</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180830 TARJETA NARANJA.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="bdff164dc1f44a10aab96c09bb285e5a607a871ba1d94edb947d0c5685590c5c">
+    <Id>0b91386d-bfa4-43c0-b82b-77618f4958d2</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>636713568000000000</Fecha>
+    <Monto>6904.28</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180901 OMINT.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="f12841a5cc244b6797db744016eebb5048ee8cbedc9945419320f1a05febaeef">
+    <Id>7946a06d-a283-47ad-b147-700bc8143456</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636717024000000000</Fecha>
+    <Monto>8500</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180905 ALQUILER.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="f8e9229432de432c9678823d64d2fc1a9c18dca2759641ddb0231d7831755eb9">
+    <Id>0ecb5ed7-438b-4fa1-9c3a-aa3bd276bd76</Id>
+    <IdConcepto>d85812f4-e047-48b8-8bf4-151809026194</IdConcepto>
+    <Fecha>636721344000000000</Fecha>
+    <Monto>489.15</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180910 EDENOR.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="c89dde0e81214a00af780a42a5495726e1c86da28873482288907b701f948713">
+    <Id>6d9a11c3-8f4b-4e35-8a21-6f0ec7b7e9f0</Id>
+    <IdConcepto>580f8e11-e5dd-4d2a-8bf6-e2973b515c87</IdConcepto>
+    <Fecha>636724800000000000</Fecha>
+    <Monto>1845.74</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180914 AGUA.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="b33dd4746d8f404d89689ee3fe4c4ec8352f3bcfedf945b380621e05c78c0daa">
+    <Id>8e74b233-cb62-4bb0-92f0-4d917ecd2509</Id>
+    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
+    <Fecha>636729984000000000</Fecha>
+    <Monto>1336.29</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180920 GAS NATURAL FENOSA CUOTA 11805.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="4a62bbfe71ea4f96ac107780433f733ec5ab4b6b009742349bce6512feddd738">
+    <Id>8a843ca3-5af9-469f-a402-c7afb1ea391e</Id>
+    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
+    <Fecha>636729984000000000</Fecha>
+    <Monto>1336.29</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180920 GAS NATURAL FENOSA CUOTA 21805.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="4f82922fc6864e6db969a425513b6d50b55a54207f17460fb3a09bd5ece957b1">
+    <Id>b9f8fa95-b825-45a5-8022-bc73598fef25</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>636736896000000000</Fecha>
+    <Monto>1418.22</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180928 MOVISTAR.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="90af2c5e56624a7785d7634c2df004b0e4347bc6ceb747209e40092a4f22312e">
+    <Id>a65531c6-4494-4d66-a33c-14936d312bf5</Id>
+    <IdConcepto>bd0a3780-11fe-4039-a4cf-7e90b395d044</IdConcepto>
+    <Fecha>636736896000000000</Fecha>
+    <Monto>12776.20</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180928 TARJETA NARANJA.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="777746fbbcf54d40adfc78918d722ecf45573179eb2644e3b50f355b56224d81">
+    <Id>7d0d4b2d-dec6-400a-b725-ed62c7c30ce8</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>636740352000000000</Fecha>
+    <Monto>7470.79</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20181002 OMINT.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="2e08be70431b4d7682f0b6318203856cae1b25172f054a26939fc17c32e3a4a7">
+    <Id>cb3130bc-dd61-470d-81a3-3127fb4d1234</Id>
+    <IdConcepto>4580937d-a6c7-4227-8767-5dee20156679</IdConcepto>
+    <Fecha>636740352000000000</Fecha>
+    <Monto>15000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20181002 PLAZO FIJO.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="c4578454f3204c909cbf179df0a8d5908f47a614875842158b326d7a98c49abc">
+    <Id>15a85de5-43ef-45c8-a215-8dc70f521b89</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636745536000000000</Fecha>
+    <Monto>8500</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20181008 ALQUILER.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="9cabe14fc07e4fdf863c0476faf7fe2806ca9337a8e14abe9106035d5c5c7231">
+    <Id>6f76ec45-0f71-4500-9ce9-8f839bed1721</Id>
+    <IdConcepto>d85812f4-e047-48b8-8bf4-151809026194</IdConcepto>
+    <Fecha>636745536000000000</Fecha>
+    <Monto>620.37</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20181008 EDENOR.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="05b4fb310ff341e4ba3c9dc4b27d4659385646011cf746ef87cf757a2ee5fdd1">
+    <Id>0a07e9f4-6fa0-47b0-bde7-c2cc7c8b4606</Id>
+    <IdConcepto>a78269b1-eca3-4e49-9814-3af893b070de</IdConcepto>
+    <Fecha>636748992000000000</Fecha>
+    <Monto>1348.25</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20181012 TARJETA SANTANDER RIO.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="0e887997227b4a4996cce18b6ea40bd2a6cf9d49af8c4e1283e87ae69cb4c75c">
+    <Id>9b225b25-7550-48f9-8320-87c307664e9b</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>636764544000000000</Fecha>
+    <Monto>1418.22</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20181030 MOVISTAR.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="24d6c49096d14f26988eb0527b431c719d792a7d4c0f4545aebd378a80f269d5">
+    <Id>8e17f6b6-aff3-42ca-9bf1-5e268c30c40c</Id>
+    <IdConcepto>bd0a3780-11fe-4039-a4cf-7e90b395d044</IdConcepto>
+    <Fecha>636764544000000000</Fecha>
+    <Monto>3574.49</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20181030 TARJETA NARANJA.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="293b33e465d54b53a9641817118956ab309c23ba3c694d0daf773e15d849e277">
+    <Id>bbd12ac9-657f-465e-baae-299bb868d561</Id>
+    <IdConcepto>a78269b1-eca3-4e49-9814-3af893b070de</IdConcepto>
+    <Fecha>636765408000000000</Fecha>
+    <Monto>1376.67</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20181031 TARJETA SANTANDER RIO.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="3fd3d9584d7940e48e42817199ba1b2532d4b7ae05c14ac0bc343c973e2bf02a">
+    <Id>f3244223-9516-48a8-aa48-38e82e2f5b97</Id>
+    <IdConcepto>d85812f4-e047-48b8-8bf4-151809026194</IdConcepto>
+    <Fecha>636766272000000000</Fecha>
+    <Monto>678.49</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20181101 EDENOR.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="b7bc900691824073a81628adb45ca0279bc074ae258741d8a2a96825c49a7f3a">
+    <Id>75bc3aaf-c20e-42dd-b0a9-59f99f23bd91</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>636766272000000000</Fecha>
+    <Monto>7622.18</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20181101 OMINT.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="efa569330fe6422ea622e5b590c4703a1ac009348e904ab0b4274b837eecd760">
+    <Id>3be95fb8-c7c0-4b24-bc76-d1cd7a45278d</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636773184000000000</Fecha>
+    <Monto>8500</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20181109 ALQUILER.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="33373c3f96d34c9b85ceec9f6b3119f8dc01faaff80d40438cf2810950354701">
+    <Id>bccfbfdb-fe19-4009-9eac-d4a316318fab</Id>
+    <IdConcepto>4580937d-a6c7-4227-8767-5dee20156679</IdConcepto>
+    <Fecha>636773184000000000</Fecha>
+    <Monto>30500</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20181109 PLAZO FIJO 30500.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="ab18b96cbb0b42d998979132dd1caf66044a47bdb55e4770a892f9c413258f98">
+    <Id>ebcf1a0c-db42-4b49-8b50-50496c8ebf74</Id>
+    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
+    <Fecha>636777504000000000</Fecha>
+    <Monto>1403.08</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20181114 GAS NATURAL FENOSA 11806.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="a92437ffda864d928cd6efb3a21d50106ea0796fc89a415aa825fc74c9ce0746">
+    <Id>306f69b0-aa0a-46cb-81ac-83a9c54d60ef</Id>
+    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
+    <Fecha>636777504000000000</Fecha>
+    <Monto>1403.08</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20181114 GAS NATURAL FENOSA 21806.png</FileRef>
+    <CreaFecha>636944938767480070</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="bc3722e552be499db6a2c6c3eecb3ce42dbeff06909049c5899f9d47a68debee">
+    <Id>6f9d3e47-9bd1-4c16-b6f6-f611bb0a7b7f</Id>
+    <IdConcepto>580f8e11-e5dd-4d2a-8bf6-e2973b515c87</IdConcepto>
+    <Fecha>636782688000000000</Fecha>
+    <Monto>2166.35</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20181120 AGUA.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="1452c0685ae548c7b3f85c36ca095626e2f8c453868f4d6e88924ab1b8e0accc">
+    <Id>72f9a6c0-6bc0-4a1d-8c18-a8674f1efc27</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>636793056000000000</Fecha>
+    <Monto>1418.22</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20181202 MOVISTAR.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="7f98de10f9ba4e7688d1f4b1731516703a92d1f611994aa89dc333907b62e520">
+    <Id>ff5e9d17-ba2f-49a7-a285-488d4575e2ae</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>636793056000000000</Fecha>
+    <Monto>8257.18</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20181202 OMINT.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="122879dbb80c4920844e4019726b50ba6a259360dc6a494a9dc512baef227748">
+    <Id>5872a7e6-c9ec-4235-9ecf-7480e78b4174</Id>
+    <IdConcepto>a78269b1-eca3-4e49-9814-3af893b070de</IdConcepto>
+    <Fecha>636793056000000000</Fecha>
+    <Monto>3551.31</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20181202 TARJETA SANTANDER RIO.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="646627c880904d9c83a469b997f61e7e48aa5501acc144e495482216819a85d1">
+    <Id>9271392f-c825-49da-a283-96536575421f</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636796512000000000</Fecha>
+    <Monto>8500</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20181206 ALQUILER.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="0949235b5f1a4bfe8b57151769f204aee2ab737e72604b0796ec01d2df423f6a">
+    <Id>4e346632-fe30-4676-932d-60e458a826e6</Id>
+    <IdConcepto>bd0a3780-11fe-4039-a4cf-7e90b395d044</IdConcepto>
+    <Fecha>636796512000000000</Fecha>
+    <Monto>11319.89</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20181206 TARJETA NARANJA.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="bc087c0ff82f42ca9127140c890f931425179b42549d4ff7967c9326dc057468">
+    <Id>387fe0bf-1a76-4b2e-bea1-86f3deaf67b0</Id>
+    <IdConcepto>d85812f4-e047-48b8-8bf4-151809026194</IdConcepto>
+    <Fecha>636800832000000000</Fecha>
+    <Monto>700.88</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20181211 EDENOR.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="7934d74d0eda404893f583375423b4066dbbf35d0cb94a0db614c25e7323630b">
+    <Id>f7eef7ed-27d8-45d8-ac82-62ca69bc0810</Id>
+    <IdConcepto>d22e2a0e-068a-4c55-a13a-ce5310e9904f</IdConcepto>
+    <Fecha>636814656000000000</Fecha>
+    <Monto>15400</Monto>
+    <Observaciones>Juego de Sillones (1 de 3 cuerpos y 2 de 1 cuerpo)</Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20181227 MERCADOPAGO - SILLONES.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="ca081e3d92da41ba804e261c4c1f3e8a40568cd6f9894ccbb61f0634419eb937">
+    <Id>c0da24e0-0919-4f51-b537-206a86e51938</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>636819840000000000</Fecha>
+    <Monto>1644.91</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190102 MOVISTAR.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="61bdcde4e62040ceb74557959ec4bf3dc236b4ab46b044dfb52c3f415bff42bd">
+    <Id>2b553c72-6355-4d91-8141-69058bedafb3</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636825888000000000</Fecha>
+    <Monto>8500</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190109 ALQUILER.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="6bdd8f94a5884e418a395a73f185c8293fc1eb1beb954e718b2bb5b1b7df0e1a">
+    <Id>20e05708-df43-445b-a624-17faa2b3d87c</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>636825888000000000</Fecha>
+    <Monto>8257.18</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190109 OMINT.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="3d08c24933d241d8859cc6717fe1f6ac360ef6a27cd541b7aa79ab582f9ab695">
+    <Id>a327dddc-fd31-43da-8cc9-a4b0372b34ce</Id>
+    <IdConcepto>4580937d-a6c7-4227-8767-5dee20156679</IdConcepto>
+    <Fecha>636825888000000000</Fecha>
+    <Monto>25000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190109 PLAZO FIJO.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="06763dd03ded4057b675061381077ee339bae41e06414d6790156f77cceec547">
+    <Id>86555879-f5c0-4fcd-ad9a-d3174a38e5fd</Id>
+    <IdConcepto>bd0a3780-11fe-4039-a4cf-7e90b395d044</IdConcepto>
+    <Fecha>636825888000000000</Fecha>
+    <Monto>4735.49</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190109 TARJETA NARANJA.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="82051dc05893465e9efb4ffb0916ddc7dac9ed022af8419887574b8a414719e8">
+    <Id>870f5d8a-83f3-4b48-b7e4-b7eb32512170</Id>
+    <IdConcepto>a78269b1-eca3-4e49-9814-3af893b070de</IdConcepto>
+    <Fecha>636825888000000000</Fecha>
+    <Monto>7356.56</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190109 TARJETA SANTANDER RIO.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="4762091b36964d2f98a504b10556abc4edc0ef9e0f804e259fccbe0617c7f48c">
+    <Id>d501517f-825a-462a-84e8-1d6e34384bc4</Id>
+    <IdConcepto>d85812f4-e047-48b8-8bf4-151809026194</IdConcepto>
+    <Fecha>636826752000000000</Fecha>
+    <Monto>1342.02</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190110 EDENOR.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="67ef2f10bc6c4c91be1929b92123542f91c1a3763abd4cae9db7d90309d30f92">
+    <Id>d1528799-9a43-441a-b19e-1b736c5f9d2e</Id>
+    <IdConcepto>580f8e11-e5dd-4d2a-8bf6-e2973b515c87</IdConcepto>
+    <Fecha>636834528000000000</Fecha>
+    <Monto>2826.73</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190119 AGUA.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="2b50358b3d1a422aab4c4462b561a7e9363ddef66bcf42d59e1c158bd30c6fa0">
+    <Id>a0300387-a1c4-4f09-9372-56b6a0ac3c3e</Id>
+    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
+    <Fecha>636834528000000000</Fecha>
+    <Monto>1037.48</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190119 GAS NATURAL FENOSA 11901.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="d79d9f4e54ca4d06b78bc8531251c59db3d4f75489074f90aa63eaf81c1a657f">
+    <Id>aee373cf-5bc5-44b7-94cb-5248f66bf7dc</Id>
+    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
+    <Fecha>636834528000000000</Fecha>
+    <Monto>1037.48</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190119 GAS NATURAL FENOSA 21901.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="919cc93235eb4f2f908d64ad651fb8dbfaba3ce84993487e916e514049fd0d83">
+    <Id>2f4af740-99f8-416d-a2fe-0b253765fa14</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636850080000000000</Fecha>
+    <Monto>8500</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190206 ALQUILER.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="d264703e0a65421d8e16f31c4a4d677b1d01371b35ca496a8e72c6e2c105c6dd">
+    <Id>094d1884-558b-44e0-ba27-b8af87f0941d</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>636850080000000000</Fecha>
+    <Monto>1644.24</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190206 MOVISTAR.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="6f334fae96f2489fb4e93fb3ec5daa26354445764bc540ad96929e0351d51a6f">
+    <Id>677dbcd3-399b-4a16-9475-8f24d91d332e</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>636850080000000000</Fecha>
+    <Monto>8662.45</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190206 OMINT.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="d35fede35fb748ab8f0b2bc435026f3e6deab61127784fcf95971df6be00c519">
+    <Id>87471aca-c191-4fd9-9442-30890851f654</Id>
+    <IdConcepto>bd0a3780-11fe-4039-a4cf-7e90b395d044</IdConcepto>
+    <Fecha>636850080000000000</Fecha>
+    <Monto>4474.42</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190206 TARJETA NARANJA.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="7fd5f6cb3c9d46579ae933665352f25c8fbf20b32ff94e4f9228b6de22060546">
+    <Id>749f027e-46e0-4153-b52b-03720822cce3</Id>
+    <IdConcepto>a78269b1-eca3-4e49-9814-3af893b070de</IdConcepto>
+    <Fecha>636850080000000000</Fecha>
+    <Monto>1936.80</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190206 TARJETA SANTANDER RIO.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="1944b19ebf9245b0974b773db2e3aa2d2ec0b1d48f7d4ab9a5926dc37bf10ca9">
+    <Id>51156c91-270f-4667-9482-aaa061fc33a6</Id>
+    <IdConcepto>d85812f4-e047-48b8-8bf4-151809026194</IdConcepto>
+    <Fecha>636855264000000000</Fecha>
+    <Monto>1383.85</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190212 EDENOR.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="300ffcc5f4724ba39c1596cd780e7b335de19d4d4e0744ce9b5961a851abe65b">
+    <Id>10e5a55b-2bd6-4cb8-9cbb-0bec573598a0</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636878592000000000</Fecha>
+    <Monto>8500</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190311 ALQUILER.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="702fefa0c7884a9a9e6a35f7a25a0078b6ed20366a4e48e98ee52ae0e28c783e">
+    <Id>defadafc-aaa5-4603-be26-a8a2a57ea76e</Id>
+    <IdConcepto>d85812f4-e047-48b8-8bf4-151809026194</IdConcepto>
+    <Fecha>636878592000000000</Fecha>
+    <Monto>2044.54</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190311 EDENOR.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="e9e4948533a748878989f26022faf7113e655f44a6f84e699a1e7056fab26e4b">
+    <Id>7e4bbe00-a555-45fc-9cfa-81c12a9a1ccc</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>636878592000000000</Fecha>
+    <Monto>1653.63</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190311 MOVISTAR.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="db907569f0ef476885dad88ed1a9b853a711dd7ae005491194ac70cd90e47fdc">
+    <Id>a6e63c0d-0910-446c-931a-79aa9e8d2cd7</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>636878592000000000</Fecha>
+    <Monto>8662.45</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190311 OMINT.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="d75e2104dc754a738716f41f68a5026e3ecf3d8f2e83408da0f22f41f6c70d40">
+    <Id>4c499772-ddab-47b4-9cae-1d62ef9e8a64</Id>
+    <IdConcepto>bd0a3780-11fe-4039-a4cf-7e90b395d044</IdConcepto>
+    <Fecha>636878592000000000</Fecha>
+    <Monto>4544.13</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190311 TARJETA NARANJA.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="a129cabfeb364c609fdafa4b951658baaa85d7d94b444ce4b7c3ed0c1816dc98">
+    <Id>5d04a291-b4bb-4a51-9d49-96d2001c5744</Id>
+    <IdConcepto>a78269b1-eca3-4e49-9814-3af893b070de</IdConcepto>
+    <Fecha>636878592000000000</Fecha>
+    <Monto>2493.02</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190311 TARJETA SANTANDER RIO.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="edfc543c7174432496ed09ec88f20b1cbfcd6dafb6b34650abd89c68ddc9e50d">
+    <Id>f065c136-e5e9-42a1-9131-5c2e0a1ae18d</Id>
+    <IdConcepto>580f8e11-e5dd-4d2a-8bf6-e2973b515c87</IdConcepto>
+    <Fecha>636883776000000000</Fecha>
+    <Monto>4620.91</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190317 AGUA.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="620b3b7a964a4902b36f65873fc32f146091da81ca7f4f93a9a010b097cedaab">
+    <Id>51879a77-2ff9-432b-96f4-991ac0b218d1</Id>
+    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
+    <Fecha>636886368000000000</Fecha>
+    <Monto>691.80</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190320 GAS NATURAL FENOSA 11902.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="74448c8ef5074df998824bfe3185c28fe68e8375e7224f6e97fd73f6b669b3e1">
+    <Id>5fb66291-5e8c-4eaa-9bc3-4e4e7fcc1153</Id>
+    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
+    <Fecha>636886368000000000</Fecha>
+    <Monto>691.80</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190320 GAS NATURAL FENOSA 21902.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="6854330d4bcb4f07ba13457d363ff26886279c276eaa4a96b61dfcda99a85b9a">
+    <Id>e21019bc-bc00-4ba2-840d-6180ff44cc6b</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>636896736000000000</Fecha>
+    <Monto>8864.69</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190401 OMINT.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="c27fb193780243d6ad84bc878cdd2c4e1f059c01b88b45188e339d804d7d8ecd">
+    <Id>08213493-882b-4d53-b710-11b915bfaa48</Id>
+    <IdConcepto>bd0a3780-11fe-4039-a4cf-7e90b395d044</IdConcepto>
+    <Fecha>636896736000000000</Fecha>
+    <Monto>3987.32</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190401 TARJETA NARANJA.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="49e0f2be18cf411488a5c7bbf573f89d40921e4198314c07884ee2165c6d3dcf">
+    <Id>75d95930-2536-437d-b023-302693ef0855</Id>
+    <IdConcepto>a78269b1-eca3-4e49-9814-3af893b070de</IdConcepto>
+    <Fecha>636896736000000000</Fecha>
+    <Monto>3090.36</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190401 TARJETA SANTANDER RIO.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="2cf8a92780384fdab91c55db8715f9d6ab897f0d880f40149e0027ffdf364a98">
+    <Id>d82e5454-0653-4f04-9f2a-03d745e7fe9b</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>636899328000000000</Fecha>
+    <Monto>1921.89</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190404 MOVISTAR.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="e4ef87c74eac46109ce0b58383852f5233f358cdf0554fa88cfb244a32f5618f">
+    <Id>518416ab-9d10-4ed2-8e2a-da22383178c1</Id>
+    <IdConcepto>4580937d-a6c7-4227-8767-5dee20156679</IdConcepto>
+    <Fecha>636899328000000000</Fecha>
+    <Monto>10000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190404 PLAZO FIJO SABRINA (10,000).png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="82b05bbde2be48dfb94f9ac0f8a1ade41bc15bd9ab2d402fa04b3f4ccbf5f401">
+    <Id>d5b96648-3603-417d-9647-03dbf8491020</Id>
+    <IdConcepto>d85812f4-e047-48b8-8bf4-151809026194</IdConcepto>
+    <Fecha>636902784000000000</Fecha>
+    <Monto>2518.32</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190408 EDENOR.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="48542e34bb8243bbb5bc18f747fda810bd2f5ee46b3d4e0c87cd03e8a7f3db3f">
+    <Id>a7644e29-1307-438e-93cb-93e912639c05</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636910560000000000</Fecha>
+    <Monto>8500</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190417 ALQUILER.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="e3fd06d65e6a48f1a848bc856f7bdeb8910239f7eef441d48e5b4716dd338eb6">
+    <Id>473359a1-e0c0-49d4-b543-9dafbaf7ff29</Id>
+    <IdConcepto>bd0a3780-11fe-4039-a4cf-7e90b395d044</IdConcepto>
+    <Fecha>636921792000000000</Fecha>
+    <Monto>2970.05</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190430 TARJETA NARANJA.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="7c58be2e16e345edaa38ed5ed70579463298df32ff5b46879afed04164ac104c">
+    <Id>9f62c37c-971d-478d-b4d2-477a3671b6a2</Id>
+    <IdConcepto>a78269b1-eca3-4e49-9814-3af893b070de</IdConcepto>
+    <Fecha>636921792000000000</Fecha>
+    <Monto>1260.05</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190430 TARJETA SANTANDER RIO.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="5c0d741f33d54697918e2049d78e6861a51fd73adb6141188f91348e26f97a67">
+    <Id>4ba93299-3256-45c7-88f8-5da59e87ab74</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>636925248000000000</Fecha>
+    <Monto>9300.76</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190504 OMINT.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="aa476d57ebff4b83a52f0387471de86ed67d96274b054422831406b3a220b783">
+    <Id>5399e07c-4057-4815-8424-9ef2271fe567</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636926976000000000</Fecha>
+    <Monto>8500</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190506 ALQUILER.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="a9544b1f83834bfabe0f7e58bbdc39b94a4b734660134b3f98bd041cb31ee023">
+    <Id>911c2f90-c2ec-4d7a-a755-edc297639682</Id>
+    <IdConcepto>4580937d-a6c7-4227-8767-5dee20156679</IdConcepto>
+    <Fecha>636926976000000000</Fecha>
+    <Monto>30000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190506 PLAZO FIJO SABRINA (30,000).png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="90033c1395cf4bccbd272d0032c84df754950a09477743368c751f0cfbc6037d">
+    <Id>2d11c85b-c586-41ff-ad21-9bf4e6c3f9ff</Id>
+    <IdConcepto>4580937d-a6c7-4227-8767-5dee20156679</IdConcepto>
+    <Fecha>636927840000000000</Fecha>
+    <Monto>20000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190507 PLAZO FIJO SABRINA (20,000).png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="b21a875ed7314d32af45fabd96b4b45009c367c476394bddb14412d4e3af1819">
+    <Id>08ac5c19-95bf-44c0-83da-56902d5ae3fb</Id>
+    <IdConcepto>d85812f4-e047-48b8-8bf4-151809026194</IdConcepto>
+    <Fecha>636929568000000000</Fecha>
+    <Monto>1501.01</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190509 EDENOR.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="ab4546954e0f4849b9c439ebdc59f384f45e7692d2824f85b5c1bf3505a4d3d9">
+    <Id>f207ba03-fcbb-4b9b-a299-bac64c602ae0</Id>
+    <IdConcepto>d22e2a0e-068a-4c55-a13a-ce5310e9904f</IdConcepto>
+    <Fecha>636933888000000000</Fecha>
+    <Monto>5000</Monto>
+    <Observaciones>Ingreso a MercadoPago</Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190514 MERCADO PAGO (5000).png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="aa97be72493942e6a7804796e37e806294dfdab0891b44468a51038b7aa5a6c7">
+    <Id>5c263739-ef4c-42d8-b6ff-5bdc562f714e</Id>
+    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
+    <Fecha>636939936000000000</Fecha>
     <Monto>1064.68</Monto>
-    <Observaciones>Pagado con Mercado Pago</Observaciones>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190521 GAS NATURAL FENOSA 201906.pdf</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="1be8a8c8d26a4fdca341da2fd04c03ec52650c2b7a144d2eaa478f335d4e6b32">
+    <Id>307be2a1-d41e-4710-be84-d985b5c6d156</Id>
+    <IdConcepto>acfea326-44a7-428f-bd16-5230fe8c1b00</IdConcepto>
+    <Fecha>636939936000000000</Fecha>
+    <Monto>1064.68</Monto>
+    <Observaciones>
+    </Observaciones>
     <FileRef>Z:\Mios\Banco\Movimientos\20190521 GAS NATURAL FENOSA 201907.pdf</FileRef>
-    <CreaFecha>21/5/2019 11:15:41</CreaFecha>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="8775c3a9032f48f4b926ef93b494f769caf8ab58192149edb47ab43818c09921">
+    <Id>e941e07e-c2d2-4249-b432-a6bb971a9674</Id>
+    <IdConcepto>580f8e11-e5dd-4d2a-8bf6-e2973b515c87</IdConcepto>
+    <Fecha>636943392000000000</Fecha>
+    <Monto>7901.20</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190525 Gascón 887 - Agua.png</FileRef>
+    <CreaFecha>636944938767490063</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="37ebefaedc474405be54612d61779770ae2c90ee987340218b693415b92d464b">
+    <Id>99692be2-bd8d-4e8e-b054-c21bc7b84132</Id>
+    <IdConcepto>e7968e57-cfb5-4d72-bee7-49fa5bce4078</IdConcepto>
+    <Fecha>636944939931324870</Fecha>
+    <Monto>1600</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944940065728043</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="cae5d17dd4a34a36bcc3a5cc097d0dc7d3f8b6ea4d9144babbc4b5ca464740ab">
+    <Id>ddba40c7-ac78-415f-809c-d12c4d534d13</Id>
+    <IdConcepto>d22e2a0e-068a-4c55-a13a-ce5310e9904f</IdConcepto>
+    <Fecha>636404940480000000</Fecha>
+    <Monto>900</Monto>
+    <Observaciones>Devolución de prestamo </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20170908 GEORGINA 900.png</FileRef>
+    <CreaFecha>636944940847246843</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="be9d2d86de0042c3bfca7398705996986e64f85a9b9448f28ada2d3da9430e84">
+    <Id>9d865841-61f6-43e9-a8a6-5dc95e1f7f9a</Id>
+    <IdConcepto>f2793f86-6413-4a8c-b9ba-b6ffa5255064</IdConcepto>
+    <Fecha>636589837110000000</Fecha>
+    <Monto>20000</Monto>
+    <Observaciones>Compra de Dólares a Ariadna Irigoyen</Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20180410 MADRE - COMPRA DOLARES.png</FileRef>
+    <CreaFecha>636944941467482401</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="3f59a9d44f004e4eb2e9f6dd7c98c32f2fe518e226604d568f0b33ddf9441cf7">
+    <Id>d7aaa86a-80ac-4645-85b3-0ba10516b00c</Id>
+    <IdConcepto>53cfe798-7917-4c28-8299-8fd6ea3d608c</IdConcepto>
+    <Fecha>636538885670000000</Fecha>
+    <Monto>55891.20</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944965925649634</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="6d8f1e013a6445c9bab8815cb674f80cfca4b05c4a4e425eb77bc944b67dc167">
+    <Id>55ea4d0d-ca81-4b29-915b-ad55dbbfb3e2</Id>
+    <IdConcepto>53cfe798-7917-4c28-8299-8fd6ea3d608c</IdConcepto>
+    <Fecha>636563077920000000</Fecha>
+    <Monto>55891.20</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944966042493704</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="4d8949ba25764649a356cc44224f07b52819146b509b48ec8b1815a42a7b5102">
+    <Id>8218e072-b8d7-4b4e-a13c-c6fbab5d28a7</Id>
+    <IdConcepto>53cfe798-7917-4c28-8299-8fd6ea3d608c</IdConcepto>
+    <Fecha>636589862040000000</Fecha>
+    <Monto>75103.80</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944966231377048</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="e7276c83a2d14ea9a2f4c1c9dcc7a0003072840ad7f54acb8e799c700fe1e2ed">
+    <Id>ca7f7342-8274-4792-85ca-47314553e6d6</Id>
+    <IdConcepto>53cfe798-7917-4c28-8299-8fd6ea3d608c</IdConcepto>
+    <Fecha>636615782670000000</Fecha>
+    <Monto>74206.88</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944966790632011</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="66aece65e8584ed8afe86571dd1527d9ed25c2222220469785e52333b2003b08">
+    <Id>649ef56c-4a35-45a0-9c5e-dcbb08b7ec78</Id>
+    <IdConcepto>b1685f7d-cc76-472c-8c8a-f14e016bc961</IdConcepto>
+    <Fecha>636615782790000000</Fecha>
+    <Monto>25000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944966910012435</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="49761792181b44699c03709f34fb6bd3016449dd07514f058d77eb814ba031e4">
+    <Id>2c442ed5-84c3-438a-80a8-832112d8d1dd</Id>
+    <IdConcepto>53cfe798-7917-4c28-8299-8fd6ea3d608c</IdConcepto>
+    <Fecha>636642566910000000</Fecha>
+    <Monto>74127</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944967037771676</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="2e6503eebbfd457bba19866c81ec77470dac6083a3b24cba95a0fd4422f9ba06">
+    <Id>3efa837d-de42-4bbf-b93e-ce997022bcb8</Id>
+    <IdConcepto>b1685f7d-cc76-472c-8c8a-f14e016bc961</IdConcepto>
+    <Fecha>636642567030000000</Fecha>
+    <Monto>35000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944967193134204</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="b2bcba5299b24b18a92989eec298a74287352fa9bc064bb3afbf1d0d1ca24c23">
+    <Id>33bb8af3-d56f-4b6b-a038-e8b30bea5d9b</Id>
+    <IdConcepto>53cfe798-7917-4c28-8299-8fd6ea3d608c</IdConcepto>
+    <Fecha>636668487190000000</Fecha>
+    <Monto>72623.25</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944967303232770</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="9b5842ec37024c4c88cc13dc4af33914e834f0471aac4d6ead93266e120853f5">
+    <Id>a17496b2-104e-4cee-8ff7-4564849da7f5</Id>
+    <IdConcepto>53cfe798-7917-4c28-8299-8fd6ea3d608c</IdConcepto>
+    <Fecha>636695271300000000</Fecha>
+    <Monto>70317.75</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944967419351651</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="669b9c0896734688ad6f39cbf1be2b6bcef7d77c81db4a76a79656178d50534a">
+    <Id>7bdaea80-9cd9-4155-9724-dc7a0ae3ccdf</Id>
+    <IdConcepto>53cfe798-7917-4c28-8299-8fd6ea3d608c</IdConcepto>
+    <Fecha>636722055410000000</Fecha>
+    <Monto>74537.75</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944967555119317</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="ae1017d1937344219f1499a31c948abdf8e5e466dbb84829bfed468edc201c2c">
+    <Id>38a87673-802e-45de-8007-a411c40cb9d1</Id>
+    <IdConcepto>b1685f7d-cc76-472c-8c8a-f14e016bc961</IdConcepto>
+    <Fecha>636722055550000000</Fecha>
+    <Monto>5000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944967646814723</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="fd57e2ff91e24cc89548c9db33959f4f58eee242c9944b0bb17801bfa52bf6d0">
+    <Id>3fb86db9-c400-4309-b781-3ccac8977a8f</Id>
+    <IdConcepto>53cfe798-7917-4c28-8299-8fd6ea3d608c</IdConcepto>
+    <Fecha>636747975640000000</Fecha>
+    <Monto>74020.40</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944967786478006</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="c9c6e9cbc73248f8b9807f464a14fc5428e5814574c0481287871022c74daef8">
+    <Id>f0da77f7-4ce0-4f64-afab-76fc9f9c51a7</Id>
+    <IdConcepto>b1685f7d-cc76-472c-8c8a-f14e016bc961</IdConcepto>
+    <Fecha>636747975780000000</Fecha>
+    <Monto>1000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944967873782316</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="e0d046cc18c04e74ac4ba2edd5d7862c7c40af5b8ee74c5581af2e0ba2339894">
+    <Id>1723ee77-8b6b-4451-a599-001f64c2c582</Id>
+    <IdConcepto>53cfe798-7917-4c28-8299-8fd6ea3d608c</IdConcepto>
+    <Fecha>636774759870000000</Fecha>
+    <Monto>74193.35</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944967987794726</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="4aa6a0a7c6ff4d65b4bfef4e5b09903a7042487a1f8d401186e611dfcfee047a">
+    <Id>bba61e3e-598d-4901-82ae-f40c4fe45365</Id>
+    <IdConcepto>53cfe798-7917-4c28-8299-8fd6ea3d608c</IdConcepto>
+    <Fecha>636800679980000000</Fecha>
+    <Monto>74084.61</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944968139094880</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="5caa6d4e78d14c05a6357de58fee207193f669faa69d4618be64064646fec8dd">
+    <Id>85f5bb10-de81-4c11-b61e-08b79dbbaedb</Id>
+    <IdConcepto>b1685f7d-cc76-472c-8c8a-f14e016bc961</IdConcepto>
+    <Fecha>636800680130000000</Fecha>
+    <Monto>13000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944968270356853</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="44be8ed650b043589f2c505575c0b6a84cfdbbca2dc54028aa5b16c3bf6f92f7">
+    <Id>9974ab69-7823-4338-840a-a8caf290fee0</Id>
+    <IdConcepto>53cfe798-7917-4c28-8299-8fd6ea3d608c</IdConcepto>
+    <Fecha>636827475040000000</Fecha>
+    <Monto>74064.97</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944979253987097</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="abbc691ce7d9454e83217c9f80551af8817f042f7efb4b34954f51eb03ee443c">
+    <Id>9c961c2c-7ced-4321-9bef-0c09db8ec592</Id>
+    <IdConcepto>b1685f7d-cc76-472c-8c8a-f14e016bc961</IdConcepto>
+    <Fecha>636827475250000000</Fecha>
+    <Monto>4000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944979353248829</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="4e5f49c05635475eba1dfb4ded8b166606d6ca6a2b4846f5a82efe5f4990f3d7">
+    <Id>4b2a5f8d-e09e-49f8-aec9-b58288031314</Id>
+    <IdConcepto>53cfe798-7917-4c28-8299-8fd6ea3d608c</IdConcepto>
+    <Fecha>636854259350000000</Fecha>
+    <Monto>81202</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944979480361087</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="5663853210ca4fd1a7c38bc390e438265dc515f95d964bdf872bd44884a45322">
+    <Id>b565568b-699b-4318-87b7-dbc41da6766f</Id>
+    <IdConcepto>b1685f7d-cc76-472c-8c8a-f14e016bc961</IdConcepto>
+    <Fecha>636854259480000000</Fecha>
+    <Monto>17500</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944979566479666</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="74655697795549b6beaea8426cfbd885a9dcd245383340468e2c509e46f3e5c2">
+    <Id>a0fff365-fcce-40ff-9169-dc1562302f32</Id>
+    <IdConcepto>abd06ec7-4e0d-4058-be26-15bb4925b5f1</IdConcepto>
+    <Fecha>636854259560000000</Fecha>
+    <Monto>33809.04</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944979697418094</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="47da1f4f3d634f0a940e1dab42ba6834b7e68dc8359c47ec85821a728f3da83a">
+    <Id>bbd781e4-4b13-4755-8390-d6a4cc7ff1f4</Id>
+    <IdConcepto>53cfe798-7917-4c28-8299-8fd6ea3d608c</IdConcepto>
+    <Fecha>636878451690000000</Fecha>
+    <Monto>84741.73</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944979840801831</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="7ae038268b9449c482cb00ad1fce03f61c54c5190da64fbd80e1cb7d2576ebe9">
+    <Id>6c97ba68-eccc-4110-bba2-0a8bb5cb50ec</Id>
+    <IdConcepto>b1685f7d-cc76-472c-8c8a-f14e016bc961</IdConcepto>
+    <Fecha>636878451840000000</Fecha>
+    <Monto>10000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944979921966493</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="17a6f228afd34d489d8b43030973333816e221a796834868a1c9467f4534c672">
+    <Id>8b144e56-a6e5-49d6-9dfc-514c18ac8746</Id>
+    <IdConcepto>abd06ec7-4e0d-4058-be26-15bb4925b5f1</IdConcepto>
+    <Fecha>636878451920000000</Fecha>
+    <Monto>26671.23</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944980072612186</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="ab8f394dade14d398b92b9e1cd6b8cd9fbbdd4c78154424e8cdd952fbbbf8f4d">
+    <Id>e1b2d7c4-1ab8-4432-876e-ef69dc8648dd</Id>
+    <IdConcepto>267e96d9-4590-4c5d-a622-bca609abefc8</IdConcepto>
+    <Fecha>636878452070000000</Fecha>
+    <Monto>29064</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944980206238378</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="ef174f188a794261a773770543172509907a466d3ae44cbbb0e57ac19c4e186b">
+    <Id>a0724f8b-f561-4727-8596-48c3cfb69d4d</Id>
+    <IdConcepto>53cfe798-7917-4c28-8299-8fd6ea3d608c</IdConcepto>
+    <Fecha>636905236200000000</Fecha>
+    <Monto>81718.40</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944980315043984</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="937040603c6441caa8bee7d2163acc7710769f85c5294cb298f03d1e2e11ad92">
+    <Id>65ccfc8b-8450-496f-a83d-28c398419ac8</Id>
+    <IdConcepto>53cfe798-7917-4c28-8299-8fd6ea3d608c</IdConcepto>
+    <Fecha>636931156310000000</Fecha>
+    <Monto>86854.32</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944980504167246</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="523c4e600a3143d8a599c5022311d1396ec7a090ab9d4065b57fa0d967f56f10">
+    <Id>f348e877-ad71-4e13-a137-13171247b0c2</Id>
+    <IdConcepto>936286e9-b759-4099-b63d-6c2c79c62d2d</IdConcepto>
+    <Fecha>636536315420000000</Fecha>
+    <Monto>2410</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944987645354851</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="47d517d59822465d9622489fd6f7b59a779527f943054f239b27735ed7e88180">
+    <Id>0bc7aed0-5d4d-402c-8ade-db96883b0f83</Id>
+    <IdConcepto>936286e9-b759-4099-b63d-6c2c79c62d2d</IdConcepto>
+    <Fecha>636613211790000000</Fecha>
+    <Monto>2524</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944987954092790</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="c072e43891774cb3812818c7b4963f74fe456e7a79184f2bb6c45763451d6154">
+    <Id>71632c61-bf2f-43d5-8cab-cf1fb0614adb</Id>
+    <IdConcepto>936286e9-b759-4099-b63d-6c2c79c62d2d</IdConcepto>
+    <Fecha>636639995950000000</Fecha>
+    <Monto>2742</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944988088828249</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="cb6a87187213403290da19eeb71b80d2c3e1bf899d564cbab6d69c0b74201324">
+    <Id>91f953d3-05a9-4433-9442-6c353b27ae34</Id>
+    <IdConcepto>936286e9-b759-4099-b63d-6c2c79c62d2d</IdConcepto>
+    <Fecha>636665916080000000</Fecha>
+    <Monto>2742</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944988208909083</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="a04956e4839c4f6198fb9759dba78f4f0414a8d9de2f4be7b5b94af3ff1c46d7">
+    <Id>959d69f8-104e-4197-98b2-ff864d4e7a21</Id>
+    <IdConcepto>936286e9-b759-4099-b63d-6c2c79c62d2d</IdConcepto>
+    <Fecha>636692700200000000</Fecha>
+    <Monto>2742</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944988333188381</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="308805dff9a4413d839b70a1980a8c2cc60b14cf56824873a51370e3a8ca0192">
+    <Id>c3227aec-acbd-4d34-8b36-6d4c3d0fdc0d</Id>
+    <IdConcepto>936286e9-b759-4099-b63d-6c2c79c62d2d</IdConcepto>
+    <Fecha>636719484330000000</Fecha>
+    <Monto>2949</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944988508126903</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="01e5ca1da9dc4234a6c437568931a0e9a158afd84e0942c6902722cb0015f831">
+    <Id>65295200-5c4a-4cb1-ba5f-5fe8a4d6f3eb</Id>
+    <IdConcepto>936286e9-b759-4099-b63d-6c2c79c62d2d</IdConcepto>
+    <Fecha>636745404500000000</Fecha>
+    <Monto>2979</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944988648499136</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="6622be4672fe4e9eb35319975c798096a095916fda2146e185285bed1771b79e">
+    <Id>563f3518-43f5-4fcb-b427-75ec7660c8a6</Id>
+    <IdConcepto>936286e9-b759-4099-b63d-6c2c79c62d2d</IdConcepto>
+    <Fecha>636772188640000000</Fecha>
+    <Monto>2979</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944988791875316</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="c520d85346544ba8856a1ce47df3aceb9407b1e8073e410687796a2997cc2642">
+    <Id>a6fc2837-5c38-488c-9a30-bc79999de47a</Id>
+    <IdConcepto>936286e9-b759-4099-b63d-6c2c79c62d2d</IdConcepto>
+    <Fecha>636798108790000000</Fecha>
+    <Monto>2949</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944988962726946</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="a34c640e63e446dea64583c28665b3ee4f0e0e286811491ebe4efac6ba09bf6c">
+    <Id>e920228a-aecd-4da5-9770-778f6e8f1352</Id>
+    <IdConcepto>936286e9-b759-4099-b63d-6c2c79c62d2d</IdConcepto>
+    <Fecha>636824892960000000</Fecha>
+    <Monto>3285</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944989124089397</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="df037f2d3d8944dabbe44a86f660c19eb23c308bcd31450d9d8c84543017aa20">
+    <Id>1539997d-3f12-4470-90db-3c9812cb7cfd</Id>
+    <IdConcepto>936286e9-b759-4099-b63d-6c2c79c62d2d</IdConcepto>
+    <Fecha>636851677120000000</Fecha>
+    <Monto>3285</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944989230709000</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="3ddaad932f7e4010b202e72c0b6788ce3cf0d10c7050469494766085fbeffc38">
+    <Id>5270051c-4f30-4fcc-810f-3fbeeb0a3509</Id>
+    <IdConcepto>936286e9-b759-4099-b63d-6c2c79c62d2d</IdConcepto>
+    <Fecha>636875869230000000</Fecha>
+    <Monto>3285</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944989391079638</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="018aa72a1acf454ebf55a43cc353942544729ecd6e60439abc4aecfdae2f34d3">
+    <Id>77c7c39b-e7bb-4dd8-b1a1-cdfa83e368d3</Id>
+    <IdConcepto>936286e9-b759-4099-b63d-6c2c79c62d2d</IdConcepto>
+    <Fecha>636902653390000000</Fecha>
+    <Monto>3285</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944989514171871</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="637213c8e37746378358a4e1e906c0f18604ffdaa2fe4f57adb3a80cf6ce0b42">
+    <Id>ffe3df14-2df8-4a67-994d-f478bb692f98</Id>
+    <IdConcepto>936286e9-b759-4099-b63d-6c2c79c62d2d</IdConcepto>
+    <Fecha>636928573510000000</Fecha>
+    <Monto>3285</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944989688651191</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="72047319a3dc4192a882e990e7ca97c252e356d17a81450cb0d29c474db79501">
+    <Id>1f180a93-0c91-41d1-ae51-1f896f472391</Id>
+    <IdConcepto>936286e9-b759-4099-b63d-6c2c79c62d2d</IdConcepto>
+    <Fecha>636587294860000000</Fecha>
+    <Monto>2400</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944991028309999</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="e8b9a345c981481bb79e041278b9372d4d6d6adc5c824133ba0afe5b62d2499f">
+    <Id>04a7f89e-37e5-4aa9-a819-6a4b0bd293cb</Id>
+    <IdConcepto>b11785e6-0682-4815-9f6d-6fd428d996ab</IdConcepto>
+    <Fecha>636552735660000000</Fecha>
+    <Monto>865</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944991909409926</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="c357859f92c04fdf9535d2bf622cffacf435997206924af9a02aa58cae3802e8">
+    <Id>40ea5e5c-4de2-4c5a-8813-96062ccdb277</Id>
+    <IdConcepto>b11785e6-0682-4815-9f6d-6fd428d996ab</IdConcepto>
+    <Fecha>636576927900000000</Fecha>
+    <Monto>1060</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944992103159098</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="ca90f152eeab4d5c8bae0a71f3cad79ce4c96ed7b5e148bc859eaa21f45746c6">
+    <Id>e10126c1-eb73-44aa-8555-f0448b05e5f9</Id>
+    <IdConcepto>b11785e6-0682-4815-9f6d-6fd428d996ab</IdConcepto>
+    <Fecha>636603712100000000</Fecha>
+    <Monto>912</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944992235952923</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="7b477669f0d14304819bf2eb3c73297a46bccac3069f4b0e8dbc110cab3be294">
+    <Id>ea384d9b-7c73-43e2-8b34-31ebc840d112</Id>
+    <IdConcepto>b11785e6-0682-4815-9f6d-6fd428d996ab</IdConcepto>
+    <Fecha>636629632230000000</Fecha>
+    <Monto>1400</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944992378520179</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="55dceac7aa2141fd885c61d1599bfcb1a28c63b98ef44552839db2eecf7ec3b2">
+    <Id>8cb4e116-84a5-45e7-a122-a51175b06574</Id>
+    <IdConcepto>b11785e6-0682-4815-9f6d-6fd428d996ab</IdConcepto>
+    <Fecha>636709120370000000</Fecha>
+    <Monto>1960</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944992530178763</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="4f91571ed76d4b9a8645c2089397b8e25b6977d8a61a47cd8b3a1aa6d3a4da0f">
+    <Id>739a600c-f212-44de-be16-b08e48779ca6</Id>
+    <IdConcepto>b11785e6-0682-4815-9f6d-6fd428d996ab</IdConcepto>
+    <Fecha>636841312530000000</Fecha>
+    <Monto>4000</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944992704354400</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="a1b6f5acafe2480e8de7aefd19a163b6093a97db4011437cb736102f33382a01">
+    <Id>7ccb3c81-d0ec-4ac5-8588-69ef062c12c3</Id>
+    <IdConcepto>b11785e6-0682-4815-9f6d-6fd428d996ab</IdConcepto>
+    <Fecha>636892288700000000</Fecha>
+    <Monto>3300</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944992823214366</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="54818779bb72478b9943eaa9ecfff5420471f4f22a0b46c48dcdc4274d5be9b2">
+    <Id>0a9ac3ae-a21f-4fb4-830e-c319e7b4ced1</Id>
+    <IdConcepto>b11785e6-0682-4815-9f6d-6fd428d996ab</IdConcepto>
+    <Fecha>636919072820000000</Fecha>
+    <Monto>1870</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944992958289140</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="0cfb178a06cf4c1291e87704585f11164b5d92af8b454a1ba68f253d5958374e">
+    <Id>131c7da9-4a7b-440f-adf0-c136f47b5377</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>636779106680000000</Fecha>
+    <Monto>1418.22</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944996653231920</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="7deb3d92832143d0a3da2848c1d7f2b3c3569f241fe44440bf723d939c369017">
+    <Id>e07d36aa-df13-4b1a-adf0-04d0dfdcec1f</Id>
+    <IdConcepto>555448d5-500c-4dba-bdaf-05291131cca3</IdConcepto>
+    <Fecha>636547557940000000</Fecha>
+    <Monto>4868.86</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944998268431252</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="48691ebd5d79417b874ec4cae92b8d2d2f96220057af4b1e97c742dc3dc9fb3c">
+    <Id>c47ee768-a333-49c5-ad4c-d4cfbd5e91f6</Id>
+    <IdConcepto>555448d5-500c-4dba-bdaf-05291131cca3</IdConcepto>
+    <Fecha>636571750260000000</Fecha>
+    <Monto>4868.86</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944998516413441</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="ccdca1b5fba1496db350457c14d9715ec69035aefca646b8b89a4c8184c331c9">
+    <Id>39ba066b-ddb7-4c28-8f09-bfab8a5bea60</Id>
+    <IdConcepto>555448d5-500c-4dba-bdaf-05291131cca3</IdConcepto>
+    <Fecha>636598534510000000</Fecha>
+    <Monto>4868.86</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944998709911976</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="b9e5e9d813b24a7eb4594e532ee86c51314f18f5bfe94736b817af9fdd8de796">
+    <Id>fa9e9de9-3d41-45c8-90c5-54e1f5142172</Id>
+    <IdConcepto>555448d5-500c-4dba-bdaf-05291131cca3</IdConcepto>
+    <Fecha>636624454700000000</Fecha>
+    <Monto>4868.86</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944998811174120</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="a80aee20f9654bc3a56329e53f9c638aa5f14761e6fa4e8294904ade1ab42be0">
+    <Id>4df3da48-7018-4d63-b7d3-5a971a8a4a65</Id>
+    <IdConcepto>555448d5-500c-4dba-bdaf-05291131cca3</IdConcepto>
+    <Fecha>636651238810000000</Fecha>
+    <Monto>4868.86</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944998930214650</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="a7f2e32d96704de6b0ef49964147feaee46cfffb64d643fa9cd6b2285914c67d">
+    <Id>86b49638-e7f5-4d37-b925-b7b7565d0beb</Id>
+    <IdConcepto>555448d5-500c-4dba-bdaf-05291131cca3</IdConcepto>
+    <Fecha>636677158930000000</Fecha>
+    <Monto>4868.86</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944999124181539</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="c993b8d03edf4006a2c168d062964fdba8ee5acdda7540d3bc20d0b907a172dc">
+    <Id>9468f26b-267b-417f-842f-5265655919e0</Id>
+    <IdConcepto>555448d5-500c-4dba-bdaf-05291131cca3</IdConcepto>
+    <Fecha>636703943120000000</Fecha>
+    <Monto>4868.86</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944999231204236</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="97a420e9a22445fe97cee76445c78b62df16a0a530c64a3fbf241bf7ca68fdeb">
+    <Id>d8335c92-3fec-4d94-9ee2-aad1f50bfa60</Id>
+    <IdConcepto>555448d5-500c-4dba-bdaf-05291131cca3</IdConcepto>
+    <Fecha>636732455230000000</Fecha>
+    <Monto>4868.86</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944999337248309</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="f2eac140f93845f9ab9031ac3c927a7f0b5ca9f9994642f7a9a41edd3ae19ee6">
+    <Id>b3d4d104-2093-4ea2-b958-01101d105794</Id>
+    <IdConcepto>555448d5-500c-4dba-bdaf-05291131cca3</IdConcepto>
+    <Fecha>636756647330000000</Fecha>
+    <Monto>4868.86</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944999448296730</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="d08342a5e7ca48b68de77e53e938b2f9874b0056cb664f1184e7115693971c32">
+    <Id>068a6173-945f-4f16-bd7a-db3db7efd35f</Id>
+    <IdConcepto>555448d5-500c-4dba-bdaf-05291131cca3</IdConcepto>
+    <Fecha>636783431440000000</Fecha>
+    <Monto>4868.86</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944999555434028</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="b64da965c69943e3a741788333006bae3ded0e70cf014d15b80b4d26fc03077d">
+    <Id>ecfc0ff2-8a46-4300-9781-99ec5e077783</Id>
+    <IdConcepto>555448d5-500c-4dba-bdaf-05291131cca3</IdConcepto>
+    <Fecha>636809351550000000</Fecha>
+    <Monto>4868.86</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944999681819871</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="2b00df3f600b41539bfe73dab3f75b0aa52a9195021b4b71ac75072668f2e0ef">
+    <Id>1b1edb53-7417-491c-b3db-b87865ccb5cb</Id>
+    <IdConcepto>555448d5-500c-4dba-bdaf-05291131cca3</IdConcepto>
+    <Fecha>636836135680000000</Fecha>
+    <Monto>6254.58</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944999843711678</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="5ed85a0b8d7440e2b8db1e23f454172a7a55b77c427d4a86ac5421a3b73681f4">
+    <Id>ce364513-512a-40bb-8a65-e01ff09723ca</Id>
+    <IdConcepto>555448d5-500c-4dba-bdaf-05291131cca3</IdConcepto>
+    <Fecha>636862919840000000</Fecha>
+    <Monto>6254.58</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636944999988432125</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="9314e29962c34e4b83f497f5d8e2b9d73c4c985d2a044284881e0513df9cc943">
+    <Id>820198ee-4f36-47ee-8aad-c869e7a368e8</Id>
+    <IdConcepto>555448d5-500c-4dba-bdaf-05291131cca3</IdConcepto>
+    <Fecha>636887111980000000</Fecha>
+    <Monto>6254.58</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636945000090084213</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="18abadcc748940d5b510ebd78b9c24e9f19d71f96f604bba8283db8278041a08">
+    <Id>10e67488-3985-4fe5-ab7d-def14b3cd9c0</Id>
+    <IdConcepto>555448d5-500c-4dba-bdaf-05291131cca3</IdConcepto>
+    <Fecha>636913896090000000</Fecha>
+    <Monto>6254.58</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636945000172973131</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="0f12a05ccad74d7182ce3cdef703b4b1801e14407a8d4080bc0d8c10112b73ed">
+    <Id>9be6a49d-1226-40b3-b747-a6533cdc6275</Id>
+    <IdConcepto>555448d5-500c-4dba-bdaf-05291131cca3</IdConcepto>
+    <Fecha>636939816170000000</Fecha>
+    <Monto>6254.58</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636945000234567126</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="a70ec396ea4945cca063f3acaca76632749f64650af640c5a78351b228a56f2c">
+    <Id>0f1e6ad0-c4bb-40fa-aaef-fc646eb99c46</Id>
+    <IdConcepto>179cdb6e-f689-47c0-a6e8-fcb682ac9a0a</IdConcepto>
+    <Fecha>636538921350000000</Fecha>
+    <Monto>2794.56</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636945001555874016</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="288d9db3288d46e9ac804626901b7fe67b3a7a9153534653982cfed779bd99ab">
+    <Id>4b7b3ea1-4e66-463f-b6d2-8c45d7eef4ab</Id>
+    <IdConcepto>179cdb6e-f689-47c0-a6e8-fcb682ac9a0a</IdConcepto>
+    <Fecha>636563113550000000</Fecha>
+    <Monto>2794.56</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636945001712955568</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="3996db2c7b7643c489350fcb83740b982567ff4cd081492c9c5d467c8da8e8e2">
+    <Id>c9cd5797-bf34-4373-a101-fd1301a79a8c</Id>
+    <IdConcepto>179cdb6e-f689-47c0-a6e8-fcb682ac9a0a</IdConcepto>
+    <Fecha>636589897710000000</Fecha>
+    <Monto>3755.19</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636945001842124768</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="3ca80be8df0a47f1a14bde6fd2e2f694efa8f69558774b91aa56801ae8dc946d">
+    <Id>d0422bbb-339f-4fbe-b7cd-360bb1d39c0c</Id>
+    <IdConcepto>b11785e6-0682-4815-9f6d-6fd428d996ab</IdConcepto>
+    <Fecha>636946437911872588</Fecha>
+    <Monto>1930</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636946438025049786</CreaFecha>
   </WindowsHelper.Cuentas.DTO.Movimiento>
 </XmlSimpleRepository>

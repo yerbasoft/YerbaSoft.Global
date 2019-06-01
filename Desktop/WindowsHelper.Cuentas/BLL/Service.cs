@@ -18,13 +18,29 @@ namespace WindowsHelper.Cuentas.BLL
             new Forms.Ahorros().Show();
         }
 
-        internal void Ver(object sender, EventArgs e)
+        internal void VerTodoExcel(object sender, EventArgs e)
         {
+            new ExcelHelper().BuildExcelAnual(new DateTime(2017, 6, 1));
+        }
+
+        internal void VerUltimoAnioExcel(object sender, EventArgs e)
+        {
+            new ExcelHelper().BuildExcelAnual(DateTime.Now.AddMonths(-11));
+        }
+
+        internal void VerUltimoMesExcel(object sender, EventArgs e)
+        {
+            new ExcelHelper().BuildExcelMensual(DateTime.Now);
         }
 
         internal void OpenConfig(object sender, EventArgs e)
         {
             new Forms.Config().Show();
+        }
+
+        internal void VerMovimientos(object sender, EventArgs e)
+        {
+            new Forms.Movimientos().Show();
         }
     }
 }

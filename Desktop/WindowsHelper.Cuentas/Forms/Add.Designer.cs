@@ -86,7 +86,6 @@
             this.txtMonto.Size = new System.Drawing.Size(432, 24);
             this.txtMonto.TabIndex = 2;
             this.txtMonto.TextChanged += new System.EventHandler(this.TxtMonto_TextChanged);
-            this.txtMonto.Validating += new System.ComponentModel.CancelEventHandler(this.TxtMonto_Validating);
             // 
             // bAddPlus
             // 

@@ -65,18 +65,18 @@
       <ToClipBoard Name="BUI :: Boletas Pendientes de Pago">SELECT ID, NUMERO, NROEXPEDIENTE FROM BU.BOLETA WHERE NROEXPEDIENTE IS NOT NULL AND ESTADO = 1;</ToClipBoard>
       <ToClipBoard Name="ATM :: Buscar un Pago">
         SELECT  C.NOMBRE "POS",
-        L.NROZ "LOTE",
-        L.CREACION "CREACION LOTE",
-        O.COMPROBANTE,
-        P.NROCOMPROBANTE,
-        P.BARCODE,
-        P.TIPO,
-        P.IMPORTE,
-        V.TARJETA,
-        V.TITULAR,
-        V.CODIGOAUTORIZACION,
-        V.NUMERO "VOUCHER NUMERO",
-        V.NROTARJETA
+                L.NROZ "LOTE",
+                L.CREACION "CREACION LOTE",
+                O.COMPROBANTE,
+                P.NROCOMPROBANTE,
+                P.BARCODE,
+                P.TIPO,
+                P.IMPORTE,
+                V.TARJETA,
+                V.TITULAR,
+                V.CODIGOAUTORIZACION,
+                V.NUMERO "VOUCHER NUMERO",
+                V.NROTARJETA
         FROM    SIRAPI.VOUCHERS         V
         INNER JOIN SIRAPI.PAGOS         P ON ( P.ID = V.ID )
         INNER JOIN SIRAPI.OPERACIONES   O ON ( O.ID = P.OPERACIONID )
@@ -84,12 +84,12 @@
         INNER JOIN SIRAPI.LOTES         L ON ( L.ID = T.LOTEID )
         INNER JOIN SIRAPI.CLIENTES      C ON ( C.ID = L.CLIENTEID )
         WHERE   --P.FECHA BETWEEN TO_DATE( '26-07-2018', 'DD-MM-YYYY' ) - 2 AND TO_DATE( '26-07-2018', 'DD-MM-YYYY' ) + 3     AND
-        P.FECHA >= TO_DATE( '01-09-2018', 'DD-MM-YYYY' ) AND
-        (
-        V.CODIGOAUTORIZACION LIKE '%6555%'      OR
-        V.NUMERO = 1860                         OR
-        V.NROTARJETA LIKE '%1853%'
-        )
+                P.FECHA >= TO_DATE( '01-09-2018', 'DD-MM-YYYY' ) AND
+                (
+                    V.CODIGOAUTORIZACION LIKE '%6555%'      OR
+                    V.NUMERO = 1860                         OR
+                    V.NROTARJETA LIKE '%1853%'
+                )
       </ToClipBoard>
       <ToClipBoard Name="SUACI :: Pendientes de Notificación">
         SELECT  SIR.RAW_TO_GUID( C.ID )

@@ -215,4 +215,64 @@
     <BajaFecha>
     </BajaFecha>
   </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="854f03b16e0c49e783b5aabd89534b5cb0de07ef6025447a95262865e93ca53b">
+    <Id>46111c60-d7c0-4556-846b-5ef67a9ce23f</Id>
+    <Name>Gastos - Abogado/a</Name>
+    <EsCredito>False</EsCredito>
+    <Observaciones>
+    </Observaciones>
+    <CreaFecha>636944270658820978</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="53cb327ddb6f4a60b4913455e3e91b5a47a3ba8fa81e4cfe9121151c34953ff9">
+    <Id>4580937d-a6c7-4227-8767-5dee20156679</Id>
+    <Name>Ahorros - Ingreso a Plazo Fijo</Name>
+    <EsCredito>False</EsCredito>
+    <Observaciones>
+    </Observaciones>
+    <CreaFecha>636944937920873968</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="1727ca59d221415aa137dd2dc25e5ca681f26c5b1bbc42b2b2976bbc9322b5e8">
+    <Id>f2793f86-6413-4a8c-b9ba-b6ffa5255064</Id>
+    <Name>Ahorros - Compra de Dolares</Name>
+    <EsCredito>False</EsCredito>
+    <Observaciones>
+    </Observaciones>
+    <CreaFecha>636944941039437080</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="551e3ed545d642c38d2517d93fba568e4ee039a6037a49ab84ae553043c47e36">
+    <Id>b1685f7d-cc76-472c-8c8a-f14e016bc961</Id>
+    <Name>Ingresos Cardinal (Negro)</Name>
+    <EsCredito>True</EsCredito>
+    <Observaciones>
+    </Observaciones>
+    <CreaFecha>636944966611593163</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="022638d0541540939dfc20438dcac5bfd1077b7ca54d426a9cf70304e19e3dc5">
+    <Id>abd06ec7-4e0d-4058-be26-15bb4925b5f1</Id>
+    <Name>Ingresos desde Ahorros</Name>
+    <EsCredito>True</EsCredito>
+    <Observaciones>
+    </Observaciones>
+    <CreaFecha>636944978958219239</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
+  <WindowsHelper.Cuentas.DTO.Concepto UniqueKey="b8e265fb094b4feba7e742e22165252297cfb3ad603242078762de2204ff65c5">
+    <Id>179cdb6e-f689-47c0-a6e8-fcb682ac9a0a</Id>
+    <Name>Impuestos - IIBB</Name>
+    <EsCredito>False</EsCredito>
+    <Observaciones>
+    </Observaciones>
+    <CreaFecha>636945001310708185</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Concepto>
 </XmlSimpleRepository>

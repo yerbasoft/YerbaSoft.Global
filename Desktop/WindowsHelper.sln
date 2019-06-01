@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YerbaSoft.DAL", "..\DAL\Yer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsHelper.Cuentas", "WindowsHelper.Cuentas\WindowsHelper.Cuentas.csproj", "{EB9AD4CC-19A9-4DDF-ADA5-7D2E6EF85408}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YerbaSoft.Office", "..\Office\YerbaSoft.Office\YerbaSoft.Office.csproj", "{0741E2F4-DA20-429B-9952-141EEE054C18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -249,6 +251,22 @@ Global
 		{EB9AD4CC-19A9-4DDF-ADA5-7D2E6EF85408}.Release|x64.Build.0 = Release|Any CPU
 		{EB9AD4CC-19A9-4DDF-ADA5-7D2E6EF85408}.Release|x86.ActiveCfg = Release|Any CPU
 		{EB9AD4CC-19A9-4DDF-ADA5-7D2E6EF85408}.Release|x86.Build.0 = Release|Any CPU
+		{0741E2F4-DA20-429B-9952-141EEE054C18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0741E2F4-DA20-429B-9952-141EEE054C18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0741E2F4-DA20-429B-9952-141EEE054C18}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{0741E2F4-DA20-429B-9952-141EEE054C18}.Debug|ARM.Build.0 = Debug|Any CPU
+		{0741E2F4-DA20-429B-9952-141EEE054C18}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0741E2F4-DA20-429B-9952-141EEE054C18}.Debug|x64.Build.0 = Debug|Any CPU
+		{0741E2F4-DA20-429B-9952-141EEE054C18}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0741E2F4-DA20-429B-9952-141EEE054C18}.Debug|x86.Build.0 = Debug|Any CPU
+		{0741E2F4-DA20-429B-9952-141EEE054C18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0741E2F4-DA20-429B-9952-141EEE054C18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0741E2F4-DA20-429B-9952-141EEE054C18}.Release|ARM.ActiveCfg = Release|Any CPU
+		{0741E2F4-DA20-429B-9952-141EEE054C18}.Release|ARM.Build.0 = Release|Any CPU
+		{0741E2F4-DA20-429B-9952-141EEE054C18}.Release|x64.ActiveCfg = Release|Any CPU
+		{0741E2F4-DA20-429B-9952-141EEE054C18}.Release|x64.Build.0 = Release|Any CPU
+		{0741E2F4-DA20-429B-9952-141EEE054C18}.Release|x86.ActiveCfg = Release|Any CPU
+		{0741E2F4-DA20-429B-9952-141EEE054C18}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

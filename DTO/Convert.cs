@@ -178,6 +178,9 @@ namespace YerbaSoft.DTO
                     return new DateTime(System.Convert.ToInt64(value));
                 else if (Math.In(tValue, typeof(string)))
                 {
+                    if (long.TryParse((string)value, out long aux))
+                        return new DateTime(aux);
+
                     foreach(var exp in DateTimeExpressions)
                     {
                         if (new System.Text.RegularExpressions.Regex(exp.Value).IsMatch(value.ToString()))

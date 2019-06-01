@@ -52,10 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\ExcelHelper.cs" />
     <Compile Include="BLL\Service.cs" />
     <Compile Include="DAL\Session.cs" />
     <Compile Include="DTO\Ahorro.cs" />
     <Compile Include="DTO\Concepto.cs" />
+    <Compile Include="DTO\DataSource\MovimientoDataSource.cs" />
     <Compile Include="DTO\Movimiento.cs" />
     <Compile Include="Forms\Add.cs">
       <SubType>Form</SubType>
@@ -81,6 +83,12 @@
     <Compile Include="Forms\Config.Designer.cs">
       <DependentUpon>Config.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Movimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Movimientos.Designer.cs">
+      <DependentUpon>Movimientos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CuentasApp.cs" />
     <EmbeddedResource Include="Forms\Add.resx">
@@ -95,6 +103,9 @@
     <EmbeddedResource Include="Forms\Config.resx">
       <DependentUpon>Config.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Movimientos.resx">
+      <DependentUpon>Movimientos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -107,6 +118,7 @@
     </Compile>
     <None Include="Properties\DataSources\WindowsHelper.Cuentas.DTO.Ahorro.datasource" />
     <None Include="Properties\DataSources\WindowsHelper.Cuentas.DTO.Concepto.datasource" />
+    <None Include="Properties\DataSources\WindowsHelper.Cuentas.DTO.DataSource.MovimientoDataSource.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -214,6 +226,10 @@
       <Project>{1bb3f5b2-eeec-4852-8960-3263d65f3180}</Project>
       <Name>YerbaSoft.Dynamic</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Office\YerbaSoft.Office\YerbaSoft.Office.csproj">
+      <Project>{0741e2f4-da20-429b-9952-141eee054c18}</Project>
+      <Name>YerbaSoft.Office</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WindowsHelper.Common\WindowsHelper.Common.csproj">
       <Project>{4cdfb59f-292d-4c42-abd1-950cc809e113}</Project>
       <Name>WindowsHelper.Common</Name>
@@ -222,6 +238,7 @@
   <ItemGroup>
     <None Include="Resources\add.ICO" />
     <None Include="Resources\delete.ICO" />
+    <None Include="Resources\note_view.ICO" />
     <Content Include="WindowsHelper.Cuentas.Ahorros.xml" />
     <Content Include="WindowsHelper.Cuentas.Movimientos.xml" />
     <None Include="Resources\camera2.ICO" />

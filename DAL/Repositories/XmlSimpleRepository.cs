@@ -89,7 +89,17 @@ namespace YerbaSoft.DAL.Repositories
                 }
                 else if (p.CustomAttributes.Any(at => typeof(Direct).IsAssignableFrom(at.AttributeType)))
                 {
-                    propNode.InnerText = value.ToString();
+                    string finalValue = "";
+                    var usesProvider = p.PropertyType.GetMethod("ToString", new Type[] { typeof(IFormatProvider) });
+
+                    if (DTO.Math.In(p.PropertyType, typeof(DateTime), typeof(DateTime?)))
+                        finalValue = ((DateTime?)value).Value.Ticks.ToString();
+                    else if (usesProvider == null)
+                        finalValue = value.ToString();
+                    else
+                        finalValue = (string)usesProvider.Invoke(value, new object[] { System.Globalization.CultureInfo.InvariantCulture });
+
+                    propNode.InnerText = finalValue;
                 }
                 else if (p.CustomAttributes.Any(at => typeof(SubClass).IsAssignableFrom(at.AttributeType)))
                 {

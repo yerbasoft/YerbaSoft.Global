@@ -369,5 +369,15 @@ namespace WindowsHelper.Cuentas.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        /// </summary>
+        internal static System.Drawing.Icon note_view {
+            get {
+                object obj = ResourceManager.GetObject("note_view", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
     }
 }

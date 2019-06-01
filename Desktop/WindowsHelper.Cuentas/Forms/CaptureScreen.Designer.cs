@@ -42,6 +42,9 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Presione C o ENTER para Tomar la Foto\r\nEsc para Cerrar";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CaptureScreen_MouseDown);
+            this.label1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CaptureScreen_MouseMove);
+            this.label1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.CaptureScreen_MouseUp);
             // 
             // CaptureScreen
             // 
