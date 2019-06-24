@@ -2571,4 +2571,98 @@
     </FileRef>
     <CreaFecha>636946438025049786</CreaFecha>
   </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="37e58f80a9664c94abe73f01670ad532cb3d9ad9ab7f4727beecf10d138c000b">
+    <Id>3f5bb6b4-6d2c-4ffa-9405-72ec49ad9e6f</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636954384791405772</Fecha>
+    <Monto>8500</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190606 Gascón 887 - Alquiler.png</FileRef>
+    <CreaFecha>636954385046837276</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="ceee3eeb70bc4523acf6c50d20d025971661e87d006a4c6fb0d5aa80386a441c">
+    <Id>9c9809a6-7b33-4152-a3ae-11666717359b</Id>
+    <IdConcepto>4580937d-a6c7-4227-8767-5dee20156679</IdConcepto>
+    <Fecha>636954387312912481</Fecha>
+    <Monto>30641.10</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190606 Ahorros - Ingreso a Plazo Fijo.png</FileRef>
+    <CreaFecha>636954387628913600</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="74a1b05638c244a7a3e45de280a6f40f1e8449a68c1c4c1eb5f036929971f7d8">
+    <Id>d6c37307-3e7e-48f9-9e6b-db0cf0d8a181</Id>
+    <IdConcepto>936286e9-b759-4099-b63d-6c2c79c62d2d</IdConcepto>
+    <Fecha>636955004316065981</Fecha>
+    <Monto>2813</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636955004509790030</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="b89f7f7d45e34432b26fd7a1ef107d9a34fcf8a482b64905abd420126f4c217d">
+    <Id>ad0a3ba8-ea70-455c-a040-fb6d2f79906b</Id>
+    <IdConcepto>53cfe798-7917-4c28-8299-8fd6ea3d608c</IdConcepto>
+    <Fecha>636953277700000000</Fecha>
+    <Monto>91677.13</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636955005837463643</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="0903702878fb4216865056967bb2782267d717f5286e4a16930f2f6150439b1d">
+    <Id>a2250a24-9f7f-47c9-a064-f4c389c16057</Id>
+    <IdConcepto>5134fd82-dd44-4e7a-bdbd-93f54d2826f9</IdConcepto>
+    <Fecha>636955518070414770</Fecha>
+    <Monto>200</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636955518174935000</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="754fe56f53bc4b4dab29e2cf8f685ad1d4f30ccb4a094724a0e1033f2f5ef1db">
+    <Id>dc1192e5-15ff-4ff2-aec6-815e0b20f6e8</Id>
+    <IdConcepto>01473c4e-7757-468b-bc69-f0fa9c5082e4</IdConcepto>
+    <Fecha>636955518175064927</Fecha>
+    <Monto>100</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636955518262614857</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="78df25ee084540469527c5e9900e0df8b62c8a3ad66b401fb391205a969d40ab">
+    <Id>90e4b22b-15d4-4ab2-bffe-12273b620214</Id>
+    <IdConcepto>d85812f4-e047-48b8-8bf4-151809026194</IdConcepto>
+    <Fecha>636959438479927211</Fecha>
+    <Monto>1550.81</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\EDENOR_4860325952.pdf</FileRef>
+    <CreaFecha>636959438966293261</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="8b4fc49a94494b0fa8cdd03c50ef2fb6d086ec6a99b74ce2823f5acf4d02352a">
+    <Id>aba12939-3d61-4c10-a288-58364fd8f5c8</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>636960385136992023</Fecha>
+    <Monto>1658.01</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190513 MOVISTAR.pdf</FileRef>
+    <CreaFecha>636960385456891559</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="77f565b9588d437ab07df72464b0d87bd45bba1daf154792b291365be9f03698">
+    <Id>aef1f29b-9b43-4a87-9eb9-ee9a9509c2d2</Id>
+    <IdConcepto>bd0a3780-11fe-4039-a4cf-7e90b395d044</IdConcepto>
+    <Fecha>636963846805456488</Fecha>
+    <Monto>4620.75</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190617 TARJETA NARANJA.pdf</FileRef>
+    <CreaFecha>636963847043618264</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
 </XmlSimpleRepository>

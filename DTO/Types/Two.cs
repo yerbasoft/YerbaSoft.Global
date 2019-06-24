@@ -8,6 +8,17 @@ namespace YerbaSoft.DTO.Types
 {
     public class TwoList<T1, T2> : List<Two<T1, T2>>
     {
+        public void RemoveRange(IEnumerable<Two<T1, T2>> elements)
+        {
+            var delete = elements.ToArray();
+            foreach (var del in delete)
+                this.Remove(del);
+        }
+
+        public void Add(T1 v1, T2 v2)
+        {
+            this.Add(new Two<T1, T2>(v1, v2));
+        }
     }
 
     public class Two<T1, T2>

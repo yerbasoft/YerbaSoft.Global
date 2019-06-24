@@ -3,5 +3,5 @@ TASKKILL /im "WindowsHelper.exe" /f /t
 TASKKILL /im "WindowsHelper.exe" /f /t
 TASKKILL /im "WindowsHelper.exe" /f /t
 W:
-cd W:\YerbaSoft\Desktop\WindowsHelper\bin\Debug
-xcopy *.* "C:\Program Files\Windows Helper\" /Y /s
+cd W:\src\YerbaSoft\Desktop\WindowsHelper\bin\Debug
+xcopy *.* "W:\app\Windows Helper\" /Y /s

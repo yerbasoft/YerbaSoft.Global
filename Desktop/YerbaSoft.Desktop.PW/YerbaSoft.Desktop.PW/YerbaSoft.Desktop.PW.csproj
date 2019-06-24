@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE6AE312-0D8F-46CE-AA2D-5CA1557D4539}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>YerbaSoft.Desktop.PW</RootNamespace>
+    <AssemblyName>YerbaSoft.Desktop.PW</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\application.ICO</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\Cuenta.cs" />
+    <Compile Include="BLL\Structs\Barco1.cs" />
+    <Compile Include="BLL\Structs\Base.cs" />
+    <Compile Include="BLL\Structs\PJInfo.cs" />
+    <Compile Include="BLL\Structs\StructTools.cs" />
+    <Compile Include="Configuration\Cuenta.cs" />
+    <Compile Include="Configuration\OpenAll.cs" />
+    <Compile Include="Configuration\PWConfig.cs" />
+    <Compile Include="DAL\AutoAssistConfig.cs" />
+    <Compile Include="DAL\AutoKeyConfig.cs" />
+    <Compile Include="DAL\AutoSpotConfig.cs" />
+    <Compile Include="DAL\CuentaConfig.cs" />
+    <Compile Include="Forms\CuentaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CuentaForm.Designer.cs">
+      <DependentUpon>CuentaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Helper\Area.cs" />
+    <Compile Include="Forms\Helper\Areas.cs" />
+    <Compile Include="Forms\Helper\Toolz.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IExtensions.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\CuentaForm.resx">
+      <DependentUpon>CuentaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_add.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_certificate.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_connection.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_delete.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_enterprise.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_enterprise_add.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_enterprise_certificate.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_enterprise_delete.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_enterprise_new.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_enterprise_preferences.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_enterprise_run.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_enterprise_stop.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_enterprise_view.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_error.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_information.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_lock.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_network.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_new.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_ok.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_preferences.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_run.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_server.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_server_add.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_server_delete.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_server_new.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_server_preferences.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_server_run.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_server_stop.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_stop.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_view.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_warning.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\DAL\YerbaSoft.DAL.csproj">
+      <Project>{13034674-fe45-480d-8869-a3f00de94fcd}</Project>
+      <Name>YerbaSoft.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\DTO\YerbaSoft.DTO.csproj">
+      <Project>{03356582-57FE-40A0-B032-9585DF279CFC}</Project>
+      <Name>YerbaSoft.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Windows\YerbaSoft.Windows\YerbaSoft.Windows.csproj">
+      <Project>{732cdadd-0c5b-4918-b6e1-51da6e2b8782}</Project>
+      <Name>YerbaSoft.Windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PWConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\element_next.ICO" />
+    <None Include="Resources\keyboard_key.ICO" />
+    <None Include="Resources\redo.ICO" />
+    <None Include="Resources\import1.ICO" />
+    <None Include="Resources\delete.ICO" />
+    <None Include="Resources\icecube.ICO" />
+    <None Include="Resources\pin_yellow.ICO" />
+    <None Include="Resources\pin_red.ICO" />
+    <None Include="Resources\pin_grey.ICO" />
+    <None Include="Resources\pin_green.ICO" />
+    <None Include="Resources\pin_blue.ICO" />
+    <None Include="Resources\debug_run.ICO" />
+    <None Include="Resources\background.png" />
+    <None Include="Resources\WR.png" />
+    <None Include="Resources\WF.png" />
+    <None Include="Resources\WB.png" />
+    <None Include="Resources\TE.png" />
+    <None Include="Resources\SE.png" />
+    <None Include="Resources\SB.png" />
+    <None Include="Resources\PS.png" />
+    <None Include="Resources\MY.png" />
+    <None Include="Resources\MG.png" />
+    <None Include="Resources\ER.png" />
+    <None Include="Resources\EP.png" />
+    <None Include="Resources\EA.png" />
+    <None Include="Resources\DB.png" />
+    <None Include="Resources\AS.png" />
+    <None Include="Resources\media_stop_red.ICO" />
+    <None Include="Resources\media_stop.ICO" />
+    <None Include="Resources\media_step_forward.ICO" />
+    <None Include="Resources\media_step_back.ICO" />
+    <None Include="Resources\media_rewind.ICO" />
+    <None Include="Resources\media_play_green.ICO" />
+    <None Include="Resources\media_play.ICO" />
+    <None Include="Resources\media_pause.ICO" />
+    <None Include="Resources\media_fast_forward.ICO" />
+    <None Include="Resources\media_end.ICO" />
+    <None Include="Resources\media_beginning.ICO" />
+    <None Include="Resources\key1.ICO" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -76,8 +76,13 @@ namespace YerbaSoft.DTO.Mapping
                 throw new ApplicationException(string.Format("AutoMapping[SubClass][XMLNode] El nodo {0} posee más de un subnodo con el atributo {1}", ori.Name, RemoteName ?? pDes.Name));
 
             vOri = childs.SingleOrDefault();
-            if (vOri == null && MustExists)
-                throw new ApplicationException(string.Format("AutoMapping[SubClass][XMLNode] El nodo {0} no posee un subnodo con el atributo {1}", ori.Name, RemoteName ?? pDes.Name));
+            if (vOri == null)
+            {
+                if (MustExists)
+                    throw new ApplicationException(string.Format("AutoMapping[SubClass][XMLNode] El nodo {0} no posee un subnodo con el atributo {1}", ori.Name, RemoteName ?? pDes.Name));
+                else
+                    return;
+            }
 
             var ctpDes = pDes.PropertyType.GetConstructor(new Type[] { });
             if (ctpDes == null)

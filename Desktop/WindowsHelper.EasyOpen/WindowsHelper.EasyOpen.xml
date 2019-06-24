@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <EasyOpen Name="EasyOpen">
   <Exe Name="Microsoft Visual Studio 2019" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" />
-  <Exe Name="Microsoft Visual Studio 2017" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" />
-  <Exe Name="VS Code" Icon="C:\Program Files\Microsoft VS Code\Code.exe" OpenWith="C:\Program Files\Microsoft VS Code\Code.exe" />
+  <Exe Name="VS Code" Icon="C:\Users\yerba\AppData\Local\Programs\Microsoft VS Code\Code.exe" OpenWith="C:\Users\yerba\AppData\Local\Programs\Microsoft VS Code\Code.exe" />
   <Exe Name="SourceTree" Icon="C:\Users\yerba\AppData\Local\SourceTree\SourceTree.exe" OpenWith="C:\Users\yerba\AppData\Local\SourceTree\SourceTree.exe" Params="" />
-  <Exe Name="SQL Developer" Icon="C:\Program Files\SQLDeveloper\sqldeveloper.exe" OpenWith="C:\Program Files\SQLDeveloper\sqldeveloper.exe" Params="" />
+  <Exe Name="SQL Developer" Icon="W:\app\SQL Developer\sqldeveloper.exe" OpenWith="W:\app\SQL Developer\sqldeveloper.exe" Params="" />
   <Separator />
   <SubMenu Name="JIRA" Icon=".\EasyOpen\jira.ico">
     <Exe Name="Developer - Inbox" Icon=".\EasyOpen\web.png" OpenWith="C:\Program Files\Opera\launcher.exe" Params="https://cardinalconsulting.atlassian.net/issues/?filter=29414" />
@@ -28,7 +27,7 @@
   <SubMenu Name="Cardinal Systems" Icon=".\EasyOpen\pc.ico">
     <OpenFile Name="Cardinal.xml" Path="Z:\Work\Cardinal Systems\Cardinal.xml" />
     <OpenFile Name="Carga de Horas" Path="Z:\Work\Cardinal Systems\Carga de Horas - Issues.xlsx" />
-    <ShowFiles Name="JIRA Docs" Path="W:\CS\docs" OpenFolder="true" ShowSubFolders="true" FileFilter="*.*" ShowModiFecha="true" SortByModiFecha="true" />
+    <ShowFiles Name="JIRA Docs" Path="W:\docs\CS" OpenFolder="true" ShowSubFolders="true" FileFilter="*.*" ShowModiFecha="true" SortByModiFecha="true" />
     <ShowFiles Name="logs" Path="W:\logs" OpenFolder="true" ShowSubFolders="true" />
   </SubMenu>
   <Separator />
@@ -80,25 +79,25 @@
     <Exe Name="GCBA VPN - Ping DEV" Icon="C:\Windows\System32\cmd.exe" OpenWith="C:\Windows\System32\cmd.exe" Params="/C &quot;ping 10.73.2.245 -t&quot;" />
     <Separator />
     <SubMenu Name=".NET" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe">
-      <Exe Name="SIR.All" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.All.sln" />
-      <Exe Name="SIR.Migrations" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.Migrations.sln" />
+      <Exe Name="SIR.All" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\src\CS\GCBA-SIR\src\SIR.All.sln" />
+      <Exe Name="SIR.Migrations" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\src\CS\GCBA-SIR\src\SIR.Migrations.sln" />
       <Separator />
-      <Exe Name="SIR.BackOffice" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.Server.BackOffice.sln" />
-      <Exe Name="SIR.BackOffice.Tarifaria" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.BackOffice.Tarifaria.sln" />
+      <Exe Name="SIR.BackOffice" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\src\CS\GCBA-SIR\src\SIR.Server.BackOffice.sln" />
+      <Exe Name="SIR.BackOffice.Tarifaria" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\src\CS\GCBA-SIR\src\SIR.BackOffice.Tarifaria.sln" />
       <Separator />
-      <Exe Name="SIR.BUI API" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.BoletaUnica.sln" />
-      <Exe Name="SIR.BUI Web" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.BoletaUnica.UI.sln" />
+      <Exe Name="SIR.BUI API" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\src\CS\GCBA-SIR\src\SIR.BoletaUnica.sln" />
+      <Exe Name="SIR.BUI Web" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\src\CS\GCBA-SIR\src\SIR.BoletaUnica.UI.sln" />
       <Separator />
-      <Exe Name="SIR.PE" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.PagoElectronico.sln" />
-      <Exe Name="SIR.PE.API" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.PEAPI.sln" />
+      <Exe Name="SIR.PE" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\src\CS\GCBA-SIR\src\SIR.PagoElectronico.sln" />
+      <Exe Name="SIR.PE.API" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\src\CS\GCBA-SIR\src\SIR.PEAPI.sln" />
       <Separator />
-      <Exe Name="SIR.Front Office" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-FrontOffice\SIR.FrontOffice\SIR.FrontOffice.sln" />
+      <Exe Name="SIR.Front Office" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\src\CS\GCBA-FrontOffice\SIR.FrontOffice\SIR.FrontOffice.sln" />
       <Separator />
-      <Exe Name="SIR.NotiRetry" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-SIR\src\SIR.Tareas\SIR.NotifRetry\NotifRetry.sln" />
+      <Exe Name="SIR.NotiRetry" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\src\CS\GCBA-SIR\src\SIR.Tareas\SIR.NotifRetry\NotifRetry.sln" />
       <Separator />
-      <ShowFiles Name="PostClonas" Path="W:\CS\GCBA-PostClona_SIR" FileFilter="*.sql" OpenFolder="true" />
-      <ShowFiles Name="All SIR" Path="W:\CS\GCBA-SIR\src" FileFilter="*.sln" />
-      <Exe Name="Micro Sitio de Reportes" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\CS\GCBA-reportes\Fuentes\Fuentes\SIRReport.sln" />
+      <ShowFiles Name="PostClonas" Path="W:\src\CS\GCBA-PostClona_SIR" FileFilter="*.sql" OpenFolder="true" />
+      <ShowFiles Name="All SIR" Path="W:\src\CS\GCBA-SIR\src" FileFilter="*.sln" />
+      <Exe Name="Micro Sitio de Reportes" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\src\CS\GCBA-reportes\Fuentes\Fuentes\SIRReport.sln" />
     </SubMenu>
     <SubMenu Name="Remote" Icon="C:\Windows\System32\mstsc.exe">
       <Cmd Name="Remote :: GCBA :: DEV" Icon="C:\Windows\System32\mstsc.exe" >
@@ -147,12 +146,22 @@
         mstsc /v:10.73.2.99 /admin /f
       </Cmd>
       <Separator />
-      <Cmd Name="LOGs :: GCBA :: PROD (WEB)" Icon="C:\Windows\explorer.exe" >
+      <Cmd Name="LOGs (HIST) :: GCBA :: PROD (WEB)" Icon="C:\Windows\explorer.exe" >
+        cmdkey /delete:10.15.128.10
+        cmdkey /add:10.15.128.10 /user:"DGUIAF\grodriguez" /pass:"G4st0n.2015"
+        C:\Windows\explorer.exe "\\10.15.128.10"
+      </Cmd>
+      <Cmd Name="LOGs (HIST) :: GCBA :: PROD (APK)" Icon="C:\Windows\explorer.exe" >
+        cmdkey /delete:10.15.128.11
+        cmdkey /add:10.15.128.11 /user:"DGUIAF\grodriguez" /pass:"G4st0n.2015"
+        C:\Windows\explorer.exe "\\10.15.128.11"
+      </Cmd>
+      <Cmd Name="LOGs (HIST) :: GCBA :: PROD (WEB)" Icon="C:\Windows\explorer.exe" >
         cmdkey /delete:10.73.100.42
         cmdkey /add:10.73.100.42 /user:"DGUIAF\grodriguez" /pass:"G4st0n.2015"
         C:\Windows\explorer.exe "\\10.73.100.42"
       </Cmd>
-      <Cmd Name="LOGs :: GCBA :: PROD (APK)" Icon="C:\Windows\explorer.exe" >
+      <Cmd Name="LOGs (HIST) :: GCBA :: PROD (APK)" Icon="C:\Windows\explorer.exe" >
         cmdkey /delete:10.73.100.44
         cmdkey /add:10.73.100.44 /user:"DGUIAF\grodriguez" /pass:"G4st0n.2015"
         C:\Windows\explorer.exe "\\10.73.100.44"
@@ -219,13 +228,13 @@
     </SubMenu>
     <Separator />
     <SubMenu Name=".NET" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe">
-      <Exe Name="SIR.BO" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\CS\NACION-SIR.CORE\Fuentes\BO\SIR.BO.sln" />
-      <Exe Name="SIR.CORE.All" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\CS\NACION-SIR.CORE\Fuentes\SIR.Core.All.sln" />
-      <Exe Name="SIR.CORE :: Migrations" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\CS\NACION-SIR.CORE\Fuentes\SIR.Core.Migrations.sln" />
-      <Exe Name="SIR.Gestion (Angular)" Icon="C:\Program Files\Microsoft VS Code\Code.exe" OpenWith="C:\Program Files\Microsoft VS Code\Code.exe" Params="W:\CS\NACION-SIR.CORE\Fuentes\SIR.Gestion\app" />
+      <Exe Name="SIR.BO" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\src\CS\NACION-SIR.CORE\Fuentes\BO\SIR.BO.sln" />
+      <Exe Name="SIR.CORE.All" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\src\CS\NACION-SIR.CORE\Fuentes\SIR.Core.All.sln" />
+      <Exe Name="SIR.CORE :: Migrations" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\src\CS\NACION-SIR.CORE\Fuentes\SIR.Core.Migrations.sln" />
+      <Exe Name="SIR.Gestion (Angular)" Icon="C:\Users\yerba\AppData\Local\Programs\Microsoft VS Code\Code.exe" OpenWith="C:\Users\yerba\AppData\Local\Programs\Microsoft VS Code\Code.exe" Params="W:\src\CS\NACION-SIR.CORE\Fuentes\SIR.Gestion\app" />
       <Separator />
-      <Exe Name="SIR.AfipAPI.WebAPI" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\CS\NACION-AfipConnector\Fuentes\CS.AFIPAPI.WebAPI.sln" />
-      <Exe Name="SIR.AfipAPI :: Migrations" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\CS\NACION-AfipConnector\Fuentes\CS.AfipApi.Migrations.sln" />
+      <Exe Name="SIR.AfipAPI.WebAPI" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\src\CS\NACION-AfipConnector\Fuentes\CS.AFIPAPI.WebAPI.sln" />
+      <Exe Name="SIR.AfipAPI :: Migrations" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\src\CS\NACION-AfipConnector\Fuentes\CS.AfipApi.Migrations.sln" />
     </SubMenu>
     <SubMenu Name="Remote" Icon="C:\Windows\System32\mstsc.exe">
       <Cmd Name="Remote :: CS DEV" Icon="C:\Windows\System32\mstsc.exe" >
@@ -264,26 +273,28 @@
   <SubMenu Name="Continnum - Edenor" Icon=".\EasyOpen\continnum.png">
     <!--<SubMenu Name="Edenor" Icon=".\EasyOpen\edenor.png">-->
       <Exe Name="GDC.All" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\Continnum\Edesur\src\GDC.sln" />
-      <Exe Name="GDC.Web" Icon="C:\Program Files\Microsoft VS Code\Code.exe" OpenWith="C:\Program Files\Microsoft VS Code\Code.exe" Params="W:\Continnum\Edesur\src\GDC.WebSite\my-app" />
+      <Exe Name="GDC.Web" Icon="C:\Users\yerba\AppData\Local\Programs\Microsoft VS Code\Code.exe" OpenWith="C:\Users\yerba\AppData\Local\Programs\Microsoft VS Code\Code.exe" Params="W:\Continnum\Edesur\src\GDC.WebSite\my-app" />
       <Separator />
       <ShowFiles Name="Documentación" Path="W:\Google Drive\Continnum\Edenor" OpenFolder="true" ShowSubFolders="true" FileFilter="*.*" ShowModiFecha="true" SortByModiFecha="true" />
     <!--</SubMenu>-->
   </SubMenu>
-  <SubMenu Name="YerbaSoft" Icon="W:\YerbaSoft\YerbaSoft.ico">
-    <Exe Name="WindowsHelper" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\YerbaSoft\Desktop\WindowsHelper.sln" />
-    <Exe Name="OracleCloner" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\YerbaSoft\Desktop\YerbaSoft.Desktop.OracleCloner\YerbaSoft.Desktop.OracleCloner.sln" />
+  <SubMenu Name="YerbaSoft" Icon="W:\src\YerbaSoft\YerbaSoft.ico">
+    <Exe Name="WindowsHelper" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\src\YerbaSoft\Desktop\WindowsHelper.sln" />
+    <Exe Name="OracleCloner" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\src\YerbaSoft\Desktop\YerbaSoft.Desktop.OracleCloner\YerbaSoft.Desktop.OracleCloner.sln" />
     <Separator />
-    <Exe Name="YerbaSoft.Web.Games.Clue.All" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\YerbaSoft\Web\Games\YerbaSoft.Web.Games.Clue\YerbaSoft.Web.Games.Clue.sln" />
-    <Exe Name="YerbaSoft.Web.Games.Clue.Web" Icon="C:\Program Files\Microsoft VS Code\Code.exe" OpenWith="C:\Program Files\Microsoft VS Code\Code.exe" Params="W:\YerbaSoft\Web\Games\YerbaSoft.Web.Games.Clue\YerbaSoft.Web.Games.Clue.Web" />
-    <Cmd Name="Implementar Clue (Angular)" Icon="W:\YerbaSoft\Web\Games\YerbaSoft.Web.Games.Clue\YerbaSoft.Web.Games.Clue.Web\src\favicon.ico" >
+    <Exe Name="PW" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\src\YerbaSoft\Desktop\YerbaSoft.Desktop.PW.sln" />
+    <Separator />
+    <Exe Name="YerbaSoft.Web.Games.Clue.All" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\src\YerbaSoft\Web\Games\YerbaSoft.Web.Games.Clue\YerbaSoft.Web.Games.Clue.sln" />
+    <Exe Name="YerbaSoft.Web.Games.Clue.Web" Icon="C:\Users\yerba\AppData\Local\Programs\Microsoft VS Code\Code.exe" OpenWith="C:\Users\yerba\AppData\Local\Programs\Microsoft VS Code\Code.exe" Params="W:\src\YerbaSoft\Web\Games\YerbaSoft.Web.Games.Clue\YerbaSoft.Web.Games.Clue.Web" />
+    <Cmd Name="Implementar Clue (Angular)" Icon="W:\src\YerbaSoft\Web\Games\YerbaSoft.Web.Games.Clue\YerbaSoft.Web.Games.Clue.Web\src\favicon.ico" >
       w:
-      cd "W:\YerbaSoft\Web\Games\YerbaSoft.Web.Games.Clue\YerbaSoft.Web.Games.Clue.Web"
+      cd "W:\src\YerbaSoft\Web\Games\YerbaSoft.Web.Games.Clue\YerbaSoft.Web.Games.Clue.Web"
       ng build --env=prod
       cd dist
       xcopy *.* "C:\inetpub\Clue\" /E /Y
     </Cmd>
     <Separator />
-    <Exe Name="YerbaSoft.Web.Games.Clue (HTML)" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\YerbaSoft\Web\Games\YerbaSoft.Web.Games.Clue_old\YerbaSoft.Web.Games.Clue.sln" />
+    <Exe Name="YerbaSoft.Web.Games.Clue (HTML)" Icon="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" OpenWith="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" Params="W:\src\YerbaSoft\Web\Games\YerbaSoft.Web.Games.Clue_old\YerbaSoft.Web.Games.Clue.sln" />
   </SubMenu>
   <Separator />
   <SubMenu Name="Mios" Icon="Z:\Mios\mios.ico">

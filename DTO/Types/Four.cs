@@ -12,6 +12,13 @@ namespace YerbaSoft.DTO.Types
         {
             base.Add(new Four<T1, T2, T3, T4>(v1, v2, v3, v4));
         }
+
+        public void RemoveRange(IEnumerable<Four<T1, T2, T3, T4>> elements)
+        {
+            var delete = elements.ToArray();
+            foreach (var del in delete)
+                this.Remove(del);
+        }
     }
 
     public class Four<T1, T2, T3, T4>

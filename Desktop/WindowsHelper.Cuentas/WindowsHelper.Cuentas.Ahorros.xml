@@ -55,4 +55,17 @@
     <BajaFecha>
     </BajaFecha>
   </WindowsHelper.Cuentas.DTO.Ahorro>
+  <WindowsHelper.Cuentas.DTO.Ahorro UniqueKey="8051653afefe4fa4be93377d4afc0b5ceca1670f944b4854af60c433bfd6573d">
+    <Id>7da88d57-dd38-48b4-8863-1b000c29fe86</Id>
+    <TipoAhorro>PlazoFijo</TipoAhorro>
+    <Entidad>Banco Credicoop</Entidad>
+    <Observaciones>Sabrina - Renovación de Plazo del 4/4/2019 y se agregan $20.000 mas al fondo.</Observaciones>
+    <FechaDesde>636954385956987680</FechaDesde>
+    <FechaHasta>637007089950000000</FechaHasta>
+    <Monto>30641.10</Monto>
+    <TazaAnual>48</TazaAnual>
+    <CreaFecha>636954385956987680</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Ahorro>
 </XmlSimpleRepository>

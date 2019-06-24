@@ -10,7 +10,7 @@ namespace WindowsHelper.Cuentas
 {
     public class CuentasApp : Interfaces.IApp
     {
-        public const string DBPath = @"W:\YerbaSoft\Desktop\WindowsHelper.Cuentas";
+        public const string DBPath = @"W:\src\YerbaSoft\Desktop\WindowsHelper.Cuentas";
         internal static System.Drawing.Icon DefaultIcon => Properties.Resources.cashier;
         public const string AppName = "Cuentas";
 

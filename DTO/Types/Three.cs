@@ -13,6 +13,12 @@ namespace YerbaSoft.DTO.Types
             base.Add(new Three<T1, T2, T3>(v1, v2, v3));
         }
 
+        public void RemoveRange(IEnumerable<Three<T1, T2, T3>> elements)
+        {
+            var delete = elements.ToArray();
+            foreach (var del in delete)
+                this.Remove(del);
+        }
     }
 
     public class Three<T1, T2, T3>

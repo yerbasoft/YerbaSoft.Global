@@ -13,7 +13,7 @@ namespace WindowsHelper.Memory.NOTES
 
         public Notes()
         {
-            noteRepositoryPath = @"W:\YerbaSoft\Desktop\WindowsHelper.Memory\WindowsHelper.Memory.Notes.xml";
+            noteRepositoryPath = @"W:\src\YerbaSoft\Desktop\WindowsHelper.Memory\WindowsHelper.Memory.Notes.xml";
         }
 
         public static void OpenNote(object sender, EventArgs e)

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PWConfig AppPath="W:\Games\Perfect World Classic\element\elementclient.exe">
+  <Cuenta Name="Mochi" Login="izaa005" Pass="zxpo3971" Type="ER" mail="izaa005@protonmail.com" mailpass="zxpo3971" />
+  <Cuenta Name="Gayston" Login="yerba" Pass="xzy2954a" Type="EP" ShowInfo="true" />
+  <Cuenta Name="Hoseok" Login="yerbaep" Pass="zxpo3971" Type="EP" mail="izaa004@protonmail.com" mailpass="zxpo3971" />
+  <Cuenta Name="Sprayette" Login="yerbaea" Pass="xzy2954a" Type="EA" mail="yerbasoft@outlook.com" />
+  <Cuenta Name="Ceo" Login="yerbawork" Pass="xzy2954a" Type="WB" mail="yerbawork@gmail.com" />
+  <Cuenta Name="TuVieja" Login="izaawf" Pass="zxpo3971" Type="WF" mail="izaa001@protonmail.com" mailpass="zxpo3971" />
+  <Cuenta Name="Feminazi" Login="izaawf2" Pass="zxpo3971" Type="WF" mail="izaa002@protonmail.com" mailpass="zxpo3971" />
+  <Cuenta Name="Patriarca" Login="yerbawr" Pass="zxpo3971" Type="WR" mail="izaa003@protonmail.com" mailpass="zxpo3971" />
+  <OpenAll Name="All" Cuentas="Hoseok,Sprayette,Ceo,TuVieja,Feminazi,Patriarca" />
+</PWConfig>
