@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace YerbaSoft.DAL
 {
@@ -43,7 +39,7 @@ namespace YerbaSoft.DAL
         public int PageSize { get; set; }
         [DataMember]
         public int TotalCount { get; set; }
-        
+
         public PagerResult SetInfo(int pageNum, int pageSize, int totalCount)
         {
             this.PageNum = pageNum;

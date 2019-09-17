@@ -279,11 +279,14 @@
     <SubMenu Name="Connections Strings" Icon=".\Memory\db.ico">
       <ToClipBoard Name="DEV" Icon=".\Memory\db_connect.ico">&lt;add name=&quot;conn&quot; connectionString=&quot;Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.245)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRDEV)));User Id=SIR;Password=Ab123456;&quot; /&gt;</ToClipBoard>
       <ToClipBoard Name="TEST" Icon=".\Memory\db_connect.ico">&lt;add name=&quot;conn&quot; connectionString=&quot;Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.226)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRT)));User Id=SIR;Password=Ab123456;&quot; /&gt;</ToClipBoard>
-      <ToClipBoard Name="HOMO" Icon=".\Memory\db_connect.ico">&lt;add name=&quot;conn&quot; connectionString=&quot;Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.226)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRH)));User Id=SIR;Password=Hm2PYH4_H;&quot; /&gt;</ToClipBoard>
-      <ToClipBoard Name="SIRI 1" Icon=".\Memory\db_connect.ico">&lt;add name=&quot;conn&quot; connectionString=&quot;Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.226)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRI)));User Id=SIR;Password=Hm2PYH4;&quot; /&gt;</ToClipBoard>
+      <ToClipBoard Name="HOMO" Icon=".\Memory\db_connect.ico">&lt;add name=&quot;conn&quot; connectionString=&quot;Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.226)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRH)));User Id=GRODRIGUEZ;Password=Grodriguez.8935!;&quot; /&gt;</ToClipBoard>
+      
+      <ToClipBoard Name="SIRI 1" Icon=".\Memory\db_connect.ico">&lt;add name=&quot;conn&quot; connectionString=&quot;Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.226)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRI))); User Id=SIR;Password=Hm2PYH4;&quot; /&gt;</ToClipBoard>
       <ToClipBoard Name="SIRI 2" Icon=".\Memory\db_connect.ico">&lt;add name=&quot;conn&quot; connectionString=&quot;Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.226)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRI2)));User Id=SIR;Password=Hm2PYH4;&quot; /&gt;</ToClipBoard>
+      
       <ToClipBoard Name="SIRUM" Icon=".\Memory\db_connect.ico">&lt;add name=&quot;conn&quot; connectionString=&quot;Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.245)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRUM)));User Id=SIR;Password=nhGAcpCe;&quot; /&gt;</ToClipBoard>
       <ToClipBoard Name="SIRUM (new) (user BU)" Icon=".\Memory\db_connect.ico">&lt;add name=&quot;conn&quot; connectionString=&quot;Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = orasirprod01)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRUM)));User Id=BU;Password=e9JzM2aE;&quot; /&gt;</ToClipBoard>
+      
       <ToClipBoard Name="PREPROD" Icon=".\Memory\db_connect.ico">&lt;add name=&quot;conn&quot; connectionString=&quot;Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.226)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRPRE)));User Id=GRODRIGUEZ;Password=Grodriguez.8935!;&quot; /&gt;</ToClipBoard>
     </SubMenu>
   </SubMenu>

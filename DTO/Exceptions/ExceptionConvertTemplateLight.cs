@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace YerbaSoft.DTO.Exceptions
+﻿namespace YerbaSoft.DTO.Exceptions
 {
     public class ExceptionConvertTemplateLight : ExceptionConvertTemplateBase
     {
@@ -31,7 +25,7 @@ namespace YerbaSoft.DTO.Exceptions
             }
         }
 
-        protected override int TabsForInnerException {get { return 1; }}
-        protected override bool Use2SpaceInTabsForInnerException {get { return true; }}
+        protected override int TabsForInnerException { get { return 1; } }
+        protected override bool Use2SpaceInTabsForInnerException { get { return true; } }
     }
 }

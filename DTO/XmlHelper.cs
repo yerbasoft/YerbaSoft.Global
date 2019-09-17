@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Schema;
+﻿using System.Xml.Schema;
 
 namespace YerbaSoft.DTO
 {
@@ -15,7 +10,7 @@ namespace YerbaSoft.DTO
 
             var schemas = new XmlSchemaSet();
             schemas.Add("", xsdFilePath);
-            
+
             var xml = System.Xml.Linq.XDocument.Load(xmlFilePath);
 
             xml.Validate(schemas, (o, e) =>

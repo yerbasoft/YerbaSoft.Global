@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace YerbaSoft.DTO.Exceptions
 {
@@ -80,7 +76,7 @@ namespace YerbaSoft.DTO.Exceptions
             values = Convert.IsNull(values, new Dictionary<string, object>());
             config = Convert.IsNull(config, new ExceptionConvertTemplateFull());
 
-            
+
             return config.GetFullDescription(ex, values);
         }
     }

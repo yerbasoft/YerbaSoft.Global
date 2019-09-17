@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
 
 namespace YerbaSoft.DTO.Mapping
@@ -112,7 +110,7 @@ namespace YerbaSoft.DTO.Mapping
         {
             if (values == null) return default(T);
             config = config ?? new Config.DefaultAutomappingConfig();
-                        
+
             object des = new T();
             CopyTo(values, des, config);
 
@@ -121,7 +119,7 @@ namespace YerbaSoft.DTO.Mapping
 
             return (T)des;
         }
-        
+
         /// <summary>
         /// Copia las propiedades que puede y se configuraron desde una lista de valores "values" al objeto "des"
         /// </summary>
@@ -199,7 +197,7 @@ namespace YerbaSoft.DTO.Mapping
             config = config ?? new Config.DefaultAutomappingConfig();
 
             var tDes = des.GetType();
-            
+
             // Tiene Automapping
             var props = (from ps in tDes.GetProperties()    //Busco atributos en la clase de destino de copia
                          from at in ps.CustomAttributes

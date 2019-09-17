@@ -1,5 +1,4 @@
-﻿using System;
-using System.Data.Linq;
+﻿using System.Data.Linq;
 using System.Linq;
 
 namespace YerbaSoft.DAL.Repositories

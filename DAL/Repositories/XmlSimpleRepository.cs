@@ -107,7 +107,7 @@ namespace YerbaSoft.DAL.Repositories
                 }
                 else if (p.CustomAttributes.Any(at => typeof(SubList).IsAssignableFrom(at.AttributeType)))
                 {
-                    foreach(var item in (IEnumerable)value)
+                    foreach (var item in (IEnumerable)value)
                     {
                         var itemListNode = node.OwnerDocument.CreateNode(XmlNodeType.Element, p.Name, node.OwnerDocument.NamespaceURI);
                         propNode.AppendChild(itemListNode);
@@ -182,7 +182,7 @@ namespace YerbaSoft.DAL.Repositories
             xml.Load(this.FileName);
 
             // Ejecuto las operaciones del cache
-            foreach(var e in Cache)
+            foreach (var e in Cache)
             {
                 var node = xml.SelectSingleNode($"/XmlSimpleRepository/{typeof(T).FullName}[@{XmlSimpleClass.UniqueKeyName}='{e.UniqueKey}']");
 

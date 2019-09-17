@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
 
 namespace YerbaSoft.DTO.Mapping
@@ -28,7 +26,7 @@ namespace YerbaSoft.DTO.Mapping
             this.MustExists = mustExists;
             this.RemoteName = remoteName;
         }
-        
+
         public void Map(Type tConfig, Type tOri, object oOri, Type tDes, object oDes, System.Reflection.PropertyInfo cProp, Config.AutoMappingConfig config)
         {
             var pOri = tConfig == tOri ? cProp : tOri.GetProperty(RemoteName ?? cProp.Name);
@@ -69,7 +67,7 @@ namespace YerbaSoft.DTO.Mapping
             else
             {
                 int i = 0;
-                foreach(var oItem in vOri)
+                foreach (var oItem in vOri)
                 {
                     var ctpDes = tpDes.GetConstructor(new Type[] { });
                     if (ctpDes == null)
@@ -189,7 +187,7 @@ namespace YerbaSoft.DTO.Mapping
 
                 if (isIList)
                 {
-                    var mDes = tpDes.GetMethod("Insert", new Type[]{ typeof(int), tpDes.GenericTypeArguments[0] });
+                    var mDes = tpDes.GetMethod("Insert", new Type[] { typeof(int), tpDes.GenericTypeArguments[0] });
                     mDes.Invoke(vDes, new object[] { i++, dItem });
                 }
                 else if (isICollection)
@@ -230,7 +228,7 @@ namespace YerbaSoft.DTO.Mapping
             var vOri = (dynamic)ori[col];
             if (vOri == null && this.MustExists)
                 throw new ApplicationException(string.Format("AutoMapping[DataRow] La columna {0} no posee un valor válido para mapear {1}", RemoteName ?? pDes.Name, tDes.FullName));
-            
+
             int i = 0;
             foreach (var oItem in vOri)
             {

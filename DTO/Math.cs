@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace YerbaSoft.DTO
 {
@@ -62,7 +59,7 @@ namespace YerbaSoft.DTO
 
             return IsNumber(value.GetType());
         }
-        
+
         /// <summary>
         /// Devuelve si un Type es numérico y entero
         /// </summary>
@@ -94,7 +91,7 @@ namespace YerbaSoft.DTO
 
             return IsIntNumber(value.GetType());
         }
-        
+
         /// <summary>
         /// Devuelve si un Type es numérico y sin signo
         /// </summary>
@@ -108,6 +105,11 @@ namespace YerbaSoft.DTO
                 typeof(uint), typeof(uint?),
                 typeof(ulong), typeof(ulong?)
                 );
+        }
+
+        public static bool Between(float x, float v1, float v2)
+        {
+            return x >= v1 && x <= v2;
         }
 
         /// <summary>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlSimpleRepository>
+  <YerbaSoft.Desktop.PW.DTO.Configuration.Partys.PartyConfig UniqueKey="0000000000000000000000000000000000000000000000000000000000000001">
+    <Name>Caves</Name>
+    <Lider>Feminazi</Lider>
+    <Member1>Ceo</Member1><Member2>Hoseok</Member2><Member3>TuVieja</Member3><Member4>Sprayette</Member4><Member5>Patriarca</Member5>
+  </YerbaSoft.Desktop.PW.DTO.Configuration.Partys.PartyConfig>
+  <YerbaSoft.Desktop.PW.DTO.Configuration.Partys.PartyConfig UniqueKey="0000000000000000000000000000000000000000000000000000000000000002">
+    <Name>Level</Name>
+    <Lider>Sprayette</Lider>
+    <Member1>Ceo</Member1><Member2>Hoseok</Member2><Member3>TuVieja</Member3><Member4>Feminazi</Member4><Member5>Patriarca</Member5>
+  </YerbaSoft.Desktop.PW.DTO.Configuration.Partys.PartyConfig>
+</XmlSimpleRepository>

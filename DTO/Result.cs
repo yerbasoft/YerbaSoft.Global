@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace YerbaSoft.DTO
 {
@@ -144,8 +143,8 @@ namespace YerbaSoft.DTO
 
                 foreach (var m in this)
                 {
-                    sb.AppendLine(string.Format("{0}: {1}", 
-                        m.EsError ? "ERROR" : "INFO", 
+                    sb.AppendLine(string.Format("{0}: {1}",
+                        m.EsError ? "ERROR" : "INFO",
                         m.Ex != null ? config.GetFullDescription(m.Ex, null) : m.Text
                         ));
                 }

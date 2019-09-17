@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace YerbaSoft.DTO.Types
 {
     public class FiveList<T1, T2, T3, T4, T5> : List<Five<T1, T2, T3, T4, T5>>
     {
-        public void Add(T1 v1, T2 v2, T3 v3, T4 v4, T5 v5)
+        public Five<T1, T2, T3, T4, T5> Add(T1 v1, T2 v2, T3 v3, T4 v4, T5 v5)
         {
-            base.Add(new Five<T1, T2, T3, T4, T5>(v1, v2, v3, v4, v5));
+            Five<T1, T2, T3, T4, T5> item;
+            base.Add(item = new Five<T1, T2, T3, T4, T5>(v1, v2, v3, v4, v5));
+            return item;
         }
 
         public void RemoveRange(IEnumerable<Five<T1, T2, T3, T4, T5>> elements)

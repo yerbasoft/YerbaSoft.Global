@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 
 namespace YerbaSoft.DTO.Exceptions
 {
@@ -10,9 +6,9 @@ namespace YerbaSoft.DTO.Exceptions
     {
         protected override string Template
         {
-            get 
+            get
             {
-                var sb = new StringBuilder();                
+                var sb = new StringBuilder();
                 sb.AppendLine("-------------------------- EXCEPTION --------------------------");
                 //sb.Append("{C#::System.String.IsNullOrEmpty(CurrentUser) ? null : \"Current User: \" + CurrentUser + System.Environment.NewLine}");
                 sb.AppendLine("Current Date: {C#::System.DateTime.Now.ToString(\"dd/MM/yyyy HH:mm:ss\")}");
@@ -27,7 +23,7 @@ namespace YerbaSoft.DTO.Exceptions
 
         protected override string TemplateInner
         {
-            get 
+            get
             {
                 var sb = new StringBuilder();
                 sb.AppendLine();

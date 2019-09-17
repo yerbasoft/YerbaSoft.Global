@@ -33,7 +33,7 @@ namespace YerbaSoft.DAL.Repositories
         {
             this._Query = queryable;
         }
-        
+
         internal void SetSpecialQueriable(System.Reflection.PropertyInfo prop)
         {
             if (prop == null)
@@ -141,7 +141,7 @@ namespace YerbaSoft.DAL.Repositories
                 exec = exec.Skip((pager.PageNum - 1) * pager.PageSize).Take(pager.PageSize);
 
             var result = new PagerResult<T>(exec.AsEnumerable<T>().ToArray());
-            
+
             if (pager != null && pager.IsValid())
                 result.SetInfo(pager.PageNum, pager.PageSize, totalCount);
 
@@ -152,7 +152,7 @@ namespace YerbaSoft.DAL.Repositories
         {
             return Find(new Expression<Func<T, bool>>[] { filter }, pager, orderBy);
         }
-        
+
         public object Max(Expression<Func<T, object>> field)
         {
             return Max(new Expression<Func<T, bool>>[] { }, field);

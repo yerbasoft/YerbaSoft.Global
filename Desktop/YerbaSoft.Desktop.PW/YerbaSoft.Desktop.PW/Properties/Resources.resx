@@ -331,4 +331,145 @@
   <data name="element_next" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\element_next.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="branch_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\branch_delete.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="element" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\element.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="elements1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elements1.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="elements2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elements2.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="elements_selection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elements_selection.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="element_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\element_add.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="element_copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\element_copy.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="element_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\element_delete.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="element_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\element_down.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="element_find" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\element_find.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="element_into" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\element_into.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="element_into_input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\element_into_input.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="element_new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\element_new.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="element_new_after" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\element_new_after.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="element_new_before" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\element_new_before.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="element_ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\element_ok.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="element_preferences" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\element_preferences.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="element_previous" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\element_previous.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="element_refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\element_refresh.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="element_replace" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\element_replace.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="element_run" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\element_run.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="element_selection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\element_selection.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="element_selection_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\element_selection_delete.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="element_stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\element_stop.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="element_time" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\element_time.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="element_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\element_up.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="element_view" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\element_view.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="recycle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\recycle.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="replace2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\replace2.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cd_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cd_1.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cd_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cd_add.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cd_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cd_audio.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cd_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cd_delete.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cd_gold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cd_gold.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cd_into" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cd_into.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cd_music" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cd_music.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cd_new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cd_new.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cd_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cd_out.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cd_pause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cd_pause.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cd_run" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cd_run.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cd_stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cd_stop.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clients" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clients.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="client_network" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\client_network.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="window" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\window.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="windows" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\windows.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete2.ICO;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

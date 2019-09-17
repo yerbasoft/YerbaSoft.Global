@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using YerbaSoft.DAL;
-using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace YerbaSoft.DAL
 {
     public class OrderBy
     {
         private Dictionary<string, bool> Orders { get; set; } = new Dictionary<string, bool>();
-        
+
         public OrderBy() { }
         public OrderBy(string sqlOrderByFormat)
         {

@@ -11,6 +11,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YerbaSoft.Windows", "..\Win
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YerbaSoft.DAL", "..\DAL\YerbaSoft.DAL.csproj", "{13034674-FE45-480D-8869-A3F00DE94FCD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YerbaSoft.Desktop.PW.Launcher", "YerbaSoft.Desktop.PW\YerbaSoft.Desktop.PW.Launcher\YerbaSoft.Desktop.PW.Launcher.csproj", "{E97507B1-1F31-4B80-B74D-D094D749A06E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YerbaSoft.Desktop.PW.Client", "YerbaSoft.Desktop.PW.Client\YerbaSoft.Desktop.PW.Client.csproj", "{A6112BCE-C678-451D-97BF-AAD034BF9B7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YerbaSoft.Desktop.PW.BLL", "YerbaSoft.Desktop.PW\YerbaSoft.Desktop.PW.BLL\YerbaSoft.Desktop.PW.BLL.csproj", "{6957B1E8-0AF6-431D-A7DB-727823F99309}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YerbaSoft.Desktop.PW.DTO", "YerbaSoft.Desktop.PW\YerbaSoft.Desktop.PW.DTO\YerbaSoft.Desktop.PW.DTO.csproj", "{CDBE9B1B-BCFC-4677-8362-C7543ECB32B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YerbaSoft.Desktop.PW.DAL", "YerbaSoft.Desktop.PW\YerbaSoft.Desktop.PW.DAL\YerbaSoft.Desktop.PW.DAL.csproj", "{AFD050B4-1591-41C8-92EF-385C8ACA5782}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +43,26 @@ Global
 		{13034674-FE45-480D-8869-A3F00DE94FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13034674-FE45-480D-8869-A3F00DE94FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13034674-FE45-480D-8869-A3F00DE94FCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E97507B1-1F31-4B80-B74D-D094D749A06E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E97507B1-1F31-4B80-B74D-D094D749A06E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E97507B1-1F31-4B80-B74D-D094D749A06E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E97507B1-1F31-4B80-B74D-D094D749A06E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6112BCE-C678-451D-97BF-AAD034BF9B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6112BCE-C678-451D-97BF-AAD034BF9B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6112BCE-C678-451D-97BF-AAD034BF9B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6112BCE-C678-451D-97BF-AAD034BF9B7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6957B1E8-0AF6-431D-A7DB-727823F99309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6957B1E8-0AF6-431D-A7DB-727823F99309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6957B1E8-0AF6-431D-A7DB-727823F99309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6957B1E8-0AF6-431D-A7DB-727823F99309}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDBE9B1B-BCFC-4677-8362-C7543ECB32B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDBE9B1B-BCFC-4677-8362-C7543ECB32B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDBE9B1B-BCFC-4677-8362-C7543ECB32B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDBE9B1B-BCFC-4677-8362-C7543ECB32B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFD050B4-1591-41C8-92EF-385C8ACA5782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFD050B4-1591-41C8-92EF-385C8ACA5782}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFD050B4-1591-41C8-92EF-385C8ACA5782}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFD050B4-1591-41C8-92EF-385C8ACA5782}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace YerbaSoft.DTO.Exceptions
 {
@@ -25,7 +23,7 @@ namespace YerbaSoft.DTO.Exceptions
         /// Indica si se utilizarán 2 espacios vacíos en lugar de Tabs
         /// </summary>
         protected abstract bool Use2SpaceInTabsForInnerException { get; }
-        
+
         /// <summary>
         /// Devuelve la descripción completa de la Excepción
         /// </summary>
@@ -46,10 +44,10 @@ namespace YerbaSoft.DTO.Exceptions
 
         protected virtual string CustomFormat_OnResolveExpression(Dictionary<string, object> values, string fullexpression, string mode, string expression, string valorCalculado)
         {
-            switch(fullexpression.ToUpper())
+            switch (fullexpression.ToUpper())
             {
                 case "INNEREXCEPTION":
-                    
+
                     var vals = values.ToDictionary(k => k.Key, v => v.Value); // clono el objeto
                     vals["ex"] = ((Exception)vals["ex"]).InnerException;    // piso "ex" con su inner
 

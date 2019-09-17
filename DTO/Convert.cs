@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace YerbaSoft.DTO
 {
@@ -14,8 +11,8 @@ namespace YerbaSoft.DTO
         private static Dictionary<string, string> _DateTimeExpressions;
         public static Dictionary<string, string> DateTimeExpressions
         {
-            get 
-            { 
+            get
+            {
                 if (_DateTimeExpressions == null)
                 {
                     _DateTimeExpressions = new Dictionary<string, string>();
@@ -143,7 +140,7 @@ namespace YerbaSoft.DTO
                 else
                     throw new InvalidCastException(string.Format("No se pudo convertir {0} en el tipo de datos System.Guid", value));
             }
-            
+
 
             else if (Math.In(type, typeof(byte), typeof(byte?)))
                 return System.Convert.ToByte(value, DeafultFormatProvider);
@@ -162,7 +159,7 @@ namespace YerbaSoft.DTO
                 return System.Convert.ToDouble(value, DeafultFormatProvider);
             else if (Math.In(type, typeof(decimal), typeof(decimal?)))
                 return System.Convert.ToDecimal(value, DeafultFormatProvider);
-                
+
             else if (Math.In(type, typeof(ushort), typeof(ushort?)))
                 return System.Convert.ToUInt16(value, DeafultFormatProvider);
             else if (Math.In(type, typeof(uint), typeof(uint?)))
@@ -181,7 +178,7 @@ namespace YerbaSoft.DTO
                     if (long.TryParse((string)value, out long aux))
                         return new DateTime(aux);
 
-                    foreach(var exp in DateTimeExpressions)
+                    foreach (var exp in DateTimeExpressions)
                     {
                         if (new System.Text.RegularExpressions.Regex(exp.Value).IsMatch(value.ToString()))
                             return DateTime.ParseExact(value.ToString(), exp.Key, DeafultFormatProvider);
@@ -194,7 +191,7 @@ namespace YerbaSoft.DTO
 
             else if (type.IsEnum)
                 return Enum.Parse(type, (value ?? "").ToString());
- 
+
             else
                 throw new FormatException("No se reconoce el formato de salida");
         }

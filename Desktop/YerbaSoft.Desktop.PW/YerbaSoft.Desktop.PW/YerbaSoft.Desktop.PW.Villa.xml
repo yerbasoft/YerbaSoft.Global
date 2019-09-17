@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Villa FreezeDuringFly="false">
+  <VillaPoint RequestItem="14067" QuestName="Paperclip for Villa" MinYOnExit=""                                   MinFlyForArrive="40" NPC_dbCode="14090" NPC_X="1311.405"   NPC_Z="915.7265"  />
+  <VillaPoint RequestItem="14066" QuestName="First Exchange"      MinYOnExit="235"                                MinFlyForArrive="00" NPC_dbCode="12974" NPC_X="1332.687"   NPC_Z="956.6384"  />
+  <VillaPoint RequestItem="14031" QuestName="PW History"          MinYOnExit="262"                                MinFlyForArrive="24" NPC_dbCode="4436"  NPC_X="1227.050"   NPC_Z="984.8594"  />
+  <VillaPoint RequestItem="14032" QuestName="World History"       MinYOnExit=""                                   MinFlyForArrive="63" NPC_dbCode="2288"  NPC_X="-1718.345"  NPC_Z="62.0317"   />
+  <VillaPoint RequestItem="14033" QuestName="World History"       MinYOnExit="234"                                MinFlyForArrive="63" NPC_dbCode="3125"  NPC_X="985.00"     NPC_Z="4204.00"   />
+  <VillaPoint RequestItem="14034" QuestName="World History"       MinYOnExit="538"                                MinFlyForArrive="63" NPC_dbCode="6623"  NPC_X="-1822.719"  NPC_Z="-1278.396" />
+  <VillaPoint RequestItem="14035" QuestName="World History"       MinYOnExit="227"                                MinFlyForArrive="63" NPC_dbCode="3417"  NPC_X="588.3"      NPC_Z="435"       />
+  <VillaPoint RequestItem="14036" QuestName="World History"       MinYOnExit=""                                   MinFlyForArrive="63" NPC_dbCode="3273"  NPC_X="1865"       NPC_Z="148.6317"  />
+  <VillaPoint RequestItem="14037" QuestName="World History"       MinYOnExit="251"                                MinFlyForArrive="63" NPC_dbCode="3820"  NPC_X="1865.3"     NPC_Z="170.2336"  />
+  <VillaPoint RequestItem="14038" QuestName="World History"       MinYOnExit="259"                                MinFlyForArrive="63" NPC_dbCode="9305"  NPC_X="1815.0"     NPC_Z="1359.215"  />
+  <VillaPoint RequestItem="14039" QuestName="World History"       MinYOnExit="240"                                MinFlyForArrive="63" NPC_dbCode="3721"  NPC_X="2212.65"    NPC_Z="1740.5"    />
+  <VillaPoint RequestItem="14040" QuestName="World History"       MinYOnExit="228"                                MinFlyForArrive="63" NPC_dbCode="3852"  NPC_X="2556"       NPC_Z="3065.6"    />
+  <VillaPoint RequestItem="14041" QuestName="World History"       MinYOnExit=""                                   MinFlyForArrive="63" NPC_dbCode="2584"  NPC_X="2653"       NPC_Z="4186.8"    />
+  <VillaPoint RequestItem="14042" QuestName="World History"       MinYOnExit=""                                   MinFlyForArrive="63" NPC_dbCode="6639"  NPC_X="310.7"      NPC_Z="1869.3"    />
+  <VillaPoint RequestItem="14043" QuestName="World History"       MinYOnExit="338"                                MinFlyForArrive="63" NPC_dbCode="3732"  NPC_X="-437"       NPC_Z="2379"      />
+  <VillaPoint RequestItem="14044" QuestName="World History"       MinYOnExit="225"                                MinFlyForArrive="63" NPC_dbCode="4066"  NPC_X="-661.6"     NPC_Z="2772.603"  />
+  <VillaPoint RequestItem="14045" QuestName="World History"       MinYOnExit="535"                                MinFlyForArrive="78" NPC_dbCode="4164"  NPC_X="-2765"      NPC_Z="408.7"     />
+  <VillaPoint RequestItem="14046" QuestName="World History"       MinYOnExit=""                                   MinFlyForArrive="78" NPC_dbCode="3958"  NPC_X="-2575"      NPC_Z="921"       />
+  <VillaPoint RequestItem="14047" QuestName="World History"       MinYOnExit=""                                   MinFlyForArrive="63" NPC_dbCode="3948"  NPC_X="-1156"      NPC_Z="169.15"    />
+  <VillaPoint RequestItem="14048" QuestName="World History"       MinYOnExit="233"                                MinFlyForArrive="63" NPC_dbCode="3963"  NPC_X="341"        NPC_Z="-914"      />
+  <VillaPoint RequestItem="14049" QuestName="World History"       MinYOnExit="269"                                MinFlyForArrive="63" NPC_dbCode="3950"  NPC_X="649"        NPC_Z="-2104.5"   />
+  <VillaPoint RequestItem="14050" QuestName="World History"       MinYOnExit="264"                                MinFlyForArrive="63" NPC_dbCode="7198"  NPC_X="2662"       NPC_Z="-1808.6"   />
+  <VillaPoint RequestItem="14051" QuestName="World History"       MinYOnExit="264"                                MinFlyForArrive="63" NPC_dbCode="7476"  NPC_X="2669.8"     NPC_Z="-1757.3"   />
+  <VillaPoint RequestItem="14052" QuestName="World History"       MinYOnExit=""                                   MinFlyForArrive="63" NPC_dbCode="7189"  NPC_X="1473.3"     NPC_Z="-1773.2"   />
+  <VillaPoint RequestItem="14053" QuestName="World History"       MinYOnExit="238"  MoveOnExit="1483.2;-1743.7"   MinFlyForArrive="63" NPC_dbCode="7156"  NPC_X="1490"       NPC_Z="-1737.6"   />
+  <VillaPoint RequestItem="14054" QuestName="World History"       MinYOnExit="229"                                MinFlyForArrive="63" NPC_dbCode="7193"  NPC_X="1395.6"     NPC_Z="-1346.2"   />
+  <VillaPoint RequestItem="14055" QuestName="World History"       MinYOnExit="230"                                MinFlyForArrive="63" NPC_dbCode="9294"  NPC_X="2394"       NPC_Z="-742.4"    />
+  <VillaPoint RequestItem="14056" QuestName="World History"       MinYOnExit="237"  MoveOnExit="2430.1;151.8"     MinFlyForArrive="63" NPC_dbCode="7146"  NPC_X="2404"       NPC_Z="150"       />
+  <VillaPoint RequestItem="14057" QuestName="World History"       MinYOnExit=""                                   MinFlyForArrive="63" NPC_dbCode="7126"  NPC_X="2544.6"     NPC_Z="2.9"       />
+  <VillaPoint RequestItem="14058" QuestName="World History"       MinYOnExit=""                                   MinFlyForArrive="63" NPC_dbCode="7155"  NPC_X="2640"       NPC_Z="606"       />
+  <VillaPoint RequestItem="14059" QuestName="World History"       MinYOnExit="273"                                MinFlyForArrive="63" NPC_dbCode="7149"  NPC_X="2426.6"     NPC_Z="646.6"     />
+  <VillaPoint RequestItem="14060" QuestName="World History"       MinYOnExit="250"                                MinFlyForArrive="63" NPC_dbCode="7367"  NPC_X="-2181"      NPC_Z="3169.8"    />
+  <!-- volver a amerigo -->
+  <VillaPoint RequestItem="14061" QuestName="Prologue"            MinYOnExit=""                                   MinFlyForArrive="63" NPC_dbCode="14090" NPC_X="1311.405"   NPC_Z="915.7265"  />
+  <VillaPoint RequestItem="14062" QuestName="Reviews"             MinYOnExit=""                                   MinFlyForArrive="63" NPC_dbCode="14090" NPC_X="1311.405"   NPC_Z="915.7265"  />
+  <VillaPoint RequestItem="14063" QuestName="Postscripts"         MinYOnExit=""                                   MinFlyForArrive="63" NPC_dbCode="14090" NPC_X="1311.405"   NPC_Z="915.7265"  />
+  <VillaPoint RequestItem="14064" QuestName="Illustrated Version" MinYOnExit=""                                   MinFlyForArrive="63" NPC_dbCode="14090" NPC_X="1311.405"   NPC_Z="915.7265"  />
+  <VillaPoint RequestItem="14065" QuestName="Another Version"     MinYOnExit=""                                   MinFlyForArrive="63" NPC_dbCode="14090" NPC_X="1311.405"   NPC_Z="915.7265"  />
+  <VillaPoint RequestItem="14125" QuestName="Title of the Villa"  MinYOnExit=""                                   MinFlyForArrive="63" NPC_dbCode="14090" NPC_X="1311.405"   NPC_Z="915.7265"  />
+</Villa>

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace YerbaSoft.DTO.Exceptions
+﻿namespace YerbaSoft.DTO.Exceptions
 {
     public class ExceptionConvertTemplateOnlyMessage : ExceptionConvertTemplateBase
     {

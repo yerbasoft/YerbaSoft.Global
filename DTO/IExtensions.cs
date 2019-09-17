@@ -4,16 +4,14 @@ using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
 using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
-using System.Xml.Schema;
 
 namespace YerbaSoft.DTO
 {
     public static class IExtensions
     {
         #region Xml Extensions
-        
+
         public static XmlNode SubNode(this XmlNode node)
         {
             return node.SubNodes().SingleOrDefault();
@@ -80,12 +78,12 @@ namespace YerbaSoft.DTO
                 {
                     object value = null;
                     int i = 0;
-                    
+
                     if (p.PropertyType.GenericTypeArguments.Count() > 0 && (p.PropertyType.IsGenericList() || p.PropertyType.IsGenericCollection()))
                     {
                         value = (dynamic)Activator.CreateInstance(p.PropertyType);
 
-                        foreach( var item in n.SubNodes())
+                        foreach (var item in n.SubNodes())
                         {
                             var obj = (dynamic)item.Cast(p.PropertyType.GenericTypeArguments[0]);
 
@@ -104,7 +102,7 @@ namespace YerbaSoft.DTO
                         catch (FormatException)
                         {
                             value = n.Cast(p.PropertyType);
-                        }                        
+                        }
                     }
 
                     p.SetValue(o, value);
@@ -151,7 +149,7 @@ namespace YerbaSoft.DTO
         public static XmlNode SetProperties(this XmlNode node, object obj)
         {
             var oProps = obj.GetType().GetProperties().Where(p => p.CanRead);
-            foreach(var p in oProps)
+            foreach (var p in oProps)
             {
                 var a = node.Attrs().SingleOrDefault(x => x.Name == p.Name);
                 if (a == null)
@@ -222,7 +220,7 @@ namespace YerbaSoft.DTO
         /// <param name="input"></param>
         /// <returns></returns>
         public static T GetRandomValue<T>(this IEnumerable<T> input)
-        {            
+        {
             var rnd = new Random();
             var index = rnd.Next(0, input.Count() - 1);
 
@@ -301,7 +299,8 @@ namespace YerbaSoft.DTO
                 */
                 if (_ex is AggregateException)
                 {
-                    ((AggregateException)_ex).Handle((iex) => {
+                    ((AggregateException)_ex).Handle((iex) =>
+                    {
                         sb.AppendLine($"\n{tab}\t- Aggregate Inner Exception -");
                         sb.AppendLine($"{tab}\tType:    {iex.GetType().FullName}");
                         sb.AppendLine($"{tab}\tMessage: {iex.Message}");

@@ -1,13 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace YerbaSoft.DTO.Types
 {
     public class TwoList<T1, T2> : List<Two<T1, T2>>
     {
+        public TwoList() { }
+        public TwoList(T1 v1, T2 v2)
+        {
+            this.Add(v1, v2);
+        }
+        public TwoList(Two<T1, T2> two)
+        {
+            this.Add(two);
+        }
+        public TwoList(IEnumerable<Two<T1, T2>> list)
+        {
+            this.AddRange(list);
+        }
+
         public void RemoveRange(IEnumerable<Two<T1, T2>> elements)
         {
             var delete = elements.ToArray();
@@ -15,9 +26,10 @@ namespace YerbaSoft.DTO.Types
                 this.Remove(del);
         }
 
-        public void Add(T1 v1, T2 v2)
+        public TwoList<T1,T2> Add(T1 v1, T2 v2)
         {
             this.Add(new Two<T1, T2>(v1, v2));
+            return this;
         }
     }
 

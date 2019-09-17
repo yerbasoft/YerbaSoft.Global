@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
 
 namespace YerbaSoft.DTO.Mapping
@@ -80,7 +77,7 @@ namespace YerbaSoft.DTO.Mapping
 
             #endregion
         }
-        
+
         public void Map(Dictionary<string, object> values, Type tDes, object oDes, PropertyInfo pDes, Config.AutoMappingConfig config)
         {
             if (!ExistsProperty(values, this.RemoteName ?? pDes.Name, config))
@@ -118,7 +115,7 @@ namespace YerbaSoft.DTO.Mapping
             }
 
             var value = GetPropertyValue(ori, this.RemoteName ?? pDes.Name, config);
-            
+
             try
             {
                 if (pDes.UseComplexConvert())
@@ -132,7 +129,7 @@ namespace YerbaSoft.DTO.Mapping
                     throw new ApplicationException(string.Format("AutoMapping[Direct][XmlNode] Error al copiar un dato '{0}' a {1}.{2}", value, tDes.FullName, pDes.Name), ex);
             }
         }
-        
+
         public void Map(DataRow ori, Type tDes, object oDes, PropertyInfo pDes, Config.AutoMappingConfig config)
         {
             if (!ExistsProperty(ori, this.RemoteName ?? pDes.Name, config))

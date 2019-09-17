@@ -68,4 +68,56 @@
     <BajaFecha>
     </BajaFecha>
   </WindowsHelper.Cuentas.DTO.Ahorro>
+  <WindowsHelper.Cuentas.DTO.Ahorro UniqueKey="206dd6e8d70c490fa01aa7c10544273b01692e9210c64b4694144aa76bb673af">
+    <Id>03536bbf-b86d-4a74-a141-691cca7e6f8c</Id>
+    <TipoAhorro>PlazoFijo</TipoAhorro>
+    <Entidad>Banco Credicoop</Entidad>
+    <Observaciones>Sabrina - Renovación Plazo Fijo</Observaciones>
+    <FechaDesde>637006038070000000</FechaDesde>
+    <FechaHasta>637031958070000000</FechaHasta>
+    <Monto>93200</Monto>
+    <TazaAnual>49</TazaAnual>
+    <CreaFecha>637012950078744266</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Ahorro>
+  <WindowsHelper.Cuentas.DTO.Ahorro UniqueKey="a99c3ca7de904a6b8e7a151c441a783303e5ca8170084a2e924e076e5ae9a7cf">
+    <Id>1bfe6dd8-929b-4090-8142-6acdda1163ab</Id>
+    <TipoAhorro>PlazoFijo</TipoAhorro>
+    <Entidad>Banco Nacion</Entidad>
+    <Observaciones>Sabrina - Renovación de Plazo Fijo</Observaciones>
+    <FechaDesde>637031984873529677</FechaDesde>
+    <FechaHasta>637109744870000000</FechaHasta>
+    <Monto>97000</Monto>
+    <TazaAnual>63</TazaAnual>
+    <CreaFecha>637031984873529677</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Ahorro>
+  <WindowsHelper.Cuentas.DTO.Ahorro UniqueKey="44e73101c6c64ad880525811c4e83f5d2ba52d93a10e4daeae9d6f8341a74514">
+    <Id>6675c3ba-0bbe-4836-9c9b-a00d29952663</Id>
+    <TipoAhorro>PlazoFijo</TipoAhorro>
+    <Entidad>Santander Rio</Entidad>
+    <Observaciones>GGR</Observaciones>
+    <FechaDesde>637032025301772589</FechaDesde>
+    <FechaHasta>637058809300000000</FechaHasta>
+    <Monto>40000</Monto>
+    <TazaAnual>57</TazaAnual>
+    <CreaFecha>637032025301772589</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Ahorro>
+  <WindowsHelper.Cuentas.DTO.Ahorro UniqueKey="ddea8d4d518d4356bc0e621519eaf5772bcaab532b8d40a5ba90fe6330d49629">
+    <Id>93fd9250-55d2-41ec-a5ca-f2b801ae36ea</Id>
+    <TipoAhorro>PlazoFijo</TipoAhorro>
+    <Entidad>sdfsd</Entidad>
+    <Observaciones>d111</Observaciones>
+    <FechaDesde>637032025860726528</FechaDesde>
+    <FechaHasta>637032889860000000</FechaHasta>
+    <Monto>1111</Monto>
+    <TazaAnual>11</TazaAnual>
+    <CreaFecha>637032025860726528</CreaFecha>
+    <BajaFecha>
+    </BajaFecha>
+  </WindowsHelper.Cuentas.DTO.Ahorro>
 </XmlSimpleRepository>

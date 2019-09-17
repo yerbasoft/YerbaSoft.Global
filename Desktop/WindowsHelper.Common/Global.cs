@@ -110,14 +110,14 @@ namespace WindowsHelper
                 case ".csv":
                 case ".xls":
                 case ".xlsx":
-                    return @"C:\Program Files (x86)\Microsoft Office\root\Office16\EXCEL.EXE";
+                    return @"C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE";
                 case ".doc":
                 case ".docx":
-                    return @"C:\Program Files (x86)\Microsoft Office\root\Office16\WINWORD.EXE";
+                    return @"C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE";
                 case ".sln":
                     return @"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe";
                 case ".sql":
-                    return @"C:\Program Files\SQLDeveloper\sqldeveloper.exe";
+                    return @"W:\app\SQL Developer\sqldeveloper.exe";
                 case ".htm":
                 case ".html":
                     return @".\EasyOpen\web.png";

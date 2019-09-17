@@ -39,8 +39,12 @@
             this.bAutoFollow = new System.Windows.Forms.ToolStripMenuItem();
             this.bAutoSpot = new System.Windows.Forms.ToolStripMenuItem();
             this.bStopAll = new System.Windows.Forms.ToolStripMenuItem();
+            this.bWinModes = new System.Windows.Forms.ToolStripMenuItem();
+            this.bWinModeAdd = new System.Windows.Forms.ToolStripMenuItem();
+            this.bPartys = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.cerrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.startVillaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,10 +62,12 @@
             this.abrirNuevoToolStripMenuItem,
             this.toolStripMenuItem1,
             this.commandsToolStripMenuItem,
+            this.bWinModes,
+            this.bPartys,
             this.toolStripMenuItem2,
             this.cerrarToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 126);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 170);
             // 
             // asociarAPWAbiertoToolStripMenuItem
             // 
@@ -87,7 +93,8 @@
             this.commandsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bAutoFollow,
             this.bAutoSpot,
-            this.bStopAll});
+            this.bStopAll,
+            this.startVillaToolStripMenuItem});
             this.commandsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("commandsToolStripMenuItem.Image")));
             this.commandsToolStripMenuItem.Name = "commandsToolStripMenuItem";
             this.commandsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
@@ -97,7 +104,8 @@
             // 
             this.bAutoFollow.Image = ((System.Drawing.Image)(resources.GetObject("bAutoFollow.Image")));
             this.bAutoFollow.Name = "bAutoFollow";
-            this.bAutoFollow.Size = new System.Drawing.Size(180, 22);
+            this.bAutoFollow.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F9)));
+            this.bAutoFollow.Size = new System.Drawing.Size(186, 22);
             this.bAutoFollow.Text = "AutoFollow";
             this.bAutoFollow.Click += new System.EventHandler(this.BAutoFollow_Click);
             // 
@@ -105,7 +113,7 @@
             // 
             this.bAutoSpot.Image = ((System.Drawing.Image)(resources.GetObject("bAutoSpot.Image")));
             this.bAutoSpot.Name = "bAutoSpot";
-            this.bAutoSpot.Size = new System.Drawing.Size(180, 22);
+            this.bAutoSpot.Size = new System.Drawing.Size(186, 22);
             this.bAutoSpot.Text = "AutoSpot";
             this.bAutoSpot.Click += new System.EventHandler(this.BAutoSpot_Click);
             // 
@@ -113,9 +121,34 @@
             // 
             this.bStopAll.Image = ((System.Drawing.Image)(resources.GetObject("bStopAll.Image")));
             this.bStopAll.Name = "bStopAll";
-            this.bStopAll.Size = new System.Drawing.Size(180, 22);
+            this.bStopAll.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F12)));
+            this.bStopAll.Size = new System.Drawing.Size(186, 22);
             this.bStopAll.Text = "STOP ALL";
             this.bStopAll.Click += new System.EventHandler(this.BStopAll_Click);
+            // 
+            // bWinModes
+            // 
+            this.bWinModes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bWinModeAdd});
+            this.bWinModes.Image = ((System.Drawing.Image)(resources.GetObject("bWinModes.Image")));
+            this.bWinModes.Name = "bWinModes";
+            this.bWinModes.Size = new System.Drawing.Size(180, 22);
+            this.bWinModes.Text = "Win Modes";
+            // 
+            // bWinModeAdd
+            // 
+            this.bWinModeAdd.Image = ((System.Drawing.Image)(resources.GetObject("bWinModeAdd.Image")));
+            this.bWinModeAdd.Name = "bWinModeAdd";
+            this.bWinModeAdd.Size = new System.Drawing.Size(132, 22);
+            this.bWinModeAdd.Text = "- Agregar -";
+            this.bWinModeAdd.Click += new System.EventHandler(this.BWinModeAdd_Click);
+            // 
+            // bPartys
+            // 
+            this.bPartys.Image = ((System.Drawing.Image)(resources.GetObject("bPartys.Image")));
+            this.bPartys.Name = "bPartys";
+            this.bPartys.Size = new System.Drawing.Size(180, 22);
+            this.bPartys.Text = "Partys";
             // 
             // toolStripMenuItem2
             // 
@@ -129,6 +162,13 @@
             this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cerrarToolStripMenuItem.Text = "Close";
             this.cerrarToolStripMenuItem.Click += new System.EventHandler(this.CerrarToolStripMenuItem_Click);
+            // 
+            // startVillaToolStripMenuItem
+            // 
+            this.startVillaToolStripMenuItem.Name = "startVillaToolStripMenuItem";
+            this.startVillaToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.startVillaToolStripMenuItem.Text = "Start Villa";
+            this.startVillaToolStripMenuItem.Click += new System.EventHandler(this.StartVillaToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -158,6 +198,10 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem bAutoSpot;
         private System.Windows.Forms.ToolStripMenuItem bStopAll;
+        private System.Windows.Forms.ToolStripMenuItem bWinModes;
+        private System.Windows.Forms.ToolStripMenuItem bWinModeAdd;
+        private System.Windows.Forms.ToolStripMenuItem bPartys;
+        private System.Windows.Forms.ToolStripMenuItem startVillaToolStripMenuItem;
     }
 }
 

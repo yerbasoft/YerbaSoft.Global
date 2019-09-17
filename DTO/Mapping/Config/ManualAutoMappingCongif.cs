@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace YerbaSoft.DTO.Mapping.Config
+﻿namespace YerbaSoft.DTO.Mapping.Config
 {
     public class ManualAutoMappingCongif : AutoMappingConfig
     {
@@ -20,7 +14,7 @@ namespace YerbaSoft.DTO.Mapping.Config
         public bool SetCaseSensitive { get; set; }
         internal override bool CaseSensitive { get { return SetCaseSensitive; } }
 
-        public ManualAutoMappingCongif() 
+        public ManualAutoMappingCongif()
         {
             Mapping.Map.CopyTo(new DefaultAutomappingConfig(), this);   // arranco con las propiedades default?
         }

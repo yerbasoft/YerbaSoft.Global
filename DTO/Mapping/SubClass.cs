@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
 
 namespace YerbaSoft.DTO.Mapping
@@ -21,7 +19,7 @@ namespace YerbaSoft.DTO.Mapping
         /// Indica que el mapping es una subclase.
         /// </summary>
         public SubClass() { }
-        public SubClass(string remoteName) : this(false, remoteName)  { }
+        public SubClass(string remoteName) : this(false, remoteName) { }
         public SubClass(bool mustExists) : this(mustExists, null) { }
         public SubClass(bool mustExists, string remoteName)
         {
@@ -43,7 +41,7 @@ namespace YerbaSoft.DTO.Mapping
             if (vOri == null && MustExists)
                 throw new ApplicationException(string.Format("AutoMapping[SubClass] La propiedad de origen {0}.{1} debe tener un valor", tOri.FullName, pOri.Name));
 
-            var vDes = pDes.PropertyType.GetConstructor(new Type[]{}).Invoke(null);
+            var vDes = pDes.PropertyType.GetConstructor(new Type[] { }).Invoke(null);
             Mapping.Map.CopyTo(vOri, vDes, config);
 
             pDes.SetValue(oDes, vDes);
@@ -93,7 +91,7 @@ namespace YerbaSoft.DTO.Mapping
 
             if (config.UseExtraMapping && typeof(Mapping.IExtraMapping).IsAssignableFrom(pDes.PropertyType))
                 ((Mapping.IExtraMapping)vDes).ExtraMappingWhenGet(vOri, null);
-            
+
             pDes.SetValue(oDes, vDes);
         }
 
@@ -102,7 +100,7 @@ namespace YerbaSoft.DTO.Mapping
             var col = oOri.Table.Columns.OfType<DataColumn>().SingleOrDefault(p => p.ColumnName == (RemoteName ?? pDes.Name));
             if (col == null)
                 throw new ApplicationException(string.Format("AutoMapping[SubClass][DataRow] No se encuentra la columna {0} en DataRow de origen de datos para la clase {1}", RemoteName ?? pDes.Name, tDes.FullName));
-            
+
             var vOri = oOri[col];
             if (vOri == null && MustExists)
                 throw new ApplicationException(string.Format("AutoMapping[SubClass][Datarow] El valor de la columna {0} en el DataRow debe tener un valor para la clase {1}", RemoteName ?? pDes.Name, tDes.FullName));

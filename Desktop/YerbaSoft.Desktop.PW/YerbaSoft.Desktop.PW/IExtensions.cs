@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using YerbaSoft.Desktop.PW.Client.PWI_1_3_6_2265.Structs;
 
 namespace YerbaSoft.Desktop.PW
 {
@@ -42,6 +40,12 @@ namespace YerbaSoft.Desktop.PW
                 return key;
             else
                 return default(Keys);
+        }
+        
+        public static ToolStripMenuItem Do(this ToolStripMenuItem obj, Action<ToolStripMenuItem> action)
+        {
+            action?.Invoke(obj);
+            return obj;
         }
     }
 }

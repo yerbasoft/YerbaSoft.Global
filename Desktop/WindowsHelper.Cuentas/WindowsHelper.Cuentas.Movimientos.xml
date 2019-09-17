@@ -2665,4 +2665,164 @@
     <FileRef>Z:\Mios\Banco\Movimientos\20190617 TARJETA NARANJA.pdf</FileRef>
     <CreaFecha>636963847043618264</CreaFecha>
   </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="2770193ca2dc4c75861212c83c5bd0bf9869396cb49a40dba5d7412f48432836">
+    <Id>a465a73c-554f-489e-9172-455dabfad31f</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>636982151310299614</Fecha>
+    <Monto>1955.18</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190708 MOVISTAR.pdf</FileRef>
+    <CreaFecha>636982151739374450</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="eaf2143ac18f4dfab56e89b273694110ece70e1293034fa4a176d8d6be4e93e2">
+    <Id>f293cffa-f48f-4308-ac26-a15d63e8287f</Id>
+    <IdConcepto>bd0a3780-11fe-4039-a4cf-7e90b395d044</IdConcepto>
+    <Fecha>636982151740064056</Fecha>
+    <Monto>743.51</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190708 NARAJNA.pdf</FileRef>
+    <CreaFecha>636982151920501677</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="226acbfd7e9a454f8cc81055dd3610b8c76eb046b43d415dad14a5afeacfbe6e">
+    <Id>73a7a723-3473-49b3-b3c6-5fa65028d082</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>636983545843093108</Fecha>
+    <Monto>19199.15</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190710 OMINT.pdf</FileRef>
+    <CreaFecha>636983546318100213</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="2328f84222044a31b596c57f314211ff509b5756f3cb4fc6b59dcbbc57193b3c">
+    <Id>f786f00e-1f9e-4e3a-bf51-a4b72177f278</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>636983920425356967</Fecha>
+    <Monto>8500</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190710 ALQUILER.pdf</FileRef>
+    <CreaFecha>636983920569670244</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="9b01b22a08dc489bac4d9d67255e07e80c2522770a234e03853bb0501cb67285">
+    <Id>329130b1-dcf6-4c35-945d-18f993812181</Id>
+    <IdConcepto>01473c4e-7757-468b-bc69-f0fa9c5082e4</IdConcepto>
+    <Fecha>636986237550984251</Fecha>
+    <Monto>150</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636986237665156931</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="9a7e86bbff164b758b0ad9fd5b986c882656fdc2076440b1827b936de3a8d84d">
+    <Id>9d64a8ed-8a97-4a50-ba36-dd3fbbe4ddb1</Id>
+    <IdConcepto>8551ba44-2433-49a0-9b37-86af7601f708</IdConcepto>
+    <Fecha>636986237666174313</Fecha>
+    <Monto>1300</Monto>
+    <Observaciones>cuotas de junio y julio</Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>636986237832581045</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="b5e958a4420741dea1807df8878312dac282ffdb49434aa7b0bfcb6700720508">
+    <Id>bba864a4-4de0-4458-a9ff-b7802b4d4857</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>637006837614436454</Fecha>
+    <Monto>1910.25</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190806 MOVISTAR.pdf</FileRef>
+    <CreaFecha>637006837832400853</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="efcb320717fb4cb9b9c94f7619b493836c3395dfa8af48c9b1e066ab86673e46">
+    <Id>31073297-f827-48fb-b83f-e58fc46b0f91</Id>
+    <IdConcepto>bd0a3780-11fe-4039-a4cf-7e90b395d044</IdConcepto>
+    <Fecha>637006838523290829</Fecha>
+    <Monto>4562.94</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190806 NARANJA.pdf</FileRef>
+    <CreaFecha>637006838667470914</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="4c41e14c1d7b4b18a32fe3a643e3ad208ff14347625144cc99bfbf3add5efa88">
+    <Id>c00f08d7-36ce-48e3-a9e3-03617a8bd81d</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>637006839788891002</Fecha>
+    <Monto>11190.96</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190806 OMINT.pdf</FileRef>
+    <CreaFecha>637006839960756670</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="88516e4eff814f8dbdcd0c2c962a8ab8627feffd13864334896b64c741b1a665">
+    <Id>101b034e-a158-4f72-b1fe-18be47388e79</Id>
+    <IdConcepto>a78269b1-eca3-4e49-9814-3af893b070de</IdConcepto>
+    <Fecha>637008033621541826</Fecha>
+    <Monto>28879.96</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190807 TARJETA VISA.pdf</FileRef>
+    <CreaFecha>637008033813793721</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="eac163c0fcb2400192a333acb626229e964b458d81704ddd915893a2600c3712">
+    <Id>2186560a-e410-46ed-8477-ce3cae6b0c10</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>637008034823347792</Fecha>
+    <Monto>8500</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190807 ALQUILER.pdf</FileRef>
+    <CreaFecha>637008034928209575</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="80c28cf0b8ce4ba08f320734f68c496ddb070e2a9ddc479fb137fa836500f20b">
+    <Id>fcb3ffab-4135-4475-a6f0-a388369becfa</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>637030272646571574</Fecha>
+    <Monto>1909.16</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190902 MOVISTAR.pdf</FileRef>
+    <CreaFecha>637030272808125125</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="3d35f76e138547ba93ac284ddc257509984f4d804a9b4bba9474c0d6a5e0d11a">
+    <Id>1005b2b1-063c-4d5f-8bea-4f5ce3354f39</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>637031988815501479</Fecha>
+    <Monto>10902.03</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190904 OMINT.pdf</FileRef>
+    <CreaFecha>637031989323905359</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="0da74a9eb00044b39a4700718dc127846841e50aede6434a8c7cb0cdd251e841">
+    <Id>1b559844-e7dd-49a7-ae12-8b5b37a64658</Id>
+    <IdConcepto>bd0a3780-11fe-4039-a4cf-7e90b395d044</IdConcepto>
+    <Fecha>637031989325087575</Fecha>
+    <Monto>2501.01</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190904 Tarjeta Naranja.png</FileRef>
+    <CreaFecha>637031989818517852</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="2cfdf8abb41f46eaa60d9dc8ae68b90ad7ab28620cad4115912cfe8ecbf2ec32">
+    <Id>91c25767-cb29-4ad9-903c-34c51055271b</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>637031989818897821</Fecha>
+    <Monto>8500</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190904 Gascón 887 - Alquiler.png</FileRef>
+    <CreaFecha>637031991390778877</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="e8babbcbbeac40978d2d3101bf114d81301a0067d19046339baf44bf3d114281">
+    <Id>906c243a-8a29-48ba-ae65-9b021e62019b</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>637032066118819513</Fecha>
+    <Monto>2000</Monto>
+    <Observaciones>agregado por nuevo aumento.</Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20190904 Gascón 887 - Alquiler (2).png</FileRef>
+    <CreaFecha>637032066422260317</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
 </XmlSimpleRepository>

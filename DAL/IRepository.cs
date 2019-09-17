@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using YerbaSoft.DAL;
 
 namespace YerbaSoft.DAL
 {
@@ -75,7 +74,7 @@ namespace YerbaSoft.DAL
         object Max(Expression<Func<T, object>> field);
         object Max(Expression<Func<T, bool>> filter, Expression<Func<T, object>> field);
         object Max(IEnumerable<Expression<Func<T, bool>>> filters, Expression<Func<T, object>> field);
-        
+
         long Sum(Expression<Func<T, long>> field);
         long Sum(Expression<Func<T, bool>> filter, Expression<Func<T, long>> field);
         long Sum(IEnumerable<Expression<Func<T, bool>>> filters, Expression<Func<T, long>> field);
