@@ -2825,4 +2825,54 @@
     <FileRef>Z:\Mios\Banco\Movimientos\20190904 Gascón 887 - Alquiler (2).png</FileRef>
     <CreaFecha>637032066422260317</CreaFecha>
   </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="7b922076efff42acb0c86ec271259aba5f847b76cb514b2aa7672d43255ade88">
+    <Id>a8f3ecbe-af08-4e45-8a24-216dc1132825</Id>
+    <IdConcepto>b11785e6-0682-4815-9f6d-6fd428d996ab</IdConcepto>
+    <Fecha>637055273203799548</Fecha>
+    <Monto>5050</Monto>
+    <Observaciones>AL DIA</Observaciones>
+    <FileRef>
+    </FileRef>
+    <CreaFecha>637055273405543224</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="464af5610c574e0e941319b088d25816da118295bc4d4827a551241150e13a01">
+    <Id>149a7c68-1d9c-4c47-b47f-47a592255285</Id>
+    <IdConcepto>bd0a3780-11fe-4039-a4cf-7e90b395d044</IdConcepto>
+    <Fecha>637057789479090269</Fecha>
+    <Monto>4506.87</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20191004 NARANJA.pdf</FileRef>
+    <CreaFecha>637057789783742589</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="41b08a48f3a245c08b8bc97962bd48f89e89e40c30a24bc9a44c7fb9cf2f56d8">
+    <Id>e4b48d75-a295-416f-b40e-fcbf46081b9a</Id>
+    <IdConcepto>5615320c-e5e1-4de1-8a3d-3c25fe0f6531</IdConcepto>
+    <Fecha>637057789784878198</Fecha>
+    <Monto>11338.11</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20191004 OMINT.pdf</FileRef>
+    <CreaFecha>637057789937415171</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="d37a85c4e76441219005df83419415bf34271245c6694ebc9773889aaaafbb0f">
+    <Id>78288519-a9eb-4475-9a30-fc108a4521ea</Id>
+    <IdConcepto>8d2742c2-2064-4cb8-88f2-49e86de7db4a</IdConcepto>
+    <Fecha>637057789937525440</Fecha>
+    <Monto>1907.99</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20191004 MOVISTAR.pdf</FileRef>
+    <CreaFecha>637057790146497275</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
+  <WindowsHelper.Cuentas.DTO.Movimiento UniqueKey="3c9e55cc60514f7ba93a2b92337cdaa3d6f09bd0304c44a3be4e11f529159371">
+    <Id>7fe781f6-04cd-419d-8ffb-a2537681092a</Id>
+    <IdConcepto>712594fd-320d-4c63-873c-be922481f66c</IdConcepto>
+    <Fecha>637057792066063666</Fecha>
+    <Monto>10500</Monto>
+    <Observaciones>
+    </Observaciones>
+    <FileRef>Z:\Mios\Banco\Movimientos\20191004 ALQUILER.pdf</FileRef>
+    <CreaFecha>637057792174525483</CreaFecha>
+  </WindowsHelper.Cuentas.DTO.Movimiento>
 </XmlSimpleRepository>

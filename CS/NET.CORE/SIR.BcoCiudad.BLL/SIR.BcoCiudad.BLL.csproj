@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SIR.BcoCiudad.Common\SIR.BcoCiudad.Common.csproj" />
+    <ProjectReference Include="..\SIR.BcoCiudad.DAL\SIR.BcoCiudad.DAL.csproj" />
+    <ProjectReference Include="..\SIR.Common.Connector\SIR.Common.Connector.csproj" />
+    <ProjectReference Include="..\SIR.Common.DAL\SIR.Common.DAL.csproj" />
+    <ProjectReference Include="..\SIR.Common\SIR.Common.csproj" />
+  </ItemGroup>
+
+</Project>

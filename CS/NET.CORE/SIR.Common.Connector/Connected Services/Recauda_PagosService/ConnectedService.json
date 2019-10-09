@@ -1,0 +1,32 @@
+﻿{
+  "ProviderId": "Microsoft.VisualStudio.ConnectedService.Wcf",
+  "Version": "15.0.30515.712",
+  "ExtendedData": {
+    "inputs": [
+      "W:/PagosService.wsdl"
+    ],
+    "collectionTypes": [
+      "System.Array",
+      "System.Collections.Generic.Dictionary`2"
+    ],
+    "internalTypeAccess": true,
+    "namespaceMappings": [
+      "*, Recauda_PagosService"
+    ],
+    "references": [
+      "Newtonsoft.Json, {Newtonsoft.Json, 12.0.2}",
+      "NLog, {NLog, 4.6.7}",
+      "Oracle.ManagedDataAccess, {Oracle.ManagedDataAccess.Core, 2.19.31}",
+      "System.ServiceModel, {System.ServiceModel.Primitives, 4.4.4}",
+      "System.ServiceModel.Duplex, {System.ServiceModel.Duplex, 4.4.4}",
+      "System.ServiceModel.Http, {System.ServiceModel.Http, 4.4.4}",
+      "System.ServiceModel.NetTcp, {System.ServiceModel.NetTcp, 4.4.4}",
+      "System.ServiceModel.Primitives, {System.ServiceModel.Primitives, 4.4.4}",
+      "System.ServiceModel.Security, {System.ServiceModel.Security, 4.4.4}",
+      "W:\\src\\CS\\SinRepo\\SIR.Common.Connector\\bin\\Debug\\netstandard2.0\\SIR.Common.DAL.dll",
+      "W:\\src\\CS\\SinRepo\\SIR.Common.Connector\\bin\\Debug\\netstandard2.0\\SIR.Common.dll"
+    ],
+    "targetFramework": "netstandard2.0",
+    "typeReuseMode": "All"
+  }
+}

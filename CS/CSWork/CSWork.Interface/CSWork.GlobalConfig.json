@@ -1,0 +1,852 @@
+{
+  "Jira": {
+    "Url": "https://cardinalconsulting.atlassian.net",
+    "User": "grodriguez@cardinalsystems.com.ar",
+    "Token": "eRU6gC70abMbObRzYub1DBD2",
+    "Filters": []
+  },
+  "Watch": {
+    "AlwaysStopWatchAtTime": 1800
+  },
+  "General": {
+    "StartWithWindows": false,
+    "GCBARed": {
+      "User": "DGUIAF\\grodriguez",
+      "Pass": "G4st0n.2015"
+    },
+    "App": {
+      "Web": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+    }
+  },
+  "Memory": [
+    {
+      "Group": "Connection Strings",
+      "Key": "SIRDEV",
+      "Value": "Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.245)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRDEV)));User Id=SIR;Password=Ab123456;"
+    },
+    {
+      "Group": "Connection Strings",
+      "Key": "SIRT",
+      "Value": "Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.226)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRT)));User Id=SIR;Password=Ab123456;"
+    },
+    {
+      "Group": "Connection Strings",
+      "Key": "SIRH",
+      "Value": "Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.226)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRH)));User Id=SIR;Password=Hm2PYH4_H;"
+    },
+    {
+      "Group": "Connection Strings",
+      "Key": "SIRI 1",
+      "Value": "Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.226)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRI)));User Id=SIR;Password=Hm2PYH4;"
+    },
+    {
+      "Group": "Connection Strings",
+      "Key": "SIRI 2",
+      "Value": "Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.226)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRI2)));User Id=SIR;Password=Hm2PYH4;"
+    },
+    {
+      "Group": "Connection Strings",
+      "Key": "SIRUM",
+      "Value": "Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.73.2.127)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = SIRUM)));User Id=SIR;Password=nhGAcpCe;"
+    },
+    {
+      "Group": "SIR :: PE",
+      "Key": "Script :: Tokens Pendientes de Pago",
+      "Value": "SELECT  SIR.RAW_TO_GUID(ID)\r\nFROM    PAGOELECTRONICO.COBRO\r\nWHERE   FECHAPAGO IS NULL   AND\r\n        FECHAVENCIMIENTO > SYSDATE;\r\n"
+    },
+    {
+      "Group": "SIR",
+      "Key": "Script :: CREATE USER ggr",
+      "Value": "\r\nINSERT INTO SIR.USUARIO ( ID,         NOMBRE,   LOGIN,        CLAVE,                                      CAMBIARCLAVE, LEGAJO,   DNI,      CREAFECHA,CREAUSU,                            APELLIDO,     EMAIL,                                SECTOR )\r\nSELECT                    SYS_GUID(), 'Gastón',\t'ggr', 'b32da141acb6fc468c63134e2f65c9e1923299ba', 'N',          29332389, 29332389, SYSDATE,  '00000000000000000000000000000001', 'Rodríguez',  'grodriguez@cardinalsystems.com.ar',  'Sistemas'\r\nFROM DUAL\r\nWHERE NOT EXISTS( SELECT 1 FROM SIR.USUARIO WHERE LOGIN = 'ggr' );\r\n\r\nINSERT INTO COBRANZA.USUARIO ( ID )\r\nSELECT    (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' )\r\nFROM DUAL\r\nWHERE NOT EXISTS( SELECT 1 FROM COBRANZA.USUARIO WHERE ID = (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ) );\r\n\r\nINSERT INTO PAGOELECTRONICO.USUARIO ( ID )\r\nSELECT    (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' )\r\nFROM DUAL\r\nWHERE NOT EXISTS( SELECT 1 FROM PAGOELECTRONICO.USUARIO WHERE ID = (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ) );\r\n\r\nINSERT INTO PORTALTRAMITES.USUARIO ( ID, ROL, LOGIN )\r\nSELECT    (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ), 'ADMIN', 'ggr'\r\nFROM DUAL\r\nWHERE NOT EXISTS( SELECT 1 FROM PORTALTRAMITES.USUARIO WHERE ID = (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ) );\r\n\r\nINSERT INTO BU.USUARIO ( ID, DEPENDENCIAID, ROLID )\r\nSELECT    (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ), (SELECT ID FROM SIR.DEPENDENCIA WHERE CODIGO = 1), (SELECT ID FROM BU.ROL WHERE NOMBRE = 'Administrador')\r\nFROM DUAL\r\nWHERE NOT EXISTS( SELECT 1 FROM BU.USUARIO WHERE ID = (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ) );\r\n\r\nINSERT INTO COBRANZA.USUARIOROL (AUDITID, IDUSUARIO, IDROL)\r\nSELECT SYS_GUID(), (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ), (SELECT ID FROM COBRANZA.ROL WHERE SIMBOL = 'ADMIN' )\r\nFROM DUAL\r\nWHERE NOT EXISTS( SELECT 1 FROM COBRANZA.USUARIOROL WHERE IDUSUARIO = (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ) AND IDROL = (SELECT ID FROM COBRANZA.ROL WHERE SIMBOL = 'ADMIN' ) );\r\n\r\nINSERT INTO COBRANZA.USUARIOROL (AUDITID, IDUSUARIO, IDROL)\r\nSELECT SYS_GUID(), (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ), (SELECT ID FROM COBRANZA.ROL WHERE SIMBOL = 'FISCALIZADOR' AND REQUIEREAGENCIA = 0 )\r\nFROM DUAL\r\nWHERE NOT EXISTS( SELECT 1 FROM COBRANZA.USUARIOROL WHERE IDUSUARIO = (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ) AND IDROL = (SELECT ID FROM COBRANZA.ROL WHERE SIMBOL = 'FISCALIZADOR' AND REQUIEREAGENCIA = 0 ) );\r\n\r\nINSERT INTO COBRANZA.USUARIOROL (AUDITID, IDUSUARIO, IDROL)\r\nSELECT SYS_GUID(), (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ), (SELECT ID FROM COBRANZA.ROL WHERE NOMBRE = 'Reportes Consulta' AND REQUIEREAGENCIA = 0 )\r\nFROM DUAL\r\nWHERE NOT EXISTS( SELECT 1 FROM COBRANZA.USUARIOROL WHERE IDUSUARIO = (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ) AND IDROL = (SELECT ID FROM COBRANZA.ROL WHERE NOMBRE = 'Reportes Consulta' AND REQUIEREAGENCIA = 0 ) );\r\n\r\nINSERT INTO COBRANZA.USUARIOROL (AUDITID, IDUSUARIO, IDROL, IDGRUPODEPENDENCIA)\r\nSELECT SYS_GUID(), (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ), (SELECT ID FROM COBRANZA.ROL WHERE SIMBOL = 'AREA' ), (SELECT ID FROM SIR.GRUPODEPENDENCIA WHERE NOMBRE = 'TODAS' )\r\nFROM DUAL\r\nWHERE NOT EXISTS( SELECT 1 FROM COBRANZA.USUARIOROL WHERE IDUSUARIO = (SELECT ID FROM SIR.USUARIO WHERE LOGIN = 'ggr' ) AND IDROL = (SELECT ID FROM COBRANZA.ROL WHERE SIMBOL = 'TODAS' ) );\r\n"
+    },
+    {
+      "Group": "SIR :: BO",
+      "Key": "Script :: SELECT Usuario-Rol-Dependencia",
+      "Value": "SELECT U.LOGIN, R.NOMBRE, A.CODIGO || '-' || A.NOMBRE , D.CODIGO || '-' || D.NOMBRE\r\nFROM SIR.USUARIO  U\r\nINNER JOIN COBRANZA.USUARIOROL UR ON ( UR.IDUSUARIO = U.ID )\r\nINNER JOIN COBRANZA.ROL R ON ( R.ID = UR.IDROL )\r\nINNER JOIN SIR.AGENCIA A ON ( A.ID = UR.IDAGENCIA )\r\nINNER JOIN SIR.GRUPODEPENDENCIA GD ON ( GD.ID = UR.IDGRUPODEPENDENCIA )\r\nINNER JOIN SIR.GRUPODEPENDENCIA_DEP GDD ON ( GDD.IDGRUPODEPENDENCIA = GD.ID )\r\nINNER JOIN SIR.DEPENDENCIA D ON ( D.ID = GDD.IDDEPENDENCIA )\r\nWHERE U.LOGIN = 'pfernandez' AND UR.BAJAFECHA IS NULL;\r\n"
+    },
+    {
+      "Group": "SIR :: ATM",
+      "Key": "Script :: SELECT Pago por ATM",
+      "Value": "SELECT  C.NOMBRE \"POS\",\r\n\t\tL.NROZ \"LOTE\",\r\n\t\tL.CREACION \"CREACION LOTE\",\r\n\t\tO.COMPROBANTE,\r\n\t\tP.NROCOMPROBANTE,\r\n\t\tP.BARCODE,\r\n\t\tP.TIPO,\r\n\t\tP.IMPORTE,\r\n\t\tV.TARJETA,\r\n\t\tV.TITULAR,\r\n\t\tV.CODIGOAUTORIZACION,\r\n\t\tV.NUMERO \"VOUCHER NUMERO\",\r\n\t\tV.NROTARJETA\r\nFROM    SIRAPI.VOUCHERS         V\r\nINNER JOIN SIRAPI.PAGOS         P ON ( P.ID = V.ID )\r\nINNER JOIN SIRAPI.OPERACIONES   O ON ( O.ID = P.OPERACIONID )\r\nINNER JOIN SIRAPI.TRANSACCIONES T ON ( T.ID = O.TRANSACCIONID )\r\nINNER JOIN SIRAPI.LOTES         L ON ( L.ID = T.LOTEID )\r\nINNER JOIN SIRAPI.CLIENTES      C ON ( C.ID = L.CLIENTEID )\r\nWHERE   --P.FECHA BETWEEN TO_DATE( '26-07-2018', 'DD-MM-YYYY' ) - 2 AND TO_DATE( '26-07-2018', 'DD-MM-YYYY' ) + 3     AND\r\n\t\tP.FECHA >= TO_DATE( '01-09-2018', 'DD-MM-YYYY' ) AND\r\n\t\t(\r\n\t\t\tV.CODIGOAUTORIZACION LIKE '%6555%'      OR\r\n\t\t\tV.NUMERO = 1860                         OR\r\n\t\t\tV.NROTARJETA LIKE '%1853%'\r\n\t\t)\r\n"
+    },
+    {
+      "Group": "SIR2 :: AFIP.API",
+      "Key": "Script :: Crear Comprobante Manual",
+      "Value": "DECLARE\r\n\tpId                 RAW(16);\r\n\tpFacturador         VARCHAR2(500);\r\n\tpIdFacturador       RAW(16);\r\n\tpPuntoDeVenta       NUMBER;\r\n\tpIdPuntoDeVenta     RAW(16);\r\n\tpTipoComprobante    NUMBER;\r\n\tpIdTipoComprobante  RAW(16);\r\n\tpTipoConcepto       NUMBER;\r\n\tpFechaVencimiento   DATE;\r\n\tpFechaServDesde     DATE;\r\n\tpFechaServHasta     DATE;\r\n\tpMoneda             VARCHAR(3);\r\n\tpMonedaCtz          VARCHAR(20);\r\n\tpObsComerciales     VARCHAR(255);\r\n\tpObsGenerales       VARCHAR(255);\r\n\tpFormaPago          VARCHAR(300);\r\n\tpNota1              VARCHAR(255);\r\n\tpNota2              VARCHAR(255);\r\n\tpNota3              VARCHAR(255);\r\n\tpImporte            NUMBER(18,2);\r\n\tpItemCodigo         VARCHAR(255);\r\n\tpItemDescripcion    VARCHAR(255);\r\n\tpCliRazonSocial     VARCHAR(255);\r\n\tpCliProvincia       VARCHAR(100);\r\n\tpCliLocalidad       VARCHAR(100);\r\n\tpCliDomicilio       VARCHAR(255);\r\n\tpCliTelefono        VARCHAR(100);\r\n\tpCliCondicionIva    VARCHAR(100);\r\n\tpCliTipoDocumento   NUMBER(3);\r\n\tpCliNroDocumento    NUMBER;\r\n\tpCliEMail           VARCHAR(100);\r\n\tpEstado             NUMBER;\r\n\tpExtraInfo          BLOB;\r\nBEGIN\r\n\t-------------------------\r\n\t-- Datos IMPORTANTES!! --\r\n\t-------------------------\r\n\tpFacturador := 'Fondo de Cooperación Técnica y Financiera CECBA- SLYT';\r\n\tpPuntoDeVenta := 12;\r\n\tpTipoComprobante := 11;    -- 11:F(C) / 12:ND(C) / 13:NC(C) / -15(R)\r\n\tpTipoConcepto := 2;     -- 1:Productos / 2:Servicios / 3:ProductosYServicios\r\n\tpImporte := 1051.00;\r\n\tpItemCodigo := '09.01.04';  -- Codigo del item en la factura\r\n\tpItemDescripcion := 'Diferencia por publicación en Boletín Oficial';    -- Descripción del Item en la factura\r\n\r\n\t-- En caso de TIPO CONCEPTO incluye SERVICIOS (establecer null cuando es TipoConcepto = 1)\r\n\tpFechaServDesde := SYSDATE;\r\n\tpFechaServHasta := SYSDATE;\r\n\r\n\t-- Datos del cliente\r\n\tpCliRazonSocial := 'Andrea';\r\n\tpCliProvincia := '';\r\n\tpCliLocalidad := '';\r\n\tpCliDomicilio := '';\r\n\tpCliTelefono := '';\r\n\tpCliCondicionIva := 'Consumidor Final';\r\n\tpCliTipoDocumento := 80;    -- 96:DNI / 80:CUIT / 86:CUIL\r\n\tpCliNroDocumento := 22113334442;\r\n\tpCliEMail := '';\r\n\r\n\t-- Datos Secundarios\r\n\tpFechaVencimiento := SYSDATE + 1;  -- días para el vencimiento del cbte\r\n\tpObsComerciales := null;\r\n\tpObsGenerales := null;\r\n\tpFormaPago := null;\r\n\tpNota1 := null;\r\n\tpNota2 := null;\r\n\tpNota3 := null;\r\n\r\n\t-- Datos que por lo gral van fijos\r\n\tpId := SYS_GUID();\r\n\tpMoneda := 'PES';\r\n\tpMonedaCtz := '1';\r\n\tpEstado := 0; -- 0:nueva\r\n\tpExtraInfo := null;\r\n\r\n\r\n\t--------------\r\n\t-- NO TOCAR --\r\n\t--------------\r\n\t-- Búsqueda de datos\r\n\tSELECT ID INTO pIdFacturador FROM AFIPAPI.FACTURADOR WHERE RAZONSOCIAL = pFacturador;\r\n\tSELECT ID INTO pIdPuntoDeVenta FROM AFIPAPI.PUNTODEVENTA WHERE IDFACTURADOR = pIdFacturador AND NUMERO = pPuntoDeVenta;    \r\n\tSELECT ID INTO pIdTipoComprobante FROM AFIPAPI.TIPOCOMPROBANTE WHERE CODIGO = pTipoComprobante;\r\n\r\n\t-- INSERT\r\n\tINSERT INTO AFIPAPI.COMPROBANTE (ID, IDFACTURADOR, IDPUNTODEVENTA, IDTIPOCOMPROBANTE, TIPOCONCEPTO, CBTEDESDE,CBTEHASTA,FECHA,  FECHAVENC,        FECHASERVDESDE, FECHASERVHASTA, TIPOMONEDA,MONEDACTZ, OBSCOMERCIALES, OBSGENERALES, FORMADEPAGO,NOTA1, NOTA2, NOTA3, IMPORTETOTAL,IMPORTETOTALCONC,IMPORTENETO,IMPORTEIVA,IMPORTETRIB,IMPORTEOPEX,CLIRAZONSOCIAL, CLIPROVINCIA, CLILOCALIDAD, CLIDOMICILIO, CLITELEFONO, CLICONDICIONIVA, CLITIPODOCUMENTO, CLINRODOCUMENTO, CLIEMAIL, ESTADO, REINTENTOSAFIP,REINTENTOSPDF,CAE, CAEVENC,CREAFECHA,CREAUSU,                           PROCAFIPFECHA,EXTRAINFO, BAJAFECHA,BAJAUSU) \r\n\t\t\t\t\t\t\t VALUES (pId,pIdFacturador,pIdPuntoDeVenta,pIdTipoComprobante,pTipoConcepto,null,     null,     SYSDATE,pFechaVencimiento,pFechaServDesde,pFechaServHasta,pMoneda,   pMonedaCtz,pObsComerciales,pObsGenerales,pFormaPago, pNota1,pNota2,pNota3,pImporte,    0,               pImporte,   0,         0,          0,          pCliRazonSocial,pCliProvincia,pCliLocalidad,pCliDomicilio,pCliTelefono,pCliCondicionIva,pCliTipoDocumento,pCliNroDocumento,pCliEMail,pEstado,0,             0,            null,null,   SYSDATE,  '00000000000000000000000000000001',null,         pExtraInfo,null,     null);\r\n\r\n\tINSERT INTO AFIPAPI.COMPROBANTEITEM (ID, IDCOMPROBANTE,CODIGO,     DESCRIPCION,     CANTIDAD,TIPOUNIDADMEDIDA,PRECIOUNITARIO,BONIFICACION,TIPOALICUOTAIVA,MONTOIVA,IMPORTE, DESPACHO,CREAFECHA,CREAUSU,                           TIPOITEM)\r\n\t\t\t\t\t\t\t\t VALUES (pId,pId,          pItemCodigo,pItemDescripcion,1,       0,               pImporte,      0,           0,              0,       pImporte,null,    SYSDATE,  '00000000000000000000000000000001',null);\r\n\r\n\tROLLBACK;\r\nEND;\r\n"
+    },
+    {
+      "Group": "SIR2 :: AFIP.API",
+      "Key": "Script :: Crear NC desde FC",
+      "Value": "\r\n-- Sólo se deben establecer los ID's de los Comprobantes en el primer query.\r\n\r\nINSERT INTO AFIPAPI.COMPROBANTE (\r\nID                                ,IDFACTURADOR                      ,IDPUNTODEVENTA                    ,IDTIPOCOMPROBANTE                 ,\r\nTIPOCONCEPTO                      ,CBTEDESDE                         ,CBTEHASTA                         ,FECHA                             ,\r\nFECHAVENC                         ,FECHASERVDESDE                    ,FECHASERVHASTA                    ,TIPOMONEDA                        ,\r\nMONEDACTZ                         ,OBSCOMERCIALES                    ,OBSGENERALES                      ,\r\nFORMADEPAGO                       ,NOTA1                             ,NOTA2                             ,NOTA3                             ,\r\nIMPORTETOTAL                      ,IMPORTETOTALCONC                  ,IMPORTENETO                       ,IMPORTEIVA                        ,\r\nIMPORTETRIB                       ,IMPORTEOPEX                       ,CLIRAZONSOCIAL                    ,CLIPROVINCIA                      ,\r\nCLILOCALIDAD                      ,CLIDOMICILIO                      ,CLITELEFONO                       ,CLICONDICIONIVA                   ,\r\nCLITIPODOCUMENTO                  ,CLINRODOCUMENTO                   ,CLIEMAIL                          ,ESTADO                            ,\r\nREINTENTOSAFIP                    ,REINTENTOSPDF                     ,CAE                               ,CAEVENC                           ,\r\nCREAFECHA                         ,CREAUSU                           ,PROCAFIPFECHA                     ,EXTRAINFO                         )\r\nSELECT\r\nSYS_GUID()                        ,C.IDFACTURADOR                    ,C.IDPUNTODEVENTA                  ,'00000000000000000003000000000000',\r\nC.TIPOCONCEPTO                    ,NULL                              ,NULL                              ,NULL                              ,\r\nC.FECHAVENC                       ,C.FECHASERVDESDE                  ,C.FECHASERVHASTA                  ,C.TIPOMONEDA                      ,\r\nC.MONEDACTZ                       ,C.OBSCOMERCIALES                  ,'Anulación de la ' || TC.DESCRIPCION || ' nº ' || TO_CHAR(C.CBTEDESDE),\r\nC.FORMADEPAGO                     ,C.NOTA1                           ,C.NOTA2                           ,C.NOTA3                           ,\r\nC.IMPORTETOTAL                    ,C.IMPORTETOTALCONC                ,C.IMPORTENETO                     ,C.IMPORTEIVA                      ,\r\nC.IMPORTETRIB                     ,C.IMPORTEOPEX                     ,C.CLIRAZONSOCIAL                  ,C.CLIPROVINCIA                    ,\r\nC.CLILOCALIDAD                    ,C.CLIDOMICILIO                    ,C.CLITELEFONO                     ,C.CLICONDICIONIVA                 ,\r\nC.CLITIPODOCUMENTO                ,C.CLINRODOCUMENTO                 ,C.CLIEMAIL                        ,88                                ,\r\n0                                 ,0                                 ,NULL                              ,NULL                              ,\r\nSYSDATE                           ,'00000000000000000000000000000001',NULL                              ,C.EXTRAINFO\r\nFROM    AFIPAPI.COMPROBANTE     C\r\nINNER JOIN AFIPAPI.TIPOCOMPROBANTE TC ON  ( TC.ID = C.IDTIPOCOMPROBANTE )\r\nWHERE   C.ID IN ( \t'1D837936C052334DB1F75DFDC2823CFF',\r\n\t\t\t\t\t'6B92363CB1645741A48112C674C969FF',\r\n\t\t\t\t\t'A0F6DE6FBC46714FAA200988347B64AF',\r\n\t\t\t\t\t'6B46F65755BC9145B8EA4D80537F7787')\r\n;\r\n\r\nINSERT INTO AFIPAPI.COMPROBANTEITEM (\r\nID                                ,IDCOMPROBANTE                     ,CODIGO                            ,DESCRIPCION                       ,\r\nCANTIDAD                          ,TIPOUNIDADMEDIDA                  ,PRECIOUNITARIO                    ,BONIFICACION                      ,\r\nTIPOALICUOTAIVA                   ,MONTOIVA                          ,IMPORTE                           ,DESPACHO                          ,\r\nCREAFECHA                         ,CREAUSU                           ,TIPOITEM                          )\r\nSELECT\r\nSYS_GUID()                        ,C.ID                              ,'ANU'                             ,C.OBSGENERALES                    ,\r\n1                                 ,0                                 ,C.IMPORTETOTAL                    ,0                                 ,\r\n0                                 ,0                                 ,C.IMPORTETOTAL                    ,NULL                              ,\r\nSYSDATE                           ,'00000000000000000000000000000001',NULL\r\nFROM    AFIPAPI.COMPROBANTE     C\r\nWHERE   C.ESTADO = 88\r\n;\r\n\r\nUPDATE AFIPAPI.COMPROBANTE SET ESTADO = 0 WHERE ESTADO = 88;\r\n\r\nROLLBACK;\r\n"
+    }
+  ],
+  "Ambientes": [
+    {
+      "Name": "A01. DEV",
+      "WebServerIP": "10.73.2.98",
+      "UseCustomUser": false,
+      "Webs": [
+        {
+          "Name": "BO",
+          "RelativeUrl": "/"
+        },
+        {
+          "Name": "PE Web",
+          "RelativeUrl": ":2485/ABM/login"
+        },
+        {
+          "Name": "BUI Web",
+          "RelativeUrl": ":6748/WEB/Usuario/SignIn"
+        },
+        {
+          "Name": "Portal Tramites",
+          "RelativeUrl": ":2942"
+        },
+        {
+          "Name": "Portal Tramites (ABM)",
+          "RelativeUrl": ":2942/ABM/Login"
+        },
+        {
+          "Name": "POS Monitor",
+          "RelativeUrl": ":2840/posmonitor/home"
+        },
+        {
+          "Name": "Micro Sitio Reportes",
+          "RelativeUrl": ":1180"
+        }
+      ]
+    },
+    {
+      "Name": "A10. TEST",
+      "WebServerIP": "10.73.100.48",
+      "UseCustomUser": false,
+      "Webs": [
+        {
+          "Name": "BO",
+          "RelativeUrl": "/"
+        },
+        {
+          "Name": "PE Web",
+          "RelativeUrl": ":2485/ABM/login"
+        },
+        {
+          "Name": "BUI Web",
+          "RelativeUrl": ":6748/WEB/Usuario/SignIn"
+        },
+        {
+          "Name": "Portal Tramites",
+          "RelativeUrl": ":2942"
+        },
+        {
+          "Name": "Portal Tramites (ABM)",
+          "RelativeUrl": ":2942/ABM/Login"
+        },
+        {
+          "Name": "POS Monitor",
+          "RelativeUrl": ":2840/posmonitor/home"
+        },
+        {
+          "Name": "Micro Sitio Reportes",
+          "RelativeUrl": ":1180"
+        }
+      ]
+    },
+    {
+      "Name": "A10. HOMO",
+      "WebServerIP": "10.73.2.97",
+      "UseCustomUser": false,
+      "Webs": [
+        {
+          "Name": "BO",
+          "RelativeUrl": "/"
+        },
+        {
+          "Name": "PE Web",
+          "RelativeUrl": ":2485/ABM/login"
+        },
+        {
+          "Name": "BUI Web",
+          "RelativeUrl": ":6748/WEB/Usuario/SignIn"
+        },
+        {
+          "Name": "Portal Tramites",
+          "RelativeUrl": ":2942"
+        },
+        {
+          "Name": "Portal Tramites (ABM)",
+          "RelativeUrl": ":2942/ABM/Login"
+        },
+        {
+          "Name": "POS Monitor",
+          "RelativeUrl": ":2840/posmonitor/home"
+        },
+        {
+          "Name": "Micro Sitio Reportes",
+          "RelativeUrl": ":1180"
+        }
+      ]
+    },
+    {
+      "Name": "A90. PRE PROD",
+      "WebServerIP": "10.73.2.99",
+      "UseCustomUser": false,
+      "Webs": [
+        {
+          "Name": "BO",
+          "RelativeUrl": "/"
+        },
+        {
+          "Name": "PE Web",
+          "RelativeUrl": ":2485/ABM/login"
+        },
+        {
+          "Name": "BUI Web",
+          "RelativeUrl": ":6748/WEB/Usuario/SignIn"
+        },
+        {
+          "Name": "Portal Tramites",
+          "RelativeUrl": ":2942"
+        },
+        {
+          "Name": "Portal Tramites (ABM)",
+          "RelativeUrl": ":2942/ABM/Login"
+        },
+        {
+          "Name": "POS Monitor",
+          "RelativeUrl": ":2840/posmonitor/home"
+        },
+        {
+          "Name": "Micro Sitio Reportes",
+          "RelativeUrl": ":1180"
+        }
+      ]
+    },
+    {
+      "Name": "A30. SIRUM",
+      "WebServerIP": "10.73.100.49",
+      "UseCustomUser": false,
+      "Webs": [
+        {
+          "Name": "BO",
+          "RelativeUrl": ":1030/"
+        },
+        {
+          "Name": "PE Web",
+          "RelativeUrl": ":1020/ABM/login"
+        },
+        {
+          "Name": "BUI Web",
+          "RelativeUrl": ":1010/WEB/Usuario/SignIn"
+        },
+        {
+          "Name": "Portal Tramites",
+          "RelativeUrl": ":1060"
+        },
+        {
+          "Name": "Portal Tramites (ABM)",
+          "RelativeUrl": ":1060/ABM/Login"
+        },
+        {
+          "Name": "POS Monitor",
+          "RelativeUrl": ":1080/posmonitor/home"
+        },
+        {
+          "Name": "Micro Sitio Reportes",
+          "RelativeUrl": ":1180"
+        }
+      ]
+    },
+    {
+      "Name": "A20. SIRI 1",
+      "WebServerIP": "10.73.100.59",
+      "UseCustomUser": false,
+      "Webs": [
+        {
+          "Name": "BO",
+          "RelativeUrl": ":1030/"
+        },
+        {
+          "Name": "PE Web",
+          "RelativeUrl": ":1020/ABM/login"
+        },
+        {
+          "Name": "BUI Web",
+          "RelativeUrl": ":1010/WEB/Usuario/SignIn"
+        },
+        {
+          "Name": "Portal Tramites",
+          "RelativeUrl": ":1060"
+        },
+        {
+          "Name": "Portal Tramites (ABM)",
+          "RelativeUrl": ":1060/ABM/Login"
+        },
+        {
+          "Name": "POS Monitor",
+          "RelativeUrl": ":1080/posmonitor/home"
+        }
+      ]
+    },
+    {
+      "Name": "A20. SIRI 2",
+      "WebServerIP": "10.73.100.59",
+      "UseCustomUser": false,
+      "Webs": [
+        {
+          "Name": "BO",
+          "RelativeUrl": ":2030/"
+        },
+        {
+          "Name": "PE Web",
+          "RelativeUrl": ":2020/ABM/login"
+        },
+        {
+          "Name": "BUI Web",
+          "RelativeUrl": ":2010/WEB/Usuario/SignIn"
+        },
+        {
+          "Name": "Portal Tramites",
+          "RelativeUrl": ":2060"
+        },
+        {
+          "Name": "Portal Tramites (ABM)",
+          "RelativeUrl": ":2060/ABM/Login"
+        },
+        {
+          "Name": "POS Monitor",
+          "RelativeUrl": ":2080/posmonitor/home"
+        }
+      ]
+    },
+    {
+      "Name": "A99. PROD (Web)",
+      "WebServerIP": "10.15.128.10",
+      "UseCustomUser": false,
+      "AllowRemote": false,
+      "Webs": []
+    },
+    {
+      "Name": "A99. PROD (Apps)",
+      "WebServerIP": "10.15.128.11",
+      "UseCustomUser": false,
+      "AllowRemote": false,
+      "Webs": []
+    },
+    {
+      "Name": "F90. File Server",
+      "WebServerIP": "hacienda-gcba.gov.ar\\entornosSIR\\SIR",
+      "UseCustomUser": false,
+      "AllowRemote": false,
+      "Webs": []
+    }
+  ],
+  "Work": {
+    "AllowTaskWithoutIssue": true,
+    "Filters": [
+      {
+        "Code": 29439,
+        "Name": "Developer - Doing",
+        "Jql": "assignee = currentUser() AND status in (\"SOPORTE N3\", \"EN ANALISIS N3\", \"EN DESARROLLO N3\", \"GCBA::EN DESARROLLO CS\", \"GCBA::En Análisis - Cardinal\", \"IN DEVELOPMENT\", \"EN DOC TECNICA\", OPEN, \"IN PROGRESS\", \"GCBA::ESTIMAR POR CS\") ORDER BY status DESC, lastViewed DESC",
+        "SearchUrl": "https://cardinalconsulting.atlassian.net/rest/api/3/search?jql=assignee+%3D+currentUser()+AND+status+in+(%22SOPORTE+N3%22,+%22EN+ANALISIS+N3%22,+%22EN+DESARROLLO+N3%22,+%22GCBA::EN+DESARROLLO+CS%22,+%22GCBA::En+An%C3%A1lisis+-+Cardinal%22,+%22IN+DEVELOPMENT%22,+%22EN+DOC+TECNICA%22,+OPEN,+%22IN+PROGRESS%22,+%22GCBA::ESTIMAR+POR+CS%22)+ORDER+BY+status+DESC,+lastViewed+DESC"
+      },
+      {
+        "Code": 19714,
+        "Name": "GCBA - N3",
+        "Jql": "project = SIRP AND issuetype in (\"Access\", Incident, Question, Request) AND status in (\"EN ANALISIS N3\", \"EN DESARROLLO N3\") OR project = SIRE AND issuetype in (Bug, BugSprint) AND status in (\"GCBA::EN ANÁLISIS - CARDINAL\", \"GCBA::EN DESARROLLO CS\")",
+        "SearchUrl": "https://cardinalconsulting.atlassian.net/rest/api/3/search?jql=project+%3D+SIRP+AND+issuetype+in+(%22Access%22,+Incident,+Question,+Request)+AND+status+in+(%22EN+ANALISIS+N3%22,+%22EN+DESARROLLO+N3%22)+OR+project+%3D+SIRE+AND+issuetype+in+(Bug,+BugSprint)+AND+status+in+(%22GCBA::EN+AN%C3%81LISIS+-+CARDINAL%22,+%22GCBA::EN+DESARROLLO+CS%22)"
+      }
+    ]
+  },
+  "Repositories": [
+    {
+      "Name": "GCBA :: SIR",
+      "Path": "W:\\src\\CS\\GCBA-SIR"
+    },
+    {
+      "Name": "GCBA :: PostClona",
+      "Path": "W:\\src\\CS\\GCBA-PostClona"
+    }
+  ],
+  "Link": {
+    "Name": "Accesos Directos",
+    "IsSubMenu": true,
+    "IsFolder": false,
+    "ShowFolderContent": false,
+    "LazyLoad": true,
+    "ShowSubFolders": false,
+    "HideSubFoldersEmpty": false,
+    "FolderFileFilter": null,
+    "IsFile": false,
+    "IsSeparator": false,
+    "Path": null,
+    "Icon": "link",
+    "SubLinks": [
+      {
+        "Name": "SourceTree",
+        "IsSubMenu": false,
+        "IsFolder": false,
+        "ShowFolderContent": false,
+        "LazyLoad": true,
+        "ShowSubFolders": false,
+        "HideSubFoldersEmpty": false,
+        "FolderFileFilter": "",
+        "IsFile": true,
+        "IsSeparator": false,
+        "Path": "C:\\Users\\yerba\\AppData\\Local\\SourceTree\\SourceTree.exe",
+        "Icon": "C:\\Users\\yerba\\AppData\\Local\\SourceTree\\SourceTree.exe",
+        "SubLinks": []
+      },
+      {
+        "Name": "Sql Developer",
+        "IsSubMenu": false,
+        "IsFolder": false,
+        "ShowFolderContent": false,
+        "LazyLoad": true,
+        "ShowSubFolders": false,
+        "HideSubFoldersEmpty": false,
+        "FolderFileFilter": "",
+        "IsFile": true,
+        "IsSeparator": false,
+        "Path": "W:\\app\\SQL Developer\\sqldeveloper.exe",
+        "Icon": "W:\\app\\SQL Developer\\sqldeveloper.exe",
+        "SubLinks": []
+      },
+      {
+        "Name": "---",
+        "IsSubMenu": false,
+        "IsFolder": false,
+        "ShowFolderContent": false,
+        "LazyLoad": true,
+        "ShowSubFolders": false,
+        "HideSubFoldersEmpty": false,
+        "FolderFileFilter": "",
+        "IsFile": false,
+        "IsSeparator": true,
+        "Path": "",
+        "Icon": "minus",
+        "SubLinks": []
+      },
+      {
+        "Name": "Docs",
+        "IsSubMenu": false,
+        "IsFolder": true,
+        "ShowFolderContent": true,
+        "LazyLoad": true,
+        "ShowSubFolders": true,
+        "HideSubFoldersEmpty": true,
+        "FolderFileFilter": "*.*",
+        "IsFile": false,
+        "IsSeparator": false,
+        "Path": "W:\\docs\\CS",
+        "Icon": "books",
+        "SubLinks": []
+      },
+      {
+        "Name": "Proyectos",
+        "IsSubMenu": true,
+        "IsFolder": false,
+        "ShowFolderContent": false,
+        "LazyLoad": true,
+        "ShowSubFolders": false,
+        "HideSubFoldersEmpty": false,
+        "FolderFileFilter": "",
+        "IsFile": false,
+        "IsSeparator": false,
+        "Path": "",
+        "Icon": "vs",
+        "SubLinks": [
+          {
+            "Name": "SIR.All",
+            "IsSubMenu": false,
+            "IsFolder": false,
+            "ShowFolderContent": false,
+            "LazyLoad": true,
+            "ShowSubFolders": false,
+            "HideSubFoldersEmpty": false,
+            "FolderFileFilter": "",
+            "IsFile": true,
+            "IsSeparator": false,
+            "Path": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.All.sln",
+            "Icon": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.All.sln",
+            "SubLinks": []
+          },
+          {
+            "Name": "SIR.Migrations",
+            "IsSubMenu": false,
+            "IsFolder": false,
+            "ShowFolderContent": false,
+            "LazyLoad": true,
+            "ShowSubFolders": false,
+            "HideSubFoldersEmpty": false,
+            "FolderFileFilter": "",
+            "IsFile": true,
+            "IsSeparator": false,
+            "Path": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.Migrations.sln",
+            "Icon": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.Migrations.sln",
+            "SubLinks": []
+          },
+          {
+            "Name": "SIR.PostClona",
+            "IsSubMenu": false,
+            "IsFolder": false,
+            "ShowFolderContent": false,
+            "LazyLoad": true,
+            "ShowSubFolders": false,
+            "HideSubFoldersEmpty": false,
+            "FolderFileFilter": "",
+            "IsFile": true,
+            "IsSeparator": false,
+            "Path": "W:\\src\\CS\\GCBA-PostClona\\src\\SIR.PostClona.sln",
+            "Icon": "W:\\src\\CS\\GCBA-PostClona\\src\\SIR.PostClona.sln",
+            "SubLinks": []
+          },
+          {
+            "Name": "---",
+            "IsSubMenu": false,
+            "IsFolder": false,
+            "ShowFolderContent": false,
+            "LazyLoad": true,
+            "ShowSubFolders": false,
+            "HideSubFoldersEmpty": false,
+            "FolderFileFilter": null,
+            "IsFile": false,
+            "IsSeparator": true,
+            "Path": null,
+            "Icon": "minus",
+            "SubLinks": []
+          },
+          {
+            "Name": "SIR.API",
+            "IsSubMenu": false,
+            "IsFolder": false,
+            "ShowFolderContent": false,
+            "LazyLoad": true,
+            "ShowSubFolders": false,
+            "HideSubFoldersEmpty": false,
+            "FolderFileFilter": "",
+            "IsFile": true,
+            "IsSeparator": false,
+            "Path": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.API.sln",
+            "Icon": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.API.sln",
+            "SubLinks": []
+          },
+          {
+            "Name": "SIR.Transmisiones",
+            "IsSubMenu": false,
+            "IsFolder": false,
+            "ShowFolderContent": false,
+            "LazyLoad": true,
+            "ShowSubFolders": false,
+            "HideSubFoldersEmpty": false,
+            "FolderFileFilter": "",
+            "IsFile": true,
+            "IsSeparator": false,
+            "Path": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.Transmisiones.sln",
+            "Icon": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.Transmisiones.sln",
+            "SubLinks": []
+          },
+          {
+            "Name": "SIR.BackOffice",
+            "IsSubMenu": false,
+            "IsFolder": false,
+            "ShowFolderContent": false,
+            "LazyLoad": true,
+            "ShowSubFolders": false,
+            "HideSubFoldersEmpty": false,
+            "FolderFileFilter": "",
+            "IsFile": true,
+            "IsSeparator": false,
+            "Path": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.Server.BackOffice.sln",
+            "Icon": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.Server.BackOffice.sln",
+            "SubLinks": []
+          },
+          {
+            "Name": "SIR.BackOffice.Tarifaria",
+            "IsSubMenu": false,
+            "IsFolder": false,
+            "ShowFolderContent": false,
+            "LazyLoad": true,
+            "ShowSubFolders": false,
+            "HideSubFoldersEmpty": false,
+            "FolderFileFilter": "",
+            "IsFile": true,
+            "IsSeparator": false,
+            "Path": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.BackOffice.Tarifaria.sln",
+            "Icon": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.BackOffice.Tarifaria.sln",
+            "SubLinks": []
+          },
+          {
+            "Name": "SIR.FrontOffice",
+            "IsSubMenu": false,
+            "IsFolder": false,
+            "ShowFolderContent": false,
+            "LazyLoad": true,
+            "ShowSubFolders": false,
+            "HideSubFoldersEmpty": false,
+            "FolderFileFilter": "",
+            "IsFile": true,
+            "IsSeparator": false,
+            "Path": "W:\\src\\CS\\GCBA-FrontOffice\\SIR.FrontOffice\\SIR.FrontOffice.sln",
+            "Icon": "W:\\src\\CS\\GCBA-FrontOffice\\SIR.FrontOffice\\SIR.FrontOffice.sln",
+            "SubLinks": []
+          },
+          {
+            "Name": "---",
+            "IsSubMenu": false,
+            "IsFolder": false,
+            "ShowFolderContent": false,
+            "LazyLoad": true,
+            "ShowSubFolders": false,
+            "HideSubFoldersEmpty": false,
+            "FolderFileFilter": null,
+            "IsFile": false,
+            "IsSeparator": true,
+            "Path": null,
+            "Icon": "minus",
+            "SubLinks": []
+          },
+          {
+            "Name": "SIR.PagoElectronico (Web)",
+            "IsSubMenu": false,
+            "IsFolder": false,
+            "ShowFolderContent": false,
+            "LazyLoad": true,
+            "ShowSubFolders": false,
+            "HideSubFoldersEmpty": false,
+            "FolderFileFilter": "",
+            "IsFile": true,
+            "IsSeparator": false,
+            "Path": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.PagoElectronico.sln",
+            "Icon": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.PagoElectronico.sln",
+            "SubLinks": []
+          },
+          {
+            "Name": "SIR.PagoElectronico (API)",
+            "IsSubMenu": false,
+            "IsFolder": false,
+            "ShowFolderContent": false,
+            "LazyLoad": true,
+            "ShowSubFolders": false,
+            "HideSubFoldersEmpty": false,
+            "FolderFileFilter": "",
+            "IsFile": true,
+            "IsSeparator": false,
+            "Path": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.PEAPI.sln",
+            "Icon": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.PEAPI.sln",
+            "SubLinks": []
+          },
+          {
+            "Name": "---",
+            "IsSubMenu": false,
+            "IsFolder": false,
+            "ShowFolderContent": false,
+            "LazyLoad": true,
+            "ShowSubFolders": false,
+            "HideSubFoldersEmpty": false,
+            "FolderFileFilter": null,
+            "IsFile": false,
+            "IsSeparator": true,
+            "Path": null,
+            "Icon": "minus",
+            "SubLinks": []
+          },
+          {
+            "Name": "SIR.BoletaUnica (Web)",
+            "IsSubMenu": false,
+            "IsFolder": false,
+            "ShowFolderContent": false,
+            "LazyLoad": true,
+            "ShowSubFolders": false,
+            "HideSubFoldersEmpty": false,
+            "FolderFileFilter": "",
+            "IsFile": true,
+            "IsSeparator": false,
+            "Path": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.BoletaUnica.UI.sln",
+            "Icon": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.BoletaUnica.UI.sln",
+            "SubLinks": []
+          },
+          {
+            "Name": "SIR.BoletaUnica (API)",
+            "IsSubMenu": false,
+            "IsFolder": false,
+            "ShowFolderContent": false,
+            "LazyLoad": true,
+            "ShowSubFolders": false,
+            "HideSubFoldersEmpty": false,
+            "FolderFileFilter": "",
+            "IsFile": true,
+            "IsSeparator": false,
+            "Path": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.BoletaUnica.sln",
+            "Icon": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.BoletaUnica.sln",
+            "SubLinks": []
+          },
+          {
+            "Name": "---",
+            "IsSubMenu": false,
+            "IsFolder": false,
+            "ShowFolderContent": false,
+            "LazyLoad": true,
+            "ShowSubFolders": false,
+            "HideSubFoldersEmpty": false,
+            "FolderFileFilter": null,
+            "IsFile": false,
+            "IsSeparator": true,
+            "Path": null,
+            "Icon": "minus",
+            "SubLinks": []
+          },
+          {
+            "Name": "SIR.PortalTramites",
+            "IsSubMenu": false,
+            "IsFolder": false,
+            "ShowFolderContent": false,
+            "ShowSubFolders": false,
+            "ShowOpenFolder": false,
+            "FolderFileFilter": "",
+            "IsFile": true,
+            "IsSeparator": false,
+            "Path": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.PortalTramites.sln",
+            "Icon": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.PortalTramites.sln",
+            "SubLinks": []
+          },
+          {
+            "Name": "SIR.Report",
+            "IsSubMenu": false,
+            "IsFolder": false,
+            "ShowFolderContent": false,
+            "LazyLoad": true,
+            "ShowSubFolders": false,
+            "HideSubFoldersEmpty": false,
+            "FolderFileFilter": "",
+            "IsFile": true,
+            "IsSeparator": false,
+            "Path": "W:\\src\\CS\\GCBA-Reportes\\Fuentes\\Fuentes\\SIRReport.sln",
+            "Icon": "W:\\src\\CS\\GCBA-Reportes\\Fuentes\\Fuentes\\SIRReport.sln",
+            "SubLinks": []
+          },
+          {
+            "Name": "SIR.GestorActasDGAI",
+            "IsSubMenu": false,
+            "IsFolder": false,
+            "ShowFolderContent": false,
+            "LazyLoad": true,
+            "ShowSubFolders": false,
+            "HideSubFoldersEmpty": false,
+            "FolderFileFilter": "",
+            "IsFile": true,
+            "IsSeparator": false,
+            "Path": "W:\\src\\CS\\GCBA-ActasDAI\\SIR.GestorActasDGAI.sln",
+            "Icon": "W:\\src\\CS\\GCBA-ActasDAI\\SIR.GestorActasDGAI.sln",
+            "SubLinks": []
+          },
+          {
+            "Name": "Consolas",
+            "IsSubMenu": true,
+            "IsFolder": false,
+            "ShowFolderContent": false,
+            "LazyLoad": true,
+            "ShowSubFolders": false,
+            "HideSubFoldersEmpty": false,
+            "FolderFileFilter": "",
+            "IsFile": false,
+            "IsSeparator": false,
+            "Path": "",
+            "Icon": "vs",
+            "SubLinks": [
+              {
+                "Name": "SIR.InterfazBcoCiudad",
+                "IsSubMenu": false,
+                "IsFolder": false,
+                "ShowFolderContent": false,
+                "LazyLoad": true,
+                "ShowSubFolders": false,
+                "HideSubFoldersEmpty": false,
+                "FolderFileFilter": "",
+                "IsFile": true,
+                "IsSeparator": false,
+                "Path": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.InterfazBcoCiudad.sln",
+                "Icon": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.InterfazBcoCiudad.sln",
+                "SubLinks": []
+              },
+              {
+                "Name": "SIR.BuiSync",
+                "IsSubMenu": false,
+                "IsFolder": false,
+                "ShowFolderContent": false,
+                "LazyLoad": true,
+                "ShowSubFolders": false,
+                "HideSubFoldersEmpty": false,
+                "FolderFileFilter": "",
+                "IsFile": true,
+                "IsSeparator": false,
+                "Path": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.BuiSync.sln",
+                "Icon": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.BuiSync.sln",
+                "SubLinks": []
+              },
+              {
+                "Name": "SIR.InterfazSVE",
+                "IsSubMenu": false,
+                "IsFolder": false,
+                "ShowFolderContent": false,
+                "LazyLoad": true,
+                "ShowSubFolders": false,
+                "HideSubFoldersEmpty": false,
+                "FolderFileFilter": "",
+                "IsFile": true,
+                "IsSeparator": false,
+                "Path": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.InterfazSVE.sln",
+                "Icon": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.InterfazSVE.sln",
+                "SubLinks": []
+              },
+              {
+                "Name": "SIR.ProcesamientoRapipago",
+                "IsSubMenu": false,
+                "IsFolder": false,
+                "ShowFolderContent": false,
+                "LazyLoad": true,
+                "ShowSubFolders": false,
+                "HideSubFoldersEmpty": false,
+                "FolderFileFilter": "",
+                "IsFile": true,
+                "IsSeparator": false,
+                "Path": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.ProcesamientoRapipago.sln",
+                "Icon": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.ProcesamientoRapipago.sln",
+                "SubLinks": []
+              },
+              {
+                "Name": "SIR.NotifRetry",
+                "IsSubMenu": false,
+                "IsFolder": false,
+                "ShowFolderContent": false,
+                "LazyLoad": true,
+                "ShowSubFolders": false,
+                "HideSubFoldersEmpty": false,
+                "FolderFileFilter": "",
+                "IsFile": true,
+                "IsSeparator": false,
+                "Path": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.Tareas\\SIR.NotifRetry\\NotifRetry.sln",
+                "Icon": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.Tareas\\SIR.NotifRetry\\NotifRetry.sln",
+                "SubLinks": []
+              },
+              {
+                "Name": "SIR.DAIReport",
+                "IsSubMenu": false,
+                "IsFolder": false,
+                "ShowFolderContent": false,
+                "LazyLoad": true,
+                "ShowSubFolders": false,
+                "HideSubFoldersEmpty": false,
+                "FolderFileFilter": "",
+                "IsFile": true,
+                "IsSeparator": false,
+                "Path": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.DAIReport.sln",
+                "Icon": "W:\\src\\CS\\GCBA-SIR\\src\\SIR.DAIReport.sln",
+                "SubLinks": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
