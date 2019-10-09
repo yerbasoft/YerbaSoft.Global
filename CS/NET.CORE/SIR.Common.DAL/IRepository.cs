@@ -6,6 +6,10 @@ using System.Text;
 
 namespace SIR.Common.DAL
 {
+    /// <summary>
+    /// Interfaz común a los repositorios de Entidades
+    /// </summary>
+    /// <typeparam name="TEntity"></typeparam>
     public interface IRepository<TEntity> where TEntity : new()
     {
         /// <summary>

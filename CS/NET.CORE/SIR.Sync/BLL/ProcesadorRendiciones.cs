@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using SIR.Common.Log;
@@ -12,13 +13,13 @@ namespace SIR.Sync.BLL
     {
         private Logger Logger;
         private Application Config;
-        public SIR.Common.DAL.SimpleDAO Session { get; private set; }
+        public SIR.Common.DAL.EF.EFDAO DAO { get; private set; }
 
         public ProcesadorRendiciones(Logger log, Application config)
         {
             this.Logger = log;
             this.Config = config;
-            this.Session = new SIR.Common.DAL.SimpleDAO(config.ConnectionString);
+            this.DAO = new SIR.Common.DAL.EF.EFDAO(config.ConnectionString, "SYN", Assembly.GetExecutingAssembly());
         }
 
         internal void ProcesarRendicionDAI(DateTime fecha, int dias)
@@ -26,20 +27,20 @@ namespace SIR.Sync.BLL
             IList<DTO.StoredProcedures.RendicionPagos> pendientes = new DTO.StoredProcedures.RendicionPagos[0];
             try
             {
-                var deps = Session.GetConfig("SYN", "RendicionPagosDAIDependencias");
+                var deps = DAO.Config.Get("RendicionPagosDAIDependencias", Logger)?.Value;
                 var parms = new SIR.Common.DAL.SP.Parameters()
                             .AddParam("pFechaDesde", fecha.AddDays(-dias + 1))
                             .AddParam("pFechaHasta", fecha)
                             .AddParam("pDependencias", deps.Split(','));
 
-                pendientes = Session.ExecProcedure<DTO.StoredProcedures.RendicionPagos>("SIR.GETRENDPAGOSDAI", parms);
+                pendientes = DAO.ExecProcedure<DTO.StoredProcedures.RendicionPagos>("SIR.GETRENDPAGOSDAI", parms);
             }
             catch (Exception ex)
             {
                 Logger.Error($"Error al obtener las boletas pendientes de notificación desde la base de datos.", ex);
             }
 
-            var path = Session.GetConfig("SYN", "RendicionPagosDAIFilePath");
+            var path = DAO.Config.Get("RendicionPagosDAIFilePath", Logger)?.Value;
             var tasks = new Queue<Task>();
             for (var d = 1; d <= dias; d++)
             {

@@ -12,7 +12,7 @@ namespace SIR.BcoCiudad.BLL
     {
         protected SIR.Common.Log.Logger Logger;
         protected SIR.BcoCiudad.Common.DTO.Config.Application Config;
-        protected DAL.DAO DAO;
+        protected SIR.BcoCiudad.Common.Interfaces.IDAO DAO;
 
         public BcoCiudadService(SIR.Common.Log.Logger log, Common.DTO.Config.Application config)
         {

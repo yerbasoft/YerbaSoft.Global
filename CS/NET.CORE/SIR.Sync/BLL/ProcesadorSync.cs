@@ -4,13 +4,14 @@ using System.Text;
 using System.Threading.Tasks;
 using VEP = SIR.Common.Connector.DTO.VEP;
 using Recauda = SIR.Common.Connector.DTO.Recauda;
+using System.Reflection;
 
 namespace SIR.Sync.BLL
 {
     internal class ProcesadorSync
     {
         private SIR.Common.Log.Logger Logger;
-        private SIR.Common.DAL.SimpleDAO Session;
+        private SIR.Common.DAL.EF.EFDAO DAO;
         private DTO.Config.Application Config;
         private SIR.Common.Connector.VEPConnector VEPConnector;
         private SIR.Common.Connector.RecaudaConnector RecaudaConnector;
@@ -19,10 +20,14 @@ namespace SIR.Sync.BLL
         {
             this.Logger = logger;
             this.Config = config;
-            this.Session = new SIR.Common.DAL.SimpleDAO(config.ConnectionString);
+            this.DAO = new SIR.Common.DAL.EF.EFDAO(config.ConnectionString, "SYN", Assembly.GetExecutingAssembly());
 
-            this.VEPConnector = new SIR.Common.Connector.VEPConnector(new Uri(Session.GetConfig("SYN", "VEPUrl")), Session.GetConfig("SYN", "VEPUser"), Session.GetConfig("SYN", "VEPPass"));
-            this.RecaudaConnector = new SIR.Common.Connector.RecaudaConnector(new Uri(Session.GetConfig("SYN", "RecaudaUrl")));
+            this.VEPConnector = new SIR.Common.Connector.VEPConnector(
+                new Uri(DAO.Config.Get("VEPUrl", Logger)?.Value), 
+                DAO.Config.Get("VEPUser", Logger)?.Value,
+                DAO.Config.Get("VEPPass", Logger)?.Value
+            );
+            this.RecaudaConnector = new SIR.Common.Connector.RecaudaConnector(new Uri(DAO.Config.Get("RecaudaUrl", Logger)?.Value));
         }
 
         internal void ProcesarNotificaciones(DateTime desde, DateTime hasta)
@@ -34,7 +39,7 @@ namespace SIR.Sync.BLL
                             .AddParam("pFechaDesde", desde)
                             .AddParam("pFechaHasta", hasta);
 
-                pendientes = Session.ExecProcedure<DTO.StoredProcedures.Pendiente>("SIR.GETBUIPENDNOTIF", parms);
+                pendientes = DAO.ExecProcedure<DTO.StoredProcedures.Pendiente>("SIR.GETBUIPENDNOTIF", parms);
             }
             catch (Exception ex)
             {
@@ -103,7 +108,7 @@ namespace SIR.Sync.BLL
                             .AddParam("pFechaDesde", desde)
                             .AddParam("pFechaHasta", hasta);
 
-                pendientes = Session.ExecProcedure<DTO.StoredProcedures.Pendiente>("SIR.GETBUIPENDANULA", parms);
+                pendientes = DAO.ExecProcedure<DTO.StoredProcedures.Pendiente>("SIR.GETBUIPENDANULA", parms);
             }
             catch (Exception ex)
             {
@@ -166,7 +171,7 @@ namespace SIR.Sync.BLL
             IList<DTO.StoredProcedures.Pendiente> pendientes = new DTO.StoredProcedures.Pendiente[0];
             try
             {
-                pendientes = Session.ExecProcedure<DTO.StoredProcedures.Pendiente>("SIR.GETBUIVENCIDAS", null);
+                pendientes = DAO.ExecProcedure<DTO.StoredProcedures.Pendiente>("SIR.GETBUIVENCIDAS", null);
             }
             catch (Exception ex)
             {
@@ -230,7 +235,7 @@ namespace SIR.Sync.BLL
             IList<DTO.StoredProcedures.PendientePE> pendientes = new DTO.StoredProcedures.PendientePE[0];
             try
             {
-                pendientes = Session.ExecProcedure<DTO.StoredProcedures.PendientePE>("SIR.GETPAGOSBUIPENDPE", null);
+                pendientes = DAO.ExecProcedure<DTO.StoredProcedures.PendientePE>("SIR.GETPAGOSBUIPENDPE", null);
             }
             catch (Exception ex)
             {
@@ -238,8 +243,8 @@ namespace SIR.Sync.BLL
                 Logger.Error(ex);
             }
 
-            var peUser = Session.GetConfig("SYN", "RecaudaUser");
-            var pePass = Session.GetConfig("SYN", "RecaudaPass");
+            var peUser = DAO.Config.Get("RecaudaUser", Logger)?.Value;
+            var pePass = DAO.Config.Get("RecaudaPass", Logger)?.Value;
             var notificaciones = new Queue<Task>();
             foreach (var notif in pendientes)
             {

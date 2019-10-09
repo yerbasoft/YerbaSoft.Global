@@ -1,12 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace SIR.Common.DAL.SP
 {
+    /// <summary>
+    /// Listado de Parámetros de StoredProcedure
+    /// </summary>
     public class Parameters : List<Parameter>
     {
+        /// <summary>
+        /// Agrega un parámetro a la lista de parámetros. Ésta funcion devolverá error si el valor es NULL
+        /// </summary>
+        /// <param name="name">nombre del parámetro</param>
+        /// <param name="value">valor del parámetro. No puede ser null</param>
+        public Parameters AddParam(string name, object value)
+        {
+            this.Add(new Parameter() { Name = name, Value = value, Type = value.GetType() });
+            return this;
+        }
+
         internal Oracle.ManagedDataAccess.Client.OracleParameter[] GetOracleParameters(Oracle.ManagedDataAccess.Client.OracleConnection conn)
         {
             var result = new List<Oracle.ManagedDataAccess.Client.OracleParameter>();
@@ -52,18 +65,6 @@ namespace SIR.Common.DAL.SP
                 }
             }
             return result.ToArray();
-        }
-
-        /// <summary>
-        /// Agrega un parámetro a la lista de parámetros. Ésta funcion devolverá error si el valor es NULL
-        /// </summary>
-        /// <param name="name">nombre del parámetro</param>
-        /// <param name="value">valor del parámetro. No puede ser null</param>
-        /// <returns></returns>
-        public Parameters AddParam(string name, object value)
-        {
-            this.Add(new Parameter() { Name = name, Value = value, Type = value.GetType() });
-            return this;
         }
 
         private object CheckOracleValue(object obj, Oracle.ManagedDataAccess.Client.OracleDbType oracleType)

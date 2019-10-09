@@ -5,6 +5,9 @@ using System.Text;
 
 namespace SIR.Common.DAL
 {
+    /// <summary>
+    /// Interfaz básica de objetos DAO
+    /// </summary>
     public interface IDAO
     {
         /// <summary>
